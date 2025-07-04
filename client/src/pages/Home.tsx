@@ -130,7 +130,7 @@ export default function Home() {
                     <h3 className="font-semibold text-text-dark text-lg">Niche‑skill gaps stall product launches.</h3>
                   </div>
                 </AccordionTrigger>
-                <AccordionContent className="pl-20 pr-lg pb-md text-text-medium leading-relaxed">
+                <AccordionContent className="pl-20 pr-lg pb-md pt-xs text-text-medium leading-relaxed">
                   Are <span className="font-semibold text-text-dark">elusive technical or specialized skills</span> delaying crucial product development or market expansion, <span className="font-semibold text-text-dark">costing you market advantage</span>?
                 </AccordionContent>
               </AccordionItem>
@@ -144,7 +144,7 @@ export default function Home() {
                     <h3 className="font-semibold text-text-dark text-lg">Unpredictable hiring wrecks delivery timelines.</h3>
                   </div>
                 </AccordionTrigger>
-                <AccordionContent className="pl-20 pr-lg pb-md text-text-medium leading-relaxed">
+                <AccordionContent className="pl-20 pr-lg pb-md pt-xs text-text-medium leading-relaxed">
                   Is <span className="font-semibold text-text-dark">chaotic and unpredictable hiring</span> velocity and inconsistent quality jeopardizing delivery timelines or crucial goals, silently erasing your planned ROI?
                 </AccordionContent>
               </AccordionItem>
@@ -158,7 +158,7 @@ export default function Home() {
                     <h3 className="font-semibold text-text-dark text-lg">Running blind without talent market intelligence.</h3>
                   </div>
                 </AccordionTrigger>
-                <AccordionContent className="pl-20 pr-lg pb-md text-text-medium leading-relaxed">
+                <AccordionContent className="pl-20 pr-lg pb-md pt-xs text-text-medium leading-relaxed">
                   Is <span className="font-semibold text-text-dark">expansion or workforce‑growth planning</span> built on guesswork, forcing risky bets on locations, salaries, and timelines that explode later?
                 </AccordionContent>
               </AccordionItem>
@@ -172,7 +172,7 @@ export default function Home() {
                     <h3 className="font-semibold text-text-dark text-lg">Your team is stuck in constant firefighting mode.</h3>
                   </div>
                 </AccordionTrigger>
-                <AccordionContent className="pl-20 pr-lg pb-md text-text-medium leading-relaxed">
+                <AccordionContent className="pl-20 pr-lg pb-md pt-xs text-text-medium leading-relaxed">
                   Are nonstop <span className="font-semibold text-text-dark">last‑minute urgent hires</span> dragging leaders into interview marathons and draining team morale because key roles still can't be staffed on schedule?
                 </AccordionContent>
               </AccordionItem>
