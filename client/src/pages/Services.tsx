@@ -1,0 +1,259 @@
+import { Link } from 'wouter';
+import { Lightbulb, Settings, Zap, Play } from 'lucide-react';
+
+export default function Services() {
+  return (
+    <div>
+      {/* Hero */}
+      <section className="bg-gradient-to-br from-tf-blue-light to-white py-xxxl">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center max-w-4xl mx-auto">
+            <h1 className="text-4xl md:text-5xl font-bold text-text-dark mb-md">
+              Predictable Talent Results, Even Under <span className="text-tf-orange">Extreme Scale and Complexity</span>
+            </h1>
+            <p className="text-lg text-text-medium mb-lg">
+              A single critical gap can bleed tens of thousands in value each month and derail strategic timelines.
+            </p>
+            <p className="text-lg text-text-dark mb-xxl">
+              Standard recruiting buckles when speed and needs spike. Our integrated <span className="font-semibold text-tf-orange">Talent Enablement Ecosystem (IIEA)</span> turns your Talent Acquisition into an engine that keeps every initiative on schedule.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-md justify-center">
+              <Link href="/contact" className="btn-primary text-lg px-8 py-4">
+                Book a Strategic Assessment
+              </Link>
+              <Link href="/" className="btn-secondary text-lg px-8 py-4">
+                Explore the Enablement Ecosystem
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Challenge */}
+      <section className="bg-bg-subtle py-xxxl">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="max-w-4xl mx-auto">
+            <div className="text-center mb-xxl">
+              <h2 className="text-3xl md:text-4xl font-bold text-text-dark mb-md">Fragmented Fixes Fail When Met With Complexity</h2>
+              <p className="text-lg text-text-medium">The symptoms are painfully familiar:</p>
+            </div>
+            <div className="space-y-md">
+              <div className="bg-white p-lg rounded-lg shadow-sm">
+                <h3 className="font-semibold text-text-dark mb-xs">Strategic projects stall while niche roles sit vacant</h3>
+                <p className="text-text-medium text-sm">Are hidden skill gaps dragging release and launch dates while gifting market share to faster rivals?</p>
+              </div>
+              <div className="bg-white p-lg rounded-lg shadow-sm">
+                <h3 className="font-semibold text-text-dark mb-xs">Chaotic hiring burns out teams and drives attrition</h3>
+                <p className="text-text-medium text-sm">Are urgent re-prioritizations forcing recruiters and managers into burnout, driving attrition rates higher?</p>
+              </div>
+              <div className="bg-white p-lg rounded-lg shadow-sm">
+                <h3 className="font-semibold text-text-dark mb-xs">Costly tools, process improvements, and training under‑deliver</h3>
+                <p className="text-text-medium text-sm">Expensive tech sits underutilized, team members don't use learning from their last training, resulting in poor ROI compared to promised values?</p>
+              </div>
+              <div className="bg-white p-lg rounded-lg shadow-sm">
+                <h3 className="font-semibold text-text-dark mb-xs">Perpetual bottlenecks are holding you back</h3>
+                <p className="text-text-medium text-sm">You fix sourcing, to discover that assessments are broken. Fix assessment and onboarding fails. The constraints shift, but the delays persist?</p>
+              </div>
+            </div>
+            <div className="text-center mt-xxl">
+              <p className="text-lg font-semibold text-text-dark">
+                Scrapwork remedies can't solve systemic problems. Our holistic enablement system moves you beyond these frustrating cycles.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* IIEA Ecosystem */}
+      <section className="bg-white py-xxxl">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-xxl">
+            <h2 className="text-3xl md:text-4xl font-bold text-text-dark mb-md">Our Talent Enablement Ecosystem</h2>
+            <p className="text-lg text-text-medium mb-lg max-w-4xl mx-auto">
+              The Pillars for Building Durable Talent Acquisition Capability
+            </p>
+            <p className="text-lg text-text-dark max-w-4xl mx-auto">
+              Our proven framework provides the structure to build a talent acquisition engine fit for your specific purpose. We recognize that not every situation requires the full ecosystem, so we designed each pillar to deliver essential value on its own.
+            </p>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-xxl mb-xxxl">
+            <div className="bg-gradient-to-br from-tf-blue-light to-white p-xxl rounded-lg shadow-lg">
+              <div className="w-16 h-16 bg-tf-blue rounded-full flex items-center justify-center mb-lg">
+                <Lightbulb className="w-8 h-8 text-white" />
+              </div>
+              <h3 className="text-xl font-bold text-text-dark mb-md">Illuminate: Predictive Market & Talent Intelligence</h3>
+              <p className="text-text-medium">
+                Anticipate shifts, validate strategy, and make data-backed decisions with confidence. We deliver deep market, competitor, and talent insights, analyzed for strategic foresight.
+              </p>
+            </div>
+            <div className="bg-gradient-to-br from-tf-blue-light to-white p-xxl rounded-lg shadow-lg">
+              <div className="w-16 h-16 bg-tf-blue rounded-full flex items-center justify-center mb-lg">
+                <Settings className="w-8 h-8 text-white" />
+              </div>
+              <h3 className="text-xl font-bold text-text-dark mb-md">Innovate: Scalable System & Process Design</h3>
+              <p className="text-text-medium">
+                Applying first principles and design thinking, we architect data-driven, adaptable TA processes and optimize your technology stack to efficiently handle your unique scale, speed, complexity, and compliance needs.
+              </p>
+            </div>
+            <div className="bg-gradient-to-br from-tf-blue-light to-white p-xxl rounded-lg shadow-lg">
+              <div className="w-16 h-16 bg-tf-blue rounded-full flex items-center justify-center mb-lg">
+                <Zap className="w-8 h-8 text-white" />
+              </div>
+              <h3 className="text-xl font-bold text-text-dark mb-md">Elevate: Next-Gen Capability & AI Enablement</h3>
+              <p className="text-text-medium">
+                Expert practitioner-led upskilling programs customized to your needs. We use real-world examples to empower your recruiters and hiring managers with tactical AI literacy and advanced recruitment expertise.
+              </p>
+            </div>
+            <div className="bg-gradient-to-br from-tf-blue-light to-white p-xxl rounded-lg shadow-lg">
+              <div className="w-16 h-16 bg-tf-blue rounded-full flex items-center justify-center mb-lg">
+                <Play className="w-8 h-8 text-white" />
+              </div>
+              <h3 className="text-xl font-bold text-text-dark mb-md">Accelerate: Strategically Applied Execution Power</h3>
+              <p className="text-text-medium">
+                On‑demand recruiting muscle and resource elasticity for time‑critical hires. We deploy seasoned TA professionals applying executive search rigor against all critical and urgent hiring needs, securing the candidates you need.
+              </p>
+            </div>
+          </div>
+
+          {/* Synergy Section */}
+          <div className="bg-gradient-to-r from-tf-orange/10 to-tf-blue/10 p-xxl rounded-lg mb-xxxl">
+            <div className="text-center mb-lg">
+              <h3 className="text-2xl font-bold text-text-dark mb-md">The Multiplier Effect: Why Integration Creates Unmatched Value</h3>
+              <p className="text-lg text-text-medium">
+                These aren't just four separate services. Our framework is powerful <em>because</em> its components are designed to work in synergy when cross-integrated, systematically amplifying results and creating a compounding strategic advantage that empowers your entire organization.
+              </p>
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-lg">
+              <div className="bg-white p-lg rounded-lg">
+                <p className="text-text-medium"><span className="font-semibold text-tf-blue">Illuminate's</span> intelligence directly <span className="font-semibold text-tf-blue">informs Innovate's design</span>, ensuring processes, hiring, and tech choices match <em>your</em> specific market context and challenges, thus <span className="font-semibold text-text-dark">preventing costly generic missteps</span>.</p>
+              </div>
+              <div className="bg-white p-lg rounded-lg">
+                <p className="text-text-medium"><span className="font-semibold text-tf-blue">Innovate's</span> resilient architecture provides the <span className="font-semibold text-tf-blue">essential operating system</span> for Elevate's advanced skills training. Which translates into <span className="font-semibold text-text-dark">real, measurable productivity improvements and consistent execution</span>, locking in training ROI.</p>
+              </div>
+              <div className="bg-white p-lg rounded-lg">
+                <p className="text-text-medium"><span className="font-semibold text-tf-blue">Elevate</span> empowers your team not only with skills but also with the <span className="font-semibold text-tf-blue">strategic context</span> and the ability to master the <span className="font-semibold text-tf-blue">Innovate</span> system while proactively applying <span className="font-semibold text-tf-blue">Illuminate</span> insights, fostering <span className="font-semibold text-text-dark">true adaptability and self-sufficiency</span>.</p>
+              </div>
+              <div className="bg-white p-lg rounded-lg">
+                <p className="text-text-medium"><span className="font-semibold text-tf-blue">Accelerate</span> performs with precision and speed <em>because</em> it operates within this enabled ecosystem, guided by <span className="font-semibold text-tf-blue">Illuminate's</span> intel, leveraging <span className="font-semibold text-tf-blue">Innovate's</span> optimized workflows, and adhering to <span className="font-semibold text-tf-blue">Elevate's</span> quality benchmarks.</p>
+              </div>
+            </div>
+            <div className="text-center mt-lg">
+              <p className="text-lg font-semibold text-text-dark">
+                A deliberate integration like this transforms your People and Talent Acquisition functions from isolated silos into a powerful, predictable engine that propels your strategic business outcomes.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ROI Section */}
+      <section className="bg-bg-subtle py-xxxl">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="max-w-4xl mx-auto">
+            <div className="text-center mb-xxl">
+              <h2 className="text-3xl md:text-4xl font-bold text-text-dark mb-md">The Compelling ROI of Integrated Enablement</h2>
+              <p className="text-lg text-text-medium mb-lg">
+                Building Lasting Value and Capability Isn't an Expense, It's How You Scale
+              </p>
+              <p className="text-lg text-text-dark">
+                When talent is treated as a plug-and-play commodity, you don't build capability. You rent it. And renting your ability to grow isn't just expensive, it's a limitation and a <span className="font-semibold text-tf-orange">silent and constant drain on your resources</span>.
+              </p>
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-lg mb-xxl">
+              <div className="bg-white p-lg rounded-lg shadow-sm">
+                <h3 className="font-semibold text-text-dark mb-md">The Transactional Treadmill</h3>
+                <p className="text-text-medium text-sm">Ineffective processes lead to endless cycles of repeated agency fees (+15-25%) for hard-to-fill roles, contractor premiums (often exceeding 50%), ongoing replacement costs due to poor hiring decisions, and lost productivity from churn.</p>
+              </div>
+              <div className="bg-white p-lg rounded-lg shadow-sm">
+                <h3 className="font-semibold text-text-dark mb-md">The Cost of Failure</h3>
+                <p className="text-text-medium text-sm">What's the <em>true</em> financial impact of a 6-month delay due to talent gaps? The <span className="font-semibold text-tf-orange">opportunity cost</span> is often <span className="font-semibold text-tf-orange">in the millions</span> in lost pipeline revenue.</p>
+              </div>
+              <div className="bg-white p-lg rounded-lg shadow-sm">
+                <h3 className="font-semibold text-text-dark mb-md">The Strategic Risk Premium</h3>
+                <p className="text-text-medium text-sm">Operating without a predictable talent engine forces you to carry a constant, unquantified risk premium, adding ambiguity to every major growth initiative.</p>
+              </div>
+            </div>
+            <div className="bg-tf-blue-light p-xxl rounded-lg">
+              <div className="text-center mb-lg">
+                <h3 className="text-xl font-bold text-text-dark mb-md">Our Solutions Are Engineered for Superior, Demonstrable Long-Term ROI</h3>
+              </div>
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-lg">
+                <div className="text-center">
+                  <h4 className="font-semibold text-text-dark mb-xs">Drastically Reducing Operational Waste</h4>
+                  <p className="text-text-medium text-sm">Establishing efficient internal systems lowers costly agency reliance, decreases effective cost-per-hire, prevents rework from bad hiring decisions.</p>
+                </div>
+                <div className="text-center">
+                  <h4 className="font-semibold text-text-dark mb-xs">Systematically De-Risking Strategic Execution</h4>
+                  <p className="text-text-medium text-sm">Creating a predictable and reliable talent delivery system removes a variable threatening your business goals.</p>
+                </div>
+                <div className="text-center">
+                  <h4 className="font-semibold text-text-dark mb-xs">Building a Tangible Strategic Asset</h4>
+                  <p className="text-text-medium text-sm">A high-performing internal Talent Acquisition function becomes a competitive advantage, enabling faster adaptation and higher enterprise value.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* How We Engage */}
+      <section className="bg-white py-xxxl">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="max-w-4xl mx-auto">
+            <div className="text-center mb-xxl">
+              <h2 className="text-3xl md:text-4xl font-bold text-text-dark mb-md">Your Path to Enabled Talent Acquisition</h2>
+              <p className="text-lg text-text-medium mb-lg">Flexible Partnership</p>
+              <p className="text-lg text-text-dark">
+                We recognize that complex challenges often demand immediate action alongside strategic initiatives. Our partnership model is designed for this reality, meeting you where your needs are most critical while always guiding you toward sustainable capability growth.
+              </p>
+            </div>
+            <div className="bg-bg-subtle p-xxl rounded-lg mb-xxl">
+              <p className="text-text-dark mb-lg">
+                Engagements start with a focused diagnostic to create a clear roadmap: perhaps an <span className="font-semibold text-tf-blue">Illuminate</span> deep-dive revealing market realities or an <span className="font-semibold text-tf-blue">Innovate</span> assessment pinpointing process bottlenecks. Based on your needs, we can deploy <span className="font-semibold text-tf-blue">Accelerate</span> for immediate, expert execution on urgent priorities. While <em>concurrently</em> implementing foundational <span className="font-semibold text-tf-blue">Innovate</span> process improvements and delivering targeted <span className="font-semibold text-tf-blue">Elevate</span> capability building in your teams to ensure lasting impact.
+              </p>
+              <p className="text-text-dark font-semibold">
+                <span className="text-tf-orange">The Guiding Principle Remains: Strategic Enablement.</span> Regardless of the starting point, our commitment extends beyond short-term fixes. Every interaction emphasizes <span className="font-semibold text-tf-blue">transparent knowledge transfer</span> and practical skill building. We measure our success by <span className="font-semibold text-tf-blue">your team's increasing self-sufficiency</span> and the creation of a robust internal talent engine that provides enduring <span className="font-semibold text-tf-blue">strategic control</span>.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* CTA */}
+      <section className="bg-bg-dark py-xxxl">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center max-w-4xl mx-auto">
+            <h2 className="text-3xl md:text-4xl font-bold text-white mb-md">
+              Ready to Build Your Predictable, High-Performance Talent Engine?
+            </h2>
+            <p className="text-lg text-tf-blue-lighter mb-xxl">
+              Move beyond the limitations and risks of the obsolete, reactive firefighting approach to talent acquisition. Discover how The Talent Foundation's integrated enablement ecosystem can transform your talent function into a strategic advantage.
+            </p>
+            <div className="mb-xxl">
+              <Link href="/contact" className="btn-primary text-lg px-8 py-4 inline-block mb-lg">
+                Schedule Discovery Call
+              </Link>
+            </div>
+            <div className="border-t border-gray-700 pt-lg">
+              <p className="text-white font-semibold mb-md">Explore the Ecosystem Pillars:</p>
+              <div className="flex flex-wrap justify-center gap-lg">
+                <span className="text-tf-blue-lighter hover:text-tf-orange transition-colors border-b border-tf-blue-lighter pb-1 cursor-pointer">
+                  Illuminate
+                </span>
+                <span className="text-tf-blue-lighter hover:text-tf-orange transition-colors border-b border-tf-blue-lighter pb-1 cursor-pointer">
+                  Innovate
+                </span>
+                <span className="text-tf-blue-lighter hover:text-tf-orange transition-colors border-b border-tf-blue-lighter pb-1 cursor-pointer">
+                  Elevate
+                </span>
+                <span className="text-tf-blue-lighter hover:text-tf-orange transition-colors border-b border-tf-blue-lighter pb-1 cursor-pointer">
+                  Accelerate
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  );
+}

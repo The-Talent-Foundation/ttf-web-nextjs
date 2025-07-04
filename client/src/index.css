@@ -1,0 +1,303 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: hsl(0, 0%, 100%);
+  --foreground: hsl(20, 14.3%, 4.1%);
+  --muted: hsl(60, 4.8%, 95.9%);
+  --muted-foreground: hsl(25, 5.3%, 44.7%);
+  --popover: hsl(0, 0%, 100%);
+  --popover-foreground: hsl(20, 14.3%, 4.1%);
+  --card: hsl(0, 0%, 100%);
+  --card-foreground: hsl(20, 14.3%, 4.1%);
+  --border: hsl(20, 5.9%, 90%);
+  --input: hsl(20, 5.9%, 90%);
+  --primary: hsl(207, 90%, 54%);
+  --primary-foreground: hsl(211, 100%, 99%);
+  --secondary: hsl(60, 4.8%, 95.9%);
+  --secondary-foreground: hsl(24, 9.8%, 10%);
+  --accent: hsl(60, 4.8%, 95.9%);
+  --accent-foreground: hsl(24, 9.8%, 10%);
+  --destructive: hsl(0, 84.2%, 60.2%);
+  --destructive-foreground: hsl(60, 9.1%, 97.8%);
+  --ring: hsl(20, 14.3%, 4.1%);
+  --radius: 0.5rem;
+
+  /* The Talent Foundation Brand Colors */
+  --tf-orange: hsl(11, 76%, 56%);
+  --tf-blue: hsl(203, 98%, 45%);
+  --tf-blue-light: hsl(203, 100%, 96%);
+  --tf-blue-lighter: hsl(203, 100%, 84%);
+  --text-dark: hsl(0, 0%, 20%);
+  --text-medium: hsl(0, 0%, 40%);
+  --text-light: hsl(0, 0%, 60%);
+  --bg-subtle: hsl(220, 13%, 97%);
+  --bg-light: hsl(0, 0%, 100%);
+  --bg-dark: hsl(0, 0%, 10%);
+  --border-light: hsl(0, 0%, 88%);
+
+  /* Spacing System - 8px increments */
+  --space-xs: 4px;
+  --space-sm: 8px;
+  --space-md: 16px;
+  --space-lg: 24px;
+  --space-xl: 32px;
+  --space-xxl: 48px;
+  --space-xxxl: 64px;
+
+  /* Typography */
+  --font-size-h1: 3rem;
+  --font-size-h2: 2.25rem;
+  --font-size-h3: 1.5rem;
+  --font-size-body: 1rem;
+  --font-size-body-large: 1.125rem;
+  --font-size-small: 0.875rem;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  --line-height-heading: 1.2;
+  --line-height-body: 1.6;
+
+  /* Shadows */
+  --box-shadow-subtle: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --box-shadow-medium: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+
+  /* Transitions */
+  --transition-default: all 0.2s ease-in-out;
+}
+
+.dark {
+  --background: hsl(240, 10%, 3.9%);
+  --foreground: hsl(0, 0%, 98%);
+  --muted: hsl(240, 3.7%, 15.9%);
+  --muted-foreground: hsl(240, 5%, 64.9%);
+  --popover: hsl(240, 10%, 3.9%);
+  --popover-foreground: hsl(0, 0%, 98%);
+  --card: hsl(240, 10%, 3.9%);
+  --card-foreground: hsl(0, 0%, 98%);
+  --border: hsl(240, 3.7%, 15.9%);
+  --input: hsl(240, 3.7%, 15.9%);
+  --primary: hsl(207, 90%, 54%);
+  --primary-foreground: hsl(211, 100%, 99%);
+  --secondary: hsl(240, 3.7%, 15.9%);
+  --secondary-foreground: hsl(0, 0%, 98%);
+  --accent: hsl(240, 3.7%, 15.9%);
+  --accent-foreground: hsl(0, 0%, 98%);
+  --destructive: hsl(0, 62.8%, 30.6%);
+  --destructive-foreground: hsl(0, 0%, 98%);
+  --ring: hsl(240, 4.9%, 83.9%);
+  --radius: 0.5rem;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply font-sans antialiased bg-background text-foreground;
+    font-family: 'Inter', sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-bold;
+    line-height: var(--line-height-heading);
+  }
+
+  h1 {
+    font-size: var(--font-size-h1);
+    font-weight: var(--font-weight-bold);
+  }
+
+  h2 {
+    font-size: var(--font-size-h2);
+    font-weight: var(--font-weight-bold);
+  }
+
+  h3 {
+    font-size: var(--font-size-h3);
+    font-weight: var(--font-weight-semibold);
+  }
+
+  p {
+    line-height: var(--line-height-body);
+  }
+}
+
+@layer utilities {
+  .text-tf-orange {
+    color: hsl(var(--tf-orange));
+  }
+
+  .text-tf-blue {
+    color: hsl(var(--tf-blue));
+  }
+
+  .text-tf-blue-light {
+    color: hsl(var(--tf-blue-light));
+  }
+
+  .text-tf-blue-lighter {
+    color: hsl(var(--tf-blue-lighter));
+  }
+
+  .text-text-dark {
+    color: hsl(var(--text-dark));
+  }
+
+  .text-text-medium {
+    color: hsl(var(--text-medium));
+  }
+
+  .text-text-light {
+    color: hsl(var(--text-light));
+  }
+
+  .bg-tf-orange {
+    background-color: hsl(var(--tf-orange));
+  }
+
+  .bg-tf-blue {
+    background-color: hsl(var(--tf-blue));
+  }
+
+  .bg-tf-blue-light {
+    background-color: hsl(var(--tf-blue-light));
+  }
+
+  .bg-tf-blue-lighter {
+    background-color: hsl(var(--tf-blue-lighter));
+  }
+
+  .bg-bg-subtle {
+    background-color: hsl(var(--bg-subtle));
+  }
+
+  .bg-bg-light {
+    background-color: hsl(var(--bg-light));
+  }
+
+  .bg-bg-dark {
+    background-color: hsl(var(--bg-dark));
+  }
+
+  .border-tf-orange {
+    border-color: hsl(var(--tf-orange));
+  }
+
+  .border-tf-blue {
+    border-color: hsl(var(--tf-blue));
+  }
+
+  .border-tf-blue-lighter {
+    border-color: hsl(var(--tf-blue-lighter));
+  }
+
+  .border-border-light {
+    border-color: hsl(var(--border-light));
+  }
+
+  .hover\:bg-tf-orange:hover {
+    background-color: hsl(var(--tf-orange));
+  }
+
+  .hover\:bg-tf-blue:hover {
+    background-color: hsl(var(--tf-blue));
+  }
+
+  .hover\:text-tf-orange:hover {
+    color: hsl(var(--tf-orange));
+  }
+
+  .hover\:text-tf-blue:hover {
+    color: hsl(var(--tf-blue));
+  }
+
+  .hover\:border-tf-orange:hover {
+    border-color: hsl(var(--tf-orange));
+  }
+
+  .focus\:ring-tf-blue:focus {
+    --tw-ring-color: hsl(var(--tf-blue));
+  }
+
+  .focus\:border-tf-blue:focus {
+    border-color: hsl(var(--tf-blue));
+  }
+}
+
+/* Custom button styles */
+.btn-primary {
+  @apply bg-tf-orange text-white px-6 py-3 rounded-md font-semibold transition-colors;
+}
+
+.btn-primary:hover {
+  background-color: hsl(var(--tf-orange) / 0.9);
+}
+
+.btn-secondary {
+  @apply border-2 border-tf-blue text-tf-blue px-6 py-3 rounded-md font-semibold transition-colors;
+}
+
+.btn-secondary:hover {
+  @apply bg-tf-blue text-white;
+}
+
+/* Spacing utilities */
+.space-xs { margin: var(--space-xs); }
+.space-sm { margin: var(--space-sm); }
+.space-md { margin: var(--space-md); }
+.space-lg { margin: var(--space-lg); }
+.space-xl { margin: var(--space-xl); }
+.space-xxl { margin: var(--space-xxl); }
+.space-xxxl { margin: var(--space-xxxl); }
+
+.p-xs { padding: var(--space-xs); }
+.p-sm { padding: var(--space-sm); }
+.p-md { padding: var(--space-md); }
+.p-lg { padding: var(--space-lg); }
+.p-xl { padding: var(--space-xl); }
+.p-xxl { padding: var(--space-xxl); }
+.p-xxxl { padding: var(--space-xxxl); }
+
+.py-xs { padding-top: var(--space-xs); padding-bottom: var(--space-xs); }
+.py-sm { padding-top: var(--space-sm); padding-bottom: var(--space-sm); }
+.py-md { padding-top: var(--space-md); padding-bottom: var(--space-md); }
+.py-lg { padding-top: var(--space-lg); padding-bottom: var(--space-lg); }
+.py-xl { padding-top: var(--space-xl); padding-bottom: var(--space-xl); }
+.py-xxl { padding-top: var(--space-xxl); padding-bottom: var(--space-xxl); }
+.py-xxxl { padding-top: var(--space-xxxl); padding-bottom: var(--space-xxxl); }
+
+.px-xs { padding-left: var(--space-xs); padding-right: var(--space-xs); }
+.px-sm { padding-left: var(--space-sm); padding-right: var(--space-sm); }
+.px-md { padding-left: var(--space-md); padding-right: var(--space-md); }
+.px-lg { padding-left: var(--space-lg); padding-right: var(--space-lg); }
+.px-xl { padding-left: var(--space-xl); padding-right: var(--space-xl); }
+.px-xxl { padding-left: var(--space-xxl); padding-right: var(--space-xxl); }
+.px-xxxl { padding-left: var(--space-xxxl); padding-right: var(--space-xxxl); }
+
+.mb-xs { margin-bottom: var(--space-xs); }
+.mb-sm { margin-bottom: var(--space-sm); }
+.mb-md { margin-bottom: var(--space-md); }
+.mb-lg { margin-bottom: var(--space-lg); }
+.mb-xl { margin-bottom: var(--space-xl); }
+.mb-xxl { margin-bottom: var(--space-xxl); }
+.mb-xxxl { margin-bottom: var(--space-xxxl); }
+
+.mt-xs { margin-top: var(--space-xs); }
+.mt-sm { margin-top: var(--space-sm); }
+.mt-md { margin-top: var(--space-md); }
+.mt-lg { margin-top: var(--space-lg); }
+.mt-xl { margin-top: var(--space-xl); }
+.mt-xxl { margin-top: var(--space-xxl); }
+.mt-xxxl { margin-top: var(--space-xxxl); }
+
+.gap-xs { gap: var(--space-xs); }
+.gap-sm { gap: var(--space-sm); }
+.gap-md { gap: var(--space-md); }
+.gap-lg { gap: var(--space-lg); }
+.gap-xl { gap: var(--space-xl); }
+.gap-xxl { gap: var(--space-xxl); }
+.gap-xxxl { gap: var(--space-xxxl); }
