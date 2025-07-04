@@ -122,48 +122,50 @@ export default function Navigation() {
             </Link>
             
             {/* Services Dropdown */}
-            <NavigationMenu>
-              <NavigationMenuList>
-                <NavigationMenuItem>
-                  <NavigationMenuTrigger className={`font-medium transition-colors ${
+            <div className="relative group">
+              <div className="flex items-center">
+                <Link
+                  href="/services"
+                  className={`font-medium transition-colors whitespace-nowrap ${
                     location.startsWith('/services')
                       ? 'text-tf-blue'
                       : 'text-text-medium hover:text-tf-blue'
-                  }`}>
-                    Services
-                  </NavigationMenuTrigger>
-                  <NavigationMenuContent>
-                    <ul className="grid w-[500px] gap-1 p-6 md:w-[600px] md:grid-cols-1">
-                      {serviceItems.map((item) => {
-                        const Icon = item.icon;
-                        return (
-                          <li key={item.href}>
-                            <NavigationMenuLink asChild>
-                              <Link
-                                href={item.href}
-                                className="flex items-start select-none space-x-4 rounded-lg p-4 leading-none no-underline outline-none transition-all hover:bg-tf-blue-lighter hover:shadow-sm focus:bg-tf-blue-lighter"
-                              >
-                                <div className="icon-container flex-shrink-0">
-                                  <Icon className="h-5 w-5 icon-secondary" />
-                                </div>
-                                <div className="flex-1">
-                                  <div className="text-base font-semibold leading-none mb-xs text-text-dark">
-                                    {item.label}
-                                  </div>
-                                  <p className="line-clamp-2 text-sm leading-snug text-text-medium">
-                                    {item.description}
-                                  </p>
-                                </div>
-                              </Link>
-                            </NavigationMenuLink>
-                          </li>
-                        );
-                      })}
-                    </ul>
-                  </NavigationMenuContent>
-                </NavigationMenuItem>
-              </NavigationMenuList>
-            </NavigationMenu>
+                  }`}
+                >
+                  Services
+                </Link>
+                <ChevronDown className="ml-1 h-4 w-4 transition-transform group-hover:rotate-180" />
+              </div>
+              
+              <div className="absolute top-full left-0 mt-1 w-[500px] bg-white rounded-lg shadow-lg border border-border-light opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+                <div className="p-6">
+                  <div className="grid gap-1">
+                    {serviceItems.map((item) => {
+                      const Icon = item.icon;
+                      return (
+                        <Link
+                          key={item.href}
+                          href={item.href}
+                          className="flex items-start space-x-4 rounded-lg p-4 leading-none no-underline outline-none transition-all hover:bg-tf-blue-lighter hover:shadow-sm"
+                        >
+                          <div className="icon-container flex-shrink-0">
+                            <Icon className="h-5 w-5 icon-secondary" />
+                          </div>
+                          <div className="flex-1">
+                            <div className="text-base font-semibold leading-none mb-xs text-text-dark">
+                              {item.label}
+                            </div>
+                            <p className="line-clamp-2 text-sm leading-snug text-text-medium">
+                              {item.description}
+                            </p>
+                          </div>
+                        </Link>
+                      );
+                    })}
+                  </div>
+                </div>
+              </div>
+            </div>
             
             {navItems.slice(1).map((item) => (
               <Link
