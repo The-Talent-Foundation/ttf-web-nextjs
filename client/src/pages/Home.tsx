@@ -390,7 +390,7 @@ export default function Home() {
                 <h3 className="font-semibold text-text-dark mb-xs">First Principles Thinking</h3>
                 <p className="text-text-medium text-sm">Deconstructing challenges to design and build fundamentally superior solutions.</p>
               </div>
-              <div className="text-center md:border-l md:border-r md:border-border-light md:px-lg">
+              <div className="text-center md:border-l-2 md:border-r-2 md:border-gray-300 md:px-xxl relative">
                 <h3 className="font-semibold text-text-dark mb-xs">Data-Driven Rigor</h3>
                 <p className="text-text-medium text-sm">Leveraging analytical and predictive intelligence for accurate forecasting and measurable results.</p>
               </div>
