@@ -101,9 +101,9 @@ export default function Illuminate() {
             </div>
           </div>
           
-          <div className="bg-gradient-to-r from-tf-orange/10 to-red-50 p-8 rounded-xl border border-tf-orange/20 text-center max-w-4xl mx-auto">
+          <div className="bg-gradient-to-r from-blue-50 to-indigo-50 p-8 rounded-xl border border-blue-200 text-center max-w-4xl mx-auto">
             <p className="text-lg font-semibold text-text-dark">
-              Ignoring talent intelligence doesn't save money, it causes <span className="text-tf-orange">systemic blindness</span>. Illuminate research service replaces guesswork with data‑driven clarity.
+              Ignoring talent intelligence doesn't save money, it causes <span className="text-blue-600">systemic blindness</span>. Illuminate research service replaces guesswork with data‑driven clarity.
             </p>
           </div>
         </div>
@@ -215,19 +215,34 @@ export default function Illuminate() {
             </div>
 
             {/* How Illuminate Works */}
-            <div className="bg-tf-blue-light p-xxl rounded-lg">
-              <h3 className="text-xl font-bold text-text-dark mb-md text-center">How Illuminate Works</h3>
-              <div className="flex items-center justify-center gap-md flex-wrap">
-                <span className="font-semibold text-text-dark">Data</span>
-                <ArrowRight className="w-4 h-4 text-tf-blue" />
-                <span className="font-semibold text-text-dark">Analytics</span>
-                <ArrowRight className="w-4 h-4 text-tf-blue" />
-                <span className="font-semibold text-text-dark">Synthesis</span>
+            <div className="bg-gradient-to-r from-blue-50 to-indigo-50 p-8 rounded-xl border border-blue-200">
+              <h3 className="text-2xl font-bold text-text-dark mb-lg text-center">How Illuminate Works</h3>
+              <div className="flex items-center justify-center gap-6 flex-wrap mb-6">
+                <div className="flex items-center gap-2">
+                  <div className="w-8 h-8 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-full flex items-center justify-center">
+                    <span className="text-white font-bold text-sm">1</span>
+                  </div>
+                  <span className="font-semibold text-text-dark">Data</span>
+                </div>
+                <ArrowRight className="w-6 h-6 text-blue-600" />
+                <div className="flex items-center gap-2">
+                  <div className="w-8 h-8 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-full flex items-center justify-center">
+                    <span className="text-white font-bold text-sm">2</span>
+                  </div>
+                  <span className="font-semibold text-text-dark">Analytics</span>
+                </div>
+                <ArrowRight className="w-6 h-6 text-blue-600" />
+                <div className="flex items-center gap-2">
+                  <div className="w-8 h-8 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-full flex items-center justify-center">
+                    <span className="text-white font-bold text-sm">3</span>
+                  </div>
+                  <span className="font-semibold text-text-dark">Synthesis</span>
+                </div>
               </div>
-              <p className="text-text-medium text-center mt-md">
-                The Talent Foundation's unique advantage lies not just in robust <span className="font-semibold text-text-dark">data aggregation</span> and <span className="font-semibold text-text-dark">advanced analytics</span>, 
-                but in the crucial layer of <span className="font-semibold text-text-dark">synthesis and strategic interpretation by seasoned TA execution experts</span>. 
-                We don't just present data. We also tell you <span className="italic">what it means</span> for your talent strategy and <span className="italic">how</span> it 
+              <p className="text-text-medium text-center leading-relaxed">
+                The Talent Foundation's unique advantage lies not just in robust <span className="font-semibold text-blue-600">data aggregation</span> and <span className="font-semibold text-blue-600">advanced analytics</span>, 
+                but in the crucial layer of <span className="font-semibold text-blue-600">synthesis and strategic interpretation by seasoned TA execution experts</span>. 
+                We don't just present data. We also tell you <span className="italic font-medium text-text-dark">what it means</span> for your talent strategy and <span className="italic font-medium text-text-dark">how</span> it 
                 directly informs practical process design, effective capability building, and precise hiring execution.
               </p>
             </div>
@@ -422,9 +437,9 @@ export default function Illuminate() {
             </div>
           </div>
           
-          <div className="bg-gradient-to-r from-tf-blue/10 to-blue-50 p-8 rounded-xl border border-tf-blue/20 text-center max-w-4xl mx-auto">
+          <div className="bg-gradient-to-r from-blue-50 to-indigo-50 p-8 rounded-xl border border-blue-200 text-center max-w-4xl mx-auto">
             <p className="text-lg font-semibold text-text-dark">
-              It provides the <span className="font-bold text-tf-orange">validated intelligence foundation</span> required to effectively target and execute talent strategies, 
+              It provides the <span className="font-bold text-blue-600">validated intelligence foundation</span> required to effectively target and execute talent strategies, 
               maximizing your chance of success in competitive environments.
             </p>
           </div>
