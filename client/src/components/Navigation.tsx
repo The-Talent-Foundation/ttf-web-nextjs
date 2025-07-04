@@ -153,7 +153,7 @@ export default function Navigation() {
                             item.href === '/services/illuminate' ? 'bg-gradient-to-br from-blue-500 to-blue-600' :
                             item.href === '/services/innovate' ? 'bg-gradient-to-br from-orange-500 to-red-500' :
                             item.href === '/services/elevate' ? 'bg-gradient-to-br from-purple-500 to-indigo-600' :
-                            'bg-gradient-to-br from-red-500 to-orange-600'
+                            'bg-gradient-to-br from-green-500 to-green-600'
                           }`}>
                             <Icon className="h-5 w-5 text-white" />
                           </div>
@@ -247,7 +247,7 @@ export default function Navigation() {
                       item.href === '/services/illuminate' ? 'bg-gradient-to-br from-blue-500 to-blue-600' :
                       item.href === '/services/innovate' ? 'bg-gradient-to-br from-orange-500 to-red-500' :
                       item.href === '/services/elevate' ? 'bg-gradient-to-br from-purple-500 to-indigo-600' :
-                      'bg-gradient-to-br from-red-500 to-orange-600'
+                      'bg-gradient-to-br from-green-500 to-green-600'
                     }`}>
                       <Icon className="h-4 w-4 text-white" />
                     </div>
