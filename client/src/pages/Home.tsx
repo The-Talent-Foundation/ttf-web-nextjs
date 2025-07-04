@@ -24,6 +24,13 @@ import {
 } from "@/components/ui/accordion";
 import ScrollAnimations from '@/components/ScrollAnimations';
 
+// Import logo images
+import amazonLogo from '@assets/egyes-fotor-202407301827_1751590492554.png';
+import awsLogo from '@assets/kettes-fotor-202407301834_1751590492559.png';
+import hingeHealthLogo from '@assets/harmas-fotor-2024073018422_1751590492559.png';
+import lyftLogo from '@assets/negyes-fotor-20240730175643_1751590492559.png';
+import devMatchLogo from '@assets/otos_1751590492559.png';
+
 export default function Home() {
   return (
     <ScrollAnimations>
@@ -61,11 +68,11 @@ export default function Home() {
           <div className="text-center">
             <h2 className="text-xl font-semibold text-text-medium mb-lg">Some of the companies Adam Kovacs provided his expertise to</h2>
             <div className="flex flex-wrap justify-center items-center gap-xxl">
-              <img src="/assets/egyes-fotor-202407301827_1751590492554.png" alt="Amazon" className="h-12 md:h-16 object-contain grayscale opacity-60 hover:opacity-100 hover:grayscale-0 transition-all duration-300" />
-              <img src="/assets/kettes-fotor-202407301834_1751590492559.png" alt="AWS" className="h-12 md:h-16 object-contain grayscale opacity-60 hover:opacity-100 hover:grayscale-0 transition-all duration-300" />
-              <img src="/assets/harmas-fotor-2024073018422_1751590492559.png" alt="Hinge Health" className="h-12 md:h-16 object-contain grayscale opacity-60 hover:opacity-100 hover:grayscale-0 transition-all duration-300" />
-              <img src="/assets/negyes-fotor-20240730175643_1751590492559.png" alt="Lyft" className="h-12 md:h-16 object-contain grayscale opacity-60 hover:opacity-100 hover:grayscale-0 transition-all duration-300" />
-              <img src="/assets/otos_1751590492559.png" alt="DevMatch" className="h-12 md:h-16 object-contain grayscale opacity-60 hover:opacity-100 hover:grayscale-0 transition-all duration-300" />
+              <img src={amazonLogo} alt="Amazon" className="h-12 md:h-16 object-contain grayscale opacity-60 hover:opacity-100 hover:grayscale-0 transition-all duration-300" />
+              <img src={awsLogo} alt="AWS" className="h-12 md:h-16 object-contain grayscale opacity-60 hover:opacity-100 hover:grayscale-0 transition-all duration-300" />
+              <img src={hingeHealthLogo} alt="Hinge Health" className="h-12 md:h-16 object-contain grayscale opacity-60 hover:opacity-100 hover:grayscale-0 transition-all duration-300" />
+              <img src={lyftLogo} alt="Lyft" className="h-12 md:h-16 object-contain grayscale opacity-60 hover:opacity-100 hover:grayscale-0 transition-all duration-300" />
+              <img src={devMatchLogo} alt="DevMatch" className="h-12 md:h-16 object-contain grayscale opacity-60 hover:opacity-100 hover:grayscale-0 transition-all duration-300" />
             </div>
             <p className="text-xs text-text-light mt-lg opacity-50">
               The logos displayed above are the trademarks and property of their respective owners. They are presented here for informational purposes only.
