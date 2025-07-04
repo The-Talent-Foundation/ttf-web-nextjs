@@ -67,7 +67,7 @@ export default function Illuminate() {
             <div className="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 group">
               <div className="text-center mb-6">
                 <div className="w-16 h-16 bg-gradient-to-br from-amber-500 to-yellow-600 rounded-lg flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
-                  <TrendingUp className="w-8 h-8 text-white" />
+                  <DollarSign className="w-8 h-8 text-white" />
                 </div>
                 <h3 className="text-xl font-bold text-text-dark group-hover:text-amber-700 transition-colors">Profit-Draining Attrition</h3>
               </div>
@@ -316,9 +316,9 @@ export default function Illuminate() {
                   <Brain className="w-8 h-8 text-white" />
                 </div>
                 <h3 className="text-xl font-bold text-text-dark group-hover:text-tf-blue transition-colors">Deep Strategic Synthesis</h3>
-                <p className="text-sm text-text-medium mt-2">Not a data dump</p>
+                <p className="text-sm font-semibold text-text-medium mt-2">Not a data dump</p>
               </div>
-              <p className="text-text-medium leading-relaxed text-center">
+              <p className="text-text-medium leading-relaxed">
                 Forget generic reports and the spreadsheet overwhelm. Unlike data brokers providing raw feeds, the Talent Foundation delivers <span className="font-semibold text-text-dark">expertly synthesized intelligence</span>. 
                 Our seasoned practitioners translate complex data points into clear implications and pragmatic, actionable strategic recommendations directly applicable to <span className="italic">your immediate challenges and operational context</span>.
               </p>
@@ -330,9 +330,9 @@ export default function Illuminate() {
                   <Target className="w-8 h-8 text-white" />
                 </div>
                 <h3 className="text-xl font-bold text-text-dark group-hover:text-tf-orange transition-colors">Operationally Grounded</h3>
-                <p className="text-sm text-text-medium mt-2">Reality of execution</p>
+                <p className="text-sm font-semibold text-text-medium mt-2">Not just theory</p>
               </div>
-              <p className="text-text-medium leading-relaxed text-center">
+              <p className="text-text-medium leading-relaxed">
                 Our insights aren't academic exercises. Instead, they are filtered through decades of <span className="font-semibold text-text-dark">deep TA and operational execution experience</span>. 
                 We understand <span className="italic">how</span> this intelligence must translate into effective process redesign, targeted team development, and precise execution to yield tangible business results.
               </p>
@@ -344,9 +344,9 @@ export default function Illuminate() {
                   <Search className="w-8 h-8 text-white" />
                 </div>
                 <h3 className="text-xl font-bold text-text-dark group-hover:text-emerald-700 transition-colors">Proactive Foresight</h3>
-                <p className="text-sm text-text-medium mt-2">Not just postmortem analysis</p>
+                <p className="text-sm font-semibold text-text-medium mt-2">Not just postmortem analysis</p>
               </div>
-              <p className="text-text-medium leading-relaxed text-center">
+              <p className="text-text-medium leading-relaxed">
                 We prioritize identifying emerging talent trends, future skill needs crucial for your growth goals, and potential competitor talent moves before they impact you. 
                 This anticipatory intelligence, which often provides months of lead time, enables you to proactively shape your strategy instead of the constantly reactive course correction.
               </p>
