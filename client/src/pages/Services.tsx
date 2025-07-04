@@ -204,7 +204,7 @@ export default function Services() {
                     <Settings className="w-4 h-4 text-white" />
                   </div>
                 </div>
-                <p className="text-text-medium"><span className="font-semibold text-tf-blue">Illuminate's</span> intelligence directly <span className="font-semibold text-tf-blue">informs Innovate's design</span>, ensuring processes, hiring, and tech choices match <em>your</em> specific market context and challenges, thus <span className="font-semibold text-text-dark">preventing costly generic missteps</span>.</p>
+                <p className="text-text-medium">Intelligence directly <span className="font-semibold text-tf-blue">informs design</span>, ensuring processes, hiring, and tech choices match <em>your</em> specific market context and challenges, thus <span className="font-semibold text-text-dark">preventing costly generic missteps</span>.</p>
               </div>
               <div className="bg-white p-lg rounded-lg shadow-sm hover:shadow-lg transition-all duration-300 group">
                 <div className="flex items-start gap-md mb-md">
@@ -215,7 +215,7 @@ export default function Services() {
                     <Zap className="w-4 h-4 text-white" />
                   </div>
                 </div>
-                <p className="text-text-medium"><span className="font-semibold text-tf-blue">Innovate's</span> resilient architecture provides the <span className="font-semibold text-tf-blue">essential operating system</span> for Elevate's advanced skills training. Which translates into <span className="font-semibold text-text-dark">real, measurable productivity improvements and consistent execution</span>, locking in training ROI.</p>
+                <p className="text-text-medium">Resilient architecture provides the <span className="font-semibold text-tf-blue">essential operating system</span> for advanced skills training. Which translates into <span className="font-semibold text-text-dark">real, measurable productivity improvements and consistent execution</span>, locking in training ROI.</p>
               </div>
               <div className="bg-white p-lg rounded-lg shadow-sm hover:shadow-lg transition-all duration-300 group">
                 <div className="flex items-start gap-md mb-md">
@@ -229,7 +229,7 @@ export default function Services() {
                     <Settings className="w-4 h-4 text-white" />
                   </div>
                 </div>
-                <p className="text-text-medium"><span className="font-semibold text-tf-blue">Elevate</span> empowers your team not only with skills but also with the <span className="font-semibold text-tf-blue">strategic context</span> and the ability to master the <span className="font-semibold text-tf-blue">Innovate</span> system while proactively applying <span className="font-semibold text-tf-blue">Illuminate</span> insights, fostering <span className="font-semibold text-text-dark">true adaptability and self-sufficiency</span>.</p>
+                <p className="text-text-medium">Empower your team not only with skills but also with the <span className="font-semibold text-tf-blue">strategic context</span> and the ability to master the systems while proactively applying insights, fostering <span className="font-semibold text-text-dark">true adaptability and self-sufficiency</span>.</p>
               </div>
               <div className="bg-white p-lg rounded-lg shadow-sm hover:shadow-lg transition-all duration-300 group">
                 <div className="flex items-start gap-md mb-md">
@@ -246,7 +246,7 @@ export default function Services() {
                     <Zap className="w-4 h-4 text-white" />
                   </div>
                 </div>
-                <p className="text-text-medium"><span className="font-semibold text-tf-blue">Accelerate</span> performs with precision and speed <em>because</em> it operates within this enabled ecosystem, guided by <span className="font-semibold text-tf-blue">Illuminate's</span> intel, leveraging <span className="font-semibold text-tf-blue">Innovate's</span> optimized workflows, and adhering to <span className="font-semibold text-tf-blue">Elevate's</span> quality benchmarks.</p>
+                <p className="text-text-medium">Perform with precision and speed <em>because</em> you operate within this enabled ecosystem, guided by intel, leveraging optimized workflows, and adhering to quality benchmarks.</p>
               </div>
             </div>
             <div className="text-center mt-lg">
