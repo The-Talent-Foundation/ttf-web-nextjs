@@ -18,7 +18,7 @@ export default function Illuminate() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl">
             <h1 className="text-4xl md:text-5xl font-bold text-text-dark mb-md">
-              Illuminate: Strategic Foresight for <span className="text-tf-orange">Talent Growth and Expansion</span>
+              Illuminate: Strategic Foresight for <span className="text-blue-600">Talent Growth and Expansion</span>
             </h1>
             <p className="text-lg md:text-xl text-text-medium mb-md font-semibold">
               One blind talent bet can cost millions, Illuminate the data to win them all.
