@@ -49,8 +49,8 @@ export default function Services() {
               <AccordionItem value="stall" className="bg-white rounded-lg px-lg shadow-sm hover:shadow-lg transition-all duration-300">
                 <AccordionTrigger className="hover:no-underline group">
                   <div className="flex items-center gap-lg">
-                    <div className="w-12 h-12 bg-gradient-to-br from-red-500 to-orange-600 rounded-full flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform duration-300">
-                      <Play className="w-6 h-6 text-white" />
+                    <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-blue-600 rounded-full flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform duration-300">
+                      <Lightbulb className="w-6 h-6 text-white group-hover:animate-pulse" />
                     </div>
                     <h3 className="font-semibold text-text-dark text-left">Strategic projects stall while niche roles sit vacant.</h3>
                   </div>
@@ -63,8 +63,8 @@ export default function Services() {
               <AccordionItem value="burnout" className="bg-white rounded-lg px-lg shadow-sm hover:shadow-lg transition-all duration-300">
                 <AccordionTrigger className="hover:no-underline group">
                   <div className="flex items-center gap-lg">
-                    <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-blue-600 rounded-full flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform duration-300">
-                      <Zap className="w-6 h-6 text-white" />
+                    <div className="w-12 h-12 bg-gradient-to-br from-orange-500 to-red-500 rounded-full flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform duration-300">
+                      <Settings className="w-6 h-6 text-white group-hover:rotate-180 transition-transform duration-700" />
                     </div>
                     <h3 className="font-semibold text-text-dark text-left">Chaotic hiring burns out teams and drives attrition.</h3>
                   </div>
@@ -77,8 +77,8 @@ export default function Services() {
               <AccordionItem value="underdeliver" className="bg-white rounded-lg px-lg shadow-sm hover:shadow-lg transition-all duration-300">
                 <AccordionTrigger className="hover:no-underline group">
                   <div className="flex items-center gap-lg">
-                    <div className="w-12 h-12 bg-gradient-to-br from-amber-500 to-orange-500 rounded-full flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform duration-300">
-                      <Settings className="w-6 h-6 text-white group-hover:rotate-180 transition-transform duration-700" />
+                    <div className="w-12 h-12 bg-gradient-to-br from-purple-500 to-indigo-600 rounded-full flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform duration-300">
+                      <Zap className="w-6 h-6 text-white group-hover:animate-bounce" />
                     </div>
                     <h3 className="font-semibold text-text-dark text-left">Costly tools, process improvements, and training under‑deliver.</h3>
                   </div>
@@ -91,8 +91,8 @@ export default function Services() {
               <AccordionItem value="bottlenecks" className="bg-white rounded-lg px-lg shadow-sm hover:shadow-lg transition-all duration-300">
                 <AccordionTrigger className="hover:no-underline group">
                   <div className="flex items-center gap-lg">
-                    <div className="w-12 h-12 bg-gradient-to-br from-gray-500 to-gray-600 rounded-full flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform duration-300">
-                      <Lightbulb className="w-6 h-6 text-white group-hover:animate-pulse" />
+                    <div className="w-12 h-12 bg-gradient-to-br from-green-500 to-emerald-600 rounded-full flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform duration-300">
+                      <Play className="w-6 h-6 text-white group-hover:scale-75 transition-transform duration-300" />
                     </div>
                     <h3 className="font-semibold text-text-dark text-left">Perpetual bottlenecks are holding you back.</h3>
                   </div>
@@ -172,16 +172,16 @@ export default function Services() {
             <Link href="/services/accelerate" className="service-card accelerate-card group relative overflow-hidden p-xxl rounded-xl shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2">
               <div className="service-card-bg"></div>
               <div className="relative z-10">
-                <div className="w-16 h-16 bg-gradient-to-br from-red-500 to-orange-600 rounded-full flex items-center justify-center mb-lg group-hover:scale-110 transition-transform duration-300">
-                  <Play className="w-8 h-8 text-white group-hover:translate-x-1 transition-transform" />
+                <div className="w-16 h-16 bg-gradient-to-br from-green-500 to-emerald-600 rounded-full flex items-center justify-center mb-lg group-hover:scale-110 transition-transform duration-300">
+                  <Play className="w-8 h-8 text-white group-hover:scale-75 transition-transform duration-300" />
                 </div>
-                <h3 className="text-xl font-bold text-text-dark mb-md group-hover:text-red-700 transition-colors">
+                <h3 className="text-xl font-bold text-text-dark mb-md group-hover:text-green-700 transition-colors">
                   Accelerate: Strategically Applied Execution Power
                 </h3>
                 <p className="text-text-medium mb-md">
                   On‑demand recruiting muscle and resource elasticity for time‑critical hires. We deploy seasoned TA professionals applying executive search rigor against all critical and urgent hiring needs, securing the candidates you need.
                 </p>
-                <span className="text-red-600 font-semibold group-hover:translate-x-2 inline-block transition-transform">Learn more →</span>
+                <span className="text-green-600 font-semibold group-hover:translate-x-2 inline-block transition-transform">Learn more →</span>
               </div>
             </Link>
           </div>
@@ -233,7 +233,7 @@ export default function Services() {
               </div>
               <div className="bg-white p-lg rounded-lg shadow-sm hover:shadow-lg transition-all duration-300 group">
                 <div className="flex items-start gap-md mb-md">
-                  <div className="w-8 h-8 bg-gradient-to-br from-green-500 to-green-600 rounded-full flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform duration-300">
+                  <div className="w-8 h-8 bg-gradient-to-br from-green-500 to-emerald-600 rounded-full flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform duration-300">
                     <Play className="w-4 h-4 text-white" />
                   </div>
                   <div className="w-8 h-8 bg-gradient-to-br from-blue-500 to-blue-600 rounded-full flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform duration-300">
@@ -275,8 +275,8 @@ export default function Services() {
               <AccordionItem value="treadmill" className="bg-white rounded-lg px-lg shadow-sm hover:shadow-lg transition-all duration-300">
                 <AccordionTrigger className="hover:no-underline group">
                   <div className="flex items-center gap-lg">
-                    <div className="w-12 h-12 bg-gradient-to-br from-red-500 to-red-600 rounded-full flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform duration-300">
-                      <Settings className="w-6 h-6 text-white group-hover:animate-spin" />
+                    <div className="w-12 h-12 bg-gradient-to-br from-orange-500 to-red-500 rounded-full flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform duration-300">
+                      <Settings className="w-6 h-6 text-white group-hover:rotate-180 transition-transform duration-700" />
                     </div>
                     <h3 className="font-semibold text-text-dark text-left">The Transactional Treadmill</h3>
                   </div>
@@ -289,8 +289,8 @@ export default function Services() {
               <AccordionItem value="failure" className="bg-white rounded-lg px-lg shadow-sm hover:shadow-lg transition-all duration-300">
                 <AccordionTrigger className="hover:no-underline group">
                   <div className="flex items-center gap-lg">
-                    <div className="w-12 h-12 bg-gradient-to-br from-orange-500 to-red-500 rounded-full flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform duration-300">
-                      <Zap className="w-6 h-6 text-white group-hover:animate-bounce" />
+                    <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-blue-600 rounded-full flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform duration-300">
+                      <Lightbulb className="w-6 h-6 text-white group-hover:animate-pulse" />
                     </div>
                     <h3 className="font-semibold text-text-dark text-left">The Cost of Failure</h3>
                   </div>
@@ -304,7 +304,7 @@ export default function Services() {
                 <AccordionTrigger className="hover:no-underline group">
                   <div className="flex items-center gap-lg">
                     <div className="w-12 h-12 bg-gradient-to-br from-purple-500 to-indigo-600 rounded-full flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform duration-300">
-                      <Lightbulb className="w-6 h-6 text-white group-hover:animate-pulse" />
+                      <Zap className="w-6 h-6 text-white group-hover:animate-bounce" />
                     </div>
                     <h3 className="font-semibold text-text-dark text-left">The Strategic Risk Premium</h3>
                   </div>
@@ -429,7 +429,7 @@ export default function Services() {
                   <span className="text-tf-blue-lighter group-hover:text-tf-orange transition-colors">Elevate</span>
                 </Link>
                 <Link href="/services/accelerate" className="group flex items-center gap-md p-md rounded-lg hover:bg-gray-800 transition-all duration-300">
-                  <div className="w-8 h-8 bg-gradient-to-br from-green-500 to-green-600 rounded-full flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform duration-300">
+                  <div className="w-8 h-8 bg-gradient-to-br from-green-500 to-emerald-600 rounded-full flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform duration-300">
                     <Play className="w-4 h-4 text-white" />
                   </div>
                   <span className="text-tf-blue-lighter group-hover:text-tf-orange transition-colors">Accelerate</span>
