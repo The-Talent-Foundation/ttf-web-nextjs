@@ -1,5 +1,5 @@
 import { Link } from 'wouter';
-import { Lightbulb, Search, TrendingUp, AlertTriangle, ArrowRight, CheckCircle2, Brain, Target, ChevronDown, MapPin, Users, DollarSign, Sparkles, BarChart3, Compass } from 'lucide-react';
+import { Lightbulb, Search, TrendingUp, AlertTriangle, ArrowRight, CheckCircle2, Brain, Target, ChevronDown, MapPin, Users, DollarSign, Sparkles, BarChart3, Compass, FileText, Zap, Settings } from 'lucide-react';
 import {
   Accordion,
   AccordionContent,
@@ -366,15 +366,13 @@ export default function Illuminate() {
               Move beyond guesswork. The Illuminate research service delivers a comprehensive and confidential <span className="font-semibold text-text-dark">Strategic Intelligence Compass</span>. 
               Your essential guide for navigating complex talent decisions.
             </p>
-            <div className="bg-gradient-to-r from-tf-blue/10 to-blue-50 p-6 rounded-xl border border-tf-blue/20 mb-lg">
-              <h3 className="text-xl font-bold text-text-dark mb-md">This powerful tool synthesizes:</h3>
-            </div>
+            <p className="text-xl font-bold text-text-dark mb-lg">This powerful tool synthesizes:</p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-lg mb-xxl">
             <div className="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 group border border-tf-blue/20">
               <div className="text-center mb-6">
                 <div className="w-16 h-16 bg-gradient-to-br from-tf-blue to-blue-600 rounded-lg flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
-                  <TrendingUp className="w-8 h-8 text-white" />
+                  <FileText className="w-8 h-8 text-white" />
                 </div>
                 <h3 className="text-xl font-bold text-text-dark group-hover:text-tf-blue transition-colors">Market & Competitor Insights</h3>
                 <p className="text-sm font-semibold text-text-medium mt-2">Rigorously researched</p>
@@ -426,7 +424,7 @@ export default function Illuminate() {
           
           <div className="bg-gradient-to-r from-tf-blue/10 to-blue-50 p-8 rounded-xl border border-tf-blue/20 text-center max-w-4xl mx-auto">
             <p className="text-lg font-semibold text-text-dark">
-              It provides the <span className="text-tf-blue">validated intelligence foundation</span> required to effectively target and execute talent strategies, 
+              It provides the <span className="font-bold text-tf-orange">validated intelligence foundation</span> required to effectively target and execute talent strategies, 
               maximizing your chance of success in competitive environments.
             </p>
           </div>
@@ -475,7 +473,7 @@ export default function Illuminate() {
             <div className="bg-gradient-to-br from-tf-orange/10 to-red-50 p-8 rounded-xl border border-tf-orange/20 hover:border-tf-orange/40 transition-all duration-300 group">
               <div className="text-center mb-6">
                 <div className="w-14 h-14 bg-gradient-to-br from-tf-orange to-red-500 rounded-lg flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
-                  <Lightbulb className="w-7 h-7 text-white" />
+                  <Settings className="w-7 h-7 text-white group-hover:rotate-90 transition-transform duration-500" />
                 </div>
                 <h4 className="text-xl font-bold text-text-dark group-hover:text-tf-orange transition-colors">Informs Innovate</h4>
                 <p className="text-sm font-semibold text-text-medium mt-2">Process design</p>
@@ -493,7 +491,7 @@ export default function Illuminate() {
             <div className="bg-gradient-to-br from-purple-50 to-indigo-50 p-8 rounded-xl border border-purple-200 hover:border-purple-300 transition-all duration-300 group">
               <div className="text-center mb-6">
                 <div className="w-14 h-14 bg-gradient-to-br from-purple-500 to-indigo-600 rounded-lg flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
-                  <TrendingUp className="w-7 h-7 text-white" />
+                  <TrendingUp className="w-7 h-7 text-white group-hover:translate-y-[-2px] transition-transform duration-300" />
                 </div>
                 <h4 className="text-xl font-bold text-text-dark group-hover:text-purple-700 transition-colors">Guides Elevate</h4>
                 <p className="text-sm font-semibold text-text-medium mt-2">Capability building</p>
@@ -511,7 +509,7 @@ export default function Illuminate() {
             <div className="bg-gradient-to-br from-emerald-50 to-teal-50 p-8 rounded-xl border border-emerald-200 hover:border-emerald-300 transition-all duration-300 group">
               <div className="text-center mb-6">
                 <div className="w-14 h-14 bg-gradient-to-br from-emerald-500 to-teal-600 rounded-lg flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
-                  <Target className="w-7 h-7 text-white" />
+                  <Zap className="w-7 h-7 text-white group-hover:scale-125 transition-transform duration-300" />
                 </div>
                 <h4 className="text-xl font-bold text-text-dark group-hover:text-emerald-700 transition-colors">Powers Accelerate</h4>
                 <p className="text-sm font-semibold text-text-medium mt-2">Execution excellence</p>
