@@ -334,7 +334,7 @@ export default function About() {
                 </div>
                 <div className="flex flex-col sm:flex-row gap-md justify-center">
                   <a href="https://cal.com/adamkovacs/the-talent-foundation" target="_blank" rel="noopener noreferrer" className="btn-primary text-lg px-8 py-4 bg-tf-orange hover:bg-tf-orange/90 text-white rounded-lg font-semibold transition-all duration-300 transform hover:-translate-y-1 shadow-lg hover:shadow-xl">
-                    Schedule a Strategy Call
+                    Schedule Strategy Session
                   </a>
                   <div className="flex flex-col sm:flex-row gap-md justify-center">
                     <Link href="/who-we-serve" className="btn-secondary text-lg px-6 py-4 bg-white border-2 border-tf-orange text-tf-orange hover:bg-tf-orange hover:text-white rounded-lg font-semibold transition-all duration-300 transform hover:-translate-y-1 shadow-lg hover:shadow-xl">

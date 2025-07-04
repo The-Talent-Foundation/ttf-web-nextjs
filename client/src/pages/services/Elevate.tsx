@@ -19,7 +19,7 @@ export default function Elevate() {
               </p>
               <div className="flex flex-col sm:flex-row gap-md justify-center">
                 <a href="https://cal.com/adamkovacs/the-talent-foundation" target="_blank" rel="noopener noreferrer" className="btn-primary bg-purple-600 hover:bg-purple-700">
-                  Request a Capability Blueprint
+                  Request Skill Needs Assessment
                 </a>
                 <Link href="/services" className="btn-secondary border-purple-600 text-purple-600 hover:bg-purple-600 hover:text-white">
                   Explore the Enablement Ecosystem
@@ -388,7 +388,7 @@ export default function Elevate() {
                 </div>
                 <div className="flex flex-col sm:flex-row gap-md justify-center">
                   <a href="https://cal.com/adamkovacs/the-talent-foundation" target="_blank" rel="noopener noreferrer" className="btn-primary text-lg px-8 py-4 bg-purple-600 hover:bg-purple-700 text-white rounded-lg font-semibold transition-all duration-300 transform hover:-translate-y-1 shadow-lg hover:shadow-xl">
-                    Request a Capability Blueprint
+                    Request Skill Needs Assessment
                   </a>
                   <Link href="/services" className="btn-secondary text-lg px-8 py-4 bg-white border-2 border-purple-600 text-purple-600 hover:bg-purple-600 hover:text-white rounded-lg font-semibold transition-all duration-300 transform hover:-translate-y-1 shadow-lg hover:shadow-xl">
                     Explore the Full Ecosystem

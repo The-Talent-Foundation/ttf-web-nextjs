@@ -67,7 +67,7 @@ export default function Home() {
             </div>
             <div className="flex flex-col sm:flex-row gap-md justify-center">
               <a href="https://cal.com/adamkovacs/the-talent-foundation" target="_blank" rel="noopener noreferrer" className="btn-primary text-lg px-8 py-4">
-                Book Discovery Call
+                Diagnose Your Talent Risks
               </a>
               <Link href="/services" className="btn-secondary text-lg px-8 py-4">
                 Explore the Enablement Ecosystem
