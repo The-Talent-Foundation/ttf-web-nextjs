@@ -386,11 +386,11 @@ export default function Home() {
               </div>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-lg mb-xxl">
-              <div className="text-center">
+              <div className="text-center border-b-2 md:border-b-0 border-gray-300 pb-lg md:pb-0">
                 <h3 className="font-semibold text-text-dark mb-xs">First Principles Thinking</h3>
                 <p className="text-text-medium text-sm">Deconstructing challenges to design and build fundamentally superior solutions.</p>
               </div>
-              <div className="text-center md:border-l-2 md:border-r-2 md:border-gray-300 md:px-xxl relative">
+              <div className="text-center border-b-2 md:border-b-0 md:border-l-2 md:border-r-2 border-gray-300 pb-lg md:pb-0 md:px-xxl relative">
                 <h3 className="font-semibold text-text-dark mb-xs">Data-Driven Rigor</h3>
                 <p className="text-text-medium text-sm">Leveraging analytical and predictive intelligence for accurate forecasting and measurable results.</p>
               </div>
