@@ -14,7 +14,9 @@ import {
   Brain,
   Rocket,
   LineChart,
-  Award
+  Award,
+  TrendingUp,
+  BarChart3
 } from 'lucide-react';
 import {
   Accordion,
@@ -193,34 +195,46 @@ export default function Home() {
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-lg mb-xxl">
-            <div className="bg-tf-blue-light p-lg rounded-lg text-center reveal-on-scroll service-card">
-              <div className="w-16 h-16 bg-tf-blue rounded-full flex items-center justify-center mx-auto mb-md">
-                <Lightbulb className="w-8 h-8 text-white" />
+            <Link href="/services/illuminate" className="service-card group relative overflow-hidden p-lg rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 text-center reveal-on-scroll bg-white">
+              <div className="absolute inset-0 bg-gradient-to-br from-blue-50 to-blue-100 opacity-50 group-hover:opacity-80 transition-opacity"></div>
+              <div className="relative z-10">
+                <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-blue-600 rounded-full flex items-center justify-center mx-auto mb-md group-hover:scale-110 transition-transform duration-300">
+                  <Lightbulb className="w-8 h-8 text-white group-hover:animate-pulse" />
+                </div>
+                <h3 className="font-semibold text-text-dark mb-xs group-hover:text-blue-700 transition-colors">Illuminate</h3>
+                <p className="text-sm text-text-medium">Predictive market and talent intelligence to gain critical foresight and spot risk early.</p>
               </div>
-              <h3 className="font-semibold text-text-dark mb-xs">Illuminate</h3>
-              <p className="text-sm text-text-medium">Predictive market and talent intelligence to gain critical foresight and spot risk early.</p>
-            </div>
-            <div className="bg-tf-blue-light p-lg rounded-lg text-center reveal-on-scroll service-card">
-              <div className="w-16 h-16 bg-tf-blue rounded-full flex items-center justify-center mx-auto mb-md">
-                <Settings className="w-8 h-8 text-white" />
+            </Link>
+            <Link href="/services/innovate" className="service-card group relative overflow-hidden p-lg rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 text-center reveal-on-scroll bg-white">
+              <div className="absolute inset-0 bg-gradient-to-br from-orange-50 to-red-50 opacity-50 group-hover:opacity-80 transition-opacity"></div>
+              <div className="relative z-10">
+                <div className="w-16 h-16 bg-gradient-to-br from-orange-500 to-red-500 rounded-full flex items-center justify-center mx-auto mb-md group-hover:scale-110 group-hover:rotate-12 transition-all duration-300">
+                  <Settings className="w-8 h-8 text-white" />
+                </div>
+                <h3 className="font-semibold text-text-dark mb-xs group-hover:text-orange-700 transition-colors">Innovate</h3>
+                <p className="text-sm text-text-medium">Data‑driven systems and agentic workflows designed for scale and efficiency.</p>
               </div>
-              <h3 className="font-semibold text-text-dark mb-xs">Innovate</h3>
-              <p className="text-sm text-text-medium">Data‑driven systems and agentic workflows designed for scale and efficiency.</p>
-            </div>
-            <div className="bg-tf-blue-light p-lg rounded-lg text-center reveal-on-scroll service-card">
-              <div className="w-16 h-16 bg-tf-blue rounded-full flex items-center justify-center mx-auto mb-md">
-                <Zap className="w-8 h-8 text-white" />
+            </Link>
+            <Link href="/services/elevate" className="service-card group relative overflow-hidden p-lg rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 text-center reveal-on-scroll bg-white">
+              <div className="absolute inset-0 bg-gradient-to-br from-purple-50 to-indigo-50 opacity-50 group-hover:opacity-80 transition-opacity"></div>
+              <div className="relative z-10">
+                <div className="w-16 h-16 bg-gradient-to-br from-purple-500 to-indigo-600 rounded-full flex items-center justify-center mx-auto mb-md group-hover:scale-110 transition-transform duration-300">
+                  <Zap className="w-8 h-8 text-white group-hover:animate-bounce" />
+                </div>
+                <h3 className="font-semibold text-text-dark mb-xs group-hover:text-purple-700 transition-colors">Elevate</h3>
+                <p className="text-sm text-text-medium">Embedding next-generation skills and crucial AI literacy within your team.</p>
               </div>
-              <h3 className="font-semibold text-text-dark mb-xs">Elevate</h3>
-              <p className="text-sm text-text-medium">Embedding next-generation skills and crucial AI literacy within your team.</p>
-            </div>
-            <div className="bg-tf-blue-light p-lg rounded-lg text-center reveal-on-scroll service-card">
-              <div className="w-16 h-16 bg-tf-blue rounded-full flex items-center justify-center mx-auto mb-md">
-                <Play className="w-8 h-8 text-white" />
+            </Link>
+            <Link href="/services/accelerate" className="service-card group relative overflow-hidden p-lg rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 text-center reveal-on-scroll bg-white">
+              <div className="absolute inset-0 bg-gradient-to-br from-green-50 to-emerald-50 opacity-50 group-hover:opacity-80 transition-opacity"></div>
+              <div className="relative z-10">
+                <div className="w-16 h-16 bg-gradient-to-br from-green-500 to-emerald-600 rounded-full flex items-center justify-center mx-auto mb-md group-hover:scale-110 transition-transform duration-300">
+                  <Play className="w-8 h-8 text-white group-hover:animate-pulse" />
+                </div>
+                <h3 className="font-semibold text-text-dark mb-xs group-hover:text-green-700 transition-colors">Accelerate</h3>
+                <p className="text-sm text-text-medium">On‑demand expert execution power deployed with strategic precision for time-critical hires.</p>
               </div>
-              <h3 className="font-semibold text-text-dark mb-xs">Accelerate</h3>
-              <p className="text-sm text-text-medium">On‑demand expert execution power deployed with strategic precision for time-critical hires.</p>
-            </div>
+            </Link>
           </div>
           <div className="text-center">
             <p className="text-lg text-text-medium mb-lg max-w-4xl mx-auto">
@@ -241,21 +255,49 @@ export default function Home() {
               <h2 className="text-3xl md:text-4xl font-bold text-text-dark mb-md">Why We Succeed Where Others Stall</h2>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-lg">
-              <div className="bg-white p-lg rounded-lg shadow-sm reveal-on-scroll card-hover">
-                <h3 className="font-semibold text-text-dark mb-xs">System, not Band‑Aid</h3>
-                <p className="text-text-medium text-sm">We holistically identify and fix root causes, not symptoms.</p>
+              <div className="bg-white p-xl rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 reveal-on-scroll group">
+                <div className="flex items-start space-x-md mb-md">
+                  <div className="w-12 h-12 bg-gradient-to-br from-tf-orange to-red-500 rounded-lg flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform duration-300">
+                    <Target className="w-6 h-6 text-white" />
+                  </div>
+                  <div>
+                    <h3 className="font-semibold text-text-dark mb-xs text-lg group-hover:text-tf-orange transition-colors">System, not Band‑Aid</h3>
+                    <p className="text-text-medium">We holistically identify and fix root causes, not symptoms.</p>
+                  </div>
+                </div>
               </div>
-              <div className="bg-white p-lg rounded-lg shadow-sm reveal-on-scroll card-hover">
-                <h3 className="font-semibold text-text-dark mb-xs">Capability Transfer</h3>
-                <p className="text-text-medium text-sm">Your team ends every engagement stronger, without costly external dependencies.</p>
+              <div className="bg-white p-xl rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 reveal-on-scroll group">
+                <div className="flex items-start space-x-md mb-md">
+                  <div className="w-12 h-12 bg-gradient-to-br from-tf-blue to-blue-600 rounded-lg flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform duration-300">
+                    <Users className="w-6 h-6 text-white" />
+                  </div>
+                  <div>
+                    <h3 className="font-semibold text-text-dark mb-xs text-lg group-hover:text-tf-blue transition-colors">Capability Transfer</h3>
+                    <p className="text-text-medium">Your team ends every engagement stronger, without costly external dependencies.</p>
+                  </div>
+                </div>
               </div>
-              <div className="bg-white p-lg rounded-lg shadow-sm reveal-on-scroll card-hover">
-                <h3 className="font-semibold text-text-dark mb-xs">Expertise in complex scaling</h3>
-                <p className="text-text-medium text-sm">From blitz‑scaling to global expansions and product roll‑outs.</p>
+              <div className="bg-white p-xl rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 reveal-on-scroll group">
+                <div className="flex items-start space-x-md mb-md">
+                  <div className="w-12 h-12 bg-gradient-to-br from-purple-500 to-indigo-600 rounded-lg flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform duration-300">
+                    <LineChart className="w-6 h-6 text-white" />
+                  </div>
+                  <div>
+                    <h3 className="font-semibold text-text-dark mb-xs text-lg group-hover:text-purple-700 transition-colors">Expertise in complex scaling</h3>
+                    <p className="text-text-medium">From blitz‑scaling to global expansions and product roll‑outs.</p>
+                  </div>
+                </div>
               </div>
-              <div className="bg-white p-lg rounded-lg shadow-sm reveal-on-scroll card-hover">
-                <h3 className="font-semibold text-text-dark mb-xs">Metric Obsession</h3>
-                <p className="text-text-medium text-sm">We track business impact, not vanity KPIs. Our success is measured by <em>your</em> success.</p>
+              <div className="bg-white p-xl rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 reveal-on-scroll group">
+                <div className="flex items-start space-x-md mb-md">
+                  <div className="w-12 h-12 bg-gradient-to-br from-green-500 to-emerald-600 rounded-lg flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform duration-300">
+                    <Target className="w-6 h-6 text-white" />
+                  </div>
+                  <div>
+                    <h3 className="font-semibold text-text-dark mb-xs text-lg group-hover:text-green-700 transition-colors">Metric Obsession</h3>
+                    <p className="text-text-medium">We track business impact, not vanity KPIs. Our success is measured by <em>your</em> success.</p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -353,19 +395,19 @@ export default function Home() {
                 Schedule Strategic Assessment
               </Link>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-md text-left max-w-2xl mx-auto">
-                <div className="flex items-center gap-xs">
+                <div className="flex items-center gap-md">
                   <div className="w-8 h-8 bg-tf-blue rounded-full flex items-center justify-center flex-shrink-0">
                     <span className="text-white font-bold text-sm">1</span>
                   </div>
                   <p className="text-white text-sm"><span className="font-semibold">Pre‑call brief</span> – You answer five context questions</p>
                 </div>
-                <div className="flex items-center gap-xs">
+                <div className="flex items-center gap-md">
                   <div className="w-8 h-8 bg-tf-blue rounded-full flex items-center justify-center flex-shrink-0">
                     <span className="text-white font-bold text-sm">2</span>
                   </div>
                   <p className="text-white text-sm"><span className="font-semibold">30m call</span> – We unpack your talent constraint</p>
                 </div>
-                <div className="flex items-center gap-xs">
+                <div className="flex items-center gap-md">
                   <div className="w-8 h-8 bg-tf-blue rounded-full flex items-center justify-center flex-shrink-0">
                     <span className="text-white font-bold text-sm">3</span>
                   </div>
