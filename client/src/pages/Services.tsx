@@ -77,42 +77,46 @@ export default function Services() {
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-xxl mb-xxxl">
-            <div className="bg-gradient-to-br from-tf-blue-light to-white p-xxl rounded-lg shadow-lg">
+            <Link href="/services/illuminate" className="bg-gradient-to-br from-tf-blue-light to-white p-xxl rounded-lg shadow-lg hover:shadow-xl transition-all transform hover:-translate-y-1">
               <div className="w-16 h-16 bg-tf-blue rounded-full flex items-center justify-center mb-lg">
                 <Lightbulb className="w-8 h-8 text-white" />
               </div>
               <h3 className="text-xl font-bold text-text-dark mb-md">Illuminate: Predictive Market & Talent Intelligence</h3>
-              <p className="text-text-medium">
+              <p className="text-text-medium mb-md">
                 Anticipate shifts, validate strategy, and make data-backed decisions with confidence. We deliver deep market, competitor, and talent insights, analyzed for strategic foresight.
               </p>
-            </div>
-            <div className="bg-gradient-to-br from-tf-blue-light to-white p-xxl rounded-lg shadow-lg">
+              <span className="text-tf-blue font-semibold">Learn more →</span>
+            </Link>
+            <Link href="/services/innovate" className="bg-gradient-to-br from-tf-blue-light to-white p-xxl rounded-lg shadow-lg hover:shadow-xl transition-all transform hover:-translate-y-1">
               <div className="w-16 h-16 bg-tf-blue rounded-full flex items-center justify-center mb-lg">
                 <Settings className="w-8 h-8 text-white" />
               </div>
               <h3 className="text-xl font-bold text-text-dark mb-md">Innovate: Scalable System & Process Design</h3>
-              <p className="text-text-medium">
+              <p className="text-text-medium mb-md">
                 Applying first principles and design thinking, we architect data-driven, adaptable TA processes and optimize your technology stack to efficiently handle your unique scale, speed, complexity, and compliance needs.
               </p>
-            </div>
-            <div className="bg-gradient-to-br from-tf-blue-light to-white p-xxl rounded-lg shadow-lg">
+              <span className="text-tf-blue font-semibold">Learn more →</span>
+            </Link>
+            <Link href="/services/elevate" className="bg-gradient-to-br from-tf-blue-light to-white p-xxl rounded-lg shadow-lg hover:shadow-xl transition-all transform hover:-translate-y-1">
               <div className="w-16 h-16 bg-tf-blue rounded-full flex items-center justify-center mb-lg">
                 <Zap className="w-8 h-8 text-white" />
               </div>
               <h3 className="text-xl font-bold text-text-dark mb-md">Elevate: Next-Gen Capability & AI Enablement</h3>
-              <p className="text-text-medium">
+              <p className="text-text-medium mb-md">
                 Expert practitioner-led upskilling programs customized to your needs. We use real-world examples to empower your recruiters and hiring managers with tactical AI literacy and advanced recruitment expertise.
               </p>
-            </div>
-            <div className="bg-gradient-to-br from-tf-blue-light to-white p-xxl rounded-lg shadow-lg">
+              <span className="text-tf-blue font-semibold">Learn more →</span>
+            </Link>
+            <Link href="/services/accelerate" className="bg-gradient-to-br from-tf-blue-light to-white p-xxl rounded-lg shadow-lg hover:shadow-xl transition-all transform hover:-translate-y-1">
               <div className="w-16 h-16 bg-tf-blue rounded-full flex items-center justify-center mb-lg">
                 <Play className="w-8 h-8 text-white" />
               </div>
               <h3 className="text-xl font-bold text-text-dark mb-md">Accelerate: Strategically Applied Execution Power</h3>
-              <p className="text-text-medium">
+              <p className="text-text-medium mb-md">
                 On‑demand recruiting muscle and resource elasticity for time‑critical hires. We deploy seasoned TA professionals applying executive search rigor against all critical and urgent hiring needs, securing the candidates you need.
               </p>
-            </div>
+              <span className="text-tf-blue font-semibold">Learn more →</span>
+            </Link>
           </div>
 
           {/* Synergy Section */}
