@@ -6,12 +6,14 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
+import ScrollAnimations from '@/components/ScrollAnimations';
 
 export default function Services() {
   return (
-    <div>
-      {/* Hero */}
-      <section className="bg-gradient-to-br from-tf-blue-light to-white py-xxxl geometric-pattern">
+    <ScrollAnimations>
+      <div>
+        {/* Hero */}
+        <section id="hero" className="bg-gradient-to-br from-tf-blue-light to-white py-xxxl geometric-pattern">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-4xl mx-auto">
             <h1 className="text-4xl md:text-5xl font-bold text-text-dark mb-md">
@@ -102,45 +104,65 @@ export default function Services() {
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-xxl mb-xxxl">
-            <Link href="/services/illuminate" className="bg-gradient-to-br from-tf-blue-light to-white p-xxl rounded-lg shadow-lg hover:shadow-xl transition-all transform hover:-translate-y-1">
-              <div className="w-16 h-16 bg-tf-blue rounded-full flex items-center justify-center mb-lg">
-                <Lightbulb className="w-8 h-8 text-white" />
+            <Link href="/services/illuminate" className="service-card illuminate-card group relative overflow-hidden p-xxl rounded-xl shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2">
+              <div className="service-card-bg"></div>
+              <div className="relative z-10">
+                <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-blue-600 rounded-full flex items-center justify-center mb-lg group-hover:scale-110 transition-transform duration-300">
+                  <Lightbulb className="w-8 h-8 text-white group-hover:animate-pulse" />
+                </div>
+                <h3 className="text-xl font-bold text-text-dark mb-md group-hover:text-blue-700 transition-colors">
+                  Illuminate: Predictive Market & Talent Intelligence
+                </h3>
+                <p className="text-text-medium mb-md">
+                  Anticipate shifts, validate strategy, and make data-backed decisions with confidence. We deliver deep market, competitor, and talent insights, analyzed for strategic foresight.
+                </p>
+                <span className="text-blue-600 font-semibold group-hover:translate-x-2 inline-block transition-transform">Learn more →</span>
               </div>
-              <h3 className="text-xl font-bold text-text-dark mb-md">Illuminate: Predictive Market & Talent Intelligence</h3>
-              <p className="text-text-medium mb-md">
-                Anticipate shifts, validate strategy, and make data-backed decisions with confidence. We deliver deep market, competitor, and talent insights, analyzed for strategic foresight.
-              </p>
-              <span className="text-tf-blue font-semibold">Learn more →</span>
             </Link>
-            <Link href="/services/innovate" className="bg-gradient-to-br from-tf-blue-light to-white p-xxl rounded-lg shadow-lg hover:shadow-xl transition-all transform hover:-translate-y-1">
-              <div className="w-16 h-16 bg-tf-blue rounded-full flex items-center justify-center mb-lg">
-                <Settings className="w-8 h-8 text-white" />
+            <Link href="/services/innovate" className="service-card innovate-card group relative overflow-hidden p-xxl rounded-xl shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2">
+              <div className="service-card-bg"></div>
+              <div className="relative z-10">
+                <div className="w-16 h-16 bg-gradient-to-br from-orange-500 to-red-500 rounded-full flex items-center justify-center mb-lg group-hover:scale-110 group-hover:rotate-12 transition-all duration-300">
+                  <Settings className="w-8 h-8 text-white" />
+                </div>
+                <h3 className="text-xl font-bold text-text-dark mb-md group-hover:text-orange-700 transition-colors">
+                  Innovate: Scalable System & Process Design
+                </h3>
+                <p className="text-text-medium mb-md">
+                  Applying first principles and design thinking, we architect data-driven, adaptable TA processes and optimize your technology stack to efficiently handle your unique scale, speed, complexity, and compliance needs.
+                </p>
+                <span className="text-orange-600 font-semibold group-hover:translate-x-2 inline-block transition-transform">Learn more →</span>
               </div>
-              <h3 className="text-xl font-bold text-text-dark mb-md">Innovate: Scalable System & Process Design</h3>
-              <p className="text-text-medium mb-md">
-                Applying first principles and design thinking, we architect data-driven, adaptable TA processes and optimize your technology stack to efficiently handle your unique scale, speed, complexity, and compliance needs.
-              </p>
-              <span className="text-tf-blue font-semibold">Learn more →</span>
             </Link>
-            <Link href="/services/elevate" className="bg-gradient-to-br from-tf-blue-light to-white p-xxl rounded-lg shadow-lg hover:shadow-xl transition-all transform hover:-translate-y-1">
-              <div className="w-16 h-16 bg-tf-blue rounded-full flex items-center justify-center mb-lg">
-                <Zap className="w-8 h-8 text-white" />
+            <Link href="/services/elevate" className="service-card elevate-card group relative overflow-hidden p-xxl rounded-xl shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2">
+              <div className="service-card-bg"></div>
+              <div className="relative z-10">
+                <div className="w-16 h-16 bg-gradient-to-br from-purple-500 to-indigo-600 rounded-full flex items-center justify-center mb-lg group-hover:scale-110 transition-transform duration-300">
+                  <Zap className="w-8 h-8 text-white group-hover:animate-bounce" />
+                </div>
+                <h3 className="text-xl font-bold text-text-dark mb-md group-hover:text-purple-700 transition-colors">
+                  Elevate: Next-Gen Capability & AI Enablement
+                </h3>
+                <p className="text-text-medium mb-md">
+                  Expert practitioner-led upskilling programs customized to your needs. We use real-world examples to empower your recruiters and hiring managers with tactical AI literacy and advanced recruitment expertise.
+                </p>
+                <span className="text-purple-600 font-semibold group-hover:translate-x-2 inline-block transition-transform">Learn more →</span>
               </div>
-              <h3 className="text-xl font-bold text-text-dark mb-md">Elevate: Next-Gen Capability & AI Enablement</h3>
-              <p className="text-text-medium mb-md">
-                Expert practitioner-led upskilling programs customized to your needs. We use real-world examples to empower your recruiters and hiring managers with tactical AI literacy and advanced recruitment expertise.
-              </p>
-              <span className="text-tf-blue font-semibold">Learn more →</span>
             </Link>
-            <Link href="/services/accelerate" className="bg-gradient-to-br from-tf-blue-light to-white p-xxl rounded-lg shadow-lg hover:shadow-xl transition-all transform hover:-translate-y-1">
-              <div className="w-16 h-16 bg-tf-blue rounded-full flex items-center justify-center mb-lg">
-                <Play className="w-8 h-8 text-white" />
+            <Link href="/services/accelerate" className="service-card accelerate-card group relative overflow-hidden p-xxl rounded-xl shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2">
+              <div className="service-card-bg"></div>
+              <div className="relative z-10">
+                <div className="w-16 h-16 bg-gradient-to-br from-red-500 to-orange-600 rounded-full flex items-center justify-center mb-lg group-hover:scale-110 transition-transform duration-300">
+                  <Play className="w-8 h-8 text-white group-hover:translate-x-1 transition-transform" />
+                </div>
+                <h3 className="text-xl font-bold text-text-dark mb-md group-hover:text-red-700 transition-colors">
+                  Accelerate: Strategically Applied Execution Power
+                </h3>
+                <p className="text-text-medium mb-md">
+                  On‑demand recruiting muscle and resource elasticity for time‑critical hires. We deploy seasoned TA professionals applying executive search rigor against all critical and urgent hiring needs, securing the candidates you need.
+                </p>
+                <span className="text-red-600 font-semibold group-hover:translate-x-2 inline-block transition-transform">Learn more →</span>
               </div>
-              <h3 className="text-xl font-bold text-text-dark mb-md">Accelerate: Strategically Applied Execution Power</h3>
-              <p className="text-text-medium mb-md">
-                On‑demand recruiting muscle and resource elasticity for time‑critical hires. We deploy seasoned TA professionals applying executive search rigor against all critical and urgent hiring needs, securing the candidates you need.
-              </p>
-              <span className="text-tf-blue font-semibold">Learn more →</span>
             </Link>
           </div>
 
@@ -311,6 +333,7 @@ export default function Services() {
           </div>
         </div>
       </section>
-    </div>
+      </div>
+    </ScrollAnimations>
   );
 }

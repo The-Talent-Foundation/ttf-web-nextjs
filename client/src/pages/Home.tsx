@@ -22,13 +22,15 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
+import ScrollAnimations from '@/components/ScrollAnimations';
 
 export default function Home() {
   return (
-    <div>
-      {/* Hero Section */}
-      <section className="bg-gradient-to-br from-tf-blue-light to-white py-xxxl geometric-pattern">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <ScrollAnimations>
+      <div>
+        {/* Hero Section */}
+        <section id="hero" className="bg-gradient-to-br from-tf-blue-light to-white py-xxxl geometric-pattern">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-4xl mx-auto">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-text-dark mb-sm leading-tight">
               Is Your Talent Strategy <span className="text-tf-orange">Fueling Growth</span> or Slowing It Down?
@@ -73,9 +75,9 @@ export default function Home() {
       </section>
 
       {/* Problem Section */}
-      <section className="bg-bg-subtle py-xxxl">
+      <section id="problem" className="bg-bg-subtle py-xxxl">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="max-w-4xl mx-auto">
+          <div className="max-w-4xl mx-auto reveal-on-scroll">
             <div className="text-center mb-xxl">
               <h2 className="text-3xl md:text-4xl font-bold text-text-dark mb-md">The Cost of Standing Still</h2>
               <p className="text-lg text-text-medium">
@@ -149,37 +151,37 @@ export default function Home() {
       </section>
 
       {/* Solution - IIEA Ecosystem */}
-      <section className="bg-white py-xxxl">
+      <section id="solution" className="bg-white py-xxxl">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-xxl">
+          <div className="text-center mb-xxl reveal-on-scroll">
             <h2 className="text-3xl md:text-4xl font-bold text-text-dark mb-md">A Purpose-Built Operating System for Your Talent Acquisition</h2>
             <p className="text-lg text-text-medium max-w-4xl mx-auto">
               We move far beyond the tired limitations of transactional recruiting. The four interconnected pillars of our <span className="font-semibold text-tf-orange">Talent Enablement Ecosystem</span> transform hiring from a risk into a predictable and repeatable process and a competitive advantage.
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-lg mb-xxl">
-            <div className="bg-tf-blue-light p-lg rounded-lg text-center">
+            <div className="bg-tf-blue-light p-lg rounded-lg text-center reveal-on-scroll service-card">
               <div className="w-16 h-16 bg-tf-blue rounded-full flex items-center justify-center mx-auto mb-md">
                 <Lightbulb className="w-8 h-8 text-white" />
               </div>
               <h3 className="font-semibold text-text-dark mb-xs">Illuminate</h3>
               <p className="text-sm text-text-medium">Predictive market and talent intelligence to gain critical foresight and spot risk early.</p>
             </div>
-            <div className="bg-tf-blue-light p-lg rounded-lg text-center">
+            <div className="bg-tf-blue-light p-lg rounded-lg text-center reveal-on-scroll service-card">
               <div className="w-16 h-16 bg-tf-blue rounded-full flex items-center justify-center mx-auto mb-md">
                 <Settings className="w-8 h-8 text-white" />
               </div>
               <h3 className="font-semibold text-text-dark mb-xs">Innovate</h3>
               <p className="text-sm text-text-medium">Data‑driven systems and agentic workflows designed for scale and efficiency.</p>
             </div>
-            <div className="bg-tf-blue-light p-lg rounded-lg text-center">
+            <div className="bg-tf-blue-light p-lg rounded-lg text-center reveal-on-scroll service-card">
               <div className="w-16 h-16 bg-tf-blue rounded-full flex items-center justify-center mx-auto mb-md">
                 <Zap className="w-8 h-8 text-white" />
               </div>
               <h3 className="font-semibold text-text-dark mb-xs">Elevate</h3>
               <p className="text-sm text-text-medium">Embedding next-generation skills and crucial AI literacy within your team.</p>
             </div>
-            <div className="bg-tf-blue-light p-lg rounded-lg text-center">
+            <div className="bg-tf-blue-light p-lg rounded-lg text-center reveal-on-scroll service-card">
               <div className="w-16 h-16 bg-tf-blue rounded-full flex items-center justify-center mx-auto mb-md">
                 <Play className="w-8 h-8 text-white" />
               </div>
@@ -199,26 +201,26 @@ export default function Home() {
       </section>
 
       {/* Differentiation */}
-      <section className="bg-bg-subtle py-xxxl">
+      <section id="benefits" className="bg-bg-subtle py-xxxl">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl mx-auto">
-            <div className="text-center mb-xxl">
+            <div className="text-center mb-xxl reveal-on-scroll">
               <h2 className="text-3xl md:text-4xl font-bold text-text-dark mb-md">Why We Succeed Where Others Stall</h2>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-lg">
-              <div className="bg-white p-lg rounded-lg shadow-sm">
+              <div className="bg-white p-lg rounded-lg shadow-sm reveal-on-scroll card-hover">
                 <h3 className="font-semibold text-text-dark mb-xs">System, not Band‑Aid</h3>
                 <p className="text-text-medium text-sm">We holistically identify and fix root causes, not symptoms.</p>
               </div>
-              <div className="bg-white p-lg rounded-lg shadow-sm">
+              <div className="bg-white p-lg rounded-lg shadow-sm reveal-on-scroll card-hover">
                 <h3 className="font-semibold text-text-dark mb-xs">Capability Transfer</h3>
                 <p className="text-text-medium text-sm">Your team ends every engagement stronger, without costly external dependencies.</p>
               </div>
-              <div className="bg-white p-lg rounded-lg shadow-sm">
+              <div className="bg-white p-lg rounded-lg shadow-sm reveal-on-scroll card-hover">
                 <h3 className="font-semibold text-text-dark mb-xs">Expertise in complex scaling</h3>
                 <p className="text-text-medium text-sm">From blitz‑scaling to global expansions and product roll‑outs.</p>
               </div>
-              <div className="bg-white p-lg rounded-lg shadow-sm">
+              <div className="bg-white p-lg rounded-lg shadow-sm reveal-on-scroll card-hover">
                 <h3 className="font-semibold text-text-dark mb-xs">Metric Obsession</h3>
                 <p className="text-text-medium text-sm">We track business impact, not vanity KPIs. Our success is measured by <em>your</em> success.</p>
               </div>
@@ -352,6 +354,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-    </div>
+      </div>
+    </ScrollAnimations>
   );
 }

@@ -389,3 +389,154 @@
 .icon-secondary {
   color: hsl(var(--tf-blue));
 }
+
+/* Service card specific backgrounds */
+.illuminate-card .service-card-bg {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, #dbeafe 0%, #bfdbfe 50%, #93c5fd 100%);
+  opacity: 0.6;
+  transition: opacity 0.3s ease;
+}
+
+.illuminate-card:hover .service-card-bg {
+  opacity: 0.8;
+}
+
+.innovate-card .service-card-bg {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, #fed7d7 0%, #fbb6ce 50%, #f687b3 100%);
+  opacity: 0.6;
+  transition: opacity 0.3s ease;
+}
+
+.innovate-card:hover .service-card-bg {
+  opacity: 0.8;
+}
+
+.elevate-card .service-card-bg {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, #e9d5ff 0%, #ddd6fe 50%, #c4b5fd 100%);
+  opacity: 0.6;
+  transition: opacity 0.3s ease;
+}
+
+.elevate-card:hover .service-card-bg {
+  opacity: 0.8;
+}
+
+.accelerate-card .service-card-bg {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, #fecaca 0%, #fca5a5 50%, #f87171 100%);
+  opacity: 0.6;
+  transition: opacity 0.3s ease;
+}
+
+.accelerate-card:hover .service-card-bg {
+  opacity: 0.8;
+}
+
+/* Scroll reveal animations */
+@keyframes slideInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.reveal-on-scroll {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.6s ease;
+}
+
+.reveal-on-scroll.revealed {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Counter animations */
+@keyframes countUp {
+  from {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.counter {
+  animation: countUp 0.8s ease-out;
+}
+
+/* Parallax effect */
+.parallax-element {
+  transition: transform 0.1s ease-out;
+}
+
+/* Progress indicator */
+.progress-indicator {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 4px;
+  background: linear-gradient(90deg, hsl(var(--tf-orange)), hsl(var(--tf-blue)));
+  z-index: 1000;
+  transition: width 0.2s ease;
+}
+
+/* Floating CTA */
+.floating-cta {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  z-index: 50;
+  opacity: 0;
+  transform: translateY(100px);
+  transition: all 0.3s ease;
+}
+
+.floating-cta.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Enhanced accordion animations */
+[data-state="open"] > [data-accordion-content] {
+  animation: slideDown 0.3s ease-out;
+}
+
+[data-state="closed"] > [data-accordion-content] {
+  animation: slideUp 0.3s ease-out;
+}
+
+@keyframes slideDown {
+  from {
+    height: 0;
+    opacity: 0;
+  }
+  to {
+    height: var(--radix-accordion-content-height);
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    height: var(--radix-accordion-content-height);
+    opacity: 1;
+  }
+  to {
+    height: 0;
+    opacity: 0;
+  }
+}

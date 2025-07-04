@@ -1,6 +1,5 @@
 import { Link } from 'wouter';
 import { Lightbulb, Search, TrendingUp, AlertTriangle, ArrowRight, CheckCircle2, Brain, Target, ChevronDown, MapPin, Users, DollarSign, Sparkles } from 'lucide-react';
-import { useState } from 'react';
 import {
   Accordion,
   AccordionContent,
@@ -9,15 +8,6 @@ import {
 } from "@/components/ui/accordion";
 
 export default function Illuminate() {
-  const [flippedCards, setFlippedCards] = useState<number[]>([]);
-
-  const toggleCard = (index: number) => {
-    setFlippedCards(prev =>
-      prev.includes(index)
-        ? prev.filter(i => i !== index)
-        : [...prev, index]
-    );
-  };
 
   return (
     <div>
@@ -124,116 +114,98 @@ export default function Illuminate() {
               We cut through the noise, delivering targeted, synthesized, in-depth intelligence tailored to your most critical talent and business decisions.
             </p>
 
-            {/* Flip Cards */}
+            {/* Progressive Disclosure Cards */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-lg mb-xxl">
               {/* Card 1 */}
-              <div
-                className="bg-gradient-to-br from-tf-blue-light to-white p-xl rounded-lg shadow-lg cursor-pointer transition-all hover:shadow-xl min-h-[300px]"
-                onClick={() => toggleCard(0)}
-              >
-                {!flippedCards.includes(0) ? (
-                  <div>
-                    <MapPin className="w-12 h-12 text-tf-blue mb-md" />
-                    <h3 className="text-xl font-bold text-text-dark mb-md">Where can we hire scarce talent at scale?</h3>
-                    <p className="text-text-medium">
-                      Assess talent density, skills availability, true compensation realities, competitor saturation, and compliance factors to 
-                      <span className="font-semibold"> confidently inform location strategy, remote work policies, and targeted recruitment efforts.</span>
-                    </p>
-                    <p className="text-sm text-tf-blue mt-md">Click to see details →</p>
-                  </div>
-                ) : (
-                  <div>
-                    <h4 className="font-bold text-text-dark mb-md">Talent Market Mapping & Feasibility Analysis</h4>
-                    <ul className="space-y-sm text-text-medium text-sm">
-                      <li className="italic">"What are the top 3 locations globally with availability to realistically source 50+ Senior Machine Learning engineers experienced in regulated industries within 6 months?"</li>
-                      <li className="italic">"What are the actual total compensation market rates vs. self-reported survey data?"</li>
-                      <li className="italic">"What specific local nuances impact hiring speed in Locations A vs. B?"</li>
+              <div className="insight-card group relative overflow-hidden bg-gradient-to-br from-blue-50 to-blue-100 p-xl rounded-xl shadow-lg hover:shadow-2xl transition-all duration-500 min-h-[340px] reveal-on-scroll">
+                <div className="relative z-10">
+                  <MapPin className="w-12 h-12 text-blue-600 mb-md group-hover:scale-110 transition-transform duration-300" />
+                  <h3 className="text-xl font-bold text-text-dark mb-md group-hover:text-blue-700 transition-colors">
+                    Where can we hire scarce talent at scale?
+                  </h3>
+                  <p className="text-text-medium mb-md">
+                    Assess talent density, skills availability, true compensation realities, competitor saturation, and compliance factors to 
+                    <span className="font-semibold"> confidently inform location strategy, remote work policies, and targeted recruitment efforts.</span>
+                  </p>
+                  
+                  <div className="insight-details opacity-0 group-hover:opacity-100 transform translate-y-4 group-hover:translate-y-0 transition-all duration-300 bg-white/90 backdrop-blur-sm p-md rounded-lg mt-md border border-blue-200">
+                    <h4 className="font-bold text-blue-700 mb-sm text-sm">Example Intelligence:</h4>
+                    <ul className="space-y-xs text-text-medium text-xs">
+                      <li className="italic">"Top 3 locations to source 50+ Senior ML engineers within 6 months"</li>
+                      <li className="italic">"Actual compensation vs. survey data discrepancies"</li>
+                      <li className="italic">"Local hiring speed factors Location A vs. B"</li>
+                      <li className="italic">"Remote work impact on compensation expectations"</li>
                     </ul>
-                    <p className="text-sm text-tf-blue mt-md">Click to go back →</p>
                   </div>
-                )}
+                </div>
               </div>
 
               {/* Card 2 */}
-              <div
-                className="bg-gradient-to-br from-tf-blue-light to-white p-xl rounded-lg shadow-lg cursor-pointer transition-all hover:shadow-xl min-h-[300px]"
-                onClick={() => toggleCard(1)}
-              >
-                {!flippedCards.includes(1) ? (
-                  <div>
-                    <Users className="w-12 h-12 text-tf-blue mb-md" />
-                    <h3 className="text-xl font-bold text-text-dark mb-md">How are my competitors really staffing and paying?</h3>
-                    <p className="text-text-medium">
-                      Uncover crucial insights into competitor talent strategies, organizational structures, compensation philosophies, and sourcing channels to inform your own competitive positioning and proactively counter threats.
-                    </p>
-                    <p className="text-sm text-tf-blue mt-md">Click to see details →</p>
-                  </div>
-                ) : (
-                  <div>
-                    <h4 className="font-bold text-text-dark mb-md">Competitor Intelligence & Counter Strategy Planning</h4>
-                    <ul className="space-y-sm text-text-medium text-sm">
-                      <li className="italic">"How is Competitor X structuring compensation and total rewards for their new Design team?"</li>
-                      <li className="italic">"Which research labs and companies are their primary sources for hiring top AI talent?"</li>
-                      <li className="italic">"What specific value proposition resonates with the talent they're targeting?"</li>
+              <div className="insight-card group relative overflow-hidden bg-gradient-to-br from-orange-50 to-orange-100 p-xl rounded-xl shadow-lg hover:shadow-2xl transition-all duration-500 min-h-[340px] reveal-on-scroll">
+                <div className="relative z-10">
+                  <Users className="w-12 h-12 text-orange-600 mb-md group-hover:scale-110 transition-transform duration-300" />
+                  <h3 className="text-xl font-bold text-text-dark mb-md group-hover:text-orange-700 transition-colors">
+                    How are my competitors really staffing and paying?
+                  </h3>
+                  <p className="text-text-medium mb-md">
+                    Uncover crucial insights into competitor talent strategies, organizational structures, compensation philosophies, and sourcing channels to inform your own competitive positioning and proactively counter threats.
+                  </p>
+                  
+                  <div className="insight-details opacity-0 group-hover:opacity-100 transform translate-y-4 group-hover:translate-y-0 transition-all duration-300 bg-white/90 backdrop-blur-sm p-md rounded-lg mt-md border border-orange-200">
+                    <h4 className="font-bold text-orange-700 mb-sm text-sm">Example Intelligence:</h4>
+                    <ul className="space-y-xs text-text-medium text-xs">
+                      <li className="italic">"Competitor X compensation structure for new Design teams"</li>
+                      <li className="italic">"Research labs and companies for hiring top AI talent"</li>
+                      <li className="italic">"Value propositions that resonate with their targets"</li>
                     </ul>
-                    <p className="text-sm text-tf-blue mt-md">Click to go back →</p>
                   </div>
-                )}
+                </div>
               </div>
 
               {/* Card 3 */}
-              <div
-                className="bg-gradient-to-br from-tf-blue-light to-white p-xl rounded-lg shadow-lg cursor-pointer transition-all hover:shadow-xl min-h-[300px]"
-                onClick={() => toggleCard(2)}
-              >
-                {!flippedCards.includes(2) ? (
-                  <div>
-                    <DollarSign className="w-12 h-12 text-tf-blue mb-md" />
-                    <h3 className="text-xl font-bold text-text-dark mb-md">What does a winning offer actually cost?</h3>
-                    <p className="text-text-medium">
-                      Access role‑specific, geo‑calibrated compensation and benefits data to ensure that your offers are competitive enough to secure key talent while also retaining high-performing critical employees.
-                    </p>
-                    <p className="text-sm text-tf-blue mt-md">Click to see details →</p>
-                  </div>
-                ) : (
-                  <div>
-                    <h4 className="font-bold text-text-dark mb-md">Compensation & Total Rewards Benchmarking</h4>
-                    <ul className="space-y-sm text-text-medium text-sm">
-                      <li className="italic">"What is the true, competitive market rate (including base, bonus, equity trends, and key benefits) for Principal Product Managers in the Bay Area versus fully remote?"</li>
-                      <li className="italic">"How do cash compensation expectations of Robotics Engineering candidates in Boston compare to expectations in London, Berlin, or Singapore?"</li>
-                      <li className="italic">"What additional talent pool would become available if you raised the top of your salary band by 10%?"</li>
+              <div className="insight-card group relative overflow-hidden bg-gradient-to-br from-purple-50 to-purple-100 p-xl rounded-xl shadow-lg hover:shadow-2xl transition-all duration-500 min-h-[340px] reveal-on-scroll">
+                <div className="relative z-10">
+                  <DollarSign className="w-12 h-12 text-purple-600 mb-md group-hover:scale-110 transition-transform duration-300" />
+                  <h3 className="text-xl font-bold text-text-dark mb-md group-hover:text-purple-700 transition-colors">
+                    What does a winning offer actually cost?
+                  </h3>
+                  <p className="text-text-medium mb-md">
+                    Access role‑specific, geo‑calibrated compensation and benefits data to ensure that your offers are competitive enough to secure key talent while also retaining high-performing critical employees.
+                  </p>
+                  
+                  <div className="insight-details opacity-0 group-hover:opacity-100 transform translate-y-4 group-hover:translate-y-0 transition-all duration-300 bg-white/90 backdrop-blur-sm p-md rounded-lg mt-md border border-purple-200">
+                    <h4 className="font-bold text-purple-700 mb-sm text-sm">Example Intelligence:</h4>
+                    <ul className="space-y-xs text-text-medium text-xs">
+                      <li className="italic">"True market rates for Principal PMs: Bay Area vs. remote"</li>
+                      <li className="italic">"Robotics Engineering comp: Boston vs. London/Berlin/Singapore"</li>
+                      <li className="italic">"Talent pool expansion with 10% salary band increase"</li>
                     </ul>
-                    <p className="text-sm text-tf-blue mt-md">Click to go back →</p>
                   </div>
-                )}
+                </div>
               </div>
 
               {/* Card 4 */}
-              <div
-                className="bg-gradient-to-br from-tf-blue-light to-white p-xl rounded-lg shadow-lg cursor-pointer transition-all hover:shadow-xl min-h-[300px]"
-                onClick={() => toggleCard(3)}
-              >
-                {!flippedCards.includes(3) ? (
-                  <div>
-                    <Sparkles className="w-12 h-12 text-tf-blue mb-md" />
-                    <h3 className="text-xl font-bold text-text-dark mb-md">Which future skill demands will break our roadmap?</h3>
-                    <p className="text-text-medium">
-                      Map skill requirements tied to your roadmap. Analyze internal strengths and gaps compared to external supply and demand to build workforce plans, advise on build vs buy decisions, and target high-ROI upskilling programs.
-                    </p>
-                    <p className="text-sm text-tf-blue mt-md">Click to see details →</p>
-                  </div>
-                ) : (
-                  <div>
-                    <h4 className="font-bold text-text-dark mb-md">Skills Foresight & Strategic Workforce Planning</h4>
-                    <ul className="space-y-sm text-text-medium text-sm">
-                      <li className="italic">"Based on the external supply, cost realities, and our current capability gaps, which domain expertise should we upskill internally to plug hiring gaps?"</li>
-                      <li className="italic">"What's the optimal, data-driven build or buy strategy to achieve our growth goals?"</li>
-                      <li className="italic">"What emerging skills will our current team lack for the 12-month product roadmap?"</li>
+              <div className="insight-card group relative overflow-hidden bg-gradient-to-br from-green-50 to-green-100 p-xl rounded-xl shadow-lg hover:shadow-2xl transition-all duration-500 min-h-[340px] reveal-on-scroll">
+                <div className="relative z-10">
+                  <Sparkles className="w-12 h-12 text-green-600 mb-md group-hover:scale-110 transition-transform duration-300" />
+                  <h3 className="text-xl font-bold text-text-dark mb-md group-hover:text-green-700 transition-colors">
+                    Which future skill demands will break our roadmap?
+                  </h3>
+                  <p className="text-text-medium mb-md">
+                    Map skill requirements tied to your roadmap. Analyze internal strengths and gaps compared to external supply and demand to build workforce plans, advise on build vs buy decisions, and target high-ROI upskilling programs.
+                  </p>
+                  
+                  <div className="insight-details opacity-0 group-hover:opacity-100 transform translate-y-4 group-hover:translate-y-0 transition-all duration-300 bg-white/90 backdrop-blur-sm p-md rounded-lg mt-md border border-green-200">
+                    <h4 className="font-bold text-green-700 mb-sm text-sm">Example Intelligence:</h4>
+                    <ul className="space-y-xs text-text-medium text-xs">
+                      <li className="italic">"Optimal build vs. buy strategy based on supply/cost realities"</li>
+                      <li className="italic">"Data-driven upskilling recommendations"</li>
+                      <li className="italic">"Emerging skills gaps for 12-month roadmap"</li>
                     </ul>
-                    <p className="text-sm text-tf-blue mt-md">Click to go back →</p>
                   </div>
-                )}
+                </div>
               </div>
+
             </div>
 
             {/* How Illuminate Works */}

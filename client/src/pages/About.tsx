@@ -1,9 +1,11 @@
 import { Link } from 'wouter';
 import { Lightbulb, TrendingUp, Eye, BarChart, Search, Users, Target, CheckCircle2 } from 'lucide-react';
+import ScrollAnimations from '@/components/ScrollAnimations';
 
 export default function About() {
   return (
-    <div>
+    <ScrollAnimations>
+      <div>
       {/* Hero */}
       <section className="bg-white py-xxxl">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -251,6 +253,7 @@ export default function About() {
           </div>
         </div>
       </section>
-    </div>
+      </div>
+    </ScrollAnimations>
   );
 }

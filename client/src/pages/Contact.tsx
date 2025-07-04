@@ -12,6 +12,7 @@ import { Textarea } from '@/components/ui/textarea';
 import { Checkbox } from '@/components/ui/checkbox';
 import { Button } from '@/components/ui/button';
 import { useToast } from '@/hooks/use-toast';
+import ScrollAnimations from '@/components/ScrollAnimations';
 
 const contactSchema = z.object({
   fullName: z.string().min(1, 'Full name is required'),
@@ -67,9 +68,10 @@ export default function Contact() {
   };
 
   return (
-    <div>
-      {/* Header */}
-      <section className="bg-white py-xxxl">
+    <ScrollAnimations>
+      <div>
+        {/* Header */}
+        <section id="hero" className="bg-white py-xxxl">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl mx-auto">
             <h1 className="text-4xl md:text-5xl font-bold text-text-dark mb-md">
@@ -304,6 +306,7 @@ export default function Contact() {
           </div>
         </div>
       </section>
-    </div>
+      </div>
+    </ScrollAnimations>
   );
 }
