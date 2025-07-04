@@ -138,7 +138,7 @@ export default function Navigation() {
               </div>
               
               <div className="absolute top-full left-0 mt-1 w-[500px] bg-white rounded-lg shadow-lg border border-border-light opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
-                <div className="p-6">
+                <div className="p-4">
                   <div className="grid gap-1">
                     {serviceItems.map((item) => {
                       const Icon = item.icon;
@@ -146,7 +146,7 @@ export default function Navigation() {
                         <Link
                           key={item.href}
                           href={item.href}
-                          className="flex items-start space-x-4 rounded-lg p-4 leading-none no-underline outline-none transition-all hover:bg-orange-50 hover:shadow-sm"
+                          className="flex items-start space-x-3 rounded-lg p-3 leading-none no-underline outline-none transition-all hover:bg-orange-50 hover:shadow-sm"
                         >
                           <div className={`w-10 h-10 rounded-full flex items-center justify-center flex-shrink-0 ${
                             item.href === '/services' ? 'bg-gradient-to-br from-gray-400 to-gray-600' :
@@ -213,13 +213,13 @@ export default function Navigation() {
       {/* Mobile Navigation */}
       {mobileMenuOpen && (
         <div className="lg:hidden">
-          <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white border-t border-border-light">
+          <div className="px-4 pt-4 pb-6 space-y-2 sm:px-6 bg-gradient-to-b from-white to-gray-50 border-t border-border-light shadow-lg">
             <Link
               href="/"
-              className={`block px-3 py-2 transition-colors ${
+              className={`block px-3 py-3 rounded-lg transition-colors ${
                 isActive('/')
-                  ? 'text-tf-orange'
-                  : 'text-text-medium hover:text-tf-orange'
+                  ? 'text-tf-orange bg-orange-50'
+                  : 'text-text-medium hover:text-tf-orange hover:bg-orange-50'
               }`}
               onClick={() => setMobileMenuOpen(false)}
             >
@@ -229,40 +229,55 @@ export default function Navigation() {
             {/* Services Section */}
             <div className="px-3 py-2">
               <p className="font-medium text-text-dark mb-2">Services</p>
-              {serviceItems.map((item) => (
-                <Link
-                  key={item.href}
-                  href={item.href}
-                  className={`block pl-4 py-2 text-sm transition-colors ${
-                    isActive(item.href)
-                      ? 'text-tf-orange'
-                      : 'text-text-medium hover:text-tf-orange'
-                  }`}
-                  onClick={() => setMobileMenuOpen(false)}
-                >
-                  {item.label}
-                </Link>
-              ))}
+              {serviceItems.map((item) => {
+                const Icon = item.icon;
+                return (
+                  <Link
+                    key={item.href}
+                    href={item.href}
+                    className={`flex items-center space-x-3 pl-4 py-3 text-sm transition-colors rounded-lg hover:bg-orange-50 ${
+                      isActive(item.href)
+                        ? 'text-tf-orange'
+                        : 'text-text-medium hover:text-tf-orange'
+                    }`}
+                    onClick={() => setMobileMenuOpen(false)}
+                  >
+                    <div className={`w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0 ${
+                      item.href === '/services' ? 'bg-gradient-to-br from-gray-400 to-gray-600' :
+                      item.href === '/services/illuminate' ? 'bg-gradient-to-br from-blue-500 to-blue-600' :
+                      item.href === '/services/innovate' ? 'bg-gradient-to-br from-orange-500 to-red-500' :
+                      item.href === '/services/elevate' ? 'bg-gradient-to-br from-purple-500 to-indigo-600' :
+                      'bg-gradient-to-br from-red-500 to-orange-600'
+                    }`}>
+                      <Icon className="h-4 w-4 text-white" />
+                    </div>
+                    <div className="flex-1">
+                      <div className="font-medium">{item.label}</div>
+                      <div className="text-xs text-text-medium">{item.description}</div>
+                    </div>
+                  </Link>
+                );
+              })}
             </div>
             
             {navItems.slice(1).map((item) => (
               <Link
                 key={item.href}
                 href={item.href}
-                className={`block px-3 py-2 transition-colors ${
+                className={`block px-3 py-3 rounded-lg transition-colors ${
                   isActive(item.href)
-                    ? 'text-tf-orange'
-                    : 'text-text-medium hover:text-tf-orange'
+                    ? 'text-tf-orange bg-orange-50'
+                    : 'text-text-medium hover:text-tf-orange hover:bg-orange-50'
                 }`}
                 onClick={() => setMobileMenuOpen(false)}
               >
                 {item.label}
               </Link>
             ))}
-            <div className="px-3 py-2">
+            <div className="px-3 pt-4 border-t border-gray-200 mt-2">
               <Link
                 href="/contact"
-                className="btn-primary inline-block"
+                className="btn-primary inline-block w-full text-center"
                 onClick={() => setMobileMenuOpen(false)}
               >
                 Book Assessment
