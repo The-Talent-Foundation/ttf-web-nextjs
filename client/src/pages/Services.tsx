@@ -1,5 +1,5 @@
 import { Link } from 'wouter';
-import { Lightbulb, Settings, Zap, Play, Timer, AlertCircle, Target, TrendingDown, Shield, Building2, ArrowLeftRight, DollarSign, TrendingUp } from 'lucide-react';
+import { Lightbulb, Settings, Zap, Play, Timer, AlertCircle, Target, TrendingDown, Shield, Building2, ArrowLeftRight, DollarSign, AlertTriangle } from 'lucide-react';
 import {
   Accordion,
   AccordionContent,
@@ -292,26 +292,32 @@ export default function Services() {
               </p>
             </div>
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-lg mb-xxl auto-rows-fr">
-              <div className="bg-white p-xl rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 group h-full text-center">
-                <div className="w-16 h-16 bg-gradient-to-br from-orange-500 to-red-500 rounded-lg flex items-center justify-center mx-auto mb-lg group-hover:scale-110 transition-transform duration-300">
-                  <ArrowLeftRight className="w-8 h-8 text-white" />
+              <div className="bg-white p-xl rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 group h-full">
+                <div className="text-center mb-lg">
+                  <div className="w-16 h-16 bg-gradient-to-br from-slate-500 to-gray-600 rounded-lg flex items-center justify-center mx-auto mb-lg group-hover:scale-110 transition-transform duration-300">
+                    <ArrowLeftRight className="w-8 h-8 text-white" />
+                  </div>
+                  <h3 className="font-semibold text-text-dark text-xl group-hover:text-slate-700 transition-colors">The Transactional Treadmill</h3>
                 </div>
-                <h3 className="font-semibold text-text-dark mb-lg text-xl group-hover:text-orange-700 transition-colors">The Transactional Treadmill</h3>
                 <p className="text-text-medium leading-relaxed text-left">Ineffective processes lead to endless cycles of <span className="font-semibold text-text-dark">repeated agency fees (+15-25%)</span> for hard-to-fill roles, contractor premiums (often exceeding 50%), ongoing replacement costs due to poor hiring decisions, and <span className="font-semibold text-text-dark">lost productivity from churn</span>.</p>
               </div>
-              <div className="bg-white p-xl rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 group h-full text-center">
-                <div className="w-16 h-16 bg-gradient-to-br from-tf-blue to-blue-600 rounded-lg flex items-center justify-center mx-auto mb-lg group-hover:scale-110 transition-transform duration-300">
-                  <DollarSign className="w-8 h-8 text-white" />
+              <div className="bg-white p-xl rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 group h-full">
+                <div className="text-center mb-lg">
+                  <div className="w-16 h-16 bg-gradient-to-br from-amber-500 to-yellow-600 rounded-lg flex items-center justify-center mx-auto mb-lg group-hover:scale-110 transition-transform duration-300">
+                    <DollarSign className="w-8 h-8 text-white" />
+                  </div>
+                  <h3 className="font-semibold text-text-dark text-xl group-hover:text-amber-700 transition-colors">The Cost of Failure</h3>
                 </div>
-                <h3 className="font-semibold text-text-dark mb-lg text-xl group-hover:text-tf-blue transition-colors">The Cost of Failure</h3>
                 <p className="text-text-medium leading-relaxed text-left">What's the <em>true</em> financial impact of a 6-month delay due to talent gaps? The <span className="font-semibold text-tf-orange">opportunity cost</span> is often <span className="font-semibold text-tf-orange">in the millions</span> in lost pipeline revenue. You could be losing <span className="font-semibold text-text-dark">key market share</span> due to a lack of top-tier GTM talent driving MRR up.</p>
               </div>
-              <div className="bg-white p-xl rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 group h-full text-center">
-                <div className="w-16 h-16 bg-gradient-to-br from-purple-500 to-indigo-600 rounded-lg flex items-center justify-center mx-auto mb-lg group-hover:scale-110 transition-transform duration-300">
-                  <TrendingUp className="w-8 h-8 text-white" />
+              <div className="bg-white p-xl rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 group h-full">
+                <div className="text-center mb-lg">
+                  <div className="w-16 h-16 bg-gradient-to-br from-rose-500 to-pink-600 rounded-lg flex items-center justify-center mx-auto mb-lg group-hover:scale-110 transition-transform duration-300">
+                    <AlertTriangle className="w-8 h-8 text-white" />
+                  </div>
+                  <h3 className="font-semibold text-text-dark text-xl group-hover:text-rose-700 transition-colors">The Strategic Risk Premium</h3>
                 </div>
-                <h3 className="font-semibold text-text-dark mb-lg text-xl group-hover:text-purple-700 transition-colors">The Strategic Risk Premium</h3>
-                <p className="text-text-medium leading-relaxed text-left">Operating without a predictable talent engine forces you to carry a <span className="font-semibold text-text-dark">constant, unquantified risk premium</span>, adding ambiguity to every major growth initiative. Surprise compliance fines, missed local labor laws, <span className="font-semibold text-text-dark">burnout-fueled attrition</span>, the question becomes "when" and not "if."</p>
+                <p className="text-text-medium leading-relaxed text-left">Operating without a predictable talent engine forces you to carry a <span className="font-semibold text-text-dark">constant, unquantified risk premium</span>. Surprise compliance fines, missed local labor laws, <span className="font-semibold text-text-dark">burnout-fueled attrition</span>, the question becomes "when" and not "if."</p>
               </div>
             </div>
             <div className="text-center mb-xxl">
