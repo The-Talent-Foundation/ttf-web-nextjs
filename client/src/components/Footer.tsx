@@ -2,7 +2,7 @@ import { Link } from 'wouter';
 
 export default function Footer() {
   return (
-    <footer className="bg-bg-dark dark:bg-gray-950 py-xl">
+    <footer className="bg-bg-dark py-xl">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-lg">
           <div>
@@ -31,7 +31,7 @@ export default function Footer() {
             </ul>
           </div>
         </div>
-        <div className="border-t border-gray-700 dark:border-gray-800 mt-xxl pt-lg text-center">
+        <div className="border-t border-gray-700 mt-xxl pt-lg text-center">
           <p className="text-tf-blue-lighter text-sm mb-md">
             © 2025 The Talent Foundation. All rights reserved.
           </p>

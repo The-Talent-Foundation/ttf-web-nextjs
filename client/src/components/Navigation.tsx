@@ -10,7 +10,6 @@ import {
   Play,
   LayoutGrid
 } from 'lucide-react';
-import ThemeToggle from '@/components/ThemeToggle';
 import {
   NavigationMenu,
   NavigationMenuContent,
@@ -98,7 +97,7 @@ export default function Navigation() {
   };
 
   return (
-    <nav className={`bg-white dark:bg-gray-900 border-b border-border-light dark:border-gray-700 fixed top-0 left-0 right-0 z-50 transition-transform duration-300 ease-in-out ${
+    <nav className={`bg-white border-b border-border-light fixed top-0 left-0 right-0 z-50 transition-transform duration-300 ease-in-out ${
       isVisible ? 'translate-y-0' : '-translate-y-full'
     }`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -138,7 +137,7 @@ export default function Navigation() {
                 <ChevronDown className="ml-1 h-4 w-4 transition-transform group-hover:rotate-180" />
               </div>
               
-              <div className="absolute top-full left-0 mt-1 w-[500px] bg-white dark:bg-gray-800 rounded-lg shadow-lg border border-border-light dark:border-gray-600 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+              <div className="absolute top-full left-0 mt-1 w-[500px] bg-white rounded-lg shadow-lg border border-border-light opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
                 <div className="p-4">
                   <div className="grid gap-1">
                     {serviceItems.map((item) => {
@@ -147,7 +146,7 @@ export default function Navigation() {
                         <Link
                           key={item.href}
                           href={item.href}
-                          className="flex items-start space-x-3 rounded-lg p-3 leading-none no-underline outline-none transition-all hover:bg-orange-50 dark:hover:bg-gray-700 hover:shadow-sm"
+                          className="flex items-start space-x-3 rounded-lg p-3 leading-none no-underline outline-none transition-all hover:bg-orange-50 hover:shadow-sm"
                         >
                           <div className={`w-10 h-10 rounded-full flex items-center justify-center flex-shrink-0 ${
                             item.href === '/services' ? 'bg-gradient-to-br from-gray-400 to-gray-600' :
@@ -189,9 +188,8 @@ export default function Navigation() {
             ))}
           </div>
           
-          {/* Desktop CTA and Theme Toggle */}
-          <div className="hidden lg:flex items-center space-x-4">
-            <ThemeToggle />
+          {/* Desktop CTA */}
+          <div className="hidden lg:block">
             <Link
               href="/contact"
               className="btn-primary whitespace-nowrap"
@@ -215,13 +213,13 @@ export default function Navigation() {
       {/* Mobile Navigation */}
       {mobileMenuOpen && (
         <div className="lg:hidden">
-          <div className="px-4 pt-4 pb-6 space-y-2 sm:px-6 bg-gradient-to-b from-white to-gray-50 dark:from-gray-900 dark:to-gray-800 border-t border-border-light dark:border-gray-700 shadow-lg">
+          <div className="px-4 pt-4 pb-6 space-y-2 sm:px-6 bg-gradient-to-b from-white to-gray-50 border-t border-border-light shadow-lg">
             <Link
               href="/"
               className={`block px-3 py-3 rounded-lg transition-colors ${
                 isActive('/')
-                  ? 'text-tf-orange bg-orange-50 dark:bg-orange-900/20'
-                  : 'text-text-medium hover:text-tf-orange hover:bg-orange-50 dark:hover:bg-orange-900/20'
+                  ? 'text-tf-orange bg-orange-50'
+                  : 'text-text-medium hover:text-tf-orange hover:bg-orange-50'
               }`}
               onClick={() => setMobileMenuOpen(false)}
             >
@@ -237,7 +235,7 @@ export default function Navigation() {
                   <Link
                     key={item.href}
                     href={item.href}
-                    className={`flex items-center space-x-3 pl-4 py-3 text-sm transition-colors rounded-lg hover:bg-orange-50 dark:hover:bg-orange-900/20 ${
+                    className={`flex items-center space-x-3 pl-4 py-3 text-sm transition-colors rounded-lg hover:bg-orange-50 ${
                       isActive(item.href)
                         ? 'text-tf-orange'
                         : 'text-text-medium hover:text-tf-orange'
@@ -268,18 +266,15 @@ export default function Navigation() {
                 href={item.href}
                 className={`block px-3 py-3 rounded-lg transition-colors ${
                   isActive(item.href)
-                    ? 'text-tf-orange bg-orange-50 dark:bg-orange-900/20'
-                    : 'text-text-medium hover:text-tf-orange hover:bg-orange-50 dark:hover:bg-orange-900/20'
+                    ? 'text-tf-orange bg-orange-50'
+                    : 'text-text-medium hover:text-tf-orange hover:bg-orange-50'
                 }`}
                 onClick={() => setMobileMenuOpen(false)}
               >
                 {item.label}
               </Link>
             ))}
-            <div className="px-3 pt-4 border-t border-gray-200 dark:border-gray-600 mt-2 space-y-3">
-              <div className="flex justify-center">
-                <ThemeToggle />
-              </div>
+            <div className="px-3 pt-4 border-t border-gray-200 mt-2">
               <Link
                 href="/contact"
                 className="btn-primary inline-block w-full text-center"

@@ -51,7 +51,7 @@ export default function Home() {
     <ScrollAnimations>
       <div>
         {/* Hero Section */}
-        <section id="hero" className="bg-gradient-to-br from-tf-blue-light to-white dark:from-gray-900 dark:to-gray-800 py-xxxl geometric-pattern">
+        <section id="hero" className="bg-gradient-to-br from-tf-blue-light to-white py-xxxl geometric-pattern">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-4xl mx-auto">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-text-dark mb-sm leading-tight">
@@ -60,7 +60,7 @@ export default function Home() {
             <p className="text-lg md:text-xl text-text-medium mb-xl max-w-3xl mx-auto leading-relaxed">
               A single gap in critical skills or hard‑to‑hire talent can stall product launches, slow workforce expansion, and bleed tens of thousands in value each month, shaking confidence among customers, investors, and other stakeholders.
             </p>
-            <div className="bg-white dark:bg-gray-800 p-lg rounded-lg shadow-lg dark:shadow-gray-900/20 mb-xl">
+            <div className="bg-white p-lg rounded-lg shadow-lg mb-xl">
               <p className="text-lg font-semibold text-text-dark mb-md">
                 <span className="text-tf-orange font-bold">The Talent Foundation</span> partners with ambitious leaders to design and build the predictable, resilient, and reliable strategic talent capability needed to achieve your critical business objectives.
               </p>
@@ -78,7 +78,7 @@ export default function Home() {
       </section>
 
       {/* Social Proof */}
-      <section className="bg-white dark:bg-gray-900 py-lg">
+      <section className="bg-white py-lg">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h2 className="text-xl font-semibold text-text-medium mb-lg">Some of the companies Adam Kovacs provided his expertise to</h2>
@@ -111,7 +111,7 @@ export default function Home() {
       </section>
 
       {/* Problem Section */}
-      <section id="problem" className="bg-bg-subtle dark:bg-gray-800 py-xxxl">
+      <section id="problem" className="bg-bg-subtle py-xxxl">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl mx-auto reveal-on-scroll">
             <div className="text-center mb-xxl">
@@ -121,7 +121,7 @@ export default function Home() {
               </p>
             </div>
             <Accordion type="single" collapsible className="space-y-md">
-              <AccordionItem value="niche-skills" className="bg-white dark:bg-gray-900 rounded-lg px-lg shadow-sm dark:shadow-gray-900/20 border border-border-light dark:border-gray-600 card-hover">
+              <AccordionItem value="niche-skills" className="bg-white rounded-lg px-lg shadow-sm border border-border-light card-hover">
                 <AccordionTrigger className="hover:no-underline py-lg">
                   <div className="flex items-start gap-lg text-left">
                     <div className="w-12 h-12 bg-gradient-to-br from-tf-orange to-red-500 rounded-lg flex items-center justify-center flex-shrink-0">
@@ -135,7 +135,7 @@ export default function Home() {
                 </AccordionContent>
               </AccordionItem>
 
-              <AccordionItem value="unpredictable" className="bg-white dark:bg-gray-900 rounded-lg px-lg shadow-sm dark:shadow-gray-900/20 border border-border-light dark:border-gray-600 card-hover">
+              <AccordionItem value="unpredictable" className="bg-white rounded-lg px-lg shadow-sm border border-border-light card-hover">
                 <AccordionTrigger className="hover:no-underline py-lg">
                   <div className="flex items-start gap-lg text-left">
                     <div className="w-12 h-12 bg-gradient-to-br from-tf-blue to-blue-600 rounded-lg flex items-center justify-center flex-shrink-0">
@@ -149,7 +149,7 @@ export default function Home() {
                 </AccordionContent>
               </AccordionItem>
 
-              <AccordionItem value="blind" className="bg-white dark:bg-gray-900 rounded-lg px-lg shadow-sm dark:shadow-gray-900/20 border border-border-light dark:border-gray-600 card-hover">
+              <AccordionItem value="blind" className="bg-white rounded-lg px-lg shadow-sm border border-border-light card-hover">
                 <AccordionTrigger className="hover:no-underline py-lg">
                   <div className="flex items-start gap-lg text-left">
                     <div className="w-12 h-12 bg-gradient-to-br from-slate-500 to-gray-600 rounded-lg flex items-center justify-center flex-shrink-0">
@@ -163,7 +163,7 @@ export default function Home() {
                 </AccordionContent>
               </AccordionItem>
 
-              <AccordionItem value="firefighting" className="bg-white dark:bg-gray-900 rounded-lg px-lg shadow-sm dark:shadow-gray-900/20 border border-border-light dark:border-gray-600 card-hover">
+              <AccordionItem value="firefighting" className="bg-white rounded-lg px-lg shadow-sm border border-border-light card-hover">
                 <AccordionTrigger className="hover:no-underline py-lg">
                   <div className="flex items-start gap-lg text-left">
                     <div className="w-12 h-12 bg-gradient-to-br from-amber-500 to-yellow-600 rounded-lg flex items-center justify-center flex-shrink-0">
@@ -187,7 +187,7 @@ export default function Home() {
       </section>
 
       {/* Solution - IIEA Ecosystem */}
-      <section id="solution" className="bg-white dark:bg-gray-900 py-xxxl">
+      <section id="solution" className="bg-white py-xxxl">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-xxl reveal-on-scroll">
             <h2 className="text-3xl md:text-4xl font-bold text-text-dark mb-md">A Purpose-Built Operating System for Your Talent Acquisition</h2>
@@ -196,8 +196,8 @@ export default function Home() {
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-lg mb-xxl">
-            <Link href="/services/illuminate" className="service-card group relative overflow-hidden p-lg rounded-xl shadow-lg dark:shadow-gray-900/20 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 text-center reveal-on-scroll bg-white dark:bg-gray-800">
-              <div className="absolute inset-0 bg-gradient-to-br from-blue-50 to-blue-100 dark:from-blue-900/20 dark:to-blue-800/20 opacity-50 group-hover:opacity-80 transition-opacity"></div>
+            <Link href="/services/illuminate" className="service-card group relative overflow-hidden p-lg rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 text-center reveal-on-scroll bg-white">
+              <div className="absolute inset-0 bg-gradient-to-br from-blue-50 to-blue-100 opacity-50 group-hover:opacity-80 transition-opacity"></div>
               <div className="relative z-10">
                 <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-blue-600 rounded-full flex items-center justify-center mx-auto mb-md group-hover:scale-110 transition-transform duration-300">
                   <Lightbulb className="w-8 h-8 text-white group-hover:animate-pulse" />
@@ -206,8 +206,8 @@ export default function Home() {
                 <p className="text-sm text-text-medium">Predictive market and talent intelligence to gain critical foresight and spot risk early.</p>
               </div>
             </Link>
-            <Link href="/services/innovate" className="service-card group relative overflow-hidden p-lg rounded-xl shadow-lg dark:shadow-gray-900/20 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 text-center reveal-on-scroll bg-white dark:bg-gray-800">
-              <div className="absolute inset-0 bg-gradient-to-br from-orange-50 to-red-50 dark:from-orange-900/20 dark:to-red-900/20 opacity-50 group-hover:opacity-80 transition-opacity"></div>
+            <Link href="/services/innovate" className="service-card group relative overflow-hidden p-lg rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 text-center reveal-on-scroll bg-white">
+              <div className="absolute inset-0 bg-gradient-to-br from-orange-50 to-red-50 opacity-50 group-hover:opacity-80 transition-opacity"></div>
               <div className="relative z-10">
                 <div className="w-16 h-16 bg-gradient-to-br from-orange-500 to-red-500 rounded-full flex items-center justify-center mx-auto mb-md group-hover:scale-110 transition-all duration-300">
                   <Settings className="w-8 h-8 text-white group-hover:animate-spin group-hover:[animation-duration:3s]" />
@@ -216,8 +216,8 @@ export default function Home() {
                 <p className="text-sm text-text-medium">Data‑driven systems and agentic workflows designed for scale and efficiency.</p>
               </div>
             </Link>
-            <Link href="/services/elevate" className="service-card group relative overflow-hidden p-lg rounded-xl shadow-lg dark:shadow-gray-900/20 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 text-center reveal-on-scroll bg-white dark:bg-gray-800">
-              <div className="absolute inset-0 bg-gradient-to-br from-purple-50 to-indigo-50 dark:from-purple-900/20 dark:to-indigo-900/20 opacity-50 group-hover:opacity-80 transition-opacity"></div>
+            <Link href="/services/elevate" className="service-card group relative overflow-hidden p-lg rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 text-center reveal-on-scroll bg-white">
+              <div className="absolute inset-0 bg-gradient-to-br from-purple-50 to-indigo-50 opacity-50 group-hover:opacity-80 transition-opacity"></div>
               <div className="relative z-10">
                 <div className="w-16 h-16 bg-gradient-to-br from-purple-500 to-indigo-600 rounded-full flex items-center justify-center mx-auto mb-md group-hover:scale-110 transition-transform duration-300">
                   <Zap className="w-8 h-8 text-white group-hover:animate-bounce" />
@@ -226,8 +226,8 @@ export default function Home() {
                 <p className="text-sm text-text-medium">Embedding next-generation skills and crucial AI literacy within your team.</p>
               </div>
             </Link>
-            <Link href="/services/accelerate" className="service-card group relative overflow-hidden p-lg rounded-xl shadow-lg dark:shadow-gray-900/20 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 text-center reveal-on-scroll bg-white dark:bg-gray-800">
-              <div className="absolute inset-0 bg-gradient-to-br from-green-50 to-emerald-50 dark:from-green-900/20 dark:to-emerald-900/20 opacity-50 group-hover:opacity-80 transition-opacity"></div>
+            <Link href="/services/accelerate" className="service-card group relative overflow-hidden p-lg rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 text-center reveal-on-scroll bg-white">
+              <div className="absolute inset-0 bg-gradient-to-br from-green-50 to-emerald-50 opacity-50 group-hover:opacity-80 transition-opacity"></div>
               <div className="relative z-10">
                 <div className="w-16 h-16 bg-gradient-to-br from-green-500 to-emerald-600 rounded-full flex items-center justify-center mx-auto mb-md group-hover:scale-110 transition-transform duration-300">
                   <Play className="w-8 h-8 text-white group-hover:scale-75 transition-transform duration-300" />
