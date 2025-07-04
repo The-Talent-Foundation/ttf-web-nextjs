@@ -446,9 +446,9 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <div className="border-t border-gray-700 pt-xxl">
+            <div className="border-t border-gray-700 pt-xxxl">
               <p className="text-white font-semibold mb-lg">Ready to turn talent from constraint to edge?</p>
-              <div className="flex justify-center mb-xxl">
+              <div className="flex justify-center mb-lg">
                 <Link href="/services" className="text-tf-blue-lighter hover:text-tf-orange transition-colors border-b border-tf-blue-lighter pb-1">
                   Explore Our Services
                 </Link>
