@@ -25,17 +25,17 @@
   --radius: 0.5rem;
 
   /* The Talent Foundation Brand Colors */
-  --tf-orange: hsl(11, 76%, 56%);
-  --tf-blue: hsl(203, 98%, 45%);
-  --tf-blue-light: hsl(203, 100%, 96%);
-  --tf-blue-lighter: hsl(203, 100%, 84%);
-  --text-dark: hsl(0, 0%, 20%);
-  --text-medium: hsl(0, 0%, 40%);
-  --text-light: hsl(0, 0%, 60%);
-  --bg-subtle: hsl(220, 13%, 97%);
-  --bg-light: hsl(0, 0%, 100%);
-  --bg-dark: hsl(0, 0%, 10%);
-  --border-light: hsl(0, 0%, 88%);
+  --tf-orange: 11 76% 56%;
+  --tf-blue: 203 98% 45%;
+  --tf-blue-light: 203 100% 96%;
+  --tf-blue-lighter: 203 100% 84%;
+  --text-dark: 0 0% 20%;
+  --text-medium: 0 0% 40%;
+  --text-light: 0 0% 60%;
+  --bg-subtle: 220 13% 97%;
+  --bg-light: 0 0% 100%;
+  --bg-dark: 0 0% 10%;
+  --border-light: 0 0% 88%;
 
   /* Spacing System - 8px increments */
   --space-xs: 4px;
@@ -127,6 +127,7 @@
 }
 
 @layer utilities {
+  /* Text colors */
   .text-tf-orange {
     color: hsl(var(--tf-orange));
   }
@@ -155,6 +156,7 @@
     color: hsl(var(--text-light));
   }
 
+  /* Background colors */
   .bg-tf-orange {
     background-color: hsl(var(--tf-orange));
   }
@@ -183,6 +185,7 @@
     background-color: hsl(var(--bg-dark));
   }
 
+  /* Border colors */
   .border-tf-orange {
     border-color: hsl(var(--tf-orange));
   }
@@ -199,6 +202,7 @@
     border-color: hsl(var(--border-light));
   }
 
+  /* Hover states */
   .hover\:bg-tf-orange:hover {
     background-color: hsl(var(--tf-orange));
   }
@@ -219,6 +223,7 @@
     border-color: hsl(var(--tf-orange));
   }
 
+  /* Focus states */
   .focus\:ring-tf-blue:focus {
     --tw-ring-color: hsl(var(--tf-blue));
   }
@@ -230,19 +235,11 @@
 
 /* Custom button styles */
 .btn-primary {
-  @apply bg-tf-orange text-white px-6 py-3 rounded-md font-semibold transition-colors;
-}
-
-.btn-primary:hover {
-  background-color: hsl(var(--tf-orange) / 0.9);
+  @apply bg-[hsl(var(--tf-orange))] text-white px-6 py-3 rounded-md font-semibold transition-all hover:bg-[hsl(var(--tf-orange))]/90 hover:shadow-lg;
 }
 
 .btn-secondary {
-  @apply border-2 border-tf-blue text-tf-blue px-6 py-3 rounded-md font-semibold transition-colors;
-}
-
-.btn-secondary:hover {
-  @apply bg-tf-blue text-white;
+  @apply border-2 border-[hsl(var(--tf-blue))] text-[hsl(var(--tf-blue))] px-6 py-3 rounded-md font-semibold transition-all hover:bg-[hsl(var(--tf-blue))] hover:text-white;
 }
 
 /* Spacing utilities */

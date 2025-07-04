@@ -91,6 +91,7 @@ This is a full-stack web application for The Talent Foundation, a boutique talen
 ## Changelog
 
 - July 04, 2025. Initial setup
+- Jan 2, 2025. Fixed color system - Updated CSS variables to use HSL component values without hsl() wrapper for proper Tailwind CSS integration. Added custom TF brand colors to tailwind.config.ts. Website now displays The Talent Foundation brand colors (TF Orange #e84e36 and TF Blue #02a7e1) properly across all pages.
 
 ## User Preferences
 

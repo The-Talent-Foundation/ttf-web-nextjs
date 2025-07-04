@@ -61,6 +61,18 @@ export default {
           border: "var(--sidebar-border)",
           ring: "var(--sidebar-ring)",
         },
+        // The Talent Foundation custom colors
+        "tf-orange": "hsl(var(--tf-orange))",
+        "tf-blue": "hsl(var(--tf-blue))",
+        "tf-blue-light": "hsl(var(--tf-blue-light))",
+        "tf-blue-lighter": "hsl(var(--tf-blue-lighter))",
+        "text-dark": "hsl(var(--text-dark))",
+        "text-medium": "hsl(var(--text-medium))",
+        "text-light": "hsl(var(--text-light))",
+        "bg-subtle": "hsl(var(--bg-subtle))",
+        "bg-light": "hsl(var(--bg-light))",
+        "bg-dark": "hsl(var(--bg-dark))",
+        "border-light": "hsl(var(--border-light))",
       },
       keyframes: {
         "accordion-down": {
