@@ -1,5 +1,4 @@
 import { Link } from 'wouter';
-import { useRef } from 'react';
 import { 
   TrendingDown, 
   Users, 
@@ -23,29 +22,27 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
-} from "@/components/ui/carousel";
 import ScrollAnimations from '@/components/ScrollAnimations';
-import Autoplay from "embla-carousel-autoplay";
 
 // Import logo images
 import logo1 from '@assets/egyes-fotor-202407301827_1751590492554.png'; // Amazon
 import logo2 from '@assets/harmas-fotor-2024073018422_1751590492559.png'; // Hinge Health
 import logo3 from '@assets/Fleetio_ideAFrNyyy_0_1751599619994.png'; // Fleetio
 import logo4 from '@assets/kettes-fotor-202407301834_1751590492559.png'; // AWS
-import logo5 from '@assets/360_social_1751599619994.png'; // 360 Social Impact Studios
+import logo5 from '@assets/360_social (1)_1751601458500.png'; // 360 Social Impact Studios
 import logo6 from '@assets/negyes-fotor-20240730175643_1751590492559.png'; // Lyft
 import logo7 from '@assets/otos_1751590492559.png'; // DevMatch
 
 export default function Home() {
-  const autoplayPlugin = useRef(
-    Autoplay({ delay: 2500, stopOnInteraction: true })
-  );
+  const logos = [
+    { src: logo1, alt: "Amazon", name: "Amazon" },
+    { src: logo2, alt: "Hinge Health", name: "Hinge Health" },
+    { src: logo3, alt: "Fleetio", name: "Fleetio" },
+    { src: logo4, alt: "AWS", name: "AWS" },
+    { src: logo5, alt: "360 Social Impact Studios", name: "360 Social Impact Studios" },
+    { src: logo6, alt: "Lyft", name: "Lyft" },
+    { src: logo7, alt: "DevMatch", name: "DevMatch" },
+  ];
 
   return (
     <ScrollAnimations>
@@ -82,60 +79,29 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h2 className="text-xl font-semibold text-text-medium mb-lg">Some of the companies Adam Kovacs provided his expertise to</h2>
-            <div className="max-w-3xl mx-auto">
-              <Carousel 
-                className="w-full"
-                plugins={[autoplayPlugin.current]}
-                onMouseEnter={autoplayPlugin.current.stop}
-                onMouseLeave={autoplayPlugin.current.reset}
-                opts={{
-                  loop: true,
-                  dragFree: true,
-                  slidesToScroll: 1,
-                  skipSnaps: false,
-                  duration: 25
-                }}
-              >
-                <CarouselContent className="-ml-2 md:-ml-4">
-                  <CarouselItem className="basis-1/2 md:basis-1/3 lg:basis-1/4 xl:basis-1/5 pl-2 md:pl-4">
-                    <div className="p-2">
-                      <img src={logo1} alt="Amazon" className="h-16 w-auto mx-auto object-contain grayscale opacity-60 hover:opacity-100 hover:grayscale-0 transition-all duration-300" />
-                    </div>
-                  </CarouselItem>
-                  <CarouselItem className="basis-1/2 md:basis-1/3 lg:basis-1/4 xl:basis-1/5 pl-2 md:pl-4">
-                    <div className="p-2">
-                      <img src={logo2} alt="Hinge Health" className="h-16 w-auto mx-auto object-contain grayscale opacity-60 hover:opacity-100 hover:grayscale-0 transition-all duration-300" />
-                    </div>
-                  </CarouselItem>
-                  <CarouselItem className="basis-1/2 md:basis-1/3 lg:basis-1/4 xl:basis-1/5 pl-2 md:pl-4">
-                    <div className="p-2">
-                      <img src={logo3} alt="Fleetio" className="h-16 w-auto mx-auto object-contain grayscale opacity-60 hover:opacity-100 hover:grayscale-0 transition-all duration-300" />
-                    </div>
-                  </CarouselItem>
-                  <CarouselItem className="basis-1/2 md:basis-1/3 lg:basis-1/4 xl:basis-1/5 pl-2 md:pl-4">
-                    <div className="p-2">
-                      <img src={logo4} alt="AWS" className="h-16 w-auto mx-auto object-contain grayscale opacity-60 hover:opacity-100 hover:grayscale-0 transition-all duration-300" />
-                    </div>
-                  </CarouselItem>
-                  <CarouselItem className="basis-1/2 md:basis-1/3 lg:basis-1/4 xl:basis-1/5 pl-2 md:pl-4">
-                    <div className="p-2">
-                      <img src={logo5} alt="360 Social Impact Studios" className="h-16 w-auto mx-auto object-contain grayscale opacity-60 hover:opacity-100 hover:grayscale-0 transition-all duration-300" />
-                    </div>
-                  </CarouselItem>
-                  <CarouselItem className="basis-1/2 md:basis-1/3 lg:basis-1/4 xl:basis-1/5 pl-2 md:pl-4">
-                    <div className="p-2">
-                      <img src={logo6} alt="Lyft" className="h-16 w-auto mx-auto object-contain grayscale opacity-60 hover:opacity-100 hover:grayscale-0 transition-all duration-300" />
-                    </div>
-                  </CarouselItem>
-                  <CarouselItem className="basis-1/2 md:basis-1/3 lg:basis-1/4 xl:basis-1/5 pl-2 md:pl-4">
-                    <div className="p-2">
-                      <img src={logo7} alt="DevMatch" className="h-16 w-auto mx-auto object-contain grayscale opacity-60 hover:opacity-100 hover:grayscale-0 transition-all duration-300" />
-                    </div>
-                  </CarouselItem>
-                </CarouselContent>
-                <CarouselPrevious className="hidden md:flex" />
-                <CarouselNext className="hidden md:flex" />
-              </Carousel>
+            <div className="max-w-full mx-auto overflow-hidden">
+              <div className="flex animate-scroll">
+                {/* First set of logos */}
+                {logos.map((logo, index) => (
+                  <div key={`first-${index}`} className="flex-shrink-0 w-48 px-8 py-4">
+                    <img 
+                      src={logo.src} 
+                      alt={logo.alt} 
+                      className="h-16 w-auto mx-auto object-contain grayscale opacity-60 hover:opacity-100 hover:grayscale-0 transition-all duration-300" 
+                    />
+                  </div>
+                ))}
+                {/* Duplicate set for seamless loop */}
+                {logos.map((logo, index) => (
+                  <div key={`second-${index}`} className="flex-shrink-0 w-48 px-8 py-4">
+                    <img 
+                      src={logo.src} 
+                      alt={logo.alt} 
+                      className="h-16 w-auto mx-auto object-contain grayscale opacity-60 hover:opacity-100 hover:grayscale-0 transition-all duration-300" 
+                    />
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
         </div>
