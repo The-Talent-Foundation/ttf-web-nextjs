@@ -1,5 +1,5 @@
 import { Link } from 'wouter';
-import { Lightbulb, Search, TrendingUp, AlertTriangle, ArrowRight, CheckCircle2, Brain, Target, ChevronDown, MapPin, Users, DollarSign, Sparkles, BarChart3, Compass, FileText, Zap, Settings, Award, Rocket } from 'lucide-react';
+import { Lightbulb, Search, TrendingUp, AlertTriangle, ArrowRight, CheckCircle2, Brain, Target, ChevronDown, MapPin, Users, DollarSign, Sparkles, BarChart3, Compass, FileText, Zap, Settings, Award, Rocket, Play } from 'lucide-react';
 import {
   Accordion,
   AccordionContent,
@@ -491,7 +491,7 @@ export default function Illuminate() {
             <div className="bg-gradient-to-br from-purple-50 to-indigo-50 p-8 rounded-xl border border-purple-200 hover:border-purple-300 transition-all duration-300 group">
               <div className="text-center mb-6">
                 <div className="w-14 h-14 bg-gradient-to-br from-purple-500 to-indigo-600 rounded-lg flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
-                  <Award className="w-7 h-7 text-white group-hover:rotate-12 transition-transform duration-300" />
+                  <Zap className="w-7 h-7 text-white group-hover:animate-bounce" />
                 </div>
                 <h4 className="text-xl font-bold text-text-dark group-hover:text-purple-700 transition-colors">Guides Elevate</h4>
                 <p className="text-sm font-semibold text-text-medium mt-2">Capability building</p>
@@ -509,7 +509,7 @@ export default function Illuminate() {
             <div className="bg-gradient-to-br from-emerald-50 to-teal-50 p-8 rounded-xl border border-emerald-200 hover:border-emerald-300 transition-all duration-300 group">
               <div className="text-center mb-6">
                 <div className="w-14 h-14 bg-gradient-to-br from-emerald-500 to-teal-600 rounded-lg flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
-                  <Rocket className="w-7 h-7 text-white group-hover:translate-y-[-4px] transition-transform duration-300" />
+                  <Play className="w-7 h-7 text-white group-hover:scale-75 transition-transform duration-300" />
                 </div>
                 <h4 className="text-xl font-bold text-text-dark group-hover:text-emerald-700 transition-colors">Powers Accelerate</h4>
                 <p className="text-sm font-semibold text-text-medium mt-2">Execution excellence</p>
