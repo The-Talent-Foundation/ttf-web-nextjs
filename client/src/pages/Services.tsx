@@ -1,5 +1,5 @@
 import { Link } from 'wouter';
-import { Lightbulb, Settings, Zap, Play, Timer, AlertCircle, Target, TrendingDown, Shield, Building2, ArrowLeftRight, DollarSign, AlertTriangle } from 'lucide-react';
+import { Lightbulb, Settings, Zap, Play, Timer, AlertCircle, Target, TrendingDown, Shield, Building2, ArrowLeftRight, DollarSign, AlertTriangle, MapPin, Users, CheckCircle } from 'lucide-react';
 import {
   Accordion,
   AccordionContent,
@@ -365,38 +365,60 @@ export default function Services() {
       {/* How We Engage */}
       <section className="bg-white py-xxxl">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="max-w-4xl mx-auto">
-            <div className="text-center mb-xxl">
-              <h2 className="text-3xl md:text-4xl font-bold text-text-dark mb-md">Your Path to Enabled Talent Acquisition</h2>
-              <p className="text-lg text-text-medium mb-lg">Flexible Partnership</p>
-              <p className="text-lg text-text-dark">
-                We recognize that complex challenges often demand immediate action alongside strategic initiatives. Our partnership model is designed for this reality, meeting you where your needs are most critical while always guiding you toward sustainable capability growth.
-              </p>
-            </div>
-            <div className="bg-gradient-to-r from-tf-blue/5 to-tf-orange/5 p-xxl rounded-lg mb-xxl border border-tf-blue/20">
-              <div className="flex items-start gap-lg mb-lg">
-                <div className="w-12 h-12 bg-gradient-to-br from-tf-blue to-tf-blue-dark rounded-full flex items-center justify-center flex-shrink-0">
-                  <Settings className="w-6 h-6 text-white animate-pulse" />
+          <div className="text-center max-w-4xl mx-auto mb-xxl">
+            <h2 className="text-3xl md:text-4xl font-bold text-text-dark mb-lg">Your Path to Enabled Talent Acquisition</h2>
+            <p className="text-xl text-text-medium mb-md">Flexible Partnership</p>
+            <p className="text-lg text-text-dark leading-relaxed">
+              We recognize that complex challenges often demand immediate action alongside strategic initiatives. Our partnership model is designed for this reality, meeting you where your needs are most critical while always guiding you toward sustainable capability growth.
+            </p>
+          </div>
+          
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-xl mb-xxl">
+            <div className="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 group">
+              <div className="text-center mb-6">
+                <div className="w-16 h-16 bg-gradient-to-br from-tf-blue to-blue-600 rounded-lg flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
+                  <MapPin className="w-8 h-8 text-white" />
                 </div>
-                <div>
-                  <h3 className="text-xl font-bold text-text-dark mb-md">Flexible Partnership Approach</h3>
-                  <p className="text-text-dark mb-lg">
-                    Engagements start with a focused diagnostic to create a clear roadmap: perhaps an <span className="font-semibold text-tf-blue">Illuminate</span> deep-dive revealing market realities or an <span className="font-semibold text-tf-blue">Innovate</span> assessment pinpointing process bottlenecks. Based on your needs, we can deploy <span className="font-semibold text-tf-blue">Accelerate</span> for immediate, expert execution on urgent priorities. While <em>concurrently</em> implementing foundational <span className="font-semibold text-tf-blue">Innovate</span> process improvements and delivering targeted <span className="font-semibold text-tf-blue">Elevate</span> capability building in your teams to ensure lasting impact.
-                  </p>
-                </div>
+                <h3 className="text-2xl font-bold text-text-dark group-hover:text-tf-blue transition-colors">Flexible Partnership Approach</h3>
               </div>
-              <div className="border-t border-tf-orange/30 pt-lg">
-                <div className="flex items-start gap-lg">
-                  <div className="w-12 h-12 bg-gradient-to-br from-tf-orange to-red-500 rounded-full flex items-center justify-center flex-shrink-0">
-                    <Lightbulb className="w-6 h-6 text-white" />
-                  </div>
-                  <div>
-                    <h4 className="text-lg font-bold text-tf-orange mb-md">The Guiding Principle: Strategic Enablement</h4>
-                    <p className="text-text-dark font-medium">
-                      Regardless of the starting point, our commitment extends beyond short-term fixes. Every interaction emphasizes <span className="font-semibold text-tf-blue">transparent knowledge transfer</span> and practical skill building. We measure our success by <span className="font-semibold text-tf-blue">your team's increasing self-sufficiency</span> and the creation of a robust internal talent engine that provides enduring <span className="font-semibold text-tf-blue">strategic control</span>.
-                    </p>
-                  </div>
+              <div className="space-y-4">
+                <p className="text-text-medium leading-relaxed">
+                  Engagements start with a focused diagnostic to create a clear roadmap: perhaps an <span className="font-semibold text-tf-blue">Illuminate</span> deep-dive revealing market realities or an <span className="font-semibold text-tf-orange">Innovate</span> assessment pinpointing process bottlenecks.
+                </p>
+                <p className="text-text-medium leading-relaxed">
+                  Based on your needs, we can deploy <span className="font-semibold text-green-600">Accelerate</span> for immediate, expert execution on urgent priorities. While <em>concurrently</em> implementing foundational <span className="font-semibold text-tf-orange">Innovate</span> process improvements and delivering targeted <span className="font-semibold text-purple-600">Elevate</span> capability building in your teams to ensure lasting impact.
+                </p>
+              </div>
+            </div>
+            
+            <div className="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 group">
+              <div className="text-center mb-6">
+                <div className="w-16 h-16 bg-gradient-to-br from-tf-orange to-red-500 rounded-lg flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
+                  <Target className="w-8 h-8 text-white" />
                 </div>
+                <h3 className="text-2xl font-bold text-text-dark group-hover:text-tf-orange transition-colors">The Guiding Principle: Strategic Enablement</h3>
+              </div>
+              <div className="space-y-4">
+                <p className="text-text-medium leading-relaxed">
+                  Regardless of the starting point, our commitment extends beyond short-term fixes. Every interaction emphasizes <span className="font-semibold text-text-dark">transparent knowledge transfer</span> and practical skill building.
+                </p>
+                <p className="text-text-medium leading-relaxed">
+                  We measure our success by <span className="font-semibold text-text-dark">your team's increasing self-sufficiency</span> and the creation of a robust internal talent engine that provides enduring <span className="font-semibold text-text-dark">strategic control</span>.
+                </p>
+              </div>
+            </div>
+          </div>
+          
+          <div className="bg-gradient-to-r from-tf-blue/5 to-tf-orange/5 p-8 rounded-xl border border-tf-blue/20">
+            <div className="flex flex-col md:flex-row items-start md:items-center gap-6">
+              <div className="w-12 h-12 bg-gradient-to-br from-emerald-500 to-teal-600 rounded-lg flex items-center justify-center flex-shrink-0">
+                <CheckCircle className="w-6 h-6 text-white" />
+              </div>
+              <div className="flex-1">
+                <h4 className="text-lg font-bold text-text-dark mb-2">Our Commitment</h4>
+                <p className="text-text-medium leading-relaxed">
+                  Every engagement is designed to build your internal capabilities while delivering immediate value. We don't just solve problems—we transfer the knowledge and systems that prevent them from recurring.
+                </p>
               </div>
             </div>
           </div>
