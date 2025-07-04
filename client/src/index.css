@@ -89,6 +89,19 @@
   --destructive-foreground: hsl(0, 0%, 98%);
   --ring: hsl(240, 4.9%, 83.9%);
   --radius: 0.5rem;
+
+  /* The Talent Foundation Dark Mode Colors */
+  --tf-orange: 11 76% 60%;
+  --tf-blue: 203 98% 50%;
+  --tf-blue-light: 240 3.7% 15.9%;
+  --tf-blue-lighter: 240 5% 25%;
+  --text-dark: 0 0% 95%;
+  --text-medium: 0 0% 75%;
+  --text-light: 0 0% 55%;
+  --bg-subtle: 240 3.7% 8%;
+  --bg-light: 240 10% 3.9%;
+  --bg-dark: 0 0% 10%;
+  --border-light: 240 3.7% 15.9%;
 }
 
 @layer base {
@@ -235,11 +248,11 @@
 
 /* Custom button styles */
 .btn-primary {
-  @apply bg-[hsl(var(--tf-orange))] text-white px-6 py-3 rounded-md font-semibold transition-all hover:bg-[hsl(var(--tf-orange))]/90 hover:shadow-lg;
+  @apply bg-[hsl(var(--tf-orange))] text-white px-6 py-3 rounded-md font-semibold transition-all hover:bg-[hsl(var(--tf-orange))]/90 hover:shadow-lg dark:shadow-gray-900/20;
 }
 
 .btn-secondary {
-  @apply border-2 border-[hsl(var(--tf-blue))] text-[hsl(var(--tf-blue))] px-6 py-3 rounded-md font-semibold transition-all hover:bg-[hsl(var(--tf-blue))] hover:text-white;
+  @apply border-2 border-[hsl(var(--tf-blue))] text-[hsl(var(--tf-blue))] px-6 py-3 rounded-md font-semibold transition-all hover:bg-[hsl(var(--tf-blue))] hover:text-white dark:border-[hsl(var(--tf-blue))] dark:text-[hsl(var(--tf-blue))];
 }
 
 /* Spacing utilities */
@@ -314,6 +327,13 @@
     radial-gradient(circle at 80% 80%, rgba(2, 167, 225, 0.1) 0%, transparent 50%),
     radial-gradient(circle at 40% 80%, rgba(232, 78, 54, 0.05) 0%, transparent 50%);
   z-index: 0;
+}
+
+.dark .geometric-pattern::before {
+  background-image: 
+    radial-gradient(circle at 20% 50%, rgba(232, 78, 54, 0.05) 0%, transparent 50%),
+    radial-gradient(circle at 80% 80%, rgba(2, 167, 225, 0.05) 0%, transparent 50%),
+    radial-gradient(circle at 40% 80%, rgba(232, 78, 54, 0.03) 0%, transparent 50%);
 }
 
 .geometric-pattern > * {
