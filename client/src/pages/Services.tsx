@@ -1,5 +1,5 @@
 import { Link } from 'wouter';
-import { Lightbulb, Settings, Zap, Play } from 'lucide-react';
+import { Lightbulb, Settings, Zap, Play, Timer, AlertCircle } from 'lucide-react';
 import {
   Accordion,
   AccordionContent,
@@ -46,59 +46,59 @@ export default function Services() {
               <p className="text-lg text-text-medium">The symptoms are painfully familiar:</p>
             </div>
             <Accordion type="single" collapsible className="space-y-md">
-              <AccordionItem value="stall" className="bg-white rounded-lg px-lg shadow-sm hover:shadow-lg transition-all duration-300">
-                <AccordionTrigger className="hover:no-underline group">
-                  <div className="flex items-center gap-lg">
-                    <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-blue-600 rounded-full flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform duration-300">
-                      <Lightbulb className="w-6 h-6 text-white group-hover:animate-pulse" />
+              <AccordionItem value="stall" className="bg-white rounded-lg px-lg shadow-sm border border-border-light card-hover">
+                <AccordionTrigger className="hover:no-underline py-lg">
+                  <div className="flex items-start gap-lg text-left">
+                    <div className="w-12 h-12 bg-gradient-to-br from-red-500 to-orange-600 rounded-lg flex items-center justify-center flex-shrink-0">
+                      <Timer className="h-6 w-6 text-white" />
                     </div>
-                    <h3 className="font-semibold text-text-dark text-left">Strategic projects stall while niche roles sit vacant.</h3>
+                    <h3 className="font-semibold text-text-dark text-lg">Strategic projects stall while niche roles sit vacant.</h3>
                   </div>
                 </AccordionTrigger>
-                <AccordionContent className="text-text-medium pl-20">
-                  Are hidden skill gaps dragging release and launch dates while gifting market share to faster rivals?
+                <AccordionContent className="pl-20 pr-lg pb-md pt-xs text-text-medium text-base leading-relaxed">
+                  Are <span className="font-semibold text-text-dark">hidden skill gaps</span> dragging release and launch dates while <span className="font-semibold text-text-dark">gifting market share to faster rivals</span>?
                 </AccordionContent>
               </AccordionItem>
 
-              <AccordionItem value="burnout" className="bg-white rounded-lg px-lg shadow-sm hover:shadow-lg transition-all duration-300">
-                <AccordionTrigger className="hover:no-underline group">
-                  <div className="flex items-center gap-lg">
-                    <div className="w-12 h-12 bg-gradient-to-br from-orange-500 to-red-500 rounded-full flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform duration-300">
-                      <Settings className="w-6 h-6 text-white group-hover:rotate-180 transition-transform duration-700" />
+              <AccordionItem value="burnout" className="bg-white rounded-lg px-lg shadow-sm border border-border-light card-hover">
+                <AccordionTrigger className="hover:no-underline py-lg">
+                  <div className="flex items-start gap-lg text-left">
+                    <div className="w-12 h-12 bg-gradient-to-br from-tf-blue to-blue-600 rounded-lg flex items-center justify-center flex-shrink-0">
+                      <Zap className="h-6 w-6 text-white" />
                     </div>
-                    <h3 className="font-semibold text-text-dark text-left">Chaotic hiring burns out teams and drives attrition.</h3>
+                    <h3 className="font-semibold text-text-dark text-lg">Chaotic hiring burns out teams and drives attrition.</h3>
                   </div>
                 </AccordionTrigger>
-                <AccordionContent className="text-text-medium pl-20">
-                  Are urgent re-prioritisations forcing recruiters and managers into burnout, driving attrition rates higher?
+                <AccordionContent className="pl-20 pr-lg pb-md pt-xs text-text-medium text-base leading-relaxed">
+                  Are <span className="font-semibold text-text-dark">urgent re-prioritisations</span> forcing recruiters and managers into burnout, <span className="font-semibold text-text-dark">driving attrition rates higher</span>?
                 </AccordionContent>
               </AccordionItem>
 
-              <AccordionItem value="underdeliver" className="bg-white rounded-lg px-lg shadow-sm hover:shadow-lg transition-all duration-300">
-                <AccordionTrigger className="hover:no-underline group">
-                  <div className="flex items-center gap-lg">
-                    <div className="w-12 h-12 bg-gradient-to-br from-purple-500 to-indigo-600 rounded-full flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform duration-300">
-                      <Zap className="w-6 h-6 text-white group-hover:animate-bounce" />
+              <AccordionItem value="underdeliver" className="bg-white rounded-lg px-lg shadow-sm border border-border-light card-hover">
+                <AccordionTrigger className="hover:no-underline py-lg">
+                  <div className="flex items-start gap-lg text-left">
+                    <div className="w-12 h-12 bg-gradient-to-br from-slate-500 to-gray-600 rounded-lg flex items-center justify-center flex-shrink-0">
+                      <Settings className="h-6 w-6 text-white" />
                     </div>
-                    <h3 className="font-semibold text-text-dark text-left">Costly tools, process improvements, and training under‑deliver.</h3>
+                    <h3 className="font-semibold text-text-dark text-lg">Costly tools, process improvements, and training under‑deliver.</h3>
                   </div>
                 </AccordionTrigger>
-                <AccordionContent className="text-text-medium pl-20">
-                  Expensive tech sits underutilized, team members don't use the learning from their last training, resulting in poor ROI compared to promised values?
+                <AccordionContent className="pl-20 pr-lg pb-md pt-xs text-text-medium text-base leading-relaxed">
+                  Expensive tech sits <span className="font-semibold text-text-dark">underutilized</span>, team members don't use the learning from their last training, resulting in <span className="font-semibold text-text-dark">poor ROI compared to promised values</span>?
                 </AccordionContent>
               </AccordionItem>
 
-              <AccordionItem value="bottlenecks" className="bg-white rounded-lg px-lg shadow-sm hover:shadow-lg transition-all duration-300">
-                <AccordionTrigger className="hover:no-underline group">
-                  <div className="flex items-center gap-lg">
-                    <div className="w-12 h-12 bg-gradient-to-br from-green-500 to-emerald-600 rounded-full flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform duration-300">
-                      <Play className="w-6 h-6 text-white group-hover:scale-75 transition-transform duration-300" />
+              <AccordionItem value="bottlenecks" className="bg-white rounded-lg px-lg shadow-sm border border-border-light card-hover">
+                <AccordionTrigger className="hover:no-underline py-lg">
+                  <div className="flex items-start gap-lg text-left">
+                    <div className="w-12 h-12 bg-gradient-to-br from-amber-500 to-yellow-600 rounded-lg flex items-center justify-center flex-shrink-0">
+                      <AlertCircle className="h-6 w-6 text-white" />
                     </div>
-                    <h3 className="font-semibold text-text-dark text-left">Perpetual bottlenecks are holding you back.</h3>
+                    <h3 className="font-semibold text-text-dark text-lg">Perpetual bottlenecks are holding you back.</h3>
                   </div>
                 </AccordionTrigger>
-                <AccordionContent className="text-text-medium pl-20">
-                  You fix sourcing, to discover that assessments are broken. Fix assessment and onboarding fails. The constraints shift, but the delays persist?
+                <AccordionContent className="pl-20 pr-lg pb-md pt-xs text-text-medium text-base leading-relaxed">
+                  You fix sourcing, to discover that assessments are broken. <span className="font-semibold text-text-dark">Fix assessment and onboarding fails</span>. The constraints shift, but <span className="font-semibold text-text-dark">the delays persist</span>?
                 </AccordionContent>
               </AccordionItem>
             </Accordion>
@@ -272,45 +272,45 @@ export default function Services() {
               </p>
             </div>
             <Accordion type="single" collapsible className="mb-xxl space-y-md">
-              <AccordionItem value="treadmill" className="bg-white rounded-lg px-lg shadow-sm hover:shadow-lg transition-all duration-300">
-                <AccordionTrigger className="hover:no-underline group">
-                  <div className="flex items-center gap-lg">
-                    <div className="w-12 h-12 bg-gradient-to-br from-orange-500 to-red-500 rounded-full flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform duration-300">
-                      <Settings className="w-6 h-6 text-white group-hover:rotate-180 transition-transform duration-700" />
+              <AccordionItem value="treadmill" className="bg-white rounded-lg px-lg shadow-sm border border-border-light card-hover">
+                <AccordionTrigger className="hover:no-underline py-lg">
+                  <div className="flex items-start gap-lg text-left">
+                    <div className="w-12 h-12 bg-gradient-to-br from-orange-500 to-red-500 rounded-lg flex items-center justify-center flex-shrink-0">
+                      <Settings className="h-6 w-6 text-white" />
                     </div>
-                    <h3 className="font-semibold text-text-dark text-left">The Transactional Treadmill</h3>
+                    <h3 className="font-semibold text-text-dark text-lg">The Transactional Treadmill</h3>
                   </div>
                 </AccordionTrigger>
-                <AccordionContent className="text-text-medium pl-20">
-                  Ineffective processes lead to endless cycles of repeated agency fees (+15-25%) for hard-to-fill roles, contractor premiums (often exceeding 50%), ongoing replacement costs due to poor hiring decisions, and lost productivity from churn.
+                <AccordionContent className="pl-20 pr-lg pb-md pt-xs text-text-medium text-base leading-relaxed">
+                  Ineffective processes lead to endless cycles of <span className="font-semibold text-text-dark">repeated agency fees (+15-25%)</span> for hard-to-fill roles, contractor premiums (often exceeding 50%), ongoing replacement costs due to poor hiring decisions, and <span className="font-semibold text-text-dark">lost productivity from churn</span>.
                 </AccordionContent>
               </AccordionItem>
 
-              <AccordionItem value="failure" className="bg-white rounded-lg px-lg shadow-sm hover:shadow-lg transition-all duration-300">
-                <AccordionTrigger className="hover:no-underline group">
-                  <div className="flex items-center gap-lg">
-                    <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-blue-600 rounded-full flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform duration-300">
-                      <Lightbulb className="w-6 h-6 text-white group-hover:animate-pulse" />
+              <AccordionItem value="failure" className="bg-white rounded-lg px-lg shadow-sm border border-border-light card-hover">
+                <AccordionTrigger className="hover:no-underline py-lg">
+                  <div className="flex items-start gap-lg text-left">
+                    <div className="w-12 h-12 bg-gradient-to-br from-tf-blue to-blue-600 rounded-lg flex items-center justify-center flex-shrink-0">
+                      <Lightbulb className="h-6 w-6 text-white" />
                     </div>
-                    <h3 className="font-semibold text-text-dark text-left">The Cost of Failure</h3>
+                    <h3 className="font-semibold text-text-dark text-lg">The Cost of Failure</h3>
                   </div>
                 </AccordionTrigger>
-                <AccordionContent className="text-text-medium pl-20">
-                  What's the <em>true</em> financial impact of a 6-month delay due to talent gaps? The <span className="font-semibold text-tf-orange">opportunity cost</span> is often <span className="font-semibold text-tf-orange">in the millions</span> in lost pipeline revenue. You could be losing key market share due to a lack of top-tier GTM talent driving MRR up.
+                <AccordionContent className="pl-20 pr-lg pb-md pt-xs text-text-medium text-base leading-relaxed">
+                  What's the <em>true</em> financial impact of a 6-month delay due to talent gaps? The <span className="font-semibold text-tf-orange">opportunity cost</span> is often <span className="font-semibold text-tf-orange">in the millions</span> in lost pipeline revenue. You could be losing <span className="font-semibold text-text-dark">key market share</span> due to a lack of top-tier GTM talent driving MRR up.
                 </AccordionContent>
               </AccordionItem>
 
-              <AccordionItem value="risk-premium" className="bg-white rounded-lg px-lg shadow-sm hover:shadow-lg transition-all duration-300">
-                <AccordionTrigger className="hover:no-underline group">
-                  <div className="flex items-center gap-lg">
-                    <div className="w-12 h-12 bg-gradient-to-br from-purple-500 to-indigo-600 rounded-full flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform duration-300">
-                      <Zap className="w-6 h-6 text-white group-hover:animate-bounce" />
+              <AccordionItem value="risk-premium" className="bg-white rounded-lg px-lg shadow-sm border border-border-light card-hover">
+                <AccordionTrigger className="hover:no-underline py-lg">
+                  <div className="flex items-start gap-lg text-left">
+                    <div className="w-12 h-12 bg-gradient-to-br from-purple-500 to-indigo-600 rounded-lg flex items-center justify-center flex-shrink-0">
+                      <Zap className="h-6 w-6 text-white" />
                     </div>
-                    <h3 className="font-semibold text-text-dark text-left">The Strategic Risk Premium</h3>
+                    <h3 className="font-semibold text-text-dark text-lg">The Strategic Risk Premium</h3>
                   </div>
                 </AccordionTrigger>
-                <AccordionContent className="text-text-medium pl-20">
-                  Operating without a predictable talent engine forces you to carry a constant, unquantified risk premium, adding ambiguity to every major growth initiative. Surprise compliance fines, missed local labor laws, burnout-fueled attrition, the question becomes "when" and not "if."
+                <AccordionContent className="pl-20 pr-lg pb-md pt-xs text-text-medium text-base leading-relaxed">
+                  Operating without a predictable talent engine forces you to carry a <span className="font-semibold text-text-dark">constant, unquantified risk premium</span>, adding ambiguity to every major growth initiative. Surprise compliance fines, missed local labor laws, <span className="font-semibold text-text-dark">burnout-fueled attrition</span>, the question becomes "when" and not "if."
                 </AccordionContent>
               </AccordionItem>
             </Accordion>
