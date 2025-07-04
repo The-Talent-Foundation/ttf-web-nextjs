@@ -309,7 +309,7 @@ export default function Home() {
       <section className="bg-white py-xxxl">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-3xl md:text-4xl font-bold text-text-dark mb-md">Who We Help</h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-text-dark mb-md">When We Help</h2>
             <p className="text-lg text-text-medium mb-xxl">
               The Talent Foundation specializes in partnering with ambitious organizations facing critical talent challenges associated with:
             </p>
