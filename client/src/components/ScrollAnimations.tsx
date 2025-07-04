@@ -124,10 +124,10 @@ export default function ScrollAnimations({ children }: ScrollAnimationsProps) {
         {['hero', 'problem', 'solution', 'benefits'].map((section, index) => (
           <div
             key={section}
-            className={`w-3 h-3 rounded-full transition-all duration-300 ${
+            className={`w-3 h-3 rounded-full transition-all duration-300 border-2 ${
               currentSection === section 
-                ? 'bg-tf-orange scale-125' 
-                : 'bg-tf-blue-light hover:bg-tf-blue'
+                ? 'bg-tf-orange border-tf-orange scale-125 shadow-lg' 
+                : 'bg-white border-gray-400 hover:border-tf-blue hover:bg-tf-blue-light shadow-md'
             }`}
             title={section.charAt(0).toUpperCase() + section.slice(1)}
           />

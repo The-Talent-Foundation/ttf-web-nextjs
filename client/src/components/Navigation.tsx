@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'wouter';
 import { 
   Menu, 
@@ -25,6 +25,30 @@ import logoImage from '@assets/download_1751590582407.png';
 export default function Navigation() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [location] = useLocation();
+  const [isVisible, setIsVisible] = useState(true);
+  const [lastScrollY, setLastScrollY] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentScrollY = window.scrollY;
+      
+      if (currentScrollY < 50) {
+        // Always show nav when at top
+        setIsVisible(true);
+      } else if (currentScrollY < lastScrollY) {
+        // Scrolling up - show nav
+        setIsVisible(true);
+      } else if (currentScrollY > lastScrollY && currentScrollY > 150) {
+        // Scrolling down past threshold - hide nav
+        setIsVisible(false);
+      }
+      
+      setLastScrollY(currentScrollY);
+    };
+
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, [lastScrollY]);
 
   const navItems = [
     { href: '/', label: 'Home' },
@@ -73,7 +97,9 @@ export default function Navigation() {
   };
 
   return (
-    <nav className="bg-white border-b border-border-light sticky top-0 z-50">
+    <nav className={`bg-white border-b border-border-light fixed top-0 left-0 right-0 z-50 transition-transform duration-300 ease-in-out ${
+      isVisible ? 'translate-y-0' : '-translate-y-full'
+    }`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <div className="flex items-center">
