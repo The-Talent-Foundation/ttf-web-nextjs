@@ -130,7 +130,7 @@ export default function Home() {
                     <h3 className="font-semibold text-text-dark text-lg">Niche‑skill gaps stall product launches.</h3>
                   </div>
                 </AccordionTrigger>
-                <AccordionContent className="pl-20 pr-lg pb-lg text-text-medium leading-relaxed">
+                <AccordionContent className="pl-20 pr-lg pb-md text-text-medium leading-relaxed">
                   Are <span className="font-semibold text-text-dark">elusive technical or specialized skills</span> delaying crucial product development or market expansion, <span className="font-semibold text-text-dark">costing you market advantage</span>?
                 </AccordionContent>
               </AccordionItem>
@@ -138,13 +138,13 @@ export default function Home() {
               <AccordionItem value="unpredictable" className="bg-white rounded-lg px-lg shadow-sm border border-border-light card-hover">
                 <AccordionTrigger className="hover:no-underline py-lg">
                   <div className="flex items-start gap-lg text-left">
-                    <div className="w-12 h-12 bg-gradient-to-br from-tf-blue to-blue-600 rounded-lg flex items-center justify-center flex-shrink-0">
+                    <div className="w-12 h-12 bg-gradient-to-br from-tf-orange to-red-500 rounded-lg flex items-center justify-center flex-shrink-0">
                       <Infinity className="h-6 w-6 text-white" />
                     </div>
                     <h3 className="font-semibold text-text-dark text-lg">Unpredictable hiring wrecks delivery timelines.</h3>
                   </div>
                 </AccordionTrigger>
-                <AccordionContent className="pl-20 pr-lg pb-lg text-text-medium leading-relaxed">
+                <AccordionContent className="pl-20 pr-lg pb-md text-text-medium leading-relaxed">
                   Is <span className="font-semibold text-text-dark">chaotic and unpredictable hiring</span> velocity and inconsistent quality jeopardizing delivery timelines or crucial goals, silently erasing your planned ROI?
                 </AccordionContent>
               </AccordionItem>
@@ -152,13 +152,13 @@ export default function Home() {
               <AccordionItem value="blind" className="bg-white rounded-lg px-lg shadow-sm border border-border-light card-hover">
                 <AccordionTrigger className="hover:no-underline py-lg">
                   <div className="flex items-start gap-lg text-left">
-                    <div className="w-12 h-12 bg-gradient-to-br from-purple-500 to-indigo-600 rounded-lg flex items-center justify-center flex-shrink-0">
+                    <div className="w-12 h-12 bg-gradient-to-br from-tf-orange to-red-500 rounded-lg flex items-center justify-center flex-shrink-0">
                       <Brain className="h-6 w-6 text-white" />
                     </div>
                     <h3 className="font-semibold text-text-dark text-lg">Running blind without talent market intelligence.</h3>
                   </div>
                 </AccordionTrigger>
-                <AccordionContent className="pl-20 pr-lg pb-lg text-text-medium leading-relaxed">
+                <AccordionContent className="pl-20 pr-lg pb-md text-text-medium leading-relaxed">
                   Is <span className="font-semibold text-text-dark">expansion or workforce‑growth planning</span> built on guesswork, forcing risky bets on locations, salaries, and timelines that explode later?
                 </AccordionContent>
               </AccordionItem>
@@ -166,13 +166,13 @@ export default function Home() {
               <AccordionItem value="firefighting" className="bg-white rounded-lg px-lg shadow-sm border border-border-light card-hover">
                 <AccordionTrigger className="hover:no-underline py-lg">
                   <div className="flex items-start gap-lg text-left">
-                    <div className="w-12 h-12 bg-gradient-to-br from-green-500 to-emerald-600 rounded-lg flex items-center justify-center flex-shrink-0">
+                    <div className="w-12 h-12 bg-gradient-to-br from-tf-orange to-red-500 rounded-lg flex items-center justify-center flex-shrink-0">
                       <AlertTriangle className="h-6 w-6 text-white" />
                     </div>
                     <h3 className="font-semibold text-text-dark text-lg">Your team is stuck in constant firefighting mode.</h3>
                   </div>
                 </AccordionTrigger>
-                <AccordionContent className="pl-20 pr-lg pb-lg text-text-medium leading-relaxed">
+                <AccordionContent className="pl-20 pr-lg pb-md text-text-medium leading-relaxed">
                   Are nonstop <span className="font-semibold text-text-dark">last‑minute urgent hires</span> dragging leaders into interview marathons and draining team morale because key roles still can't be staffed on schedule?
                 </AccordionContent>
               </AccordionItem>
@@ -210,7 +210,7 @@ export default function Home() {
               <div className="absolute inset-0 bg-gradient-to-br from-orange-50 to-red-50 opacity-50 group-hover:opacity-80 transition-opacity"></div>
               <div className="relative z-10">
                 <div className="w-16 h-16 bg-gradient-to-br from-orange-500 to-red-500 rounded-full flex items-center justify-center mx-auto mb-md group-hover:scale-110 transition-all duration-300">
-                  <Settings className="w-8 h-8 text-white group-hover:animate-spin" />
+                  <Settings className="w-8 h-8 text-white group-hover:animate-slow-spin" />
                 </div>
                 <h3 className="font-semibold text-text-dark mb-xs group-hover:text-orange-700 transition-colors">Innovate</h3>
                 <p className="text-sm text-text-medium">Data‑driven systems and agentic workflows designed for scale and efficiency.</p>
