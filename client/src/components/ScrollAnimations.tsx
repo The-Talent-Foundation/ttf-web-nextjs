@@ -56,7 +56,15 @@ export default function ScrollAnimations({ children }: ScrollAnimationsProps) {
     };
 
     window.addEventListener('scroll', handleScroll);
-    handleScroll(); // Initial call
+    
+    // Delayed initial call to ensure DOM is ready
+    const initialCheck = () => {
+      handleScroll();
+      // Check again after a short delay to catch any elements that weren't ready
+      setTimeout(handleScroll, 100);
+    };
+    
+    initialCheck();
 
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);

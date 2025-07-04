@@ -75,29 +75,29 @@ export default function Home() {
       </section>
 
       {/* Social Proof */}
-      <section className="bg-white py-xl">
+      <section className="bg-white py-lg">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h2 className="text-xl font-semibold text-text-medium mb-lg">Some of the companies Adam Kovacs provided his expertise to</h2>
             <div className="max-w-full mx-auto overflow-hidden">
-              <div className="flex animate-scroll">
+              <div className="flex animate-scroll items-center">
                 {/* First set of logos */}
                 {logos.map((logo, index) => (
-                  <div key={`first-${index}`} className="flex-shrink-0 w-48 px-8 py-4">
+                  <div key={`first-${index}`} className="flex-shrink-0 w-40 px-6 py-2">
                     <img 
                       src={logo.src} 
                       alt={logo.alt} 
-                      className="h-16 w-auto mx-auto object-contain grayscale opacity-60 hover:opacity-100 hover:grayscale-0 transition-all duration-300" 
+                      className="h-12 w-auto mx-auto object-contain grayscale opacity-60 hover:opacity-100 hover:grayscale-0 transition-all duration-300" 
                     />
                   </div>
                 ))}
                 {/* Duplicate set for seamless loop */}
                 {logos.map((logo, index) => (
-                  <div key={`second-${index}`} className="flex-shrink-0 w-48 px-8 py-4">
+                  <div key={`second-${index}`} className="flex-shrink-0 w-40 px-6 py-2">
                     <img 
                       src={logo.src} 
                       alt={logo.alt} 
-                      className="h-16 w-auto mx-auto object-contain grayscale opacity-60 hover:opacity-100 hover:grayscale-0 transition-all duration-300" 
+                      className="h-12 w-auto mx-auto object-contain grayscale opacity-60 hover:opacity-100 hover:grayscale-0 transition-all duration-300" 
                     />
                   </div>
                 ))}
