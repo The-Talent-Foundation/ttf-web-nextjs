@@ -210,7 +210,7 @@ export default function Home() {
               <div className="absolute inset-0 bg-gradient-to-br from-orange-50 to-red-50 opacity-50 group-hover:opacity-80 transition-opacity"></div>
               <div className="relative z-10">
                 <div className="w-16 h-16 bg-gradient-to-br from-orange-500 to-red-500 rounded-full flex items-center justify-center mx-auto mb-md group-hover:scale-110 transition-all duration-300">
-                  <Settings className="w-8 h-8 text-white group-hover:animate-spin group-hover:[animation-duration:2s]" />
+                  <Settings className="w-8 h-8 text-white group-hover:animate-slow-spin" />
                 </div>
                 <h3 className="font-semibold text-text-dark mb-xs group-hover:text-orange-700 transition-colors">Innovate</h3>
                 <p className="text-sm text-text-medium">Data‑driven systems and agentic workflows designed for scale and efficiency.</p>
