@@ -138,7 +138,7 @@ export default function Home() {
               <AccordionItem value="unpredictable" className="bg-white rounded-lg px-lg shadow-sm border border-border-light card-hover">
                 <AccordionTrigger className="hover:no-underline py-lg">
                   <div className="flex items-start gap-lg text-left">
-                    <div className="w-12 h-12 bg-gradient-to-br from-tf-orange to-red-500 rounded-lg flex items-center justify-center flex-shrink-0">
+                    <div className="w-12 h-12 bg-gradient-to-br from-tf-blue to-blue-600 rounded-lg flex items-center justify-center flex-shrink-0">
                       <Infinity className="h-6 w-6 text-white" />
                     </div>
                     <h3 className="font-semibold text-text-dark text-lg">Unpredictable hiring wrecks delivery timelines.</h3>
@@ -152,7 +152,7 @@ export default function Home() {
               <AccordionItem value="blind" className="bg-white rounded-lg px-lg shadow-sm border border-border-light card-hover">
                 <AccordionTrigger className="hover:no-underline py-lg">
                   <div className="flex items-start gap-lg text-left">
-                    <div className="w-12 h-12 bg-gradient-to-br from-tf-orange to-red-500 rounded-lg flex items-center justify-center flex-shrink-0">
+                    <div className="w-12 h-12 bg-gradient-to-br from-slate-500 to-gray-600 rounded-lg flex items-center justify-center flex-shrink-0">
                       <Brain className="h-6 w-6 text-white" />
                     </div>
                     <h3 className="font-semibold text-text-dark text-lg">Running blind without talent market intelligence.</h3>
@@ -166,7 +166,7 @@ export default function Home() {
               <AccordionItem value="firefighting" className="bg-white rounded-lg px-lg shadow-sm border border-border-light card-hover">
                 <AccordionTrigger className="hover:no-underline py-lg">
                   <div className="flex items-start gap-lg text-left">
-                    <div className="w-12 h-12 bg-gradient-to-br from-tf-orange to-red-500 rounded-lg flex items-center justify-center flex-shrink-0">
+                    <div className="w-12 h-12 bg-gradient-to-br from-amber-500 to-yellow-600 rounded-lg flex items-center justify-center flex-shrink-0">
                       <AlertTriangle className="h-6 w-6 text-white" />
                     </div>
                     <h3 className="font-semibold text-text-dark text-lg">Your team is stuck in constant firefighting mode.</h3>
@@ -210,7 +210,7 @@ export default function Home() {
               <div className="absolute inset-0 bg-gradient-to-br from-orange-50 to-red-50 opacity-50 group-hover:opacity-80 transition-opacity"></div>
               <div className="relative z-10">
                 <div className="w-16 h-16 bg-gradient-to-br from-orange-500 to-red-500 rounded-full flex items-center justify-center mx-auto mb-md group-hover:scale-110 transition-all duration-300">
-                  <Settings className="w-8 h-8 text-white group-hover:animate-slow-spin" />
+                  <Settings className="w-8 h-8 text-white group-hover:animate-spin group-hover:[animation-duration:2s]" />
                 </div>
                 <h3 className="font-semibold text-text-dark mb-xs group-hover:text-orange-700 transition-colors">Innovate</h3>
                 <p className="text-sm text-text-medium">Data‑driven systems and agentic workflows designed for scale and efficiency.</p>
