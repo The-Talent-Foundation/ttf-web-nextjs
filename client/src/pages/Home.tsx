@@ -1,5 +1,11 @@
 import { Link } from 'wouter';
 import { Lightbulb, Settings, Zap, Play, AlertTriangle, Target, CheckCircle2 } from 'lucide-react';
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
 
 export default function Home() {
   return (
@@ -56,52 +62,55 @@ export default function Home() {
                 <span className="font-semibold text-text-dark">Conventional talent acquisition breaks down when pressure rises.</span> Does any of this hit home?
               </p>
             </div>
-            <div className="space-y-md">
-              <div className="bg-white p-lg rounded-lg shadow-sm border border-border-light">
-                <div className="flex items-start gap-md">
-                  <div className="flex-shrink-0">
-                    <AlertTriangle className="h-6 w-6 text-tf-orange" />
+            <Accordion type="single" collapsible className="space-y-md">
+              <AccordionItem value="niche-skills" className="bg-white rounded-lg px-lg shadow-sm border border-border-light">
+                <AccordionTrigger className="hover:no-underline">
+                  <div className="flex items-start gap-md text-left">
+                    <AlertTriangle className="h-6 w-6 text-tf-orange flex-shrink-0 mt-1" />
+                    <h3 className="font-semibold text-text-dark">Niche‑skill gaps stall product launches.</h3>
                   </div>
-                  <div className="flex-1">
-                    <h3 className="font-semibold text-text-dark mb-xs">Niche‑skill gaps stall product launches</h3>
-                    <p className="text-text-medium text-sm">Are <span className="font-semibold text-text-dark">elusive technical or specialized skills</span> delaying crucial product development or market expansion, <span className="font-semibold text-text-dark">costing you market advantage</span>?</p>
+                </AccordionTrigger>
+                <AccordionContent className="pl-10 text-text-medium">
+                  Are <span className="font-semibold text-text-dark">elusive technical or specialized skills</span> delaying crucial product development or market expansion, <span className="font-semibold text-text-dark">costing you market advantage</span>?
+                </AccordionContent>
+              </AccordionItem>
+
+              <AccordionItem value="unpredictable" className="bg-white rounded-lg px-lg shadow-sm border border-border-light">
+                <AccordionTrigger className="hover:no-underline">
+                  <div className="flex items-start gap-md text-left">
+                    <Zap className="h-6 w-6 text-tf-orange flex-shrink-0 mt-1" />
+                    <h3 className="font-semibold text-text-dark">Unpredictable hiring wrecks delivery timelines.</h3>
                   </div>
-                </div>
-              </div>
-              <div className="bg-white p-lg rounded-lg shadow-sm border border-border-light">
-                <div className="flex items-start gap-md">
-                  <div className="flex-shrink-0">
-                    <Zap className="h-6 w-6 text-tf-orange" />
+                </AccordionTrigger>
+                <AccordionContent className="pl-10 text-text-medium">
+                  Is <span className="font-semibold text-text-dark">chaotic and unpredictable hiring</span> velocity and inconsistent quality jeopardizing delivery timelines or crucial goals, silently erasing your planned ROI?
+                </AccordionContent>
+              </AccordionItem>
+
+              <AccordionItem value="blind" className="bg-white rounded-lg px-lg shadow-sm border border-border-light">
+                <AccordionTrigger className="hover:no-underline">
+                  <div className="flex items-start gap-md text-left">
+                    <Lightbulb className="h-6 w-6 text-tf-orange flex-shrink-0 mt-1" />
+                    <h3 className="font-semibold text-text-dark">Running blind without talent market intelligence.</h3>
                   </div>
-                  <div className="flex-1">
-                    <h3 className="font-semibold text-text-dark mb-xs">Unpredictable hiring wrecks delivery timelines</h3>
-                    <p className="text-text-medium text-sm">Is <span className="font-semibold text-text-dark">chaotic and unpredictable hiring</span> velocity and inconsistent quality jeopardizing delivery timelines or crucial goals, silently erasing your planned ROI?</p>
+                </AccordionTrigger>
+                <AccordionContent className="pl-10 text-text-medium">
+                  Is <span className="font-semibold text-text-dark">expansion or workforce‑growth planning</span> built on guesswork, forcing risky bets on locations, salaries, and timelines that explode later?
+                </AccordionContent>
+              </AccordionItem>
+
+              <AccordionItem value="firefighting" className="bg-white rounded-lg px-lg shadow-sm border border-border-light">
+                <AccordionTrigger className="hover:no-underline">
+                  <div className="flex items-start gap-md text-left">
+                    <Target className="h-6 w-6 text-tf-orange flex-shrink-0 mt-1" />
+                    <h3 className="font-semibold text-text-dark">Your team is stuck in constant firefighting mode.</h3>
                   </div>
-                </div>
-              </div>
-              <div className="bg-white p-lg rounded-lg shadow-sm border border-border-light">
-                <div className="flex items-start gap-md">
-                  <div className="flex-shrink-0">
-                    <Lightbulb className="h-6 w-6 text-tf-orange" />
-                  </div>
-                  <div className="flex-1">
-                    <h3 className="font-semibold text-text-dark mb-xs">Running blind without talent market intelligence</h3>
-                    <p className="text-text-medium text-sm">Is <span className="font-semibold text-text-dark">expansion or workforce‑growth planning</span> built on guesswork, forcing risky bets on locations, salaries, and timelines that explode later?</p>
-                  </div>
-                </div>
-              </div>
-              <div className="bg-white p-lg rounded-lg shadow-sm border border-border-light">
-                <div className="flex items-start gap-md">
-                  <div className="flex-shrink-0">
-                    <Target className="h-6 w-6 text-tf-orange" />
-                  </div>
-                  <div className="flex-1">
-                    <h3 className="font-semibold text-text-dark mb-xs">Your team is stuck in constant firefighting mode</h3>
-                    <p className="text-text-medium text-sm">Are nonstop <span className="font-semibold text-text-dark">last‑minute urgent hires</span> dragging leaders into interview marathons and draining team morale because key roles still can't be staffed on schedule?</p>
-                  </div>
-                </div>
-              </div>
-            </div>
+                </AccordionTrigger>
+                <AccordionContent className="pl-10 text-text-medium">
+                  Are nonstop <span className="font-semibold text-text-dark">last‑minute urgent hires</span> dragging leaders into interview marathons and draining team morale because key roles still can't be staffed on schedule?
+                </AccordionContent>
+              </AccordionItem>
+            </Accordion>
             <div className="text-center mt-xxl">
               <p className="text-lg font-semibold text-text-dark">
                 Patchwork fixes won't solve these. You need a system built for complexity, focused on strategically building capability and resilience.

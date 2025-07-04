@@ -1,5 +1,11 @@
 import { Link } from 'wouter';
 import { Lightbulb, Settings, Zap, Play } from 'lucide-react';
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
 
 export default function Services() {
   return (
@@ -37,24 +43,43 @@ export default function Services() {
               <h2 className="text-3xl md:text-4xl font-bold text-text-dark mb-md">Fragmented Fixes Fail When Met With Complexity</h2>
               <p className="text-lg text-text-medium">The symptoms are painfully familiar:</p>
             </div>
-            <div className="space-y-md">
-              <div className="bg-white p-lg rounded-lg shadow-sm">
-                <h3 className="font-semibold text-text-dark mb-xs">Strategic projects stall while niche roles sit vacant</h3>
-                <p className="text-text-medium text-sm">Are hidden skill gaps dragging release and launch dates while gifting market share to faster rivals?</p>
-              </div>
-              <div className="bg-white p-lg rounded-lg shadow-sm">
-                <h3 className="font-semibold text-text-dark mb-xs">Chaotic hiring burns out teams and drives attrition</h3>
-                <p className="text-text-medium text-sm">Are urgent re-prioritizations forcing recruiters and managers into burnout, driving attrition rates higher?</p>
-              </div>
-              <div className="bg-white p-lg rounded-lg shadow-sm">
-                <h3 className="font-semibold text-text-dark mb-xs">Costly tools, process improvements, and training under‑deliver</h3>
-                <p className="text-text-medium text-sm">Expensive tech sits underutilized, team members don't use learning from their last training, resulting in poor ROI compared to promised values?</p>
-              </div>
-              <div className="bg-white p-lg rounded-lg shadow-sm">
-                <h3 className="font-semibold text-text-dark mb-xs">Perpetual bottlenecks are holding you back</h3>
-                <p className="text-text-medium text-sm">You fix sourcing, to discover that assessments are broken. Fix assessment and onboarding fails. The constraints shift, but the delays persist?</p>
-              </div>
-            </div>
+            <Accordion type="single" collapsible className="space-y-md">
+              <AccordionItem value="stall" className="bg-white rounded-lg px-lg shadow-sm">
+                <AccordionTrigger className="hover:no-underline">
+                  <h3 className="font-semibold text-text-dark text-left">Strategic projects stall while niche roles sit vacant.</h3>
+                </AccordionTrigger>
+                <AccordionContent className="text-text-medium">
+                  Are hidden skill gaps dragging release and launch dates while gifting market share to faster rivals?
+                </AccordionContent>
+              </AccordionItem>
+
+              <AccordionItem value="burnout" className="bg-white rounded-lg px-lg shadow-sm">
+                <AccordionTrigger className="hover:no-underline">
+                  <h3 className="font-semibold text-text-dark text-left">Chaotic hiring burns out teams and drives attrition.</h3>
+                </AccordionTrigger>
+                <AccordionContent className="text-text-medium">
+                  Are urgent re-prioritisations forcing recruiters and managers into burnout, driving attrition rates higher?
+                </AccordionContent>
+              </AccordionItem>
+
+              <AccordionItem value="underdeliver" className="bg-white rounded-lg px-lg shadow-sm">
+                <AccordionTrigger className="hover:no-underline">
+                  <h3 className="font-semibold text-text-dark text-left">Costly tools, process improvements, and training under‑deliver.</h3>
+                </AccordionTrigger>
+                <AccordionContent className="text-text-medium">
+                  Expensive tech sits underutilized, team members don't use the learning from their last training, resulting in poor ROI compared to promised values?
+                </AccordionContent>
+              </AccordionItem>
+
+              <AccordionItem value="bottlenecks" className="bg-white rounded-lg px-lg shadow-sm">
+                <AccordionTrigger className="hover:no-underline">
+                  <h3 className="font-semibold text-text-dark text-left">Perpetual bottlenecks are holding you back.</h3>
+                </AccordionTrigger>
+                <AccordionContent className="text-text-medium">
+                  You fix sourcing, to discover that assessments are broken. Fix assessment and onboarding fails. The constraints shift, but the delays persist?
+                </AccordionContent>
+              </AccordionItem>
+            </Accordion>
             <div className="text-center mt-xxl">
               <p className="text-lg font-semibold text-text-dark">
                 Scrapwork remedies can't solve systemic problems. Our holistic enablement system moves you beyond these frustrating cycles.
@@ -163,38 +188,66 @@ export default function Services() {
                 When talent is treated as a plug-and-play commodity, you don't build capability. You rent it. And renting your ability to grow isn't just expensive, it's a limitation and a <span className="font-semibold text-tf-orange">silent and constant drain on your resources</span>.
               </p>
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-lg mb-xxl">
-              <div className="bg-white p-lg rounded-lg shadow-sm">
-                <h3 className="font-semibold text-text-dark mb-md">The Transactional Treadmill</h3>
-                <p className="text-text-medium text-sm">Ineffective processes lead to endless cycles of repeated agency fees (+15-25%) for hard-to-fill roles, contractor premiums (often exceeding 50%), ongoing replacement costs due to poor hiring decisions, and lost productivity from churn.</p>
-              </div>
-              <div className="bg-white p-lg rounded-lg shadow-sm">
-                <h3 className="font-semibold text-text-dark mb-md">The Cost of Failure</h3>
-                <p className="text-text-medium text-sm">What's the <em>true</em> financial impact of a 6-month delay due to talent gaps? The <span className="font-semibold text-tf-orange">opportunity cost</span> is often <span className="font-semibold text-tf-orange">in the millions</span> in lost pipeline revenue.</p>
-              </div>
-              <div className="bg-white p-lg rounded-lg shadow-sm">
-                <h3 className="font-semibold text-text-dark mb-md">The Strategic Risk Premium</h3>
-                <p className="text-text-medium text-sm">Operating without a predictable talent engine forces you to carry a constant, unquantified risk premium, adding ambiguity to every major growth initiative.</p>
-              </div>
-            </div>
+            <Accordion type="single" collapsible className="mb-xxl">
+              <AccordionItem value="treadmill" className="bg-white rounded-lg px-lg shadow-sm mb-md">
+                <AccordionTrigger className="hover:no-underline">
+                  <h3 className="font-semibold text-text-dark text-left">The Transactional Treadmill</h3>
+                </AccordionTrigger>
+                <AccordionContent className="text-text-medium">
+                  Ineffective processes lead to endless cycles of repeated agency fees (+15-25%) for hard-to-fill roles, contractor premiums (often exceeding 50%), ongoing replacement costs due to poor hiring decisions, and lost productivity from churn.
+                </AccordionContent>
+              </AccordionItem>
+
+              <AccordionItem value="failure" className="bg-white rounded-lg px-lg shadow-sm mb-md">
+                <AccordionTrigger className="hover:no-underline">
+                  <h3 className="font-semibold text-text-dark text-left">The Cost of Failure</h3>
+                </AccordionTrigger>
+                <AccordionContent className="text-text-medium">
+                  What's the <em>true</em> financial impact of a 6-month delay due to talent gaps? The <span className="font-semibold text-tf-orange">opportunity cost</span> is often <span className="font-semibold text-tf-orange">in the millions</span> in lost pipeline revenue. You could be losing key market share due to a lack of top-tier GTM talent driving MRR up.
+                </AccordionContent>
+              </AccordionItem>
+
+              <AccordionItem value="risk-premium" className="bg-white rounded-lg px-lg shadow-sm mb-md">
+                <AccordionTrigger className="hover:no-underline">
+                  <h3 className="font-semibold text-text-dark text-left">The Strategic Risk Premium</h3>
+                </AccordionTrigger>
+                <AccordionContent className="text-text-medium">
+                  Operating without a predictable talent engine forces you to carry a constant, unquantified risk premium, adding ambiguity to every major growth initiative. Surprise compliance fines, missed local labor laws, burnout-fueled attrition, the question becomes "when" and not "if."
+                </AccordionContent>
+              </AccordionItem>
+            </Accordion>
             <div className="bg-tf-blue-light p-xxl rounded-lg">
               <div className="text-center mb-lg">
                 <h3 className="text-xl font-bold text-text-dark mb-md">Our Solutions Are Engineered for Superior, Demonstrable Long-Term ROI</h3>
               </div>
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-lg">
-                <div className="text-center">
-                  <h4 className="font-semibold text-text-dark mb-xs">Drastically Reducing Operational Waste</h4>
-                  <p className="text-text-medium text-sm">Establishing efficient internal systems lowers costly agency reliance, decreases effective cost-per-hire, prevents rework from bad hiring decisions.</p>
-                </div>
-                <div className="text-center">
-                  <h4 className="font-semibold text-text-dark mb-xs">Systematically De-Risking Strategic Execution</h4>
-                  <p className="text-text-medium text-sm">Creating a predictable and reliable talent delivery system removes a variable threatening your business goals.</p>
-                </div>
-                <div className="text-center">
-                  <h4 className="font-semibold text-text-dark mb-xs">Building a Tangible Strategic Asset</h4>
-                  <p className="text-text-medium text-sm">A high-performing internal Talent Acquisition function becomes a competitive advantage, enabling faster adaptation and higher enterprise value.</p>
-                </div>
-              </div>
+              <Accordion type="single" collapsible>
+                <AccordionItem value="waste" className="mb-sm">
+                  <AccordionTrigger className="hover:no-underline text-left">
+                    <h4 className="font-semibold text-text-dark">Drastically Reducing Operational Waste & External Spend</h4>
+                  </AccordionTrigger>
+                  <AccordionContent className="text-text-medium">
+                    Establishing efficient internal systems lowers costly agency reliance, decreases effective cost-per-hire, prevents rework from bad hiring decisions, and streamlines workflows, yielding direct, measurable cost savings.
+                  </AccordionContent>
+                </AccordionItem>
+
+                <AccordionItem value="derisk" className="mb-sm">
+                  <AccordionTrigger className="hover:no-underline text-left">
+                    <h4 className="font-semibold text-text-dark">Systematically De-Risking Strategic Execution</h4>
+                  </AccordionTrigger>
+                  <AccordionContent className="text-text-medium">
+                    Creating a predictable and reliable talent delivery system removes a variable threatening your business goals and increases the probability of successful outcomes for initiatives like product launches, market expansions, or large-scale transformations.
+                  </AccordionContent>
+                </AccordionItem>
+
+                <AccordionItem value="asset" className="mb-sm">
+                  <AccordionTrigger className="hover:no-underline text-left">
+                    <h4 className="font-semibold text-text-dark">Building a Tangible Strategic Asset</h4>
+                  </AccordionTrigger>
+                  <AccordionContent className="text-text-medium">
+                    A high-performing internal Talent Acquisition function isn't an expense line or a cost center. Instead, it becomes a competitive advantage, enabling faster adaptation, better talent attraction, higher growth, and ultimately, higher enterprise and equity value.
+                  </AccordionContent>
+                </AccordionItem>
+              </Accordion>
             </div>
           </div>
         </div>
