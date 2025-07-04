@@ -6,13 +6,15 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
+import ScrollAnimations from '@/components/ScrollAnimations';
 
 export default function Illuminate() {
 
   return (
-    <div>
-      {/* Hero Section */}
-      <section className="bg-gradient-to-br from-tf-blue-light to-white py-xxxl geometric-pattern">
+    <ScrollAnimations>
+      <div>
+        {/* Hero Section */}
+        <section id="hero" className="bg-gradient-to-br from-tf-blue-light to-white py-xxxl geometric-pattern">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl">
             <h1 className="text-4xl md:text-5xl font-bold text-text-dark mb-md">
@@ -400,6 +402,7 @@ export default function Illuminate() {
           </div>
         </div>
       </section>
-    </div>
+      </div>
+    </ScrollAnimations>
   );
 }
