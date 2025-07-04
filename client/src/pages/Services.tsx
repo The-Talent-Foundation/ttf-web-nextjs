@@ -46,38 +46,58 @@ export default function Services() {
               <p className="text-lg text-text-medium">The symptoms are painfully familiar:</p>
             </div>
             <Accordion type="single" collapsible className="space-y-md">
-              <AccordionItem value="stall" className="bg-white rounded-lg px-lg shadow-sm">
-                <AccordionTrigger className="hover:no-underline">
-                  <h3 className="font-semibold text-text-dark text-left">Strategic projects stall while niche roles sit vacant.</h3>
+              <AccordionItem value="stall" className="bg-white rounded-lg px-lg shadow-sm hover:shadow-lg transition-all duration-300">
+                <AccordionTrigger className="hover:no-underline group">
+                  <div className="flex items-center gap-lg">
+                    <div className="w-12 h-12 bg-gradient-to-br from-red-500 to-orange-600 rounded-full flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform duration-300">
+                      <Play className="w-6 h-6 text-white" />
+                    </div>
+                    <h3 className="font-semibold text-text-dark text-left">Strategic projects stall while niche roles sit vacant.</h3>
+                  </div>
                 </AccordionTrigger>
-                <AccordionContent className="text-text-medium">
+                <AccordionContent className="text-text-medium pl-20">
                   Are hidden skill gaps dragging release and launch dates while gifting market share to faster rivals?
                 </AccordionContent>
               </AccordionItem>
 
-              <AccordionItem value="burnout" className="bg-white rounded-lg px-lg shadow-sm">
-                <AccordionTrigger className="hover:no-underline">
-                  <h3 className="font-semibold text-text-dark text-left">Chaotic hiring burns out teams and drives attrition.</h3>
+              <AccordionItem value="burnout" className="bg-white rounded-lg px-lg shadow-sm hover:shadow-lg transition-all duration-300">
+                <AccordionTrigger className="hover:no-underline group">
+                  <div className="flex items-center gap-lg">
+                    <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-blue-600 rounded-full flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform duration-300">
+                      <Zap className="w-6 h-6 text-white" />
+                    </div>
+                    <h3 className="font-semibold text-text-dark text-left">Chaotic hiring burns out teams and drives attrition.</h3>
+                  </div>
                 </AccordionTrigger>
-                <AccordionContent className="text-text-medium">
+                <AccordionContent className="text-text-medium pl-20">
                   Are urgent re-prioritisations forcing recruiters and managers into burnout, driving attrition rates higher?
                 </AccordionContent>
               </AccordionItem>
 
-              <AccordionItem value="underdeliver" className="bg-white rounded-lg px-lg shadow-sm">
-                <AccordionTrigger className="hover:no-underline">
-                  <h3 className="font-semibold text-text-dark text-left">Costly tools, process improvements, and training under‑deliver.</h3>
+              <AccordionItem value="underdeliver" className="bg-white rounded-lg px-lg shadow-sm hover:shadow-lg transition-all duration-300">
+                <AccordionTrigger className="hover:no-underline group">
+                  <div className="flex items-center gap-lg">
+                    <div className="w-12 h-12 bg-gradient-to-br from-amber-500 to-orange-500 rounded-full flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform duration-300">
+                      <Settings className="w-6 h-6 text-white group-hover:rotate-180 transition-transform duration-700" />
+                    </div>
+                    <h3 className="font-semibold text-text-dark text-left">Costly tools, process improvements, and training under‑deliver.</h3>
+                  </div>
                 </AccordionTrigger>
-                <AccordionContent className="text-text-medium">
+                <AccordionContent className="text-text-medium pl-20">
                   Expensive tech sits underutilized, team members don't use the learning from their last training, resulting in poor ROI compared to promised values?
                 </AccordionContent>
               </AccordionItem>
 
-              <AccordionItem value="bottlenecks" className="bg-white rounded-lg px-lg shadow-sm">
-                <AccordionTrigger className="hover:no-underline">
-                  <h3 className="font-semibold text-text-dark text-left">Perpetual bottlenecks are holding you back.</h3>
+              <AccordionItem value="bottlenecks" className="bg-white rounded-lg px-lg shadow-sm hover:shadow-lg transition-all duration-300">
+                <AccordionTrigger className="hover:no-underline group">
+                  <div className="flex items-center gap-lg">
+                    <div className="w-12 h-12 bg-gradient-to-br from-gray-500 to-gray-600 rounded-full flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform duration-300">
+                      <Lightbulb className="w-6 h-6 text-white group-hover:animate-pulse" />
+                    </div>
+                    <h3 className="font-semibold text-text-dark text-left">Perpetual bottlenecks are holding you back.</h3>
+                  </div>
                 </AccordionTrigger>
-                <AccordionContent className="text-text-medium">
+                <AccordionContent className="text-text-medium pl-20">
                   You fix sourcing, to discover that assessments are broken. Fix assessment and onboarding fails. The constraints shift, but the delays persist?
                 </AccordionContent>
               </AccordionItem>
@@ -175,16 +195,57 @@ export default function Services() {
               </p>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-lg">
-              <div className="bg-white p-lg rounded-lg">
+              <div className="bg-white p-lg rounded-lg shadow-sm hover:shadow-lg transition-all duration-300 group">
+                <div className="flex items-start gap-md mb-md">
+                  <div className="w-8 h-8 bg-gradient-to-br from-blue-500 to-blue-600 rounded-full flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform duration-300">
+                    <Lightbulb className="w-4 h-4 text-white" />
+                  </div>
+                  <div className="w-8 h-8 bg-gradient-to-br from-orange-500 to-red-500 rounded-full flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform duration-300">
+                    <Settings className="w-4 h-4 text-white" />
+                  </div>
+                </div>
                 <p className="text-text-medium"><span className="font-semibold text-tf-blue">Illuminate's</span> intelligence directly <span className="font-semibold text-tf-blue">informs Innovate's design</span>, ensuring processes, hiring, and tech choices match <em>your</em> specific market context and challenges, thus <span className="font-semibold text-text-dark">preventing costly generic missteps</span>.</p>
               </div>
-              <div className="bg-white p-lg rounded-lg">
+              <div className="bg-white p-lg rounded-lg shadow-sm hover:shadow-lg transition-all duration-300 group">
+                <div className="flex items-start gap-md mb-md">
+                  <div className="w-8 h-8 bg-gradient-to-br from-orange-500 to-red-500 rounded-full flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform duration-300">
+                    <Settings className="w-4 h-4 text-white" />
+                  </div>
+                  <div className="w-8 h-8 bg-gradient-to-br from-purple-500 to-indigo-600 rounded-full flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform duration-300">
+                    <Zap className="w-4 h-4 text-white" />
+                  </div>
+                </div>
                 <p className="text-text-medium"><span className="font-semibold text-tf-blue">Innovate's</span> resilient architecture provides the <span className="font-semibold text-tf-blue">essential operating system</span> for Elevate's advanced skills training. Which translates into <span className="font-semibold text-text-dark">real, measurable productivity improvements and consistent execution</span>, locking in training ROI.</p>
               </div>
-              <div className="bg-white p-lg rounded-lg">
+              <div className="bg-white p-lg rounded-lg shadow-sm hover:shadow-lg transition-all duration-300 group">
+                <div className="flex items-start gap-md mb-md">
+                  <div className="w-8 h-8 bg-gradient-to-br from-purple-500 to-indigo-600 rounded-full flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform duration-300">
+                    <Zap className="w-4 h-4 text-white" />
+                  </div>
+                  <div className="w-8 h-8 bg-gradient-to-br from-blue-500 to-blue-600 rounded-full flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform duration-300">
+                    <Lightbulb className="w-4 h-4 text-white" />
+                  </div>
+                  <div className="w-8 h-8 bg-gradient-to-br from-orange-500 to-red-500 rounded-full flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform duration-300">
+                    <Settings className="w-4 h-4 text-white" />
+                  </div>
+                </div>
                 <p className="text-text-medium"><span className="font-semibold text-tf-blue">Elevate</span> empowers your team not only with skills but also with the <span className="font-semibold text-tf-blue">strategic context</span> and the ability to master the <span className="font-semibold text-tf-blue">Innovate</span> system while proactively applying <span className="font-semibold text-tf-blue">Illuminate</span> insights, fostering <span className="font-semibold text-text-dark">true adaptability and self-sufficiency</span>.</p>
               </div>
-              <div className="bg-white p-lg rounded-lg">
+              <div className="bg-white p-lg rounded-lg shadow-sm hover:shadow-lg transition-all duration-300 group">
+                <div className="flex items-start gap-md mb-md">
+                  <div className="w-8 h-8 bg-gradient-to-br from-green-500 to-green-600 rounded-full flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform duration-300">
+                    <Play className="w-4 h-4 text-white" />
+                  </div>
+                  <div className="w-8 h-8 bg-gradient-to-br from-blue-500 to-blue-600 rounded-full flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform duration-300">
+                    <Lightbulb className="w-4 h-4 text-white" />
+                  </div>
+                  <div className="w-8 h-8 bg-gradient-to-br from-orange-500 to-red-500 rounded-full flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform duration-300">
+                    <Settings className="w-4 h-4 text-white" />
+                  </div>
+                  <div className="w-8 h-8 bg-gradient-to-br from-purple-500 to-indigo-600 rounded-full flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform duration-300">
+                    <Zap className="w-4 h-4 text-white" />
+                  </div>
+                </div>
                 <p className="text-text-medium"><span className="font-semibold text-tf-blue">Accelerate</span> performs with precision and speed <em>because</em> it operates within this enabled ecosystem, guided by <span className="font-semibold text-tf-blue">Illuminate's</span> intel, leveraging <span className="font-semibold text-tf-blue">Innovate's</span> optimized workflows, and adhering to <span className="font-semibold text-tf-blue">Elevate's</span> quality benchmarks.</p>
               </div>
             </div>
@@ -210,30 +271,45 @@ export default function Services() {
                 When talent is treated as a plug-and-play commodity, you don't build capability. You rent it. And renting your ability to grow isn't just expensive, it's a limitation and a <span className="font-semibold text-tf-orange">silent and constant drain on your resources</span>.
               </p>
             </div>
-            <Accordion type="single" collapsible className="mb-xxl">
-              <AccordionItem value="treadmill" className="bg-white rounded-lg px-lg shadow-sm mb-md">
-                <AccordionTrigger className="hover:no-underline">
-                  <h3 className="font-semibold text-text-dark text-left">The Transactional Treadmill</h3>
+            <Accordion type="single" collapsible className="mb-xxl space-y-md">
+              <AccordionItem value="treadmill" className="bg-white rounded-lg px-lg shadow-sm hover:shadow-lg transition-all duration-300">
+                <AccordionTrigger className="hover:no-underline group">
+                  <div className="flex items-center gap-lg">
+                    <div className="w-12 h-12 bg-gradient-to-br from-red-500 to-red-600 rounded-full flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform duration-300">
+                      <Settings className="w-6 h-6 text-white group-hover:animate-spin" />
+                    </div>
+                    <h3 className="font-semibold text-text-dark text-left">The Transactional Treadmill</h3>
+                  </div>
                 </AccordionTrigger>
-                <AccordionContent className="text-text-medium">
+                <AccordionContent className="text-text-medium pl-20">
                   Ineffective processes lead to endless cycles of repeated agency fees (+15-25%) for hard-to-fill roles, contractor premiums (often exceeding 50%), ongoing replacement costs due to poor hiring decisions, and lost productivity from churn.
                 </AccordionContent>
               </AccordionItem>
 
-              <AccordionItem value="failure" className="bg-white rounded-lg px-lg shadow-sm mb-md">
-                <AccordionTrigger className="hover:no-underline">
-                  <h3 className="font-semibold text-text-dark text-left">The Cost of Failure</h3>
+              <AccordionItem value="failure" className="bg-white rounded-lg px-lg shadow-sm hover:shadow-lg transition-all duration-300">
+                <AccordionTrigger className="hover:no-underline group">
+                  <div className="flex items-center gap-lg">
+                    <div className="w-12 h-12 bg-gradient-to-br from-orange-500 to-red-500 rounded-full flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform duration-300">
+                      <Zap className="w-6 h-6 text-white group-hover:animate-bounce" />
+                    </div>
+                    <h3 className="font-semibold text-text-dark text-left">The Cost of Failure</h3>
+                  </div>
                 </AccordionTrigger>
-                <AccordionContent className="text-text-medium">
+                <AccordionContent className="text-text-medium pl-20">
                   What's the <em>true</em> financial impact of a 6-month delay due to talent gaps? The <span className="font-semibold text-tf-orange">opportunity cost</span> is often <span className="font-semibold text-tf-orange">in the millions</span> in lost pipeline revenue. You could be losing key market share due to a lack of top-tier GTM talent driving MRR up.
                 </AccordionContent>
               </AccordionItem>
 
-              <AccordionItem value="risk-premium" className="bg-white rounded-lg px-lg shadow-sm mb-md">
-                <AccordionTrigger className="hover:no-underline">
-                  <h3 className="font-semibold text-text-dark text-left">The Strategic Risk Premium</h3>
+              <AccordionItem value="risk-premium" className="bg-white rounded-lg px-lg shadow-sm hover:shadow-lg transition-all duration-300">
+                <AccordionTrigger className="hover:no-underline group">
+                  <div className="flex items-center gap-lg">
+                    <div className="w-12 h-12 bg-gradient-to-br from-purple-500 to-indigo-600 rounded-full flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform duration-300">
+                      <Lightbulb className="w-6 h-6 text-white group-hover:animate-pulse" />
+                    </div>
+                    <h3 className="font-semibold text-text-dark text-left">The Strategic Risk Premium</h3>
+                  </div>
                 </AccordionTrigger>
-                <AccordionContent className="text-text-medium">
+                <AccordionContent className="text-text-medium pl-20">
                   Operating without a predictable talent engine forces you to carry a constant, unquantified risk premium, adding ambiguity to every major growth initiative. Surprise compliance fines, missed local labor laws, burnout-fueled attrition, the question becomes "when" and not "if."
                 </AccordionContent>
               </AccordionItem>
@@ -286,13 +362,31 @@ export default function Services() {
                 We recognize that complex challenges often demand immediate action alongside strategic initiatives. Our partnership model is designed for this reality, meeting you where your needs are most critical while always guiding you toward sustainable capability growth.
               </p>
             </div>
-            <div className="bg-bg-subtle p-xxl rounded-lg mb-xxl">
-              <p className="text-text-dark mb-lg">
-                Engagements start with a focused diagnostic to create a clear roadmap: perhaps an <span className="font-semibold text-tf-blue">Illuminate</span> deep-dive revealing market realities or an <span className="font-semibold text-tf-blue">Innovate</span> assessment pinpointing process bottlenecks. Based on your needs, we can deploy <span className="font-semibold text-tf-blue">Accelerate</span> for immediate, expert execution on urgent priorities. While <em>concurrently</em> implementing foundational <span className="font-semibold text-tf-blue">Innovate</span> process improvements and delivering targeted <span className="font-semibold text-tf-blue">Elevate</span> capability building in your teams to ensure lasting impact.
-              </p>
-              <p className="text-text-dark font-semibold">
-                <span className="text-tf-orange">The Guiding Principle Remains: Strategic Enablement.</span> Regardless of the starting point, our commitment extends beyond short-term fixes. Every interaction emphasizes <span className="font-semibold text-tf-blue">transparent knowledge transfer</span> and practical skill building. We measure our success by <span className="font-semibold text-tf-blue">your team's increasing self-sufficiency</span> and the creation of a robust internal talent engine that provides enduring <span className="font-semibold text-tf-blue">strategic control</span>.
-              </p>
+            <div className="bg-gradient-to-r from-tf-blue/5 to-tf-orange/5 p-xxl rounded-lg mb-xxl border border-tf-blue/20">
+              <div className="flex items-start gap-lg mb-lg">
+                <div className="w-12 h-12 bg-gradient-to-br from-tf-blue to-tf-blue-dark rounded-full flex items-center justify-center flex-shrink-0">
+                  <Settings className="w-6 h-6 text-white animate-pulse" />
+                </div>
+                <div>
+                  <h3 className="text-xl font-bold text-text-dark mb-md">Flexible Partnership Approach</h3>
+                  <p className="text-text-dark mb-lg">
+                    Engagements start with a focused diagnostic to create a clear roadmap: perhaps an <span className="font-semibold text-tf-blue">Illuminate</span> deep-dive revealing market realities or an <span className="font-semibold text-tf-blue">Innovate</span> assessment pinpointing process bottlenecks. Based on your needs, we can deploy <span className="font-semibold text-tf-blue">Accelerate</span> for immediate, expert execution on urgent priorities. While <em>concurrently</em> implementing foundational <span className="font-semibold text-tf-blue">Innovate</span> process improvements and delivering targeted <span className="font-semibold text-tf-blue">Elevate</span> capability building in your teams to ensure lasting impact.
+                  </p>
+                </div>
+              </div>
+              <div className="border-t border-tf-orange/30 pt-lg">
+                <div className="flex items-start gap-lg">
+                  <div className="w-12 h-12 bg-gradient-to-br from-tf-orange to-red-500 rounded-full flex items-center justify-center flex-shrink-0">
+                    <Lightbulb className="w-6 h-6 text-white" />
+                  </div>
+                  <div>
+                    <h4 className="text-lg font-bold text-tf-orange mb-md">The Guiding Principle: Strategic Enablement</h4>
+                    <p className="text-text-dark font-medium">
+                      Regardless of the starting point, our commitment extends beyond short-term fixes. Every interaction emphasizes <span className="font-semibold text-tf-blue">transparent knowledge transfer</span> and practical skill building. We measure our success by <span className="font-semibold text-tf-blue">your team's increasing self-sufficiency</span> and the creation of a robust internal talent engine that provides enduring <span className="font-semibold text-tf-blue">strategic control</span>.
+                    </p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -313,21 +407,33 @@ export default function Services() {
                 Schedule Discovery Call
               </Link>
             </div>
-            <div className="border-t border-gray-700 pt-lg">
-              <p className="text-white font-semibold mb-md">Explore the Ecosystem Pillars:</p>
-              <div className="flex flex-wrap justify-center gap-lg">
-                <span className="text-tf-blue-lighter hover:text-tf-orange transition-colors border-b border-tf-blue-lighter pb-1 cursor-pointer">
-                  Illuminate
-                </span>
-                <span className="text-tf-blue-lighter hover:text-tf-orange transition-colors border-b border-tf-blue-lighter pb-1 cursor-pointer">
-                  Innovate
-                </span>
-                <span className="text-tf-blue-lighter hover:text-tf-orange transition-colors border-b border-tf-blue-lighter pb-1 cursor-pointer">
-                  Elevate
-                </span>
-                <span className="text-tf-blue-lighter hover:text-tf-orange transition-colors border-b border-tf-blue-lighter pb-1 cursor-pointer">
-                  Accelerate
-                </span>
+            <div className="border-t border-gray-700 pt-lg mt-lg">
+              <p className="text-white font-semibold mb-lg">Explore the Ecosystem Pillars:</p>
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-md">
+                <Link href="/services/illuminate" className="group flex items-center gap-md p-md rounded-lg hover:bg-gray-800 transition-all duration-300">
+                  <div className="w-8 h-8 bg-gradient-to-br from-blue-500 to-blue-600 rounded-full flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform duration-300">
+                    <Lightbulb className="w-4 h-4 text-white" />
+                  </div>
+                  <span className="text-tf-blue-lighter group-hover:text-tf-orange transition-colors">Illuminate</span>
+                </Link>
+                <Link href="/services/innovate" className="group flex items-center gap-md p-md rounded-lg hover:bg-gray-800 transition-all duration-300">
+                  <div className="w-8 h-8 bg-gradient-to-br from-orange-500 to-red-500 rounded-full flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform duration-300">
+                    <Settings className="w-4 h-4 text-white" />
+                  </div>
+                  <span className="text-tf-blue-lighter group-hover:text-tf-orange transition-colors">Innovate</span>
+                </Link>
+                <Link href="/services/elevate" className="group flex items-center gap-md p-md rounded-lg hover:bg-gray-800 transition-all duration-300">
+                  <div className="w-8 h-8 bg-gradient-to-br from-purple-500 to-indigo-600 rounded-full flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform duration-300">
+                    <Zap className="w-4 h-4 text-white" />
+                  </div>
+                  <span className="text-tf-blue-lighter group-hover:text-tf-orange transition-colors">Elevate</span>
+                </Link>
+                <Link href="/services/accelerate" className="group flex items-center gap-md p-md rounded-lg hover:bg-gray-800 transition-all duration-300">
+                  <div className="w-8 h-8 bg-gradient-to-br from-green-500 to-green-600 rounded-full flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform duration-300">
+                    <Play className="w-4 h-4 text-white" />
+                  </div>
+                  <span className="text-tf-blue-lighter group-hover:text-tf-orange transition-colors">Accelerate</span>
+                </Link>
               </div>
             </div>
           </div>
