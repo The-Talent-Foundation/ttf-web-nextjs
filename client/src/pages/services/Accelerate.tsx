@@ -19,9 +19,9 @@ export default function Accelerate() {
                 Bridge the gap while you build capacity, or supplement it when stakes are highest.
               </p>
               <div className="flex flex-col sm:flex-row gap-md justify-center">
-                <Link href="/contact" className="btn-primary bg-emerald-600 hover:bg-emerald-700">
+                <a href="https://cal.com/adamkovacs/the-talent-foundation" target="_blank" rel="noopener noreferrer" className="btn-primary bg-emerald-600 hover:bg-emerald-700">
                   Request Expert Support
-                </Link>
+                </a>
                 <Link href="/services" className="btn-secondary border-emerald-600 text-emerald-600 hover:bg-emerald-600 hover:text-white">
                   Explore the Enablement Ecosystem
                 </Link>
@@ -388,9 +388,9 @@ export default function Accelerate() {
                   </p>
                 </div>
                 <div className="flex flex-col sm:flex-row gap-md justify-center">
-                  <Link href="/contact" className="btn-primary text-lg px-8 py-4 bg-emerald-600 hover:bg-emerald-700 text-white rounded-lg font-semibold transition-all duration-300 transform hover:-translate-y-1 shadow-lg hover:shadow-xl">
+                  <a href="https://cal.com/adamkovacs/the-talent-foundation" target="_blank" rel="noopener noreferrer" className="btn-primary text-lg px-8 py-4 bg-emerald-600 hover:bg-emerald-700 text-white rounded-lg font-semibold transition-all duration-300 transform hover:-translate-y-1 shadow-lg hover:shadow-xl">
                     Request Expert Support
-                  </Link>
+                  </a>
                   <Link href="/services" className="btn-secondary text-lg px-8 py-4 bg-white border-2 border-emerald-600 text-emerald-600 hover:bg-emerald-600 hover:text-white rounded-lg font-semibold transition-all duration-300 transform hover:-translate-y-1 shadow-lg hover:shadow-xl">
                     Explore the Full Ecosystem
                   </Link>

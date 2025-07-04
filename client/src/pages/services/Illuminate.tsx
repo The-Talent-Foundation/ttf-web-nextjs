@@ -29,9 +29,9 @@ export default function Illuminate() {
               and build the workforce your future demands</span>.
             </p>
             <div className="flex flex-col sm:flex-row gap-md">
-              <Link href="/contact" className="btn-primary">
+              <a href="https://cal.com/adamkovacs/the-talent-foundation" target="_blank" rel="noopener noreferrer" className="btn-primary">
                 Request a Strategic Intelligence Briefing
-              </Link>
+              </a>
               <Link href="/services" className="btn-secondary">
                 Explore the Enablement Ecosystem
               </Link>
@@ -463,9 +463,9 @@ export default function Illuminate() {
                 </p>
               </div>
               <div className="flex flex-col sm:flex-row gap-md justify-center">
-                <Link href="/contact" className="btn-primary text-lg px-8 py-4 bg-tf-blue hover:bg-tf-blue/90 text-white rounded-lg font-semibold transition-all duration-300 transform hover:-translate-y-1 shadow-lg hover:shadow-xl">
+                <a href="https://cal.com/adamkovacs/the-talent-foundation" target="_blank" rel="noopener noreferrer" className="btn-primary text-lg px-8 py-4 bg-tf-blue hover:bg-tf-blue/90 text-white rounded-lg font-semibold transition-all duration-300 transform hover:-translate-y-1 shadow-lg hover:shadow-xl">
                   Request a Strategic Intelligence Briefing
-                </Link>
+                </a>
                 <Link href="/services" className="btn-secondary text-lg px-8 py-4 bg-white border-2 border-tf-blue text-tf-blue hover:bg-tf-blue hover:text-white rounded-lg font-semibold transition-all duration-300 transform hover:-translate-y-1 shadow-lg hover:shadow-xl">
                   Explore the Full Ecosystem
                 </Link>

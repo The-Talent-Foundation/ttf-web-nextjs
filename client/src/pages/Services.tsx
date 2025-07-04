@@ -26,9 +26,9 @@ export default function Services() {
               Standard recruiting buckles when speed and needs spike. Our integrated <span className="font-semibold text-tf-orange">Talent Enablement Ecosystem (IIEA)</span> turns your Talent Acquisition into an engine that keeps every initiative on schedule.
             </p>
             <div className="flex flex-col sm:flex-row gap-md justify-center">
-              <Link href="/contact" className="btn-primary text-lg px-8 py-4">
-                Book a Strategic Assessment
-              </Link>
+              <a href="https://cal.com/adamkovacs/the-talent-foundation" target="_blank" rel="noopener noreferrer" className="btn-primary text-lg px-8 py-4">
+                Explore Your Enablement Needs
+              </a>
               <Link href="/" className="btn-secondary text-lg px-8 py-4">
                 Explore the Enablement Ecosystem
               </Link>

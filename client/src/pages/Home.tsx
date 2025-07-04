@@ -66,9 +66,9 @@ export default function Home() {
               </p>
             </div>
             <div className="flex flex-col sm:flex-row gap-md justify-center">
-              <Link href="/contact" className="btn-primary text-lg px-8 py-4">
-                Book a Strategic Assessment
-              </Link>
+              <a href="https://cal.com/adamkovacs/the-talent-foundation" target="_blank" rel="noopener noreferrer" className="btn-primary text-lg px-8 py-4">
+                Book Discovery Call
+              </a>
               <Link href="/services" className="btn-secondary text-lg px-8 py-4">
                 Explore the Enablement Ecosystem
               </Link>
@@ -422,9 +422,9 @@ export default function Home() {
               Move beyond unpredictable hiring outcomes and build the robust talent engine your strategic ambition demands. Let's have a direct conversation about how expert talent enablement can de-risk your initiatives and accelerate sustainable growth.
             </p>
             <div className="mb-xxl">
-              <Link href="/contact" className="btn-primary text-lg px-8 py-4 inline-block mb-lg">
+              <a href="https://cal.com/adamkovacs/the-talent-foundation" target="_blank" rel="noopener noreferrer" className="btn-primary text-lg px-8 py-4 inline-block mb-lg">
                 Schedule Strategic Assessment
-              </Link>
+              </a>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-md text-left max-w-2xl mx-auto">
                 <div className="flex items-center gap-md">
                   <div className="w-8 h-8 bg-tf-blue rounded-full flex items-center justify-center flex-shrink-0">

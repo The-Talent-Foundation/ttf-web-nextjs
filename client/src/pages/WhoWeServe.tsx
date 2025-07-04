@@ -396,9 +396,9 @@ export default function WhoWeServe() {
                   </p>
                 </div>
                 <div className="flex flex-col sm:flex-row gap-md justify-center mb-6">
-                  <Link href="/contact" className="btn-primary text-lg px-8 py-4 bg-tf-orange hover:bg-tf-orange/90 text-white rounded-lg font-semibold transition-all duration-300 transform hover:-translate-y-1 shadow-lg hover:shadow-xl">
+                  <a href="https://cal.com/adamkovacs/the-talent-foundation" target="_blank" rel="noopener noreferrer" className="btn-primary text-lg px-8 py-4 bg-tf-orange hover:bg-tf-orange/90 text-white rounded-lg font-semibold transition-all duration-300 transform hover:-translate-y-1 shadow-lg hover:shadow-xl">
                     Discuss Your Specific Strategic Challenge
-                  </Link>
+                  </a>
                 </div>
                 <div className="flex flex-col sm:flex-row gap-md justify-center">
                   <Link href="/services" className="text-blue-600 hover:text-blue-500 font-semibold transition-colors">

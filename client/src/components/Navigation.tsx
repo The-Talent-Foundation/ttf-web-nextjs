@@ -190,12 +190,14 @@ export default function Navigation() {
           
           {/* Desktop CTA */}
           <div className="hidden lg:block">
-            <Link
-              href="/contact"
+            <a
+              href="https://cal.com/adamkovacs/the-talent-foundation"
+              target="_blank"
+              rel="noopener noreferrer"
               className="btn-primary whitespace-nowrap"
             >
-              Book Assessment
-            </Link>
+              Book Discovery Call
+            </a>
           </div>
           
           {/* Mobile menu button */}
@@ -275,13 +277,15 @@ export default function Navigation() {
               </Link>
             ))}
             <div className="px-3 pt-4 border-t border-gray-200 mt-2">
-              <Link
-                href="/contact"
+              <a
+                href="https://cal.com/adamkovacs/the-talent-foundation"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="btn-primary inline-block w-full text-center"
                 onClick={() => setMobileMenuOpen(false)}
               >
-                Book Assessment
-              </Link>
+                Book Discovery Call
+              </a>
             </div>
           </div>
         </div>

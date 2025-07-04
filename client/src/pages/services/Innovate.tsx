@@ -18,9 +18,9 @@ export default function Innovate() {
                 With first-principles and design-thinking rigor, we build the <span className="font-semibold text-text-dark">data driven, resilient</span> talent-acquisition operating system that turns reactive firefighting into a repeatable competitive advantage.
               </p>
               <div className="flex flex-col sm:flex-row gap-md justify-center">
-                <Link href="/contact" className="btn-primary bg-tf-orange hover:bg-tf-orange/90">
+                <a href="https://cal.com/adamkovacs/the-talent-foundation" target="_blank" rel="noopener noreferrer" className="btn-primary bg-tf-orange hover:bg-tf-orange/90">
                   Request a System Consultation
-                </Link>
+                </a>
                 <Link href="/services" className="btn-secondary border-tf-orange text-tf-orange hover:bg-tf-orange hover:text-white">
                   Explore the Enablement Ecosystem
                 </Link>
@@ -378,9 +378,9 @@ export default function Innovate() {
                   </p>
                 </div>
                 <div className="flex flex-col sm:flex-row gap-md justify-center">
-                  <Link href="/contact" className="btn-primary text-lg px-8 py-4 bg-tf-orange hover:bg-tf-orange/90 text-white rounded-lg font-semibold transition-all duration-300 transform hover:-translate-y-1 shadow-lg hover:shadow-xl">
+                  <a href="https://cal.com/adamkovacs/the-talent-foundation" target="_blank" rel="noopener noreferrer" className="btn-primary text-lg px-8 py-4 bg-tf-orange hover:bg-tf-orange/90 text-white rounded-lg font-semibold transition-all duration-300 transform hover:-translate-y-1 shadow-lg hover:shadow-xl">
                     Request a System Consultation
-                  </Link>
+                  </a>
                   <Link href="/services" className="btn-secondary text-lg px-8 py-4 bg-white border-2 border-tf-orange text-tf-orange hover:bg-tf-orange hover:text-white rounded-lg font-semibold transition-all duration-300 transform hover:-translate-y-1 shadow-lg hover:shadow-xl">
                     Explore the Full Ecosystem
                   </Link>
