@@ -11,7 +11,7 @@ export default function Services() {
   return (
     <div>
       {/* Hero */}
-      <section className="bg-gradient-to-br from-tf-blue-light to-white py-xxxl">
+      <section className="bg-gradient-to-br from-tf-blue-light to-white py-xxxl geometric-pattern">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-4xl mx-auto">
             <h1 className="text-4xl md:text-5xl font-bold text-text-dark mb-md">

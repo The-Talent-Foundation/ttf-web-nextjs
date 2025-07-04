@@ -1,5 +1,21 @@
 import { Link } from 'wouter';
-import { Lightbulb, Settings, Zap, Play, AlertTriangle, Target, CheckCircle2 } from 'lucide-react';
+import { 
+  TrendingDown, 
+  Users, 
+  DollarSign, 
+  Infinity,
+  Lightbulb,
+  Settings,
+  Zap,
+  Play,
+  AlertTriangle,
+  Target,
+  CheckCircle2,
+  Brain,
+  Rocket,
+  LineChart,
+  Award
+} from 'lucide-react';
 import {
   Accordion,
   AccordionContent,
@@ -11,7 +27,7 @@ export default function Home() {
   return (
     <div>
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-tf-blue-light to-white py-xxxl">
+      <section className="bg-gradient-to-br from-tf-blue-light to-white py-xxxl geometric-pattern">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-4xl mx-auto">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-text-dark mb-sm leading-tight">
@@ -41,13 +57,17 @@ export default function Home() {
       <section className="bg-white py-xl">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
-            <h2 className="text-xl font-semibold text-text-medium mb-lg">Proven Results With Leaders From:</h2>
-            <div className="flex flex-wrap justify-center items-center gap-lg opacity-60">
-              <div className="bg-gray-200 px-lg py-md rounded-lg text-gray-500 font-semibold">AWS</div>
-              <div className="bg-gray-200 px-lg py-md rounded-lg text-gray-500 font-semibold">Amazon</div>
-              <div className="bg-gray-200 px-lg py-md rounded-lg text-gray-500 font-semibold">Tech Startups</div>
-              <div className="bg-gray-200 px-lg py-md rounded-lg text-gray-500 font-semibold">Growth Companies</div>
+            <h2 className="text-xl font-semibold text-text-medium mb-lg">Some of the companies Adam Kovacs provided his expertise to</h2>
+            <div className="flex flex-wrap justify-center items-center gap-xxl">
+              <img src="/assets/egyes-fotor-202407301827_1751590492554.png" alt="Amazon" className="h-12 md:h-16 object-contain grayscale opacity-60 hover:opacity-100 hover:grayscale-0 transition-all duration-300" />
+              <img src="/assets/kettes-fotor-202407301834_1751590492559.png" alt="AWS" className="h-12 md:h-16 object-contain grayscale opacity-60 hover:opacity-100 hover:grayscale-0 transition-all duration-300" />
+              <img src="/assets/harmas-fotor-2024073018422_1751590492559.png" alt="Hinge Health" className="h-12 md:h-16 object-contain grayscale opacity-60 hover:opacity-100 hover:grayscale-0 transition-all duration-300" />
+              <img src="/assets/negyes-fotor-20240730175643_1751590492559.png" alt="Lyft" className="h-12 md:h-16 object-contain grayscale opacity-60 hover:opacity-100 hover:grayscale-0 transition-all duration-300" />
+              <img src="/assets/otos_1751590492559.png" alt="DevMatch" className="h-12 md:h-16 object-contain grayscale opacity-60 hover:opacity-100 hover:grayscale-0 transition-all duration-300" />
             </div>
+            <p className="text-xs text-text-light mt-lg opacity-50">
+              The logos displayed above are the trademarks and property of their respective owners. They are presented here for informational purposes only.
+            </p>
           </div>
         </div>
       </section>
@@ -63,50 +83,58 @@ export default function Home() {
               </p>
             </div>
             <Accordion type="single" collapsible className="space-y-md">
-              <AccordionItem value="niche-skills" className="bg-white rounded-lg px-lg shadow-sm border border-border-light">
+              <AccordionItem value="niche-skills" className="bg-white rounded-lg px-lg shadow-sm border border-border-light card-hover">
                 <AccordionTrigger className="hover:no-underline">
                   <div className="flex items-start gap-md text-left">
-                    <AlertTriangle className="h-6 w-6 text-tf-orange flex-shrink-0 mt-1" />
+                    <div className="icon-container">
+                      <TrendingDown className="h-6 w-6 icon-primary" />
+                    </div>
                     <h3 className="font-semibold text-text-dark">Niche‑skill gaps stall product launches.</h3>
                   </div>
                 </AccordionTrigger>
-                <AccordionContent className="pl-10 text-text-medium">
+                <AccordionContent className="pl-16 text-text-medium">
                   Are <span className="font-semibold text-text-dark">elusive technical or specialized skills</span> delaying crucial product development or market expansion, <span className="font-semibold text-text-dark">costing you market advantage</span>?
                 </AccordionContent>
               </AccordionItem>
 
-              <AccordionItem value="unpredictable" className="bg-white rounded-lg px-lg shadow-sm border border-border-light">
+              <AccordionItem value="unpredictable" className="bg-white rounded-lg px-lg shadow-sm border border-border-light card-hover">
                 <AccordionTrigger className="hover:no-underline">
                   <div className="flex items-start gap-md text-left">
-                    <Zap className="h-6 w-6 text-tf-orange flex-shrink-0 mt-1" />
+                    <div className="icon-container">
+                      <Infinity className="h-6 w-6 icon-primary" />
+                    </div>
                     <h3 className="font-semibold text-text-dark">Unpredictable hiring wrecks delivery timelines.</h3>
                   </div>
                 </AccordionTrigger>
-                <AccordionContent className="pl-10 text-text-medium">
+                <AccordionContent className="pl-16 text-text-medium">
                   Is <span className="font-semibold text-text-dark">chaotic and unpredictable hiring</span> velocity and inconsistent quality jeopardizing delivery timelines or crucial goals, silently erasing your planned ROI?
                 </AccordionContent>
               </AccordionItem>
 
-              <AccordionItem value="blind" className="bg-white rounded-lg px-lg shadow-sm border border-border-light">
+              <AccordionItem value="blind" className="bg-white rounded-lg px-lg shadow-sm border border-border-light card-hover">
                 <AccordionTrigger className="hover:no-underline">
                   <div className="flex items-start gap-md text-left">
-                    <Lightbulb className="h-6 w-6 text-tf-orange flex-shrink-0 mt-1" />
+                    <div className="icon-container">
+                      <Brain className="h-6 w-6 icon-primary" />
+                    </div>
                     <h3 className="font-semibold text-text-dark">Running blind without talent market intelligence.</h3>
                   </div>
                 </AccordionTrigger>
-                <AccordionContent className="pl-10 text-text-medium">
+                <AccordionContent className="pl-16 text-text-medium">
                   Is <span className="font-semibold text-text-dark">expansion or workforce‑growth planning</span> built on guesswork, forcing risky bets on locations, salaries, and timelines that explode later?
                 </AccordionContent>
               </AccordionItem>
 
-              <AccordionItem value="firefighting" className="bg-white rounded-lg px-lg shadow-sm border border-border-light">
+              <AccordionItem value="firefighting" className="bg-white rounded-lg px-lg shadow-sm border border-border-light card-hover">
                 <AccordionTrigger className="hover:no-underline">
                   <div className="flex items-start gap-md text-left">
-                    <Target className="h-6 w-6 text-tf-orange flex-shrink-0 mt-1" />
+                    <div className="icon-container">
+                      <AlertTriangle className="h-6 w-6 icon-primary" />
+                    </div>
                     <h3 className="font-semibold text-text-dark">Your team is stuck in constant firefighting mode.</h3>
                   </div>
                 </AccordionTrigger>
-                <AccordionContent className="pl-10 text-text-medium">
+                <AccordionContent className="pl-16 text-text-medium">
                   Are nonstop <span className="font-semibold text-text-dark">last‑minute urgent hires</span> dragging leaders into interview marathons and draining team morale because key roles still can't be staffed on schedule?
                 </AccordionContent>
               </AccordionItem>

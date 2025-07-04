@@ -1,6 +1,15 @@
 import { useState } from 'react';
 import { Link, useLocation } from 'wouter';
-import { Menu, X, ChevronDown } from 'lucide-react';
+import { 
+  Menu, 
+  X, 
+  ChevronDown,
+  Lightbulb,
+  Settings,
+  Zap,
+  Play,
+  LayoutGrid
+} from 'lucide-react';
 import {
   NavigationMenu,
   NavigationMenuContent,
@@ -22,11 +31,36 @@ export default function Navigation() {
   ];
 
   const serviceItems = [
-    { href: '/services', label: 'Overview', description: 'The Talent Enablement Ecosystem' },
-    { href: '/services/illuminate', label: 'Illuminate', description: 'Talent & Market Intelligence' },
-    { href: '/services/innovate', label: 'Innovate', description: 'Process Design & Transformation' },
-    { href: '/services/elevate', label: 'Elevate', description: 'Capability Building & AI Literacy' },
-    { href: '/services/accelerate', label: 'Accelerate', description: 'Expert Execution Support' },
+    { 
+      href: '/services', 
+      label: 'Overview', 
+      description: 'The Talent Enablement Ecosystem',
+      icon: LayoutGrid
+    },
+    { 
+      href: '/services/illuminate', 
+      label: 'Illuminate', 
+      description: 'Talent & Market Intelligence',
+      icon: Lightbulb
+    },
+    { 
+      href: '/services/innovate', 
+      label: 'Innovate', 
+      description: 'Process Design & Transformation',
+      icon: Settings
+    },
+    { 
+      href: '/services/elevate', 
+      label: 'Elevate', 
+      description: 'Capability Building & AI Literacy',
+      icon: Zap
+    },
+    { 
+      href: '/services/accelerate', 
+      label: 'Accelerate', 
+      description: 'Expert Execution Support',
+      icon: Play
+    },
   ];
 
   const isActive = (href: string) => {
@@ -40,8 +74,8 @@ export default function Navigation() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <div className="flex items-center">
-            <Link href="/" className="font-bold text-xl text-tf-orange">
-              The Talent Foundation
+            <Link href="/" className="flex items-center">
+              <img src="/assets/download_1751590582407.png" alt="The Talent Foundation" className="h-10 w-auto" />
             </Link>
           </div>
           
@@ -70,22 +104,32 @@ export default function Navigation() {
                     Services
                   </NavigationMenuTrigger>
                   <NavigationMenuContent>
-                    <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-1">
-                      {serviceItems.map((item) => (
-                        <li key={item.href}>
-                          <NavigationMenuLink asChild>
-                            <Link
-                              href={item.href}
-                              className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
-                            >
-                              <div className="text-sm font-medium leading-none">{item.label}</div>
-                              <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
-                                {item.description}
-                              </p>
-                            </Link>
-                          </NavigationMenuLink>
-                        </li>
-                      ))}
+                    <ul className="grid w-[500px] gap-1 p-6 md:w-[600px] md:grid-cols-1">
+                      {serviceItems.map((item) => {
+                        const Icon = item.icon;
+                        return (
+                          <li key={item.href}>
+                            <NavigationMenuLink asChild>
+                              <Link
+                                href={item.href}
+                                className="flex items-start select-none space-x-4 rounded-lg p-4 leading-none no-underline outline-none transition-all hover:bg-tf-blue-lighter hover:shadow-sm focus:bg-tf-blue-lighter"
+                              >
+                                <div className="icon-container flex-shrink-0">
+                                  <Icon className="h-5 w-5 icon-secondary" />
+                                </div>
+                                <div className="flex-1">
+                                  <div className="text-base font-semibold leading-none mb-xs text-text-dark">
+                                    {item.label}
+                                  </div>
+                                  <p className="line-clamp-2 text-sm leading-snug text-text-medium">
+                                    {item.description}
+                                  </p>
+                                </div>
+                              </Link>
+                            </NavigationMenuLink>
+                          </li>
+                        );
+                      })}
                     </ul>
                   </NavigationMenuContent>
                 </NavigationMenuItem>
