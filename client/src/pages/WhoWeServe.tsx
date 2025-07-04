@@ -1,234 +1,421 @@
 import { Link } from 'wouter';
-import { Users, Settings, ArrowRight } from 'lucide-react';
+import { Users, Settings, ArrowRight, Target, TrendingUp, Globe, Cog, Zap, Rocket, Building, CheckCircle2, Shield, Lightbulb, BarChart3, Award, Clock } from 'lucide-react';
+import ScrollAnimations from '@/components/ScrollAnimations';
 
 export default function WhoWeServe() {
   return (
-    <div>
-      {/* Hero */}
-      <section className="bg-gradient-to-br from-tf-blue-light to-white py-xxxl">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="max-w-4xl mx-auto">
-            <h1 className="text-4xl md:text-5xl font-bold text-text-dark mb-md">
-              Who We Serve: <span className="text-tf-orange">Focused Expertise</span> for Complex Challenges
-            </h1>
-            <p className="text-lg text-text-medium">
-              We partner exclusively with organizations facing <span className="font-semibold text-text-dark">complex talent demands</span> where standard approaches fail. Our specialized knowledge delivers <span className="font-semibold text-text-dark">tailored solutions where generic approaches fall short</span>.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      {/* Strategic Advantage */}
-      <section className="bg-bg-subtle py-xxxl">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center max-w-4xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-bold text-text-dark mb-md">The Strategic Advantage of Specialization</h2>
-            <p className="text-lg text-text-medium mb-lg">
-              Standard talent acquisition approaches often stumble when faced with unique market conditions, specialized skill requirements, or complex organizational dynamics.
-            </p>
-            <p className="text-lg text-text-dark">
-              Our deep focus on specific challenge types enables <span className="font-semibold text-text-dark">unmatched pattern recognition</span>, <span className="font-semibold text-text-dark">more relevant benchmarks</span>, <span className="font-semibold text-text-dark">faster diagnostics</span>, and <span className="font-semibold text-text-dark">highly effective, tailored solutions</span>. This specialization translates directly into <span className="font-semibold text-text-dark">lower risk, faster and more predictable results</span>, and <span className="font-semibold text-text-dark">significantly higher ROI</span> for our clients.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      {/* Areas of Expertise */}
-      <section className="bg-white py-xxxl">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-xxl">
-            <h2 className="text-3xl md:text-4xl font-bold text-text-dark mb-md">Our Areas of Deep Expertise</h2>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-xxl">
-            <div className="bg-white p-xxl rounded-lg shadow-lg border border-border-light hover:shadow-xl transition-shadow">
-              <div className="w-full h-48 bg-gray-200 rounded-lg mb-lg flex items-center justify-center text-gray-500 text-sm">
-                [Placeholder: Reduced Time-to-Fill Graph]
-              </div>
-              <h3 className="text-xl font-semibold text-text-dark mb-md">Solving Specialized Talent Velocity (ICP #1)</h3>
-              <blockquote className="border-l-4 border-tf-blue-lighter pl-md mb-md italic text-text-medium">
-                "We need to hire 50 specialized engineers in 6 months, but our current process takes 4 months per hire."
-              </blockquote>
-              <p className="text-text-medium mb-md">
-                Organizations experiencing rapid growth or product launches that demand specialized skills at unprecedented speed and scale.
+    <ScrollAnimations>
+      <div>
+        {/* Hero Section */}
+        <section id="hero" className="bg-gradient-to-br from-blue-50 to-white py-xxxl geometric-pattern">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="max-w-4xl mx-auto text-center">
+              <h1 className="text-4xl md:text-5xl font-bold text-text-dark mb-lg">
+                Focused Expertise for Your Most <span className="text-tf-orange">Critical, Complex</span> Talent Challenges
+              </h1>
+              <p className="text-lg md:text-xl text-text-medium mb-lg">
+                <span className="font-semibold text-text-dark">Standard approaches fail when the stakes are highest.</span> The Talent Foundation partners exclusively with ambitious leaders navigating demanding inflection points: rapid growth, critical transformations, high‑risk global expansion, essential capability builds.
               </p>
-              <p className="text-text-dark mb-lg">
-                <strong>Our Focused Value:</strong> <span className="font-semibold text-text-dark">Accelerate</span> specialized talent pipelines with <span className="font-semibold text-text-dark">Illuminate</span> market intelligence, enabling predictable hiring velocity.
-              </p>
-              <div className="pt-md border-t border-border-light">
-                <Link href="/contact" className="inline-flex items-center text-tf-blue font-medium hover:text-tf-orange transition-colors">
-                  Explore Specialized Talent Solutions
-                  <ArrowRight className="ml-xs w-4 h-4" />
-                </Link>
-              </div>
-            </div>
-
-            <div className="bg-white p-xxl rounded-lg shadow-lg border border-border-light hover:shadow-xl transition-shadow">
-              <div className="w-full h-48 bg-gray-200 rounded-lg mb-lg flex items-center justify-center text-gray-500 text-sm">
-                [Placeholder: AI Adoption Metrics Dashboard]
-              </div>
-              <h3 className="text-xl font-semibold text-text-dark mb-md">AI-Enabled Talent Transformation (ICP #2)</h3>
-              <blockquote className="border-l-4 border-tf-blue-lighter pl-md mb-md italic text-text-medium">
-                "Our recruiters are drowning in manual work while AI tools sit unused."
-              </blockquote>
-              <p className="text-text-medium mb-md">
-                Organizations struggling to leverage AI and automation in their talent acquisition processes effectively.
-              </p>
-              <p className="text-text-dark mb-lg">
-                <strong>Our Focused Value:</strong> <span className="font-semibold text-text-dark">Elevate</span> teams with practical AI literacy while <span className="font-semibold text-text-dark">Innovate</span> creates seamless AI-human workflows.
-              </p>
-              <div className="pt-md border-t border-border-light">
-                <Link href="/contact" className="inline-flex items-center text-tf-blue font-medium hover:text-tf-orange transition-colors">
-                  Discover AI Enablement Programs
-                  <ArrowRight className="ml-xs w-4 h-4" />
-                </Link>
-              </div>
-            </div>
-
-            <div className="bg-white p-xxl rounded-lg shadow-lg border border-border-light hover:shadow-xl transition-shadow">
-              <div className="w-full h-48 bg-gray-200 rounded-lg mb-lg flex items-center justify-center text-gray-500 text-sm">
-                [Placeholder: Market Expansion Timeline]
-              </div>
-              <h3 className="text-xl font-semibold text-text-dark mb-md">Strategic Market Expansion (ICP #3)</h3>
-              <blockquote className="border-l-4 border-tf-blue-lighter pl-md mb-md italic text-text-medium">
-                "We're entering new markets but don't understand the local talent landscape."
-              </blockquote>
-              <p className="text-text-medium mb-md">
-                Companies expanding into new geographic markets or launching new product lines requiring unknown talent profiles.
-              </p>
-              <p className="text-text-dark mb-lg">
-                <strong>Our Focused Value:</strong> <span className="font-semibold text-text-dark">Illuminate</span> provides market intelligence while <span className="font-semibold text-text-dark">Innovate</span> designs location-specific processes.
-              </p>
-              <div className="pt-md border-t border-border-light">
-                <Link href="/contact" className="inline-flex items-center text-tf-blue font-medium hover:text-tf-orange transition-colors">
-                  Plan Your Market Expansion
-                  <ArrowRight className="ml-xs w-4 h-4" />
-                </Link>
-              </div>
-            </div>
-
-            <div className="bg-white p-xxl rounded-lg shadow-lg border border-border-light hover:shadow-xl transition-shadow">
-              <div className="w-full h-48 bg-gray-200 rounded-lg mb-lg flex items-center justify-center text-gray-500 text-sm">
-                [Placeholder: Portfolio Scaling Metrics]
-              </div>
-              <h3 className="text-xl font-semibold text-text-dark mb-md">VC Portfolio Scaling (ICP #4)</h3>
-              <blockquote className="border-l-4 border-tf-blue-lighter pl-md mb-md italic text-text-medium">
-                "Our portfolio companies need consistent talent strategies that scale with their growth."
-              </blockquote>
-              <p className="text-text-medium mb-md">
-                Venture capital firms seeking to provide standardized talent enablement across their portfolio companies.
-              </p>
-              <p className="text-text-dark mb-lg">
-                <strong>Our Focused Value:</strong> <span className="font-semibold text-text-dark">Innovate</span> creates scalable frameworks while <span className="font-semibold text-text-dark">Elevate</span> builds consistent capabilities across portfolios.
-              </p>
-              <div className="pt-md border-t border-border-light">
-                <Link href="/contact" className="inline-flex items-center text-tf-blue font-medium hover:text-tf-orange transition-colors">
-                  Explore Portfolio Solutions
-                  <ArrowRight className="ml-xs w-4 h-4" />
-                </Link>
+              <div className="bg-gradient-to-r from-tf-orange/10 to-blue-50 p-6 rounded-xl border border-tf-orange/20 inline-block">
+                <p className="text-lg font-semibold text-text-dark">
+                  We deliver specialized <span className="text-tf-orange">talent enablement</span> solutions architected for your specific context, ensuring predictable results where generalist methods create risk and frustration.
+                </p>
               </div>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
 
-      {/* Partnership Approach */}
-      <section className="bg-bg-subtle py-xxxl">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-bold text-text-dark mb-md">Our Enablement Approach: Maximizing Value Through Partnership</h2>
-            <p className="text-lg text-text-dark mb-xxl">
-              Our collaborative methodology ensures optimal outcomes by aligning our expertise with your specific context and objectives.
-            </p>
-            <div className="space-y-lg">
-              <div className="flex items-start gap-md">
-                <div className="w-6 h-6 bg-tf-blue rounded-full flex items-center justify-center flex-shrink-0 mt-1">
-                  <svg className="w-4 h-4 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                  </svg>
+        {/* Strategic Advantage of Specialization */}
+        <section className="bg-bg-subtle py-xxxl">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="max-w-5xl mx-auto">
+              <div className="text-center mb-xxl">
+                <h2 className="text-3xl md:text-4xl font-bold text-text-dark mb-lg">
+                  The Undeniable Strategic Advantage of Deep Specialization
+                </h2>
+                <p className="text-lg text-text-medium mb-lg">
+                  Let's be direct: complexity demands focus. Attempting to solve high‑stakes talent challenges with generic approaches or partners spread thin across unrelated domains is inherently risky and inefficient.
+                </p>
+                <p className="text-lg text-text-dark">
+                  <span className="font-semibold text-tf-orange">The Talent Foundation deliberately concentrates its entire expertise solely on these specific, demanding scenarios.</span>
+                </p>
+              </div>
+              
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-lg mb-xxl">
+                <div className="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 group">
+                  <div className="text-center mb-6">
+                    <div className="w-16 h-16 bg-gradient-to-br from-red-500 to-orange-500 rounded-lg flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
+                      <Shield className="w-8 h-8 text-white" />
+                    </div>
+                    <h3 className="text-xl font-bold text-text-dark group-hover:text-red-700 transition-colors">Significantly Lower Execution Risk</h3>
+                  </div>
+                  <p className="text-text-medium leading-relaxed text-center">
+                    We've navigated these waters before with proven methodologies.
+                  </p>
                 </div>
-                <div>
-                  <h3 className="font-semibold text-text-dark mb-xs">A Clear Mandate and Strategic Alignment</h3>
-                  <p className="text-text-medium">Leadership commitment to talent as a strategic priority, with clear success metrics and resource allocation.</p>
+                
+                <div className="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 group">
+                  <div className="text-center mb-6">
+                    <div className="w-16 h-16 bg-gradient-to-br from-emerald-500 to-teal-600 rounded-lg flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
+                      <Clock className="w-8 h-8 text-white" />
+                    </div>
+                    <h3 className="text-xl font-bold text-text-dark group-hover:text-emerald-700 transition-colors">Faster, More Predictable Results</h3>
+                  </div>
+                  <p className="text-text-medium leading-relaxed text-center">
+                    Proven methods mean less trial‑and‑error (often improving critical timelines by <span className="font-semibold text-text-dark">30‑50%+</span>).
+                  </p>
+                </div>
+                
+                <div className="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 group">
+                  <div className="text-center mb-6">
+                    <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-lg flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
+                      <TrendingUp className="w-8 h-8 text-white" />
+                    </div>
+                    <h3 className="text-xl font-bold text-text-dark group-hover:text-blue-700 transition-colors">Superior Long‑Term ROI</h3>
+                  </div>
+                  <p className="text-text-medium leading-relaxed text-center">
+                    Building targeted capability delivers far greater value than perpetual reliance on fragmented solutions.
+                  </p>
                 </div>
               </div>
-              <div className="flex items-start gap-md">
-                <div className="w-6 h-6 bg-tf-blue rounded-full flex items-center justify-center flex-shrink-0 mt-1">
-                  <svg className="w-4 h-4 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                  </svg>
-                </div>
-                <div>
-                  <h3 className="font-semibold text-text-dark mb-xs">Leadership Commitment to Change</h3>
-                  <p className="text-text-medium">Willingness to evolve processes, invest in capability building, and support team development during transformation.</p>
-                </div>
-              </div>
-              <div className="flex items-start gap-md">
-                <div className="w-6 h-6 bg-tf-blue rounded-full flex items-center justify-center flex-shrink-0 mt-1">
-                  <svg className="w-4 h-4 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                  </svg>
-                </div>
-                <div>
-                  <h3 className="font-semibold text-text-dark mb-xs">Openness to Data-Driven Insights</h3>
-                  <p className="text-text-medium">Receptiveness to market intelligence, process optimization recommendations, and evidence-based decision making.</p>
-                </div>
-              </div>
-              <div className="flex items-start gap-md">
-                <div className="w-6 h-6 bg-tf-blue rounded-full flex items-center justify-center flex-shrink-0 mt-1">
-                  <svg className="w-4 h-4 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                  </svg>
-                </div>
-                <div>
-                  <h3 className="font-semibold text-text-dark mb-xs">A Focus on Long-Term Capability Building</h3>
-                  <p className="text-text-medium">Investment in sustainable internal capabilities rather than quick fixes or temporary solutions.</p>
-                </div>
+              
+              <div className="text-center">
+                <p className="text-lg font-semibold text-text-dark">
+                  We succeed in complexity because <span className="text-tf-orange">deep specialization is our strategic commitment.</span>
+                </p>
               </div>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
 
-      {/* Right Fit */}
-      <section className="bg-white py-xxl">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="max-w-3xl mx-auto text-center">
-            <div className="bg-tf-blue-light p-lg rounded-lg">
-              <h3 className="text-lg font-semibold text-text-dark mb-xs">Ensuring the Right Fit</h3>
-              <p className="text-text-medium">
-                We're <span className="font-semibold text-text-dark">committed to transparency</span> about fit and compatibility. If we're not the right partner for your specific challenge, we'll tell you directly and help you find a better solution.
+        {/* Areas of Deep Expertise */}
+        <section className="bg-white py-xxxl">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="text-center mb-xxl">
+              <h2 className="text-3xl md:text-4xl font-bold text-text-dark mb-lg">
+                Our Areas of Deep Expertise
+              </h2>
+              <p className="text-lg text-text-medium max-w-4xl mx-auto">
+                Where The Talent Foundation delivers transformative value through specialized enablement solutions.
               </p>
             </div>
-          </div>
-        </div>
-      </section>
+            
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-lg">
+              {/* Card 1: Specialized Talent Velocity */}
+              <div className="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 group border border-blue-500/20">
+                <div className="mb-6">
+                  <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-lg flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
+                    <Target className="w-8 h-8 text-white" />
+                  </div>
+                  <h3 className="text-xl font-bold text-text-dark group-hover:text-blue-700 transition-colors mb-2">
+                    Solving Critical Niche Talent Velocity Challenges
+                  </h3>
+                  <p className="text-sm italic text-text-medium mb-4">
+                    "Our innovation hinges on hiring elite [AI/Cyber/Bio] experts. Six months+ vacancy isn't just slow; it's handing the market to competitors!"
+                  </p>
+                </div>
+                <div className="space-y-4">
+                  <p className="text-text-medium leading-relaxed">
+                    <span className="font-semibold text-text-dark">The Challenge:</span> Intense global competition for hyper‑scarce technical or scientific talent creates crippling bottlenecks.
+                  </p>
+                  <p className="text-text-medium leading-relaxed">
+                    <span className="font-semibold text-text-dark">Our Value:</span> Integrated enablement solution targeting <span className="font-semibold text-text-dark">30‑50% time‑to‑fill reduction</span> without compromising quality.
+                  </p>
+                  <div className="flex flex-wrap gap-2 mt-4">
+                    <Link href="/services/accelerate" className="text-emerald-600 hover:text-emerald-500 font-semibold text-sm transition-colors">
+                      Accelerate →
+                    </Link>
+                    <Link href="/services/elevate" className="text-purple-600 hover:text-purple-500 font-semibold text-sm transition-colors">
+                      Elevate →
+                    </Link>
+                  </div>
+                </div>
+              </div>
 
-      {/* CTA */}
-      <section className="bg-bg-dark py-xxxl">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center max-w-4xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-bold text-white mb-md">
-              Ready to Tackle Your Specific Challenge?
-            </h2>
-            <p className="text-lg text-tf-blue-lighter mb-xxl">
-              If your situation aligns with our areas of expertise, let's explore how our specialized approach can deliver the predictable results your organization needs.
-            </p>
-            <div className="mb-xxl">
-              <Link href="/contact" className="btn-primary text-lg px-8 py-4 inline-block mb-lg">
-                Discuss Your Specific Challenge
-              </Link>
-            </div>
-            <div className="flex flex-wrap justify-center gap-lg">
-              <Link href="/services" className="text-tf-blue-lighter hover:text-tf-orange transition-colors border-b border-tf-blue-lighter pb-1">
-                Review Our Services
-              </Link>
-              <Link href="/about" className="text-tf-blue-lighter hover:text-tf-orange transition-colors border-b border-tf-blue-lighter pb-1">
-                Learn About Our Approach
-              </Link>
+              {/* Card 2: PE/VC Portfolio Scaling */}
+              <div className="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 group border border-emerald-500/20">
+                <div className="mb-6">
+                  <div className="w-16 h-16 bg-gradient-to-br from-emerald-500 to-teal-600 rounded-lg flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
+                    <BarChart3 className="w-8 h-8 text-white" />
+                  </div>
+                  <h3 className="text-xl font-bold text-text-dark group-hover:text-emerald-700 transition-colors mb-2">
+                    Executing Predictable PE/VC Portfolio Scaling & Value Creation
+                  </h3>
+                  <p className="text-sm italic text-text-medium mb-4">
+                    "The Value Creation Plan demands we double headcount profitably within 18 months. We need absolute execution reliability and talent ROI, not excuses."
+                  </p>
+                </div>
+                <div className="space-y-4">
+                  <p className="text-text-medium leading-relaxed">
+                    <span className="font-semibold text-text-dark">The Challenge:</span> Executing aggressive PE/VC growth mandates requires extreme speed, talent quality, scalability, and demonstrable ROI.
+                  </p>
+                  <p className="text-text-medium leading-relaxed">
+                    <span className="font-semibold text-text-dark">Our Value:</span> Metrics‑driven TA operating systems aligned with VCPs, reliably transforming talent into measurable value creation driver.
+                  </p>
+                  <div className="mt-4">
+                    <Link href="/services" className="text-tf-orange hover:text-tf-orange/80 font-semibold text-sm transition-colors">
+                      Explore IIEA Framework →
+                    </Link>
+                  </div>
+                </div>
+              </div>
+
+              {/* Card 3: Global Expansion */}
+              <div className="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 group border border-purple-500/20">
+                <div className="mb-6">
+                  <div className="w-16 h-16 bg-gradient-to-br from-purple-500 to-indigo-600 rounded-lg flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
+                    <Globe className="w-8 h-8 text-white" />
+                  </div>
+                  <h3 className="text-xl font-bold text-text-dark group-hover:text-purple-700 transition-colors mb-2">
+                    De‑Risking & Accelerating Critical First Global Expansion
+                  </h3>
+                  <p className="text-sm italic text-text-medium mb-4">
+                    "Entering Asia is key, but navigating local compliance AND finding leaders in Singapore seems like a minefield. Failure here isn't an option."
+                  </p>
+                </div>
+                <div className="space-y-4">
+                  <p className="text-text-medium leading-relaxed">
+                    <span className="font-semibold text-text-dark">The Challenge:</span> First major international leap introduces immense unknowns and magnified risks.
+                  </p>
+                  <p className="text-text-medium leading-relaxed">
+                    <span className="font-semibold text-text-dark">Our Value:</span> Systematically de‑risk global launch with local market intelligence and globally consistent yet locally compliant processes.
+                  </p>
+                  <div className="flex flex-wrap gap-2 mt-4">
+                    <Link href="/services/illuminate" className="text-blue-600 hover:text-blue-500 font-semibold text-sm transition-colors">
+                      Illuminate →
+                    </Link>
+                    <Link href="/services/innovate" className="text-tf-orange hover:text-tf-orange/80 font-semibold text-sm transition-colors">
+                      Innovate →
+                    </Link>
+                  </div>
+                </div>
+              </div>
+
+              {/* Card 4: TA Function Build */}
+              <div className="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 group border border-tf-orange/20">
+                <div className="mb-6">
+                  <div className="w-16 h-16 bg-gradient-to-br from-tf-orange to-red-500 rounded-lg flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
+                    <Cog className="w-8 h-8 text-white" />
+                  </div>
+                  <h3 className="text-xl font-bold text-text-dark group-hover:text-tf-orange transition-colors mb-2">
+                    Architecting Your Scalable, High‑Performing TA Function
+                  </h3>
+                  <p className="text-sm italic text-text-medium mb-4">
+                    "We just closed Series C. Ad‑hoc hiring is killing us! We need a professional, predictable TA engine built for scale, starting yesterday."
+                  </p>
+                </div>
+                <div className="space-y-4">
+                  <p className="text-text-medium leading-relaxed">
+                    <span className="font-semibold text-text-dark">The Challenge:</span> Existing chaotic hiring process is actively hindering growth and causing massive hidden costs.
+                  </p>
+                  <p className="text-text-medium leading-relaxed">
+                    <span className="font-semibold text-text-dark">Our Value:</span> Architects of high‑performance TA functions that create predictable, metrics‑driven, scalable internal engines.
+                  </p>
+                  <div className="flex flex-wrap gap-2 mt-4">
+                    <Link href="/services/innovate" className="text-tf-orange hover:text-tf-orange/80 font-semibold text-sm transition-colors">
+                      Innovate →
+                    </Link>
+                    <Link href="/services/elevate" className="text-purple-600 hover:text-purple-500 font-semibold text-sm transition-colors">
+                      Elevate →
+                    </Link>
+                  </div>
+                </div>
+              </div>
+
+              {/* Card 5: Technology Transformation */}
+              <div className="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 group border border-amber-500/20">
+                <div className="mb-6">
+                  <div className="w-16 h-16 bg-gradient-to-br from-amber-500 to-orange-500 rounded-lg flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
+                    <Zap className="w-8 h-8 text-white" />
+                  </div>
+                  <h3 className="text-xl font-bold text-text-dark group-hover:text-amber-700 transition-colors mb-2">
+                    Enabling Critical Technology Transformation with the Right Talent
+                  </h3>
+                  <p className="text-sm italic text-text-medium mb-4">
+                    "This $50M cloud migration is mission‑critical, but sourcing enough engineers with these specific modern skills feels impossible. The project timeline is slipping."
+                  </p>
+                </div>
+                <div className="space-y-4">
+                  <p className="text-text-medium leading-relaxed">
+                    <span className="font-semibold text-text-dark">The Challenge:</span> Vital technology modernization jeopardized by acute scarcity of essential modern skills.
+                  </p>
+                  <p className="text-text-medium leading-relaxed">
+                    <span className="font-semibold text-text-dark">Our Value:</span> De‑risk transformation by ensuring talent enables, not blocks, success through rapid acquisition and upskilling.
+                  </p>
+                  <div className="flex flex-wrap gap-2 mt-4">
+                    <Link href="/services/accelerate" className="text-emerald-600 hover:text-emerald-500 font-semibold text-sm transition-colors">
+                      Accelerate →
+                    </Link>
+                    <Link href="/services/elevate" className="text-purple-600 hover:text-purple-500 font-semibold text-sm transition-colors">
+                      Elevate →
+                    </Link>
+                  </div>
+                </div>
+              </div>
+
+              {/* Card 6: GTM Launch */}
+              <div className="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 group border border-red-500/20">
+                <div className="mb-6">
+                  <div className="w-16 h-16 bg-gradient-to-br from-red-500 to-pink-600 rounded-lg flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
+                    <Rocket className="w-8 h-8 text-white" />
+                  </div>
+                  <h3 className="text-xl font-bold text-text-dark group-hover:text-red-700 transition-colors mb-2">
+                    Winning the Market with High‑Velocity Go‑To‑Market Team Builds
+                  </h3>
+                  <p className="text-sm italic text-text-medium mb-4">
+                    "Our disruptive product must capture the market lead in Q3. We need a fully ramped, elite GTM team on day one. Speed and quality are non‑negotiable."
+                  </p>
+                </div>
+                <div className="space-y-4">
+                  <p className="text-text-medium leading-relaxed">
+                    <span className="font-semibold text-text-dark">The Challenge:</span> Narrow, hyper‑competitive window for make‑or‑break product launch requiring extreme velocity.
+                  </p>
+                  <p className="text-text-medium leading-relaxed">
+                    <span className="font-semibold text-text-dark">Our Value:</span> Specialists in executing high‑velocity GTM team builds that capture critical market share from day one.
+                  </p>
+                  <div className="mt-4">
+                    <Link href="/services/accelerate" className="text-emerald-600 hover:text-emerald-500 font-semibold text-sm transition-colors">
+                      See Accelerate →
+                    </Link>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
-      </section>
-    </div>
+        </section>
+
+        {/* Partnership Value */}
+        <section className="bg-bg-subtle py-xxxl">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="max-w-5xl mx-auto">
+              <div className="text-center mb-xxl">
+                <h2 className="text-3xl md:text-4xl font-bold text-text-dark mb-lg">
+                  Our Enablement Partnership Drives Transformational Value
+                </h2>
+                <p className="text-lg text-text-medium">
+                  Our collaborative, capability‑building model achieves the greatest strategic impact and ROI when partnered with organizations possessing these core characteristics:
+                </p>
+              </div>
+              
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-lg">
+                <div className="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 group">
+                  <div className="mb-6">
+                    <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-lg flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
+                      <Target className="w-8 h-8 text-white" />
+                    </div>
+                    <h3 className="text-xl font-bold text-text-dark group-hover:text-blue-700 transition-colors">Strategically Mandated</h3>
+                  </div>
+                  <p className="text-text-medium leading-relaxed">
+                    Possessing a clear executive mandate recognizing talent acquisition as mission‑critical and requiring fundamental improvement, not just tactical fixes.
+                  </p>
+                </div>
+                
+                <div className="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 group">
+                  <div className="mb-6">
+                    <div className="w-16 h-16 bg-gradient-to-br from-emerald-500 to-teal-600 rounded-lg flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
+                      <CheckCircle2 className="w-8 h-8 text-white" />
+                    </div>
+                    <h3 className="text-xl font-bold text-text-dark group-hover:text-emerald-700 transition-colors">Committed to Capability</h3>
+                  </div>
+                  <p className="text-text-medium leading-relaxed">
+                    Viewing the investment in robust talent systems, processes, and skills as building a crucial, long‑term strategic asset.
+                  </p>
+                </div>
+                
+                <div className="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 group">
+                  <div className="mb-6">
+                    <div className="w-16 h-16 bg-gradient-to-br from-purple-500 to-indigo-600 rounded-lg flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
+                      <Lightbulb className="w-8 h-8 text-white" />
+                    </div>
+                    <h3 className="text-xl font-bold text-text-dark group-hover:text-purple-700 transition-colors">Open to Insight</h3>
+                  </div>
+                  <p className="text-text-medium leading-relaxed">
+                    Willingness to rigorously examine existing practices, embrace data‑driven decisions, and adopt proven modern methodologies for superior results.
+                  </p>
+                </div>
+                
+                <div className="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 group">
+                  <div className="mb-6">
+                    <div className="w-16 h-16 bg-gradient-to-br from-tf-orange to-red-500 rounded-lg flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
+                      <TrendingUp className="w-8 h-8 text-white" />
+                    </div>
+                    <h3 className="text-xl font-bold text-text-dark group-hover:text-tf-orange transition-colors">Focused on Sustainable Outcomes</h3>
+                  </div>
+                  <p className="text-text-medium leading-relaxed">
+                    Prioritizing lasting internal strength, predictable high performance, and enduring strategic advantage over temporary, fragmented solutions.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Right Fit Section */}
+        <section className="bg-white py-xxxl">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="max-w-4xl mx-auto">
+              <div className="bg-gradient-to-br from-indigo-50 to-white p-8 rounded-2xl border border-indigo-200">
+                <div className="text-center mb-8">
+                  <div className="w-20 h-20 bg-gradient-to-br from-indigo-600 to-purple-600 rounded-full flex items-center justify-center mx-auto mb-6">
+                    <Shield className="w-10 h-10 text-white" />
+                  </div>
+                  <h2 className="text-3xl md:text-4xl font-bold text-text-dark mb-lg">
+                    Ensuring the Right Fit: Our Commitment to Strategic Enablement
+                  </h2>
+                </div>
+                <div className="space-y-6 text-center">
+                  <p className="text-lg text-text-dark">
+                    Our deep expertise is laser‑focused on <span className="font-bold text-indigo-600">enablement</span> solutions for the complex, high‑stakes talent challenges outlined above. This is where we deliver uniquely transformative value.
+                  </p>
+                  <p className="text-lg text-text-medium">
+                    Consequently, TF is generally not the optimal partner for standard, low‑volume contingency searches or basic temporary staffing where building enduring internal capability and strategic process improvement is not the primary objective.
+                  </p>
+                  <p className="text-lg text-text-dark">
+                    Our belief in <span className="font-semibold text-indigo-600">radical transparency</span> means we'll be upfront if another approach better suits your immediate, non‑strategic needs.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* CTA Section */}
+        <section className="bg-bg-subtle py-xxxl">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="max-w-4xl mx-auto">
+              <div className="bg-gradient-to-r from-tf-orange/10 to-indigo-50 p-12 rounded-2xl border border-tf-orange/20 text-center">
+                <div className="mb-8">
+                  <div className="w-20 h-20 bg-gradient-to-br from-tf-orange to-indigo-600 rounded-full flex items-center justify-center mx-auto mb-6">
+                    <Users className="w-10 h-10 text-white" />
+                  </div>
+                  <h2 className="text-3xl md:text-4xl font-bold text-text-dark mb-lg">
+                    Facing a High‑Stakes Talent Challenge? Let's Discuss a Strategic Solution.
+                  </h2>
+                  <p className="text-lg text-text-medium mb-8">
+                    If your organization confronts the type of complexity where standard approaches create unacceptable risk, The Talent Foundation offers specialized expertise grounded in proven enablement frameworks.
+                  </p>
+                </div>
+                <div className="flex flex-col sm:flex-row gap-md justify-center mb-6">
+                  <Link href="/contact" className="btn-primary text-lg px-8 py-4 bg-tf-orange hover:bg-tf-orange/90 text-white rounded-lg font-semibold transition-all duration-300 transform hover:-translate-y-1 shadow-lg hover:shadow-xl">
+                    Discuss Your Specific Strategic Challenge
+                  </Link>
+                </div>
+                <div className="flex flex-col sm:flex-row gap-md justify-center">
+                  <Link href="/services" className="text-blue-600 hover:text-blue-500 font-semibold transition-colors">
+                    Explore Our Services
+                  </Link>
+                  <Link href="/about" className="text-indigo-600 hover:text-indigo-500 font-semibold transition-colors">
+                    Learn About Our Approach
+                  </Link>
+                  <Link href="/contact" className="text-tf-orange hover:text-tf-orange/80 font-semibold transition-colors">
+                    Contact Us
+                  </Link>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </ScrollAnimations>
   );
 }
