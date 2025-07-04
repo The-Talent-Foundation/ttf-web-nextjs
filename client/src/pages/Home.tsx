@@ -314,41 +314,53 @@ export default function Home() {
               The Talent Foundation specializes in partnering with ambitious organizations facing critical talent challenges associated with:
             </p>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-lg mb-xxl">
-              <div className="bg-gradient-to-br from-blue-50 to-indigo-50 p-lg rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 text-center group border border-blue-100">
-                <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-lg flex items-center justify-center mx-auto mb-md group-hover:scale-110 transition-transform duration-300">
-                  <Users className="w-6 h-6 text-white" />
+              <div className="bg-gradient-to-br from-blue-50 to-indigo-50 p-lg rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 group border border-blue-100">
+                <div className="flex items-center gap-md">
+                  <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-lg flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform duration-300">
+                    <Users className="w-6 h-6 text-white" />
+                  </div>
+                  <p className="text-text-dark font-semibold text-base group-hover:text-blue-700 transition-colors leading-tight">Strategic Hiring and Talent Pipelining</p>
                 </div>
-                <p className="text-text-dark font-semibold text-lg group-hover:text-blue-700 transition-colors">Strategic Hiring and Talent Pipelining</p>
               </div>
-              <div className="bg-gradient-to-br from-emerald-50 to-teal-50 p-lg rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 text-center group border border-emerald-100">
-                <div className="w-12 h-12 bg-gradient-to-br from-emerald-500 to-teal-600 rounded-lg flex items-center justify-center mx-auto mb-md group-hover:scale-110 transition-transform duration-300">
-                  <Brain className="w-6 h-6 text-white" />
+              <div className="bg-gradient-to-br from-emerald-50 to-teal-50 p-lg rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 group border border-emerald-100">
+                <div className="flex items-center gap-md">
+                  <div className="w-12 h-12 bg-gradient-to-br from-emerald-500 to-teal-600 rounded-lg flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform duration-300">
+                    <Brain className="w-6 h-6 text-white" />
+                  </div>
+                  <p className="text-text-dark font-semibold text-base group-hover:text-emerald-700 transition-colors leading-tight">AI‑Literacy Upskilling</p>
                 </div>
-                <p className="text-text-dark font-semibold text-lg group-hover:text-emerald-700 transition-colors">AI‑Literacy Upskilling</p>
               </div>
-              <div className="bg-gradient-to-br from-orange-50 to-red-50 p-lg rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 text-center group border border-orange-100">
-                <div className="w-12 h-12 bg-gradient-to-br from-orange-500 to-red-500 rounded-lg flex items-center justify-center mx-auto mb-md group-hover:scale-110 transition-transform duration-300">
-                  <Rocket className="w-6 h-6 text-white" />
+              <div className="bg-gradient-to-br from-orange-50 to-red-50 p-lg rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 group border border-orange-100">
+                <div className="flex items-center gap-md">
+                  <div className="w-12 h-12 bg-gradient-to-br from-orange-500 to-red-500 rounded-lg flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform duration-300">
+                    <Rocket className="w-6 h-6 text-white" />
+                  </div>
+                  <p className="text-text-dark font-semibold text-base group-hover:text-orange-700 transition-colors leading-tight">Launching New Products or Markets</p>
                 </div>
-                <p className="text-text-dark font-semibold text-lg group-hover:text-orange-700 transition-colors">Launching New Products or Markets</p>
               </div>
-              <div className="bg-gradient-to-br from-purple-50 to-pink-50 p-lg rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 text-center group border border-purple-100">
-                <div className="w-12 h-12 bg-gradient-to-br from-purple-500 to-pink-500 rounded-lg flex items-center justify-center mx-auto mb-md group-hover:scale-110 transition-transform duration-300">
-                  <TrendingUp className="w-6 h-6 text-white" />
+              <div className="bg-gradient-to-br from-purple-50 to-pink-50 p-lg rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 group border border-purple-100">
+                <div className="flex items-center gap-md">
+                  <div className="w-12 h-12 bg-gradient-to-br from-purple-500 to-pink-500 rounded-lg flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform duration-300">
+                    <TrendingUp className="w-6 h-6 text-white" />
+                  </div>
+                  <p className="text-text-dark font-semibold text-base group-hover:text-purple-700 transition-colors leading-tight">Venture Capital Portfolio Scaling</p>
                 </div>
-                <p className="text-text-dark font-semibold text-lg group-hover:text-purple-700 transition-colors">Venture Capital Portfolio Scaling</p>
               </div>
-              <div className="bg-gradient-to-br from-slate-50 to-gray-50 p-lg rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 text-center group border border-slate-100">
-                <div className="w-12 h-12 bg-gradient-to-br from-slate-500 to-gray-600 rounded-lg flex items-center justify-center mx-auto mb-md group-hover:scale-110 transition-transform duration-300">
-                  <Building className="w-6 h-6 text-white" />
+              <div className="bg-gradient-to-br from-slate-50 to-gray-50 p-lg rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 group border border-slate-100">
+                <div className="flex items-center gap-md">
+                  <div className="w-12 h-12 bg-gradient-to-br from-slate-500 to-gray-600 rounded-lg flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform duration-300">
+                    <Building className="w-6 h-6 text-white" />
+                  </div>
+                  <p className="text-text-dark font-semibold text-base group-hover:text-slate-700 transition-colors leading-tight">Critical Organizational Function Builds</p>
                 </div>
-                <p className="text-text-dark font-semibold text-lg group-hover:text-slate-700 transition-colors">Critical Organizational Function Builds</p>
               </div>
-              <div className="bg-gradient-to-br from-cyan-50 to-blue-50 p-lg rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 text-center group border border-cyan-100">
-                <div className="w-12 h-12 bg-gradient-to-br from-cyan-500 to-blue-500 rounded-lg flex items-center justify-center mx-auto mb-md group-hover:scale-110 transition-transform duration-300">
-                  <Target className="w-6 h-6 text-white" />
+              <div className="bg-gradient-to-br from-cyan-50 to-blue-50 p-lg rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 group border border-cyan-100">
+                <div className="flex items-center gap-md">
+                  <div className="w-12 h-12 bg-gradient-to-br from-cyan-500 to-blue-500 rounded-lg flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform duration-300">
+                    <Target className="w-6 h-6 text-white" />
+                  </div>
+                  <p className="text-text-dark font-semibold text-base group-hover:text-cyan-700 transition-colors leading-tight">Urgent Niche Skill Development</p>
                 </div>
-                <p className="text-text-dark font-semibold text-lg group-hover:text-cyan-700 transition-colors">Urgent Niche Skill Development</p>
               </div>
             </div>
             <Link href="/who-we-serve" className="text-tf-blue font-semibold hover:text-tf-orange transition-colors">
