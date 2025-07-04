@@ -31,8 +31,8 @@ export default function Footer() {
             </ul>
           </div>
         </div>
-        <div className="border-t border-gray-700 mt-lg pt-lg text-center">
-          <p className="text-tf-blue-lighter text-sm mb-sm">
+        <div className="border-t border-gray-700 mt-xxl pt-xxl text-center">
+          <p className="text-tf-blue-lighter text-sm mb-md">
             © 2025 The Talent Foundation. All rights reserved.
           </p>
           <p className="text-xs text-tf-blue-lighter opacity-60">

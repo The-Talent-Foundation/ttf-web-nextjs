@@ -16,7 +16,8 @@ import {
   LineChart,
   Award,
   TrendingUp,
-  BarChart3
+  BarChart3,
+  Building
 } from 'lucide-react';
 import {
   Accordion,
@@ -121,57 +122,57 @@ export default function Home() {
             </div>
             <Accordion type="single" collapsible className="space-y-md">
               <AccordionItem value="niche-skills" className="bg-white rounded-lg px-lg shadow-sm border border-border-light card-hover">
-                <AccordionTrigger className="hover:no-underline">
-                  <div className="flex items-start gap-md text-left">
-                    <div className="icon-container">
-                      <TrendingDown className="h-6 w-6 icon-primary" />
+                <AccordionTrigger className="hover:no-underline py-lg">
+                  <div className="flex items-start gap-lg text-left">
+                    <div className="w-12 h-12 bg-gradient-to-br from-tf-orange to-red-500 rounded-lg flex items-center justify-center flex-shrink-0">
+                      <TrendingDown className="h-6 w-6 text-white" />
                     </div>
-                    <h3 className="font-semibold text-text-dark">Niche‑skill gaps stall product launches.</h3>
+                    <h3 className="font-semibold text-text-dark text-lg">Niche‑skill gaps stall product launches.</h3>
                   </div>
                 </AccordionTrigger>
-                <AccordionContent className="pl-16 text-text-medium">
+                <AccordionContent className="pl-20 pr-lg pb-lg text-text-medium leading-relaxed">
                   Are <span className="font-semibold text-text-dark">elusive technical or specialized skills</span> delaying crucial product development or market expansion, <span className="font-semibold text-text-dark">costing you market advantage</span>?
                 </AccordionContent>
               </AccordionItem>
 
               <AccordionItem value="unpredictable" className="bg-white rounded-lg px-lg shadow-sm border border-border-light card-hover">
-                <AccordionTrigger className="hover:no-underline">
-                  <div className="flex items-start gap-md text-left">
-                    <div className="icon-container">
-                      <Infinity className="h-6 w-6 icon-primary" />
+                <AccordionTrigger className="hover:no-underline py-lg">
+                  <div className="flex items-start gap-lg text-left">
+                    <div className="w-12 h-12 bg-gradient-to-br from-tf-blue to-blue-600 rounded-lg flex items-center justify-center flex-shrink-0">
+                      <Infinity className="h-6 w-6 text-white" />
                     </div>
-                    <h3 className="font-semibold text-text-dark">Unpredictable hiring wrecks delivery timelines.</h3>
+                    <h3 className="font-semibold text-text-dark text-lg">Unpredictable hiring wrecks delivery timelines.</h3>
                   </div>
                 </AccordionTrigger>
-                <AccordionContent className="pl-16 text-text-medium">
+                <AccordionContent className="pl-20 pr-lg pb-lg text-text-medium leading-relaxed">
                   Is <span className="font-semibold text-text-dark">chaotic and unpredictable hiring</span> velocity and inconsistent quality jeopardizing delivery timelines or crucial goals, silently erasing your planned ROI?
                 </AccordionContent>
               </AccordionItem>
 
               <AccordionItem value="blind" className="bg-white rounded-lg px-lg shadow-sm border border-border-light card-hover">
-                <AccordionTrigger className="hover:no-underline">
-                  <div className="flex items-start gap-md text-left">
-                    <div className="icon-container">
-                      <Brain className="h-6 w-6 icon-primary" />
+                <AccordionTrigger className="hover:no-underline py-lg">
+                  <div className="flex items-start gap-lg text-left">
+                    <div className="w-12 h-12 bg-gradient-to-br from-purple-500 to-indigo-600 rounded-lg flex items-center justify-center flex-shrink-0">
+                      <Brain className="h-6 w-6 text-white" />
                     </div>
-                    <h3 className="font-semibold text-text-dark">Running blind without talent market intelligence.</h3>
+                    <h3 className="font-semibold text-text-dark text-lg">Running blind without talent market intelligence.</h3>
                   </div>
                 </AccordionTrigger>
-                <AccordionContent className="pl-16 text-text-medium">
+                <AccordionContent className="pl-20 pr-lg pb-lg text-text-medium leading-relaxed">
                   Is <span className="font-semibold text-text-dark">expansion or workforce‑growth planning</span> built on guesswork, forcing risky bets on locations, salaries, and timelines that explode later?
                 </AccordionContent>
               </AccordionItem>
 
               <AccordionItem value="firefighting" className="bg-white rounded-lg px-lg shadow-sm border border-border-light card-hover">
-                <AccordionTrigger className="hover:no-underline">
-                  <div className="flex items-start gap-md text-left">
-                    <div className="icon-container">
-                      <AlertTriangle className="h-6 w-6 icon-primary" />
+                <AccordionTrigger className="hover:no-underline py-lg">
+                  <div className="flex items-start gap-lg text-left">
+                    <div className="w-12 h-12 bg-gradient-to-br from-green-500 to-emerald-600 rounded-lg flex items-center justify-center flex-shrink-0">
+                      <AlertTriangle className="h-6 w-6 text-white" />
                     </div>
-                    <h3 className="font-semibold text-text-dark">Your team is stuck in constant firefighting mode.</h3>
+                    <h3 className="font-semibold text-text-dark text-lg">Your team is stuck in constant firefighting mode.</h3>
                   </div>
                 </AccordionTrigger>
-                <AccordionContent className="pl-16 text-text-medium">
+                <AccordionContent className="pl-20 pr-lg pb-lg text-text-medium leading-relaxed">
                   Are nonstop <span className="font-semibold text-text-dark">last‑minute urgent hires</span> dragging leaders into interview marathons and draining team morale because key roles still can't be staffed on schedule?
                 </AccordionContent>
               </AccordionItem>
@@ -208,8 +209,8 @@ export default function Home() {
             <Link href="/services/innovate" className="service-card group relative overflow-hidden p-lg rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 text-center reveal-on-scroll bg-white">
               <div className="absolute inset-0 bg-gradient-to-br from-orange-50 to-red-50 opacity-50 group-hover:opacity-80 transition-opacity"></div>
               <div className="relative z-10">
-                <div className="w-16 h-16 bg-gradient-to-br from-orange-500 to-red-500 rounded-full flex items-center justify-center mx-auto mb-md group-hover:scale-110 group-hover:rotate-12 transition-all duration-300">
-                  <Settings className="w-8 h-8 text-white" />
+                <div className="w-16 h-16 bg-gradient-to-br from-orange-500 to-red-500 rounded-full flex items-center justify-center mx-auto mb-md group-hover:scale-110 transition-all duration-300">
+                  <Settings className="w-8 h-8 text-white group-hover:animate-spin" />
                 </div>
                 <h3 className="font-semibold text-text-dark mb-xs group-hover:text-orange-700 transition-colors">Innovate</h3>
                 <p className="text-sm text-text-medium">Data‑driven systems and agentic workflows designed for scale and efficiency.</p>
@@ -229,7 +230,7 @@ export default function Home() {
               <div className="absolute inset-0 bg-gradient-to-br from-green-50 to-emerald-50 opacity-50 group-hover:opacity-80 transition-opacity"></div>
               <div className="relative z-10">
                 <div className="w-16 h-16 bg-gradient-to-br from-green-500 to-emerald-600 rounded-full flex items-center justify-center mx-auto mb-md group-hover:scale-110 transition-transform duration-300">
-                  <Play className="w-8 h-8 text-white group-hover:animate-pulse" />
+                  <Play className="w-8 h-8 text-white group-hover:scale-75 transition-transform duration-300" />
                 </div>
                 <h3 className="font-semibold text-text-dark mb-xs group-hover:text-green-700 transition-colors">Accelerate</h3>
                 <p className="text-sm text-text-medium">On‑demand expert execution power deployed with strategic precision for time-critical hires.</p>
@@ -254,48 +255,48 @@ export default function Home() {
             <div className="text-center mb-xxl reveal-on-scroll">
               <h2 className="text-3xl md:text-4xl font-bold text-text-dark mb-md">Why We Succeed Where Others Stall</h2>
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-lg">
-              <div className="bg-white p-xl rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 reveal-on-scroll group">
-                <div className="flex items-start space-x-md mb-md">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-lg auto-rows-fr">
+              <div className="bg-white p-xl rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 reveal-on-scroll group h-full">
+                <div className="flex items-start space-x-md">
                   <div className="w-12 h-12 bg-gradient-to-br from-tf-orange to-red-500 rounded-lg flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform duration-300">
                     <Target className="w-6 h-6 text-white" />
                   </div>
                   <div>
-                    <h3 className="font-semibold text-text-dark mb-xs text-lg group-hover:text-tf-orange transition-colors">System, not Band‑Aid</h3>
-                    <p className="text-text-medium">We holistically identify and fix root causes, not symptoms.</p>
+                    <h3 className="font-semibold text-text-dark mb-sm text-lg group-hover:text-tf-orange transition-colors">System, not Band‑Aid</h3>
+                    <p className="text-text-medium leading-relaxed">We holistically identify and fix root causes, not symptoms.</p>
                   </div>
                 </div>
               </div>
-              <div className="bg-white p-xl rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 reveal-on-scroll group">
-                <div className="flex items-start space-x-md mb-md">
+              <div className="bg-white p-xl rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 reveal-on-scroll group h-full">
+                <div className="flex items-start space-x-md">
                   <div className="w-12 h-12 bg-gradient-to-br from-tf-blue to-blue-600 rounded-lg flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform duration-300">
                     <Users className="w-6 h-6 text-white" />
                   </div>
                   <div>
-                    <h3 className="font-semibold text-text-dark mb-xs text-lg group-hover:text-tf-blue transition-colors">Capability Transfer</h3>
-                    <p className="text-text-medium">Your team ends every engagement stronger, without costly external dependencies.</p>
+                    <h3 className="font-semibold text-text-dark mb-sm text-lg group-hover:text-tf-blue transition-colors">Capability Transfer</h3>
+                    <p className="text-text-medium leading-relaxed">Your team ends every engagement stronger, without costly external dependencies.</p>
                   </div>
                 </div>
               </div>
-              <div className="bg-white p-xl rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 reveal-on-scroll group">
-                <div className="flex items-start space-x-md mb-md">
+              <div className="bg-white p-xl rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 reveal-on-scroll group h-full">
+                <div className="flex items-start space-x-md">
                   <div className="w-12 h-12 bg-gradient-to-br from-purple-500 to-indigo-600 rounded-lg flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform duration-300">
                     <LineChart className="w-6 h-6 text-white" />
                   </div>
                   <div>
-                    <h3 className="font-semibold text-text-dark mb-xs text-lg group-hover:text-purple-700 transition-colors">Expertise in complex scaling</h3>
-                    <p className="text-text-medium">From blitz‑scaling to global expansions and product roll‑outs.</p>
+                    <h3 className="font-semibold text-text-dark mb-sm text-lg group-hover:text-purple-700 transition-colors">Expertise in complex scaling</h3>
+                    <p className="text-text-medium leading-relaxed">From blitz‑scaling to global expansions and product roll‑outs.</p>
                   </div>
                 </div>
               </div>
-              <div className="bg-white p-xl rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 reveal-on-scroll group">
-                <div className="flex items-start space-x-md mb-md">
+              <div className="bg-white p-xl rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 reveal-on-scroll group h-full">
+                <div className="flex items-start space-x-md">
                   <div className="w-12 h-12 bg-gradient-to-br from-green-500 to-emerald-600 rounded-lg flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform duration-300">
                     <Target className="w-6 h-6 text-white" />
                   </div>
                   <div>
-                    <h3 className="font-semibold text-text-dark mb-xs text-lg group-hover:text-green-700 transition-colors">Metric Obsession</h3>
-                    <p className="text-text-medium">We track business impact, not vanity KPIs. Our success is measured by <em>your</em> success.</p>
+                    <h3 className="font-semibold text-text-dark mb-sm text-lg group-hover:text-green-700 transition-colors">Metric Obsession</h3>
+                    <p className="text-text-medium leading-relaxed">We track business impact, not vanity KPIs. Our success is measured by <em>your</em> success.</p>
                   </div>
                 </div>
               </div>
@@ -312,24 +313,42 @@ export default function Home() {
             <p className="text-lg text-text-medium mb-xxl">
               The Talent Foundation specializes in partnering with ambitious organizations facing critical talent challenges associated with:
             </p>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-md mb-xxl">
-              <div className="bg-tf-blue-light p-md rounded-lg text-center">
-                <p className="text-text-dark font-medium">Strategic Hiring and Talent Pipelining</p>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-lg mb-xxl">
+              <div className="bg-gradient-to-br from-blue-50 to-indigo-50 p-lg rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 text-center group border border-blue-100">
+                <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-lg flex items-center justify-center mx-auto mb-md group-hover:scale-110 transition-transform duration-300">
+                  <Users className="w-6 h-6 text-white" />
+                </div>
+                <p className="text-text-dark font-semibold text-lg group-hover:text-blue-700 transition-colors">Strategic Hiring and Talent Pipelining</p>
               </div>
-              <div className="bg-tf-blue-light p-md rounded-lg text-center">
-                <p className="text-text-dark font-medium">AI‑Literacy Upskilling</p>
+              <div className="bg-gradient-to-br from-emerald-50 to-teal-50 p-lg rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 text-center group border border-emerald-100">
+                <div className="w-12 h-12 bg-gradient-to-br from-emerald-500 to-teal-600 rounded-lg flex items-center justify-center mx-auto mb-md group-hover:scale-110 transition-transform duration-300">
+                  <Brain className="w-6 h-6 text-white" />
+                </div>
+                <p className="text-text-dark font-semibold text-lg group-hover:text-emerald-700 transition-colors">AI‑Literacy Upskilling</p>
               </div>
-              <div className="bg-tf-blue-light p-md rounded-lg text-center">
-                <p className="text-text-dark font-medium">Launching New Products or Markets</p>
+              <div className="bg-gradient-to-br from-orange-50 to-red-50 p-lg rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 text-center group border border-orange-100">
+                <div className="w-12 h-12 bg-gradient-to-br from-orange-500 to-red-500 rounded-lg flex items-center justify-center mx-auto mb-md group-hover:scale-110 transition-transform duration-300">
+                  <Rocket className="w-6 h-6 text-white" />
+                </div>
+                <p className="text-text-dark font-semibold text-lg group-hover:text-orange-700 transition-colors">Launching New Products or Markets</p>
               </div>
-              <div className="bg-tf-blue-light p-md rounded-lg text-center">
-                <p className="text-text-dark font-medium">Venture Capital Portfolio Scaling</p>
+              <div className="bg-gradient-to-br from-purple-50 to-pink-50 p-lg rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 text-center group border border-purple-100">
+                <div className="w-12 h-12 bg-gradient-to-br from-purple-500 to-pink-500 rounded-lg flex items-center justify-center mx-auto mb-md group-hover:scale-110 transition-transform duration-300">
+                  <TrendingUp className="w-6 h-6 text-white" />
+                </div>
+                <p className="text-text-dark font-semibold text-lg group-hover:text-purple-700 transition-colors">Venture Capital Portfolio Scaling</p>
               </div>
-              <div className="bg-tf-blue-light p-md rounded-lg text-center">
-                <p className="text-text-dark font-medium">Critical Organizational Function Builds</p>
+              <div className="bg-gradient-to-br from-slate-50 to-gray-50 p-lg rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 text-center group border border-slate-100">
+                <div className="w-12 h-12 bg-gradient-to-br from-slate-500 to-gray-600 rounded-lg flex items-center justify-center mx-auto mb-md group-hover:scale-110 transition-transform duration-300">
+                  <Building className="w-6 h-6 text-white" />
+                </div>
+                <p className="text-text-dark font-semibold text-lg group-hover:text-slate-700 transition-colors">Critical Organizational Function Builds</p>
               </div>
-              <div className="bg-tf-blue-light p-md rounded-lg text-center">
-                <p className="text-text-dark font-medium">Urgent Niche Skill Development</p>
+              <div className="bg-gradient-to-br from-cyan-50 to-blue-50 p-lg rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 text-center group border border-cyan-100">
+                <div className="w-12 h-12 bg-gradient-to-br from-cyan-500 to-blue-500 rounded-lg flex items-center justify-center mx-auto mb-md group-hover:scale-110 transition-transform duration-300">
+                  <Target className="w-6 h-6 text-white" />
+                </div>
+                <p className="text-text-dark font-semibold text-lg group-hover:text-cyan-700 transition-colors">Urgent Niche Skill Development</p>
               </div>
             </div>
             <Link href="/who-we-serve" className="text-tf-blue font-semibold hover:text-tf-orange transition-colors">
@@ -359,7 +378,7 @@ export default function Home() {
                 <h3 className="font-semibold text-text-dark mb-xs">First Principles Thinking</h3>
                 <p className="text-text-medium text-sm">Deconstructing challenges to design and build fundamentally superior solutions.</p>
               </div>
-              <div className="text-center">
+              <div className="text-center md:border-l md:border-r md:border-border-light md:px-lg">
                 <h3 className="font-semibold text-text-dark mb-xs">Data-Driven Rigor</h3>
                 <p className="text-text-medium text-sm">Leveraging analytical and predictive intelligence for accurate forecasting and measurable results.</p>
               </div>
@@ -415,14 +434,11 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <div className="border-t border-gray-700 pt-lg">
-              <p className="text-white font-semibold mb-md">Ready to turn talent from constraint to edge?</p>
-              <div className="flex flex-wrap justify-center gap-lg">
+            <div className="border-t border-gray-700 pt-xxl">
+              <p className="text-white font-semibold mb-lg">Ready to turn talent from constraint to edge?</p>
+              <div className="flex justify-center mb-xxl">
                 <Link href="/services" className="text-tf-blue-lighter hover:text-tf-orange transition-colors border-b border-tf-blue-lighter pb-1">
                   Explore Our Services
-                </Link>
-                <Link href="/contact" className="text-tf-blue-lighter hover:text-tf-orange transition-colors border-b border-tf-blue-lighter pb-1">
-                  Contact Us
                 </Link>
               </div>
             </div>
