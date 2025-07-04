@@ -58,7 +58,7 @@ export default function Home() {
               Is Your Talent Strategy <span className="text-tf-orange">Fueling Growth</span> or Slowing It Down?
             </h1>
             <p className="text-lg md:text-xl text-text-medium mb-xl max-w-3xl mx-auto leading-relaxed">
-              A single gap in critical skills or hard‑to‑hire talent can stall product launches, slow workforce expansion, and bleed tens of thousands in value each month, shaking confidence among customers, investors, and other stakeholders.
+              A single gap in critical skills or hard-to-hire talent can stall product launches, slow workforce expansion, and bleed tens of thousands in value each month, shaking confidence among customers, investors, and other stakeholders.
             </p>
             <div className="bg-white p-lg rounded-lg shadow-lg mb-xl">
               <p className="text-lg font-semibold text-text-dark mb-md">
@@ -127,7 +127,7 @@ export default function Home() {
                     <div className="w-12 h-12 bg-gradient-to-br from-tf-orange to-red-500 rounded-lg flex items-center justify-center flex-shrink-0">
                       <TrendingDown className="h-6 w-6 text-white" />
                     </div>
-                    <h3 className="font-semibold text-text-dark text-lg">Niche‑skill gaps stall product launches.</h3>
+                    <h3 className="font-semibold text-text-dark text-lg">Niche-skill gaps stall product launches.</h3>
                   </div>
                 </AccordionTrigger>
                 <AccordionContent className="pl-20 pr-lg pb-md pt-xs text-text-medium text-base leading-relaxed">
@@ -159,7 +159,7 @@ export default function Home() {
                   </div>
                 </AccordionTrigger>
                 <AccordionContent className="pl-20 pr-lg pb-md pt-xs text-text-medium text-base leading-relaxed">
-                  Is <span className="font-semibold text-text-dark">expansion or workforce‑growth planning</span> built on guesswork, forcing risky bets on locations, salaries, and timelines that explode later?
+                  Is <span className="font-semibold text-text-dark">expansion or workforce-growth planning</span> built on guesswork, forcing risky bets on locations, salaries, and timelines that explode later?
                 </AccordionContent>
               </AccordionItem>
 
@@ -173,7 +173,7 @@ export default function Home() {
                   </div>
                 </AccordionTrigger>
                 <AccordionContent className="pl-20 pr-lg pb-md pt-xs text-text-medium text-base leading-relaxed">
-                  Are nonstop <span className="font-semibold text-text-dark">last‑minute urgent hires</span> dragging leaders into interview marathons and draining team morale because key roles still can't be staffed on schedule?
+                  Are nonstop <span className="font-semibold text-text-dark">last-minute urgent hires</span> dragging leaders into interview marathons and draining team morale because key roles still can't be staffed on schedule?
                 </AccordionContent>
               </AccordionItem>
             </Accordion>
@@ -213,7 +213,7 @@ export default function Home() {
                   <Settings className="w-8 h-8 text-white group-hover:animate-spin group-hover:[animation-duration:3s]" />
                 </div>
                 <h3 className="font-semibold text-text-dark mb-xs group-hover:text-orange-700 transition-colors">Innovate</h3>
-                <p className="text-sm text-text-medium">Data‑driven systems and agentic workflows designed for scale and efficiency.</p>
+                <p className="text-sm text-text-medium">Data-driven systems and agentic workflows designed for scale and efficiency.</p>
               </div>
             </Link>
             <Link href="/services/elevate" className="service-card group relative overflow-hidden p-lg rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 text-center reveal-on-scroll bg-white">
@@ -233,7 +233,7 @@ export default function Home() {
                   <Play className="w-8 h-8 text-white group-hover:scale-75 transition-transform duration-300" />
                 </div>
                 <h3 className="font-semibold text-text-dark mb-xs group-hover:text-green-700 transition-colors">Accelerate</h3>
-                <p className="text-sm text-text-medium">On‑demand expert execution power deployed with strategic precision for time-critical hires.</p>
+                <p className="text-sm text-text-medium">On-demand expert execution power deployed with strategic precision for time-critical hires.</p>
               </div>
             </Link>
           </div>
@@ -262,7 +262,7 @@ export default function Home() {
                     <Target className="w-6 h-6 text-white" />
                   </div>
                   <div>
-                    <h3 className="font-semibold text-text-dark mb-sm text-lg group-hover:text-tf-orange transition-colors">System, not Band‑Aid</h3>
+                    <h3 className="font-semibold text-text-dark mb-sm text-lg group-hover:text-tf-orange transition-colors">System, not Band-Aid</h3>
                     <p className="text-text-medium leading-relaxed">We holistically identify and fix root causes, not symptoms.</p>
                   </div>
                 </div>
@@ -285,7 +285,7 @@ export default function Home() {
                   </div>
                   <div>
                     <h3 className="font-semibold text-text-dark mb-sm text-lg group-hover:text-purple-700 transition-colors">Expertise in complex scaling</h3>
-                    <p className="text-text-medium leading-relaxed">From blitz‑scaling to global expansions and product roll‑outs.</p>
+                    <p className="text-text-medium leading-relaxed">From blitz-scaling to global expansions and product roll-outs.</p>
                   </div>
                 </div>
               </div>
@@ -327,7 +327,7 @@ export default function Home() {
                   <div className="w-12 h-12 bg-gradient-to-br from-emerald-500 to-teal-600 rounded-lg flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform duration-300">
                     <Brain className="w-6 h-6 text-white" />
                   </div>
-                  <p className="text-text-dark font-semibold text-base group-hover:text-emerald-700 transition-colors leading-tight">AI‑Literacy Upskilling</p>
+                  <p className="text-text-dark font-semibold text-base group-hover:text-emerald-700 transition-colors leading-tight">AI-Literacy Upskilling</p>
                 </div>
               </div>
               <div className="bg-gradient-to-br from-orange-50 to-red-50 p-lg rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 group border border-orange-100">
@@ -430,7 +430,7 @@ export default function Home() {
                   <div className="w-8 h-8 bg-tf-blue rounded-full flex items-center justify-center flex-shrink-0">
                     <span className="text-white font-bold text-sm">1</span>
                   </div>
-                  <p className="text-white text-sm"><span className="font-semibold">Pre‑call brief</span> – You answer five context questions</p>
+                  <p className="text-white text-sm"><span className="font-semibold">Pre-call brief</span> – You answer five context questions</p>
                 </div>
                 <div className="flex items-center gap-md">
                   <div className="w-8 h-8 bg-tf-blue rounded-full flex items-center justify-center flex-shrink-0">

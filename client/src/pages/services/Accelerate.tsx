@@ -15,7 +15,7 @@ export default function Accelerate() {
               </h1>
               <p className="text-lg md:text-xl text-text-medium mb-xl">
                 Critical roles demand expertise you can't build overnight. 
-                Get immediate access to <span className="font-semibold text-text-dark">senior‑level talent acquisition specialists</span> who deliver executive‑search rigor at startup speed. 
+                Get immediate access to <span className="font-semibold text-text-dark">senior-level talent acquisition specialists</span> who deliver executive-search rigor at startup speed. 
                 Bridge the gap while you build capacity—or supplement it when stakes are highest.
               </p>
               <div className="flex flex-col sm:flex-row gap-md justify-center">
@@ -38,7 +38,7 @@ export default function Accelerate() {
                 When Critical Roles Can't Wait for Capacity Building
               </h2>
               <p className="text-lg text-text-medium">
-                Some missions are too urgent—and too important—for trial‑and‑error. Here's when internal limits damage outcomes.
+                Some missions are too urgent—and too important—for trial-and-error. Here's when internal limits damage outcomes.
               </p>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-lg mb-xxl">
@@ -47,10 +47,10 @@ export default function Accelerate() {
                   <div className="w-16 h-16 bg-gradient-to-br from-red-500 to-orange-500 rounded-lg flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
                     <Clock className="w-8 h-8 text-white" />
                   </div>
-                  <h3 className="text-xl font-bold text-text-dark group-hover:text-red-700 transition-colors">Revenue‑Critical Hiring Delays</h3>
+                  <h3 className="text-xl font-bold text-text-dark group-hover:text-red-700 transition-colors">Revenue-Critical Hiring Delays</h3>
                 </div>
                 <p className="text-text-medium leading-relaxed text-center">
-                  C‑suite, VP‑level, and niche technical roles staying open for <span className="font-semibold text-text-dark">4+ months</span> can delay product launches, market expansion, and investment timelines.
+                  C-suite, VP-level, and niche technical roles staying open for <span className="font-semibold text-text-dark">4+ months</span> can delay product launches, market expansion, and investment timelines.
                 </p>
               </div>
               
@@ -59,10 +59,10 @@ export default function Accelerate() {
                   <div className="w-16 h-16 bg-gradient-to-br from-amber-500 to-yellow-600 rounded-lg flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
                     <Target className="w-8 h-8 text-white" />
                   </div>
-                  <h3 className="text-xl font-bold text-text-dark group-hover:text-amber-700 transition-colors">Mis‑Hire Risk at Senior Levels</h3>
+                  <h3 className="text-xl font-bold text-text-dark group-hover:text-amber-700 transition-colors">Mis-Hire Risk at Senior Levels</h3>
                 </div>
                 <p className="text-text-medium leading-relaxed text-center">
-                  Bad senior hires cost <span className="font-semibold text-text-dark">2‑3x annual salary</span> in replacement, lost productivity, and team disruption. Stakes are highest where experience matters most.
+                  Bad senior hires cost <span className="font-semibold text-text-dark">2-3x annual salary</span> in replacement, lost productivity, and team disruption. Stakes are highest where experience matters most.
                 </p>
               </div>
               
@@ -71,10 +71,10 @@ export default function Accelerate() {
                   <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-lg flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
                     <AlertTriangle className="w-8 h-8 text-white" />
                   </div>
-                  <h3 className="text-xl font-bold text-text-dark group-hover:text-blue-700 transition-colors">Under‑Resourced for Complexity</h3>
+                  <h3 className="text-xl font-bold text-text-dark group-hover:text-blue-700 transition-colors">Under-Resourced for Complexity</h3>
                 </div>
                 <p className="text-text-medium leading-relaxed text-center">
-                  Global searches, hyper‑competitive talent markets, and regulation‑heavy industries require specialist knowledge most internal teams lack.
+                  Global searches, hyper-competitive talent markets, and regulation-heavy industries require specialist knowledge most internal teams lack.
                 </p>
               </div>
               
@@ -86,14 +86,14 @@ export default function Accelerate() {
                   <h3 className="text-xl font-bold text-text-dark group-hover:text-purple-700 transition-colors">Executive Expectations vs. Reality</h3>
                 </div>
                 <p className="text-text-medium leading-relaxed text-center">
-                  Boards and investors expect <span className="font-semibold text-text-dark">search‑firm calibre</span> results without wanting to pay search‑firm rates or timelines.
+                  Boards and investors expect <span className="font-semibold text-text-dark">search-firm calibre</span> results without wanting to pay search-firm rates or timelines.
                 </p>
               </div>
             </div>
             
             <div className="bg-gradient-to-r from-emerald-600/10 to-teal-50 p-8 rounded-xl border border-emerald-600/20 text-center max-w-4xl mx-auto">
               <p className="text-lg font-semibold text-text-dark">
-                Some missions are too urgent for trial‑and‑error. <span className="font-bold text-emerald-600">Accelerate delivers expertise when it counts.</span>
+                Some missions are too urgent for trial-and-error. <span className="font-bold text-emerald-600">Accelerate delivers expertise when it counts.</span>
               </p>
             </div>
           </div>
@@ -133,11 +133,11 @@ export default function Accelerate() {
                   <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-lg flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
                     <Rocket className="w-8 h-8 text-white" />
                   </div>
-                  <h3 className="text-xl font-bold text-text-dark group-hover:text-blue-700 transition-colors">Senior‑Level Search Execution</h3>
+                  <h3 className="text-xl font-bold text-text-dark group-hover:text-blue-700 transition-colors">Senior-Level Search Execution</h3>
                   <p className="text-sm font-semibold text-text-medium mt-2">How do we find the best?</p>
                 </div>
                 <p className="text-text-medium leading-relaxed text-center">
-                  Executive‑search methodology: direct approach, multi‑channel sourcing, and rigorous assessment frameworks. No shortcuts, no compromises.
+                  Executive-search methodology: direct approach, multi-channel sourcing, and rigorous assessment frameworks. No shortcuts, no compromises.
                 </p>
               </div>
 
@@ -148,10 +148,10 @@ export default function Accelerate() {
                     <Brain className="w-8 h-8 text-white" />
                   </div>
                   <h3 className="text-xl font-bold text-text-dark group-hover:text-purple-700 transition-colors">Assessment & Reference Excellence</h3>
-                  <p className="text-sm font-semibold text-text-medium mt-2">How do we de‑risk the decision?</p>
+                  <p className="text-sm font-semibold text-text-medium mt-2">How do we de-risk the decision?</p>
                 </div>
                 <p className="text-text-medium leading-relaxed text-center">
-                  Structured competency interviews, case‑study simulations, and deep‑dive reference calls. Reduce uncertainty, improve hire quality.
+                  Structured competency interviews, case-study simulations, and deep-dive reference calls. Reduce uncertainty, improve hire quality.
                 </p>
               </div>
 
@@ -179,7 +179,7 @@ export default function Accelerate() {
                 <span className="font-semibold text-text-dark">Immediate Impact</span>
               </div>
               <p className="text-text-medium text-center mt-md">
-                Senior specialists who've delivered <span className="font-semibold text-text-dark italic">hundreds</span> of C‑suite, VP, and specialist roles across industries integrate into your team instantly.
+                Senior specialists who've delivered <span className="font-semibold text-text-dark italic">hundreds</span> of C-suite, VP, and specialist roles across industries integrate into your team instantly.
               </p>
             </div>
           </div>
@@ -214,10 +214,10 @@ export default function Accelerate() {
                   <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-lg flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
                     <Award className="w-8 h-8 text-white" />
                   </div>
-                  <h3 className="text-xl font-bold text-text-dark group-hover:text-blue-700 transition-colors">Executive‑Search Quality at Internal Speed</h3>
+                  <h3 className="text-xl font-bold text-text-dark group-hover:text-blue-700 transition-colors">Executive-Search Quality at Internal Speed</h3>
                 </div>
                 <p className="text-text-medium leading-relaxed text-center">
-                  Rigorous process without executive search timelines—deliver <span className="font-semibold text-text-dark">10‑15% better</span> hire quality in faster cycles.
+                  Rigorous process without executive search timelines—deliver <span className="font-semibold text-text-dark">10-15% better</span> hire quality in faster cycles.
                 </p>
               </div>
               
@@ -229,7 +229,7 @@ export default function Accelerate() {
                   <h3 className="text-xl font-bold text-text-dark group-hover:text-purple-700 transition-colors">Risk Mitigation & Compliance Assurance</h3>
                 </div>
                 <p className="text-text-medium leading-relaxed text-center">
-                  Structured assessment reduces senior‑level mis‑hire risk by <span className="font-semibold text-text-dark">40‑60%</span> while ensuring regulatory and bias‑mitigation compliance.
+                  Structured assessment reduces senior-level mis-hire risk by <span className="font-semibold text-text-dark">40-60%</span> while ensuring regulatory and bias-mitigation compliance.
                 </p>
               </div>
               
@@ -256,7 +256,7 @@ export default function Accelerate() {
                 When to Deploy Accelerate: Critical Scenarios
               </h2>
               <p className="text-lg text-text-medium">
-                Four high‑stakes situations where expert execution delivers outsized ROI.
+                Four high-stakes situations where expert execution delivers outsized ROI.
               </p>
             </div>
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-lg mb-xxl">
@@ -265,10 +265,10 @@ export default function Accelerate() {
                   <div className="w-16 h-16 bg-gradient-to-br from-emerald-600 to-teal-600 rounded-lg flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
                     <Clock className="w-8 h-8 text-white" />
                   </div>
-                  <h3 className="text-xl font-bold text-text-dark group-hover:text-emerald-600 transition-colors">Revenue‑Critical Leadership Gaps</h3>
+                  <h3 className="text-xl font-bold text-text-dark group-hover:text-emerald-600 transition-colors">Revenue-Critical Leadership Gaps</h3>
                 </div>
                 <p className="text-text-medium leading-relaxed text-center">
-                  When C‑suite, revenue leadership, or key technical roles block product launches, funding, or market expansion.
+                  When C-suite, revenue leadership, or key technical roles block product launches, funding, or market expansion.
                 </p>
               </div>
               
@@ -277,7 +277,7 @@ export default function Accelerate() {
                   <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-lg flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
                     <Target className="w-8 h-8 text-white" />
                   </div>
-                  <h3 className="text-xl font-bold text-text-dark group-hover:text-blue-700 transition-colors">Hyper‑Competitive Talent Markets</h3>
+                  <h3 className="text-xl font-bold text-text-dark group-hover:text-blue-700 transition-colors">Hyper-Competitive Talent Markets</h3>
                 </div>
                 <p className="text-text-medium leading-relaxed text-center">
                   For AI/ML, cybersecurity, biotech, or other specialist roles where demand outstrips supply <span className="font-semibold text-text-dark">10:1</span>.
@@ -292,7 +292,7 @@ export default function Accelerate() {
                   <h3 className="text-xl font-bold text-text-dark group-hover:text-purple-700 transition-colors">Board & Investor Scrutiny</h3>
                 </div>
                 <p className="text-text-medium leading-relaxed text-center">
-                  When hiring outcomes will be evaluated at board‑level and failure could affect funding or strategic credibility.
+                  When hiring outcomes will be evaluated at board-level and failure could affect funding or strategic credibility.
                 </p>
               </div>
               
@@ -301,7 +301,7 @@ export default function Accelerate() {
                   <div className="w-16 h-16 bg-gradient-to-br from-amber-500 to-orange-500 rounded-lg flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
                     <Calendar className="w-8 h-8 text-white" />
                   </div>
-                  <h3 className="text-xl font-bold text-text-dark group-hover:text-amber-700 transition-colors">Capacity‑Building Bridge</h3>
+                  <h3 className="text-xl font-bold text-text-dark group-hover:text-amber-700 transition-colors">Capacity-Building Bridge</h3>
                 </div>
                 <p className="text-text-medium leading-relaxed text-center">
                   While your team builds capability or during peak hiring cycles where internal bandwidth is stretched thin.
@@ -364,7 +364,7 @@ export default function Accelerate() {
                   <div className="w-12 h-12 bg-gradient-to-br from-red-500 to-pink-600 rounded-lg flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
                     <CheckCircle2 className="w-6 h-6 text-white" />
                   </div>
-                  <h3 className="text-lg font-bold text-text-dark group-hover:text-red-700 transition-colors">90‑Day Success Metrics Tracking</h3>
+                  <h3 className="text-lg font-bold text-text-dark group-hover:text-red-700 transition-colors">90-Day Success Metrics Tracking</h3>
                 </div>
               </div>
             </div>

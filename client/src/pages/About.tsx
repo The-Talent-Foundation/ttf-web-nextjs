@@ -11,10 +11,10 @@ export default function About() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="max-w-4xl mx-auto text-center">
               <h1 className="text-4xl md:text-5xl font-bold text-text-dark mb-lg">
-                Expertise Forged in <span className="text-tf-orange">Complexity.</span> Enablement, Not Band‑Aids.
+                Expertise Forged in <span className="text-tf-orange">Complexity.</span> Enablement, Not Band-Aids.
               </h1>
               <p className="text-lg md:text-xl text-text-medium mb-xl">
-                Traditional recruiting collapses under hyper‑growth, global expansion, or niche‑skill scarcity. 
+                Traditional recruiting collapses under hyper-growth, global expansion, or niche-skill scarcity. 
                 We design systems so it never happens again.
               </p>
               <div className="flex flex-col sm:flex-row gap-md justify-center">
@@ -56,7 +56,7 @@ export default function About() {
                     <div className="w-16 h-16 bg-gradient-to-br from-amber-500 to-yellow-600 rounded-lg flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
                       <Settings className="w-8 h-8 text-white" />
                     </div>
-                    <h3 className="text-xl font-bold text-text-dark group-hover:text-amber-700 transition-colors">Point‑Solution "Fixes"</h3>
+                    <h3 className="text-xl font-bold text-text-dark group-hover:text-amber-700 transition-colors">Point-Solution "Fixes"</h3>
                   </div>
                   <p className="text-text-medium leading-relaxed text-center">
                     Treat symptoms, not root causes, leaving fundamental problems unsolved.
@@ -68,10 +68,10 @@ export default function About() {
                     <div className="w-16 h-16 bg-gradient-to-br from-emerald-500 to-teal-600 rounded-lg flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
                       <TrendingUp className="w-8 h-8 text-white" />
                     </div>
-                    <h3 className="text-xl font-bold text-text-dark group-hover:text-emerald-700 transition-colors">Internal Data‑Driven Engine</h3>
+                    <h3 className="text-xl font-bold text-text-dark group-hover:text-emerald-700 transition-colors">Internal Data-Driven Engine</h3>
                   </div>
                   <p className="text-text-medium leading-relaxed text-center">
-                    Delivers <span className="font-semibold text-text-dark">compounding ROI</span> and lower long‑term risk through sustained capability.
+                    Delivers <span className="font-semibold text-text-dark">compounding ROI</span> and lower long-term risk through sustained capability.
                   </p>
                 </div>
               </div>
@@ -101,7 +101,7 @@ export default function About() {
                     <h3 className="text-xl font-bold text-text-dark group-hover:text-blue-700 transition-colors">Design Thinking</h3>
                   </div>
                   <p className="text-text-medium leading-relaxed">
-                    User‑first diagnostics ensure we solve the <span className="font-semibold text-text-dark italic">right</span> problems and drive rapid adoption.
+                    User-first diagnostics ensure we solve the <span className="font-semibold text-text-dark italic">right</span> problems and drive rapid adoption.
                   </p>
                 </div>
                 
@@ -110,10 +110,10 @@ export default function About() {
                     <div className="w-16 h-16 bg-gradient-to-br from-purple-500 to-indigo-600 rounded-lg flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
                       <Brain className="w-8 h-8 text-white" />
                     </div>
-                    <h3 className="text-xl font-bold text-text-dark group-hover:text-purple-700 transition-colors">First‑Principles Rigor</h3>
+                    <h3 className="text-xl font-bold text-text-dark group-hover:text-purple-700 transition-colors">First-Principles Rigor</h3>
                   </div>
                   <p className="text-text-medium leading-relaxed">
-                    We rebuild from bedrock logic, never copy‑pasting <span className="font-semibold text-text-dark">"best practice"</span> templates.
+                    We rebuild from bedrock logic, never copy-pasting <span className="font-semibold text-text-dark">"best practice"</span> templates.
                   </p>
                 </div>
                 
@@ -137,7 +137,7 @@ export default function About() {
                     <h3 className="text-xl font-bold text-text-dark group-hover:text-amber-700 transition-colors">Radical Transparency</h3>
                   </div>
                   <p className="text-text-medium leading-relaxed">
-                    Clear metrics, blunt feedback, and honest feasibility checks de‑risk the partnership.
+                    Clear metrics, blunt feedback, and honest feasibility checks de-risk the partnership.
                   </p>
                 </div>
               </div>
@@ -159,10 +159,10 @@ export default function About() {
               <div className="grid grid-cols-1 md:grid-cols-3 gap-xxl items-center mb-xxl">
                 <div className="md:col-span-2">
                   <h2 className="text-3xl md:text-4xl font-bold text-text-dark mb-lg">
-                    Adam Kovacs — Architect of High‑Performance Talent Systems
+                    Adam Kovacs — Architect of High-Performance Talent Systems
                   </h2>
                   <p className="text-lg text-text-medium mb-lg">
-                    Adam stays hands‑on with every engagement—no hand‑off to junior teams.
+                    Adam stays hands-on with every engagement—no hand-off to junior teams.
                   </p>
                 </div>
                 <div className="flex justify-center md:justify-end">
@@ -185,7 +185,7 @@ export default function About() {
                     <h3 className="text-xl font-bold text-text-dark group-hover:text-red-700 transition-colors">Scale Under Pressure</h3>
                   </div>
                   <p className="text-text-medium leading-relaxed">
-                    Led global TA at Amazon | AWS, delivering <span className="font-semibold text-text-dark">thousands</span> of technical & leadership hires per year during hyper‑growth.
+                    Led global TA at Amazon | AWS, delivering <span className="font-semibold text-text-dark">thousands</span> of technical & leadership hires per year during hyper-growth.
                   </p>
                 </div>
                 
@@ -197,7 +197,7 @@ export default function About() {
                     <h3 className="text-xl font-bold text-text-dark group-hover:text-blue-700 transition-colors">Intel Pioneer</h3>
                   </div>
                   <p className="text-text-medium leading-relaxed">
-                    Founded AWS Talent Intelligence to break niche‑skill scarcity with data‑driven market insight.
+                    Founded AWS Talent Intelligence to break niche-skill scarcity with data-driven market insight.
                   </p>
                 </div>
                 
@@ -247,7 +247,7 @@ export default function About() {
                     <h3 className="text-xl font-bold text-text-dark group-hover:text-tf-orange transition-colors">Narrow Focus, Deep Mastery</h3>
                   </div>
                   <p className="text-text-medium leading-relaxed">
-                    <span className="font-semibold text-text-dark">100%</span> of our time is spent on complex enablement, not broad‑market recruiting.
+                    <span className="font-semibold text-text-dark">100%</span> of our time is spent on complex enablement, not broad-market recruiting.
                   </p>
                 </div>
                 
@@ -259,7 +259,7 @@ export default function About() {
                     <h3 className="text-xl font-bold text-text-dark group-hover:text-blue-700 transition-colors">Direct Senior Expertise</h3>
                   </div>
                   <p className="text-text-medium leading-relaxed">
-                    You work with principals start‑to‑finish; zero leverage‑model dilution.
+                    You work with principals start-to-finish with zero leverage-model dilution.
                   </p>
                 </div>
                 

@@ -24,8 +24,8 @@ export default function Illuminate() {
               One blind talent bet can cost millions, Illuminate the data to win them all.
             </p>
             <p className="text-lg text-text-medium mb-xl">
-              Stop navigating mission‑critical initiatives blindfolded. Deep, synthesized market, competitor, and workforce intelligence, 
-              filtered through real execution insight that lets you <span className="font-semibold text-text-dark">anticipate shifts, validate multi‑million‑dollar strategies, 
+              Stop navigating mission-critical initiatives blindfolded. Deep, synthesized market, competitor, and workforce intelligence, 
+              filtered through real execution insight that lets you <span className="font-semibold text-text-dark">anticipate shifts, validate multi-million-dollar strategies, 
               and build the workforce your future demands</span>.
             </p>
             <div className="flex flex-col sm:flex-row gap-md">
@@ -103,7 +103,7 @@ export default function Illuminate() {
           
           <div className="bg-gradient-to-r from-blue-50 to-indigo-50 p-8 rounded-xl border border-blue-200 text-center max-w-4xl mx-auto">
             <p className="text-lg font-semibold text-text-dark">
-              Ignoring talent intelligence doesn't save money, it causes <span className="text-blue-600">systemic blindness</span>. Illuminate research service replaces guesswork with data‑driven clarity.
+              Ignoring talent intelligence doesn't save money, it causes <span className="text-blue-600">systemic blindness</span>. Illuminate research service replaces guesswork with data-driven clarity.
             </p>
           </div>
         </div>
@@ -176,7 +176,7 @@ export default function Illuminate() {
                     What does a winning offer actually cost?
                   </h3>
                   <p className="text-text-medium mb-md">
-                    Access role‑specific, geo‑calibrated compensation and benefits data to ensure that your offers are competitive enough to secure key talent while also retaining high-performing critical employees.
+                    Access role-specific, geo-calibrated compensation and benefits data to ensure that your offers are competitive enough to secure key talent while also retaining high-performing critical employees.
                   </p>
                   
                   <div className="insight-details opacity-0 group-hover:opacity-100 transform translate-y-4 group-hover:translate-y-0 transition-all duration-300 bg-white/90 backdrop-blur-sm p-md rounded-lg mt-md border border-purple-200">
@@ -456,7 +456,7 @@ export default function Illuminate() {
                   <Target className="w-10 h-10 text-white" />
                 </div>
                 <h2 className="text-3xl md:text-4xl font-bold text-text-dark mb-lg">
-                  Make Your Next Move With Data‑Driven Confidence
+                  Make Your Next Move With Data-Driven Confidence
                 </h2>
                 <p className="text-lg text-text-medium mb-8">
                   Stop risking critical initiatives on talent assumptions or incomplete information. Book a briefing and see precisely how Illuminate can provide the clarity your leadership and goals demand.

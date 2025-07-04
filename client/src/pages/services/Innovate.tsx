@@ -15,7 +15,7 @@ export default function Innovate() {
               </h1>
               <p className="text-lg md:text-xl text-text-medium mb-xl">
                 Stop losing time and money to broken hiring. Turn every process step into a repeatable system. 
-                With first‑principles and design‑thinking rigor, we build the <span className="font-semibold text-text-dark">data‑driven, resilient</span> talent‑acquisition operating system that turns reactive firefighting into a repeatable competitive advantage.
+                With first-principles and design-thinking rigor, we build the <span className="font-semibold text-text-dark">data-driven, resilient</span> talent-acquisition operating system that turns reactive firefighting into a repeatable competitive advantage.
               </p>
               <div className="flex flex-col sm:flex-row gap-md justify-center">
                 <Link href="/contact" className="btn-primary bg-tf-orange hover:bg-tf-orange/90">
@@ -37,7 +37,7 @@ export default function Innovate() {
                 When the Process Is the Bottleneck, Growth Pays the Price
               </h2>
               <p className="text-lg text-text-medium">
-                Patch‑on‑patch fixes can't repair systemic failure. Here's how chaos blocks success.
+                Patch-on-patch fixes can't repair systemic failure. Here's how chaos blocks success.
               </p>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-lg mb-xxl">
@@ -49,7 +49,7 @@ export default function Innovate() {
                   <h3 className="text-xl font-bold text-text-dark group-hover:text-red-700 transition-colors">Draining Drag of Inefficiency</h3>
                 </div>
                 <p className="text-text-medium leading-relaxed text-center">
-                  Manual hand‑offs and spreadsheet workflows between the recruiting and hiring teams waste <span className="font-semibold text-text-dark">5‑10+ of total staff hours per hire</span>, stretch time‑to‑start, raise cost-of-hire, and push burnout driven attrition rates high.
+                  Manual hand-offs and spreadsheet workflows between the recruiting and hiring teams waste <span className="font-semibold text-text-dark">5-10+ of total staff hours per hire</span>, stretch time-to-start, raise cost-of-hire, and push burnout driven attrition rates high.
                 </p>
               </div>
               
@@ -61,7 +61,7 @@ export default function Innovate() {
                   <h3 className="text-xl font-bold text-text-dark group-hover:text-amber-700 transition-colors">Unreliable Quality & Retention</h3>
                 </div>
                 <p className="text-text-medium leading-relaxed text-center">
-                  Lack of standardized assessments don't just cause a bad candidate experience, they also drive up the rate of bad hiring decisions. Each representing a sunk cost of <span className="font-semibold text-text-dark">30%+ of first‑year salary</span> and erasing team momentum.
+                  Lack of standardized assessments don't just cause a bad candidate experience, they also drive up the rate of bad hiring decisions. Each representing a sunk cost of <span className="font-semibold text-text-dark">30%+ of first-year salary</span> and erasing team momentum.
                 </p>
               </div>
               
@@ -92,7 +92,7 @@ export default function Innovate() {
             
             <div className="bg-gradient-to-r from-tf-orange/10 to-red-50 p-8 rounded-xl border border-tf-orange/20 text-center max-w-4xl mx-auto">
               <p className="text-lg font-semibold text-text-dark">
-                Patch‑on‑patch fixes can't repair systemic failure. <span className="font-bold text-tf-orange">Innovate replaces chaos with architecture.</span>
+                Patch-on-patch fixes can't repair systemic failure. <span className="font-bold text-tf-orange">Innovate replaces chaos with architecture.</span>
               </p>
             </div>
           </div>
@@ -106,7 +106,7 @@ export default function Innovate() {
                 Targeted Audit • Custom Blueprint • Measurable Adoption
               </h2>
               <p className="text-lg text-text-medium mb-lg">
-                We cut through noise to deliver a <span className="font-semibold text-text-dark italic">bespoke</span> talent‑acquisition operating system, engineered for your scale, speed, and complexity.
+                We cut through noise to deliver a <span className="font-semibold text-text-dark italic">bespoke</span> talent-acquisition operating system, engineered for your scale, speed, and complexity.
               </p>
             </div>
 
@@ -122,7 +122,7 @@ export default function Innovate() {
                   <p className="text-sm font-semibold text-text-medium mt-2">Where are we breaking?</p>
                 </div>
                 <p className="text-text-medium leading-relaxed text-center">
-                  Root‑cause analysis of flows, tools, roles, metrics, and compliance gaps. Pinpoint process, tech, skill, and data choke‑points blocking velocity.
+                  Root-cause analysis of flows, tools, roles, metrics, and compliance gaps. Pinpoint process, tech, skill, and data choke-points blocking velocity.
                 </p>
               </div>
 
@@ -136,7 +136,7 @@ export default function Innovate() {
                   <p className="text-sm font-semibold text-text-medium mt-2">What should the engine look like?</p>
                 </div>
                 <p className="text-text-medium leading-relaxed text-center">
-                  First‑principles mapping of roles, stages, SLAs, and supporting tech. Design streamlined, data‑driven workflows with clear hand‑offs and candidate journeys.
+                  First-principles mapping of roles, stages, SLAs, and supporting tech. Design streamlined, data-driven workflows with clear hand-offs and candidate journeys.
                 </p>
               </div>
 
@@ -150,7 +150,7 @@ export default function Innovate() {
                   <p className="text-sm font-semibold text-text-medium mt-2">How do we make tech actually help?</p>
                 </div>
                 <p className="text-text-medium leading-relaxed text-center">
-                  ATS/CRM configuration, integration, and automation roadmap—no shelf‑ware. Align stack to process, automate low‑value tasks, boost recruiter adoption.
+                  ATS/CRM configuration, integration, and automation roadmap—no shelf-ware. Align stack to process, automate low-value tasks, boost recruiter adoption.
                 </p>
               </div>
 
@@ -164,7 +164,7 @@ export default function Innovate() {
                   <p className="text-sm font-semibold text-text-medium mt-2">How will we prove ROI?</p>
                 </div>
                 <p className="text-text-medium leading-relaxed text-center">
-                  Real‑time dashboards and KPI loops for continuous improvement. Track the metrics executives care about—velocity, quality, cost, and risk.
+                  Real-time dashboards and KPI loops for continuous improvement. Track the metrics executives care about—velocity, quality, cost, and risk.
                 </p>
               </div>
             </div>
@@ -173,12 +173,12 @@ export default function Innovate() {
             <div className="bg-orange-50 p-xxl rounded-lg">
               <h3 className="text-xl font-bold text-text-dark mb-md text-center">Why It Works</h3>
               <div className="flex items-center justify-center gap-md flex-wrap">
-                <span className="font-semibold text-text-dark">User‑First Design</span>
+                <span className="font-semibold text-text-dark">User-First Design</span>
                 <ArrowRight className="w-4 h-4 text-tf-orange" />
-                <span className="font-semibold text-text-dark">First‑Principles Rigor</span>
+                <span className="font-semibold text-text-dark">First-Principles Rigor</span>
               </div>
               <p className="text-text-medium text-center mt-md">
-                Solutions centre on recruiter, manager, and candidate experience, then are rebuilt from bedrock business logic, not <span className="font-semibold text-text-dark">"best‑practice"</span> templates that crumble under pressure.
+                Solutions centre on recruiter, manager, and candidate experience, then are rebuilt from bedrock business logic, not <span className="font-semibold text-text-dark">"best-practice"</span> templates that crumble under pressure.
               </p>
             </div>
           </div>
@@ -201,10 +201,10 @@ export default function Innovate() {
                   <div className="w-16 h-16 bg-gradient-to-br from-tf-orange to-red-500 rounded-lg flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
                     <Zap className="w-8 h-8 text-white" />
                   </div>
-                  <h3 className="text-xl font-bold text-text-dark group-hover:text-tf-orange transition-colors">Scale‑Ready Foundations</h3>
+                  <h3 className="text-xl font-bold text-text-dark group-hover:text-tf-orange transition-colors">Scale-Ready Foundations</h3>
                 </div>
                 <p className="text-text-medium leading-relaxed text-center">
-                  Handle blitz‑growth, PE/VC headcount ramps, or 800‑hire facility builds with process capacity that won't buckle.
+                  Handle blitz-growth, PE/VC headcount ramps, or 800-hire facility builds with process capacity that won't buckle.
                 </p>
               </div>
               
@@ -213,10 +213,10 @@ export default function Innovate() {
                   <div className="w-16 h-16 bg-gradient-to-br from-emerald-500 to-teal-600 rounded-lg flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
                     <BarChart3 className="w-8 h-8 text-white" />
                   </div>
-                  <h3 className="text-xl font-bold text-text-dark group-hover:text-emerald-700 transition-colors">Double‑Digit Cost Savings</h3>
+                  <h3 className="text-xl font-bold text-text-dark group-hover:text-emerald-700 transition-colors">Double-Digit Cost Savings</h3>
                 </div>
                 <p className="text-text-medium leading-relaxed text-center">
-                  Streamlined flows and right‑sized tech routinely trim <span className="font-semibold text-text-dark">15‑30%</span> from true cost‑per‑hire and reclaim hours of manager time.
+                  Streamlined flows and right-sized tech routinely trim <span className="font-semibold text-text-dark">15-30%</span> from true cost-per-hire and reclaim hours of manager time.
                 </p>
               </div>
               
@@ -225,10 +225,10 @@ export default function Innovate() {
                   <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-lg flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
                     <CheckCircle2 className="w-8 h-8 text-white" />
                   </div>
-                  <h3 className="text-xl font-bold text-text-dark group-hover:text-blue-700 transition-colors">Quality & Compliance Locked‑In</h3>
+                  <h3 className="text-xl font-bold text-text-dark group-hover:text-blue-700 transition-colors">Quality & Compliance Locked-In</h3>
                 </div>
                 <p className="text-text-medium leading-relaxed text-center">
-                  Standardised assessment gates and audit‑ready data reduce mis‑hire rates and de‑risk global or regulated hiring.
+                  Standardised assessment gates and audit-ready data reduce mis-hire rates and de-risk global or regulated hiring.
                 </p>
               </div>
               
@@ -237,10 +237,10 @@ export default function Innovate() {
                   <div className="w-16 h-16 bg-gradient-to-br from-purple-500 to-pink-600 rounded-lg flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
                     <Monitor className="w-8 h-8 text-white" />
                   </div>
-                  <h3 className="text-xl font-bold text-text-dark group-hover:text-purple-700 transition-colors">Board‑Level Visibility</h3>
+                  <h3 className="text-xl font-bold text-text-dark group-hover:text-purple-700 transition-colors">Board-Level Visibility</h3>
                 </div>
                 <p className="text-text-medium leading-relaxed text-center">
-                  Dashboards translate TA performance into CFO‑friendly ROI, supporting budget asks and strategic credibility.
+                  Dashboards translate TA performance into CFO-friendly ROI, supporting budget asks and strategic credibility.
                 </p>
               </div>
             </div>
@@ -267,7 +267,7 @@ export default function Innovate() {
                   <h3 className="text-xl font-bold text-text-dark group-hover:text-tf-orange transition-colors">Built by Operators, Not Theorists</h3>
                 </div>
                 <p className="text-text-medium leading-relaxed text-center">
-                  Designs come from leaders who ran global TA engines under hyper‑scale pressure.
+                  Designs come from leaders who ran global TA engines under hyper-scale pressure.
                 </p>
               </div>
               
@@ -276,7 +276,7 @@ export default function Innovate() {
                   <div className="w-16 h-16 bg-gradient-to-br from-purple-500 to-indigo-600 rounded-lg flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
                     <Zap className="w-8 h-8 text-white" />
                   </div>
-                  <h3 className="text-xl font-bold text-text-dark group-hover:text-purple-700 transition-colors">People‑Centred Adoption</h3>
+                  <h3 className="text-xl font-bold text-text-dark group-hover:text-purple-700 transition-colors">People-Centred Adoption</h3>
                 </div>
                 <p className="text-text-medium leading-relaxed text-center">
                   Blueprints integrate with <span className="font-semibold text-text-dark">Elevate</span> programs so your team <span className="italic">masters</span> the new system.
@@ -288,7 +288,7 @@ export default function Innovate() {
                   <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-lg flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
                     <Database className="w-8 h-8 text-white" />
                   </div>
-                  <h3 className="text-xl font-bold text-text-dark group-hover:text-blue-700 transition-colors">Ecosystem Intelligence Baked‑In</h3>
+                  <h3 className="text-xl font-bold text-text-dark group-hover:text-blue-700 transition-colors">Ecosystem Intelligence Baked-In</h3>
                 </div>
                 <p className="text-text-medium leading-relaxed text-center">
                   <span className="font-semibold text-text-dark">Illuminate</span> market data shapes workflows; outcomes feed seamless <span className="font-semibold text-text-dark">Accelerate</span> execution.
@@ -300,10 +300,10 @@ export default function Innovate() {
                   <div className="w-16 h-16 bg-gradient-to-br from-emerald-500 to-teal-600 rounded-lg flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
                     <Brain className="w-8 h-8 text-white" />
                   </div>
-                  <h3 className="text-xl font-bold text-text-dark group-hover:text-emerald-700 transition-colors">Root‑Cause Fixation</h3>
+                  <h3 className="text-xl font-bold text-text-dark group-hover:text-emerald-700 transition-colors">Root-Cause Fixation</h3>
                 </div>
                 <p className="text-text-medium leading-relaxed text-center">
-                  Design‑thinking workshops + first‑principles analysis eliminate symptom chasing for good.
+                  Design-thinking workshops + first-principles analysis eliminate symptom chasing for good.
                 </p>
               </div>
             </div>
@@ -315,7 +315,7 @@ export default function Innovate() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center max-w-4xl mx-auto mb-xxl">
               <h2 className="text-3xl md:text-4xl font-bold text-text-dark mb-lg">
-                Your Talent Acquisition Operating‑System Blueprint
+                Your Talent Acquisition Operating-System Blueprint
               </h2>
               <p className="text-lg text-text-medium mb-lg">
                 A confidential, actionable playbook that includes all packaged for immediate execution—and measurable, compounding ROI.
@@ -354,7 +354,7 @@ export default function Innovate() {
                   <div className="w-12 h-12 bg-gradient-to-br from-emerald-500 to-teal-600 rounded-lg flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
                     <CheckCircle2 className="w-6 h-6 text-white" />
                   </div>
-                  <h3 className="text-lg font-bold text-text-dark group-hover:text-emerald-700 transition-colors">Phased Rollout & Change‑Management Roadmap</h3>
+                  <h3 className="text-lg font-bold text-text-dark group-hover:text-emerald-700 transition-colors">Phased Rollout & Change-Management Roadmap</h3>
                 </div>
               </div>
             </div>
@@ -371,10 +371,10 @@ export default function Innovate() {
                     <Settings className="w-10 h-10 text-white" />
                   </div>
                   <h2 className="text-3xl md:text-4xl font-bold text-text-dark mb-lg">
-                    Ready to Replace Fire‑Drills with a Predictable Talent Engine?
+                    Ready to Replace Fire-Drills with a Predictable Talent Engine?
                   </h2>
                   <p className="text-lg text-text-medium mb-8">
-                    Secure a complimentary 30‑minute consultation to see how Innovate can de‑risk growth and liberate capacity.
+                    Secure a complimentary 30-minute consultation to see how Innovate can de-risk growth and liberate capacity.
                   </p>
                 </div>
                 <div className="flex flex-col sm:flex-row gap-md justify-center">

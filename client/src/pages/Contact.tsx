@@ -78,11 +78,11 @@ export default function Contact() {
                 Let's Solve Your Critical <span className="text-tf-orange">Talent Challenge</span>—Fast.
               </h1>
               <p className="text-lg md:text-xl text-text-medium mb-lg">
-                When talent gaps threaten growth, speed and precision matter. Connect directly with senior experts who specialize in complex, high‑stakes hiring.
+                When talent gaps threaten growth, speed and precision matter. Connect directly with senior experts who specialize in complex, high-stakes hiring.
               </p>
               <div className="bg-gradient-to-r from-tf-orange/10 to-red-50 p-6 rounded-xl border border-tf-orange/20 inline-block">
                 <p className="text-lg font-semibold text-text-dark">
-                  We answer every legitimate request <span className="text-tf-orange">within one business day</span>—no gate‑keeping, no junior screen.
+                  We answer every legitimate request <span className="text-tf-orange">within one business day</span>—no gate-keeping, no junior screen.
                 </p>
               </div>
             </div>
@@ -119,10 +119,10 @@ export default function Contact() {
             <div className="max-w-4xl mx-auto">
               <div className="text-center mb-xxl">
                 <h2 className="text-3xl md:text-4xl font-bold text-text-dark mb-lg">
-                  Book a No‑Pitch, 30‑Minute Strategy Call
+                  Book a No-Pitch, 30-Minute Strategy Call
                 </h2>
                 <p className="text-lg text-text-medium mb-lg">
-                  <span className="italic">Clarify your challenge • Explore data‑backed solutions • Decide if enablement is the right path</span>
+                  <span className="italic">Clarify your challenge • Explore data-backed solutions • Decide if enablement is the right path</span>
                 </p>
               </div>
               
@@ -147,7 +147,7 @@ export default function Contact() {
                     <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-lg flex items-center justify-center mx-auto mb-4">
                       <Users className="w-6 h-6 text-white" />
                     </div>
-                    <h3 className="font-semibold text-text-dark mb-2">100% Senior‑Level Conversation</h3>
+                    <h3 className="font-semibold text-text-dark mb-2">100% Senior-Level Conversation</h3>
                     <p className="text-sm text-text-medium">(Adam Kovacs or principal consultant)</p>
                   </div>
                   
@@ -163,7 +163,7 @@ export default function Contact() {
                     <div className="w-12 h-12 bg-gradient-to-br from-purple-500 to-indigo-600 rounded-lg flex items-center justify-center mx-auto mb-4">
                       <ArrowRight className="w-6 h-6 text-white" />
                     </div>
-                    <h3 className="font-semibold text-text-dark mb-2">Clear Next‑Step Options</h3>
+                    <h3 className="font-semibold text-text-dark mb-2">Clear Next-Step Options</h3>
                     <p className="text-sm text-text-medium">Only if mutual value is obvious</p>
                   </div>
                 </div>
@@ -181,7 +181,7 @@ export default function Contact() {
                   Prefer Email First? Send a Quick Note.
                 </h2>
                 <p className="text-lg text-text-medium">
-                  We'll reply with qualified input or next‑step suggestions—typically within 24 hours.
+                  We'll reply with qualified input or next-step suggestions—typically within 24 hours.
                 </p>
               </div>
 

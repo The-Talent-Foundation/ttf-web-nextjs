@@ -70,7 +70,7 @@ export default function Services() {
                   </div>
                 </AccordionTrigger>
                 <AccordionContent className="pl-20 pr-lg pb-md pt-xs text-text-medium text-base leading-relaxed">
-                  Are <span className="font-semibold text-text-dark">urgent re-prioritisations</span> forcing recruiters and managers into burnout, <span className="font-semibold text-text-dark">driving attrition rates higher</span>?
+                  Are <span className="font-semibold text-text-dark">urgent re-prioritizations</span> forcing recruiters and managers into burnout, <span className="font-semibold text-text-dark">driving attrition rates higher</span>?
                 </AccordionContent>
               </AccordionItem>
 
@@ -80,7 +80,7 @@ export default function Services() {
                     <div className="w-12 h-12 bg-gradient-to-br from-slate-500 to-gray-600 rounded-lg flex items-center justify-center flex-shrink-0">
                       <Settings className="h-6 w-6 text-white" />
                     </div>
-                    <h3 className="font-semibold text-text-dark text-lg">Costly tools, process improvements, and training under‑deliver.</h3>
+                    <h3 className="font-semibold text-text-dark text-lg">Costly tools, process improvements, and training under-deliver.</h3>
                   </div>
                 </AccordionTrigger>
                 <AccordionContent className="pl-20 pr-lg pb-md pt-xs text-text-medium text-base leading-relaxed">
@@ -199,7 +199,7 @@ export default function Services() {
                   Strategically Applied Execution Power
                 </h4>
                 <p className="text-text-medium mb-md">
-                  On‑demand recruiting muscle and resource elasticity for time‑critical hires. We deploy seasoned TA professionals applying executive search rigor against all critical and urgent hiring needs, securing the candidates you need.
+                  On-demand recruiting muscle and resource elasticity for time-critical hires. We deploy seasoned TA professionals applying executive search rigor against all critical and urgent hiring needs, securing the candidates you need.
                 </p>
                 <span className="text-green-600 font-semibold group-hover:translate-x-2 inline-block transition-transform">Learn more →</span>
               </div>

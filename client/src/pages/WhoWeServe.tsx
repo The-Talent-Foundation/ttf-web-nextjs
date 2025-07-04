@@ -14,7 +14,7 @@ export default function WhoWeServe() {
                 Focused Expertise for Your Most <span className="text-tf-orange">Critical, Complex</span> Talent Challenges
               </h1>
               <p className="text-lg md:text-xl text-text-medium mb-lg">
-                <span className="font-semibold text-text-dark">Standard approaches fail when the stakes are highest.</span> The Talent Foundation partners exclusively with ambitious leaders navigating demanding inflection points: rapid growth, critical transformations, high‑risk global expansion, essential capability builds.
+                <span className="font-semibold text-text-dark">Standard approaches fail when the stakes are highest.</span> The Talent Foundation partners exclusively with ambitious leaders navigating demanding inflection points: rapid growth, critical transformations, high-risk global expansion, essential capability builds.
               </p>
               <div className="bg-gradient-to-r from-tf-orange/10 to-blue-50 p-6 rounded-xl border border-tf-orange/20 inline-block">
                 <p className="text-lg font-semibold text-text-dark">
@@ -34,7 +34,7 @@ export default function WhoWeServe() {
                   The Undeniable Strategic Advantage of Deep Specialization
                 </h2>
                 <p className="text-lg text-text-medium mb-lg">
-                  Let's be direct: complexity demands focus. Attempting to solve high‑stakes talent challenges with generic approaches or partners spread thin across unrelated domains is inherently risky and inefficient.
+                  Let's be direct: complexity demands focus. Attempting to solve high-stakes talent challenges with generic approaches or partners spread thin across unrelated domains is inherently risky and inefficient.
                 </p>
                 <p className="text-lg text-text-dark">
                   <span className="font-semibold text-tf-orange">The Talent Foundation deliberately concentrates its entire expertise solely on these specific, demanding scenarios.</span>
@@ -62,7 +62,7 @@ export default function WhoWeServe() {
                     <h3 className="text-xl font-bold text-text-dark group-hover:text-emerald-700 transition-colors">Faster, More Predictable Results</h3>
                   </div>
                   <p className="text-text-medium leading-relaxed text-center">
-                    Proven methods mean less trial‑and‑error (often improving critical timelines by <span className="font-semibold text-text-dark">30‑50%+</span>).
+                    Proven methods mean less trial-and-error (often improving critical timelines by <span className="font-semibold text-text-dark">30-50%+</span>).
                   </p>
                 </div>
                 
@@ -71,7 +71,7 @@ export default function WhoWeServe() {
                     <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-lg flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
                       <TrendingUp className="w-8 h-8 text-white" />
                     </div>
-                    <h3 className="text-xl font-bold text-text-dark group-hover:text-blue-700 transition-colors">Superior Long‑Term ROI</h3>
+                    <h3 className="text-xl font-bold text-text-dark group-hover:text-blue-700 transition-colors">Superior Long-Term ROI</h3>
                   </div>
                   <p className="text-text-medium leading-relaxed text-center">
                     Building targeted capability delivers far greater value than perpetual reliance on fragmented solutions.
@@ -116,10 +116,10 @@ export default function WhoWeServe() {
                 </div>
                 <div className="space-y-4">
                   <p className="text-text-medium leading-relaxed">
-                    <span className="font-semibold text-text-dark">The Challenge:</span> Intense global competition for hyper‑scarce technical or scientific talent creates crippling bottlenecks.
+                    <span className="font-semibold text-text-dark">The Challenge:</span> Intense global competition for hyper-scarce technical or scientific talent creates crippling bottlenecks.
                   </p>
                   <p className="text-text-medium leading-relaxed">
-                    <span className="font-semibold text-text-dark">Our Value:</span> Integrated enablement solution targeting <span className="font-semibold text-text-dark">30‑50% time‑to‑fill reduction</span> without compromising quality.
+                    <span className="font-semibold text-text-dark">Our Value:</span> Integrated enablement solution targeting <span className="font-semibold text-text-dark">30-50% time-to-fill reduction</span> without compromising quality.
                   </p>
                   <div className="flex flex-wrap gap-2 mt-4">
                     <Link href="/services/accelerate" className="text-emerald-600 hover:text-emerald-500 font-semibold text-sm transition-colors">
@@ -150,7 +150,7 @@ export default function WhoWeServe() {
                     <span className="font-semibold text-text-dark">The Challenge:</span> Executing aggressive PE/VC growth mandates requires extreme speed, talent quality, scalability, and demonstrable ROI.
                   </p>
                   <p className="text-text-medium leading-relaxed">
-                    <span className="font-semibold text-text-dark">Our Value:</span> Metrics‑driven TA operating systems aligned with VCPs, reliably transforming talent into measurable value creation driver.
+                    <span className="font-semibold text-text-dark">Our Value:</span> Metrics-driven TA operating systems aligned with VCPs, reliably transforming talent into measurable value creation driver.
                   </p>
                   <div className="mt-4">
                     <Link href="/services" className="text-tf-orange hover:text-tf-orange/80 font-semibold text-sm transition-colors">
@@ -167,7 +167,7 @@ export default function WhoWeServe() {
                     <Globe className="w-8 h-8 text-white" />
                   </div>
                   <h3 className="text-xl font-bold text-text-dark group-hover:text-purple-700 transition-colors mb-2">
-                    De‑Risking & Accelerating Critical First Global Expansion
+                    De-Risking & Accelerating Critical First Global Expansion
                   </h3>
                   <p className="text-sm italic text-text-medium mb-4">
                     "Entering Asia is key, but navigating local compliance AND finding leaders in Singapore seems like a minefield. Failure here isn't an option."
@@ -178,7 +178,7 @@ export default function WhoWeServe() {
                     <span className="font-semibold text-text-dark">The Challenge:</span> First major international leap introduces immense unknowns and magnified risks.
                   </p>
                   <p className="text-text-medium leading-relaxed">
-                    <span className="font-semibold text-text-dark">Our Value:</span> Systematically de‑risk global launch with local market intelligence and globally consistent yet locally compliant processes.
+                    <span className="font-semibold text-text-dark">Our Value:</span> Systematically de-risk global launch with local market intelligence and globally consistent yet locally compliant processes.
                   </p>
                   <div className="flex flex-wrap gap-2 mt-4">
                     <Link href="/services/illuminate" className="text-blue-600 hover:text-blue-500 font-semibold text-sm transition-colors">
@@ -198,10 +198,10 @@ export default function WhoWeServe() {
                     <Cog className="w-8 h-8 text-white" />
                   </div>
                   <h3 className="text-xl font-bold text-text-dark group-hover:text-tf-orange transition-colors mb-2">
-                    Architecting Your Scalable, High‑Performing TA Function
+                    Architecting Your Scalable, High-Performing TA Function
                   </h3>
                   <p className="text-sm italic text-text-medium mb-4">
-                    "We just closed Series C. Ad‑hoc hiring is killing us! We need a professional, predictable TA engine built for scale, starting yesterday."
+                    "We just closed Series C. Ad-hoc hiring is killing us! We need a professional, predictable TA engine built for scale, starting yesterday."
                   </p>
                 </div>
                 <div className="space-y-4">
@@ -209,7 +209,7 @@ export default function WhoWeServe() {
                     <span className="font-semibold text-text-dark">The Challenge:</span> Existing chaotic hiring process is actively hindering growth and causing massive hidden costs.
                   </p>
                   <p className="text-text-medium leading-relaxed">
-                    <span className="font-semibold text-text-dark">Our Value:</span> Architects of high‑performance TA functions that create predictable, metrics‑driven, scalable internal engines.
+                    <span className="font-semibold text-text-dark">Our Value:</span> Architects of high-performance TA functions that create predictable, metrics-driven, scalable internal engines.
                   </p>
                   <div className="flex flex-wrap gap-2 mt-4">
                     <Link href="/services/innovate" className="text-tf-orange hover:text-tf-orange/80 font-semibold text-sm transition-colors">
@@ -232,7 +232,7 @@ export default function WhoWeServe() {
                     Enabling Critical Technology Transformation with the Right Talent
                   </h3>
                   <p className="text-sm italic text-text-medium mb-4">
-                    "This $50M cloud migration is mission‑critical, but sourcing enough engineers with these specific modern skills feels impossible. The project timeline is slipping."
+                    "This $50M cloud migration is mission-critical, but sourcing enough engineers with these specific modern skills feels impossible. The project timeline is slipping."
                   </p>
                 </div>
                 <div className="space-y-4">
@@ -240,7 +240,7 @@ export default function WhoWeServe() {
                     <span className="font-semibold text-text-dark">The Challenge:</span> Vital technology modernization jeopardized by acute scarcity of essential modern skills.
                   </p>
                   <p className="text-text-medium leading-relaxed">
-                    <span className="font-semibold text-text-dark">Our Value:</span> De‑risk transformation by ensuring talent enables, not blocks, success through rapid acquisition and upskilling.
+                    <span className="font-semibold text-text-dark">Our Value:</span> De-risk transformation by ensuring talent enables, not blocks, success through rapid acquisition and upskilling.
                   </p>
                   <div className="flex flex-wrap gap-2 mt-4">
                     <Link href="/services/accelerate" className="text-emerald-600 hover:text-emerald-500 font-semibold text-sm transition-colors">
@@ -260,18 +260,18 @@ export default function WhoWeServe() {
                     <Rocket className="w-8 h-8 text-white" />
                   </div>
                   <h3 className="text-xl font-bold text-text-dark group-hover:text-red-700 transition-colors mb-2">
-                    Winning the Market with High‑Velocity Go‑To‑Market Team Builds
+                    Winning the Market with High-Velocity Go-To-Market Team Builds
                   </h3>
                   <p className="text-sm italic text-text-medium mb-4">
-                    "Our disruptive product must capture the market lead in Q3. We need a fully ramped, elite GTM team on day one. Speed and quality are non‑negotiable."
+                    "Our disruptive product must capture the market lead in Q3. We need a fully ramped, elite GTM team on day one. Speed and quality are non-negotiable."
                   </p>
                 </div>
                 <div className="space-y-4">
                   <p className="text-text-medium leading-relaxed">
-                    <span className="font-semibold text-text-dark">The Challenge:</span> Narrow, hyper‑competitive window for make‑or‑break product launch requiring extreme velocity.
+                    <span className="font-semibold text-text-dark">The Challenge:</span> Narrow, hyper-competitive window for make-or-break product launch requiring extreme velocity.
                   </p>
                   <p className="text-text-medium leading-relaxed">
-                    <span className="font-semibold text-text-dark">Our Value:</span> Specialists in executing high‑velocity GTM team builds that capture critical market share from day one.
+                    <span className="font-semibold text-text-dark">Our Value:</span> Specialists in executing high-velocity GTM team builds that capture critical market share from day one.
                   </p>
                   <div className="mt-4">
                     <Link href="/services/accelerate" className="text-emerald-600 hover:text-emerald-500 font-semibold text-sm transition-colors">
@@ -293,7 +293,7 @@ export default function WhoWeServe() {
                   Our Enablement Partnership Drives Transformational Value
                 </h2>
                 <p className="text-lg text-text-medium">
-                  Our collaborative, capability‑building model achieves the greatest strategic impact and ROI when partnered with organizations possessing these core characteristics:
+                  Our collaborative, capability-building model achieves the greatest strategic impact and ROI when partnered with organizations possessing these core characteristics:
                 </p>
               </div>
               
@@ -306,7 +306,7 @@ export default function WhoWeServe() {
                     <h3 className="text-xl font-bold text-text-dark group-hover:text-blue-700 transition-colors">Strategically Mandated</h3>
                   </div>
                   <p className="text-text-medium leading-relaxed">
-                    Possessing a clear executive mandate recognizing talent acquisition as mission‑critical and requiring fundamental improvement, not just tactical fixes.
+                    Possessing a clear executive mandate recognizing talent acquisition as mission-critical and requiring fundamental improvement, not just tactical fixes.
                   </p>
                 </div>
                 
@@ -318,7 +318,7 @@ export default function WhoWeServe() {
                     <h3 className="text-xl font-bold text-text-dark group-hover:text-emerald-700 transition-colors">Committed to Capability</h3>
                   </div>
                   <p className="text-text-medium leading-relaxed">
-                    Viewing the investment in robust talent systems, processes, and skills as building a crucial, long‑term strategic asset.
+                    Viewing the investment in robust talent systems, processes, and skills as building a crucial, long-term strategic asset.
                   </p>
                 </div>
                 
@@ -330,7 +330,7 @@ export default function WhoWeServe() {
                     <h3 className="text-xl font-bold text-text-dark group-hover:text-purple-700 transition-colors">Open to Insight</h3>
                   </div>
                   <p className="text-text-medium leading-relaxed">
-                    Willingness to rigorously examine existing practices, embrace data‑driven decisions, and adopt proven modern methodologies for superior results.
+                    Willingness to rigorously examine existing practices, embrace data-driven decisions, and adopt proven modern methodologies for superior results.
                   </p>
                 </div>
                 
@@ -365,13 +365,13 @@ export default function WhoWeServe() {
                 </div>
                 <div className="space-y-6 text-center">
                   <p className="text-lg text-text-dark">
-                    Our deep expertise is laser‑focused on <span className="font-bold text-indigo-600">enablement</span> solutions for the complex, high‑stakes talent challenges outlined above. This is where we deliver uniquely transformative value.
+                    Our deep expertise is laser-focused on <span className="font-bold text-indigo-600">enablement</span> solutions for the complex, high-stakes talent challenges outlined above. This is where we deliver uniquely transformative value.
                   </p>
                   <p className="text-lg text-text-medium">
-                    Consequently, TF is generally not the optimal partner for standard, low‑volume contingency searches or basic temporary staffing where building enduring internal capability and strategic process improvement is not the primary objective.
+                    Consequently, TF is generally not the optimal partner for standard, low-volume contingency searches or basic temporary staffing where building enduring internal capability and strategic process improvement is not the primary objective.
                   </p>
                   <p className="text-lg text-text-dark">
-                    Our belief in <span className="font-semibold text-indigo-600">radical transparency</span> means we'll be upfront if another approach better suits your immediate, non‑strategic needs.
+                    Our belief in <span className="font-semibold text-indigo-600">radical transparency</span> means we'll be upfront if another approach better suits your immediate, non-strategic needs.
                   </p>
                 </div>
               </div>
@@ -389,7 +389,7 @@ export default function WhoWeServe() {
                     <Users className="w-10 h-10 text-white" />
                   </div>
                   <h2 className="text-3xl md:text-4xl font-bold text-text-dark mb-lg">
-                    Facing a High‑Stakes Talent Challenge? Let's Discuss a Strategic Solution.
+                    Facing a High-Stakes Talent Challenge? Let's Discuss a Strategic Solution.
                   </h2>
                   <p className="text-lg text-text-medium mb-8">
                     If your organization confronts the type of complexity where standard approaches create unacceptable risk, The Talent Foundation offers specialized expertise grounded in proven enablement frameworks.
