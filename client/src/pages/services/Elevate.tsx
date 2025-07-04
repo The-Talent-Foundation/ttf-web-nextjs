@@ -30,7 +30,7 @@ export default function Elevate() {
         </section>
 
         {/* Problem Section */}
-        <section className="bg-bg-subtle py-xxxl">
+        <section id="problem" className="bg-bg-subtle py-xxxl">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center max-w-4xl mx-auto mb-xxl">
               <h2 className="text-3xl md:text-4xl font-bold text-text-dark mb-lg">
@@ -99,7 +99,7 @@ export default function Elevate() {
         </section>
 
         {/* Solution Section */}
-        <section className="bg-white py-xxxl">
+        <section id="solution" className="bg-white py-xxxl">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center max-w-4xl mx-auto mb-xxl">
               <h2 className="text-3xl md:text-4xl font-bold text-text-dark mb-lg">
@@ -185,7 +185,7 @@ export default function Elevate() {
         </section>
 
         {/* Benefits Section */}
-        <section className="bg-bg-subtle py-xxxl">
+        <section id="benefits" className="bg-bg-subtle py-xxxl">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center max-w-4xl mx-auto mb-xxl">
               <h2 className="text-3xl md:text-4xl font-bold text-text-dark mb-lg">
@@ -248,7 +248,7 @@ export default function Elevate() {
         </section>
 
         {/* Why Elevate Section */}
-        <section className="bg-white py-xxxl">
+        <section id="cta" className="bg-white py-xxxl">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center max-w-4xl mx-auto mb-xxl">
               <h2 className="text-3xl md:text-4xl font-bold text-text-dark mb-lg">
@@ -371,7 +371,7 @@ export default function Elevate() {
         </section>
 
         {/* CTA Section */}
-        <section className="bg-bg-subtle py-xxxl">
+        <section id="benefits" className="bg-bg-subtle py-xxxl">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="max-w-4xl mx-auto">
               <div className="bg-gradient-to-r from-purple-600/10 to-indigo-50 p-12 rounded-2xl border border-purple-600/20 text-center">
@@ -400,7 +400,7 @@ export default function Elevate() {
         </section>
 
         {/* Integration Section */}
-        <section className="bg-white py-xxxl">
+        <section id="cta" className="bg-white py-xxxl">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center max-w-4xl mx-auto mb-xxl">
               <h3 className="text-2xl md:text-3xl font-bold text-text-dark mb-lg">Part of the Talent Enablement Ecosystem</h3>

@@ -90,7 +90,7 @@ export default function Contact() {
         </section>
 
         {/* Value Reminder & Self-Select Links */}
-        <section className="bg-bg-subtle py-lg">
+        <section id="quick-nav" className="bg-bg-subtle py-lg">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="max-w-4xl mx-auto text-center">
               <p className="text-lg text-text-dark mb-lg">
@@ -114,7 +114,7 @@ export default function Contact() {
         </section>
 
         {/* Primary Path - Strategy Call */}
-        <section className="bg-white py-xxxl">
+        <section id="strategy-call" className="bg-white py-xxxl">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="max-w-4xl mx-auto">
               <div className="text-center mb-xxl">
@@ -173,7 +173,7 @@ export default function Contact() {
         </section>
 
         {/* Alternate Path - Quick Inquiry Form */}
-        <section className="bg-bg-subtle py-xxxl">
+        <section id="email-contact" className="bg-bg-subtle py-xxxl">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="max-w-2xl mx-auto">
               <div className="text-center mb-xxl">
@@ -330,7 +330,7 @@ export default function Contact() {
         </section>
 
         {/* Direct Contact Info */}
-        <section className="bg-white py-xxxl">
+        <section id="contact-info" className="bg-white py-xxxl">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="max-w-4xl mx-auto">
               <div className="bg-gradient-to-br from-indigo-50 to-white p-8 rounded-2xl border border-indigo-200">

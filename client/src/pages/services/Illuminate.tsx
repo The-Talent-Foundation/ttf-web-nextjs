@@ -41,7 +41,7 @@ export default function Illuminate() {
       </section>
 
       {/* Problem Section */}
-      <section className="bg-bg-subtle py-xxxl">
+      <section id="problem" className="bg-bg-subtle py-xxxl">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-4xl mx-auto mb-xxl">
             <h2 className="text-3xl md:text-4xl font-bold text-text-dark mb-lg">
@@ -110,7 +110,7 @@ export default function Illuminate() {
       </section>
 
       {/* Solution Section */}
-      <section className="bg-white py-xxxl">
+      <section id="solution" className="bg-white py-xxxl">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold text-text-dark mb-md text-center">
@@ -251,7 +251,7 @@ export default function Illuminate() {
       </section>
 
       {/* Benefits Section */}
-      <section className="bg-bg-subtle py-xxxl">
+      <section id="benefits" className="bg-bg-subtle py-xxxl">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-4xl mx-auto mb-xxl">
             <h2 className="text-3xl md:text-4xl font-bold text-text-dark mb-lg">
@@ -314,7 +314,7 @@ export default function Illuminate() {
       </section>
 
       {/* Why Illuminate Section */}
-      <section className="bg-white py-xxxl">
+      <section id="cta" className="bg-white py-xxxl">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-4xl mx-auto mb-xxl">
             <h2 className="text-3xl md:text-4xl font-bold text-text-dark mb-lg">
@@ -447,7 +447,7 @@ export default function Illuminate() {
       </section>
 
       {/* CTA Section */}
-      <section className="bg-bg-subtle py-xxxl">
+      <section id="benefits" className="bg-bg-subtle py-xxxl">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl mx-auto">
             <div className="bg-gradient-to-r from-tf-blue/10 to-tf-orange/10 p-12 rounded-2xl border border-tf-blue/20 text-center">
@@ -476,7 +476,7 @@ export default function Illuminate() {
       </section>
 
       {/* Integration Section */}
-      <section className="bg-white py-xxxl">
+      <section id="cta" className="bg-white py-xxxl">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-4xl mx-auto mb-xxl">
             <h3 className="text-2xl md:text-3xl font-bold text-text-dark mb-lg">Part of the Talent Enablement Ecosystem</h3>

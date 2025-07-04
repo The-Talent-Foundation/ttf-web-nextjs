@@ -11,17 +11,7 @@ export default function ScrollAnimations({ children }: ScrollAnimationsProps) {
   const [currentSection, setCurrentSection] = useState('');
   const [sections, setSections] = useState<string[]>([]);
 
-  // Get all sections with IDs
-  const updateSections = useCallback(() => {
-    const allSections = Array.from(document.querySelectorAll('section[id]')) as HTMLElement[];
-    const sectionIds = allSections.map(section => section.id);
-    setSections(sectionIds);
-    
-    // Set initial section
-    if (sectionIds.length > 0 && !currentSection) {
-      setCurrentSection(sectionIds[0]);
-    }
-  }, [currentSection]);
+
 
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
@@ -31,8 +21,16 @@ export default function ScrollAnimations({ children }: ScrollAnimationsProps) {
   };
 
   useEffect(() => {
-    // Initial sections discovery
-    updateSections();
+    // Discover sections and set up scroll handling
+    const setupScrollAnimations = () => {
+      const allSections = Array.from(document.querySelectorAll('section[id]')) as HTMLElement[];
+      const sectionIds = allSections.map(section => section.id);
+      setSections(sectionIds);
+      
+      if (sectionIds.length > 0 && !currentSection) {
+        setCurrentSection(sectionIds[0]);
+      }
+    };
     
     const handleScroll = () => {
       const winHeight = window.innerHeight;
@@ -49,7 +47,7 @@ export default function ScrollAnimations({ children }: ScrollAnimationsProps) {
       
       for (let i = allSections.length - 1; i >= 0; i--) {
         const element = allSections[i];
-        if (element && element.offsetTop <= scrollTop + 100) {
+        if (element && element.offsetTop <= scrollTop + 200) {
           foundSection = element.id;
           break;
         }
@@ -80,19 +78,21 @@ export default function ScrollAnimations({ children }: ScrollAnimationsProps) {
       });
     };
 
-    window.addEventListener('scroll', handleScroll);
-    
-    // Initial check
-    const timer = setTimeout(() => {
+    // Initial setup with delays to ensure DOM is ready
+    setTimeout(setupScrollAnimations, 50);
+    setTimeout(() => {
+      setupScrollAnimations();
       handleScroll();
-      updateSections();
-    }, 100);
+    }, 150);
+    
+    window.addEventListener('scroll', handleScroll);
+    window.addEventListener('resize', setupScrollAnimations);
 
     return () => {
       window.removeEventListener('scroll', handleScroll);
-      clearTimeout(timer);
+      window.removeEventListener('resize', setupScrollAnimations);
     };
-  }, [updateSections, currentSection]);
+  }, [currentSection]);
 
   // Counter animation effect
   useEffect(() => {

@@ -30,7 +30,7 @@ export default function About() {
         </section>
 
         {/* Why We Exist - The Enablement Thesis */}
-        <section className="bg-bg-subtle py-xxxl">
+        <section id="philosophy" className="bg-bg-subtle py-xxxl">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="max-w-5xl mx-auto">
               <div className="text-center mb-xxl">
@@ -86,7 +86,7 @@ export default function About() {
         </section>
 
         {/* Our Guiding Principles */}
-        <section className="bg-white py-xxxl">
+        <section id="principles" className="bg-white py-xxxl">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="max-w-5xl mx-auto">
               <div className="text-center mb-xxl">
@@ -153,7 +153,7 @@ export default function About() {
         </section>
 
         {/* Founder Profile */}
-        <section className="bg-bg-subtle py-xxxl">
+        <section id="founder" className="bg-bg-subtle py-xxxl">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="max-w-5xl mx-auto">
               <div className="grid grid-cols-1 md:grid-cols-3 gap-xxl items-center mb-xxl">
@@ -230,7 +230,7 @@ export default function About() {
         </section>
 
         {/* Why Our Boutique Model Works Better */}
-        <section className="bg-white py-xxxl">
+        <section id="boutique-model" className="bg-white py-xxxl">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="max-w-5xl mx-auto">
               <div className="text-center mb-xxl">
@@ -292,7 +292,7 @@ export default function About() {
         </section>
 
         {/* Integrity & Fit */}
-        <section className="bg-bg-subtle py-xxxl">
+        <section id="integrity" className="bg-bg-subtle py-xxxl">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="max-w-4xl mx-auto">
               <div className="bg-white p-12 rounded-2xl shadow-xl">
@@ -317,7 +317,7 @@ export default function About() {
         </section>
 
         {/* CTA Section */}
-        <section className="bg-white py-xxxl">
+        <section id="contact-cta" className="bg-white py-xxxl">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="max-w-4xl mx-auto">
               <div className="bg-gradient-to-r from-tf-orange/10 to-indigo-50 p-12 rounded-2xl border border-tf-orange/20 text-center">

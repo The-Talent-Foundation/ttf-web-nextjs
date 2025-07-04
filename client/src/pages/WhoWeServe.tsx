@@ -26,7 +26,7 @@ export default function WhoWeServe() {
         </section>
 
         {/* Strategic Advantage of Specialization */}
-        <section className="bg-bg-subtle py-xxxl">
+        <section id="overview" className="bg-bg-subtle py-xxxl">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="max-w-5xl mx-auto">
               <div className="text-center mb-xxl">
@@ -89,7 +89,7 @@ export default function WhoWeServe() {
         </section>
 
         {/* Areas of Deep Expertise */}
-        <section className="bg-white py-xxxl">
+        <section id="client-types" className="bg-white py-xxxl">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-xxl">
               <h2 className="text-3xl md:text-4xl font-bold text-text-dark mb-lg">
@@ -285,7 +285,7 @@ export default function WhoWeServe() {
         </section>
 
         {/* Partnership Value */}
-        <section className="bg-bg-subtle py-xxxl">
+        <section id="case-studies" className="bg-bg-subtle py-xxxl">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="max-w-5xl mx-auto">
               <div className="text-center mb-xxl">
@@ -351,7 +351,7 @@ export default function WhoWeServe() {
         </section>
 
         {/* Right Fit Section */}
-        <section className="bg-white py-xxxl">
+        <section id="success-metrics" className="bg-white py-xxxl">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="max-w-4xl mx-auto">
               <div className="bg-gradient-to-br from-indigo-50 to-white p-8 rounded-2xl border border-indigo-200">
@@ -380,7 +380,7 @@ export default function WhoWeServe() {
         </section>
 
         {/* CTA Section */}
-        <section className="bg-bg-subtle py-xxxl">
+        <section id="case-studies" className="bg-bg-subtle py-xxxl">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="max-w-4xl mx-auto">
               <div className="bg-gradient-to-r from-tf-orange/10 to-indigo-50 p-12 rounded-2xl border border-tf-orange/20 text-center">

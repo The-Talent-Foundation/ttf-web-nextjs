@@ -38,7 +38,7 @@ export default function Services() {
       </section>
 
       {/* Challenge */}
-      <section className="bg-bg-subtle py-xxxl">
+      <section id="overview" className="bg-bg-subtle py-xxxl">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-xxl">
@@ -112,7 +112,7 @@ export default function Services() {
       </section>
 
       {/* IIEA Ecosystem */}
-      <section className="bg-white py-xxl pt-[0px] pb-[0px]">
+      <section id="services-grid" className="bg-white py-xxl pt-[0px] pb-[0px]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-xxl">
             <h2 className="text-3xl md:text-4xl font-bold text-text-dark mb-md pt-[9px] pb-[9px]">Our Talent Enablement Ecosystem</h2>
@@ -279,7 +279,7 @@ export default function Services() {
       </section>
 
       {/* ROI Section */}
-      <section className="bg-bg-subtle py-xxxl">
+      <section id="overview" className="bg-bg-subtle py-xxxl">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-xxl">
@@ -363,7 +363,7 @@ export default function Services() {
       </section>
 
       {/* How We Engage */}
-      <section className="bg-white py-xxxl">
+      <section id="commitment" className="bg-white py-xxxl">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-4xl mx-auto mb-xxl">
             <h2 className="text-3xl md:text-4xl font-bold text-text-dark mb-lg">Your Path to Enabled Talent Acquisition</h2>
@@ -426,7 +426,7 @@ export default function Services() {
       </section>
 
       {/* CTA */}
-      <section className="bg-bg-dark py-xxxl">
+      <section id="quick-links" className="bg-bg-dark py-xxxl">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-md">
