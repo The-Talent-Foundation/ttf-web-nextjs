@@ -8,10 +8,9 @@ const mailService = new MailService();
 mailService.setApiKey(process.env.SENDGRID_API_KEY);
 
 interface ContactFormData {
-  firstName: string;
-  lastName: string;
+  fullName: string;
   email: string;
-  company?: string;
+  companyName?: string;
   title?: string;
   message: string;
 }
@@ -22,9 +21,9 @@ export async function sendContactNotification(formData: ContactFormData): Promis
 New Contact Form Submission from The Talent Foundation Website
 
 Contact Information:
-- Name: ${formData.firstName} ${formData.lastName}
+- Name: ${formData.fullName}
 - Email: ${formData.email}
-- Company: ${formData.company || 'Not provided'}
+- Company: ${formData.companyName || 'Not provided'}
 - Title: ${formData.title || 'Not provided'}
 
 Message:
@@ -36,8 +35,9 @@ This email was sent automatically from your website contact form.
 
     await mailService.send({
       to: 'hello@talent.foundation',
-      from: 'noreply@talent.foundation', // This should be a verified sender in SendGrid
-      subject: `New Contact Form Submission - ${formData.firstName} ${formData.lastName}`,
+      from: 'hello@talent.foundation', // Must be verified in SendGrid
+      replyTo: formData.email, // Allow easy replies to the contact person
+      subject: `New Contact Form Submission - ${formData.fullName}`,
       text: emailContent,
       html: `
         <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
@@ -46,9 +46,9 @@ This email was sent automatically from your website contact form.
           
           <div style="background-color: #f9f9f9; padding: 20px; border-radius: 8px; margin: 20px 0;">
             <h3 style="color: #333; margin-top: 0;">Contact Information</h3>
-            <p><strong>Name:</strong> ${formData.firstName} ${formData.lastName}</p>
+            <p><strong>Name:</strong> ${formData.fullName}</p>
             <p><strong>Email:</strong> <a href="mailto:${formData.email}">${formData.email}</a></p>
-            <p><strong>Company:</strong> ${formData.company || 'Not provided'}</p>
+            <p><strong>Company:</strong> ${formData.companyName || 'Not provided'}</p>
             <p><strong>Title:</strong> ${formData.title || 'Not provided'}</p>
           </div>
           

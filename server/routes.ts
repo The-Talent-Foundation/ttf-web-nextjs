@@ -16,12 +16,11 @@ export async function registerRoutes(app: Express): Promise<Server> {
       
       // Send email notification
       const emailSent = await sendContactNotification({
-        firstName: validatedData.firstName,
-        lastName: validatedData.lastName,
+        fullName: validatedData.fullName,
         email: validatedData.email,
-        company: validatedData.company || undefined,
+        companyName: validatedData.companyName || undefined,
         title: validatedData.title || undefined,
-        message: validatedData.message
+        message: validatedData.message || 'No message provided'
       });
       
       if (!emailSent) {
