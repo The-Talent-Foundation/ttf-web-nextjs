@@ -72,7 +72,7 @@ export default function Illuminate() {
                 <h3 className="text-xl font-bold text-text-dark group-hover:text-amber-700 transition-colors">Profit-Draining Attrition</h3>
               </div>
               <p className="text-text-medium leading-relaxed text-center">
-                Mis-benchmarked rewards based on flawed compensation reports or unaddressed competitor poaching are fueling double-digit regrettable turnover and six-figure replacement costs.
+                Misbenchmarked rewards based on flawed compensation reports or unaddressed competitor poaching are fueling double-digit regrettable turnover and six-figure replacement costs.
               </p>
             </div>
             
@@ -103,7 +103,7 @@ export default function Illuminate() {
           
           <div className="bg-gradient-to-r from-blue-50 to-indigo-50 p-8 rounded-xl border border-blue-200 text-center max-w-4xl mx-auto">
             <p className="text-lg font-semibold text-text-dark">
-              Ignoring talent intelligence doesn't save money, it causes <span className="text-blue-600">systemic blindness</span>. Illuminate research service replaces guesswork with data-driven clarity.
+              Ignoring talent intelligence doesn't save money, it causes <span className="text-blue-600">systemic blindness</span>. Illuminate research service replaces guesswork with data driven clarity.
             </p>
           </div>
         </div>
@@ -176,7 +176,7 @@ export default function Illuminate() {
                     What does a winning offer actually cost?
                   </h3>
                   <p className="text-text-medium mb-md">
-                    Access role-specific, geo-calibrated compensation and benefits data to ensure that your offers are competitive enough to secure key talent while also retaining high-performing critical employees.
+                    Access role specific, geo calibrated compensation and benefits data to ensure that your offers are competitive enough to secure key talent while also retaining high performing critical employees.
                   </p>
                   
                   <div className="insight-details opacity-0 group-hover:opacity-100 transform translate-y-4 group-hover:translate-y-0 transition-all duration-300 bg-white/90 backdrop-blur-sm p-md rounded-lg mt-md border border-purple-200">
@@ -258,7 +258,7 @@ export default function Illuminate() {
               What You'll Gain: Drive Strategy & Mitigate Risk
             </h2>
             <p className="text-lg text-text-medium">
-              Transform uncertainty into strategic advantage with data-driven intelligence that powers confident decision-making.
+              Transform uncertainty into strategic advantage with data driven intelligence that powers confident decision making.
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-lg mb-xxl">

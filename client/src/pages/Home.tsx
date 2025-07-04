@@ -58,7 +58,7 @@ export default function Home() {
               Is Your Talent Strategy <span className="text-tf-orange">Fueling Growth</span> or Slowing It Down?
             </h1>
             <p className="text-lg md:text-xl text-text-medium mb-xl max-w-3xl mx-auto leading-relaxed">
-              A single gap in critical skills or hard-to-hire talent can stall product launches, slow workforce expansion, and bleed tens of thousands in value each month, shaking confidence among customers, investors, and other stakeholders.
+              A single gap in critical skills or hard to hire talent can stall product launches, slow workforce expansion, and bleed tens of thousands in value each month, shaking confidence among customers, investors, and other stakeholders.
             </p>
             <div className="bg-white p-lg rounded-lg shadow-lg mb-xl">
               <p className="text-lg font-semibold text-text-dark mb-md">

@@ -14,8 +14,8 @@ export default function Elevate() {
                 Elevate: Build an <span className="text-purple-600">AI-Savvy, High-Performance</span> TA Team
               </h1>
               <p className="text-lg md:text-xl text-text-medium mb-xl">
-                Skills gaps drain speed, quality, and budget—Elevate transforms recruiters into strategic, metric-moving operators. 
-                Expert-led, bespoke programs embed advanced techniques and critical AI literacy so your team delivers measurable hiring outcomes—fast.
+                Skills gaps drain speed, quality, and budget, Elevate transforms recruiters into strategic, metric-moving operators. 
+                Expert-led, bespoke programs embed advanced techniques and critical AI literacy so your team delivers measurable hiring outcomes, fast.
               </p>
               <div className="flex flex-col sm:flex-row gap-md justify-center">
                 <Link href="/contact" className="btn-primary bg-purple-600 hover:bg-purple-700">
@@ -49,7 +49,7 @@ export default function Elevate() {
                   <h3 className="text-xl font-bold text-text-dark group-hover:text-red-700 transition-colors">Strategic Incapability Drag</h3>
                 </div>
                 <p className="text-text-medium leading-relaxed text-center">
-                  Out-of-date skills throttle delivery on growth initiatives, putting launches and expansions at risk.
+                  Out of date skills throttle delivery on growth initiatives, putting launches and expansions at risk.
                 </p>
               </div>
               
@@ -61,7 +61,7 @@ export default function Elevate() {
                   <h3 className="text-xl font-bold text-text-dark group-hover:text-blue-700 transition-colors">AI Adoption Gap</h3>
                 </div>
                 <p className="text-text-medium leading-relaxed text-center">
-                  Competitors wield AI to halve sourcing cycles while your team wrestles with basic prompts—or ignores the tools entirely.
+                  Competitors wield AI to halve sourcing cycles while your team wrestles with basic prompts, or ignores the tools entirely.
                 </p>
               </div>
               
@@ -73,7 +73,7 @@ export default function Elevate() {
                   <h3 className="text-xl font-bold text-text-dark group-hover:text-amber-700 transition-colors">Tech ROI Squandered</h3>
                 </div>
                 <p className="text-text-medium leading-relaxed text-center">
-                  A six-to-seven-figure TA stack sees less than 50% adoption, forfeiting efficiency gains and leaving data holes executives can't trust.
+                  A six to seven figure TA stack sees less than 50% adoption, forfeiting efficiency gains and leaving data holes executives can't trust.
                 </p>
               </div>
               
@@ -85,7 +85,7 @@ export default function Elevate() {
                   <h3 className="text-xl font-bold text-text-dark group-hover:text-purple-700 transition-colors">Bad-Hire & Agency Bleed</h3>
                 </div>
                 <p className="text-text-medium leading-relaxed text-center">
-                  Weak assessment and agency dependence add 15-25% fees and 30%+ salary losses per mis-hire—costs that compound quarter after quarter.
+                  Weak assessment and agency dependence add 15-25% fees and 30%+ salary losses per mis-hire, costs that compound quarter after quarter.
                 </p>
               </div>
             </div>
@@ -136,7 +136,7 @@ export default function Elevate() {
                   <p className="text-sm font-semibold text-text-medium mt-2">What do we teach?</p>
                 </div>
                 <p className="text-text-medium leading-relaxed text-center">
-                  Role-specific modules matched to scaling, global, or niche-talent demands. Design laser-focused learning paths linked to strategic objectives.
+                  Role specific modules matched to scaling, global, or niche-talent demands. Design laser-focused learning paths linked to strategic objectives.
                 </p>
               </div>
 
@@ -150,7 +150,7 @@ export default function Elevate() {
                   <p className="text-sm font-semibold text-text-medium mt-2">How do we embed AI?</p>
                 </div>
                 <p className="text-text-medium leading-relaxed text-center">
-                  Literacy, use-cases, governance, and hands-on prompt labs that drive real productivity. Shift from "tool dabbling" to strategic, ethical AI deployment that sticks.
+                  Literacy, use cases, governance, and hands on prompt labs that drive real productivity. Shift from "tool dabbling" to strategic, ethical AI deployment that sticks.
                 </p>
               </div>
 
@@ -279,7 +279,7 @@ export default function Elevate() {
                   <h3 className="text-xl font-bold text-text-dark group-hover:text-emerald-700 transition-colors">Context-Driven, Never Generic</h3>
                 </div>
                 <p className="text-text-medium leading-relaxed text-center">
-                  Curricula are custom-mapped to <span className="italic">your</span> strategy, market, and tech stack—no off-the-shelf fluff.
+                  Curricula are custom-mapped to <span className="italic">your</span> strategy, market, and tech stack, no off-the-shelf fluff.
                 </p>
               </div>
               
@@ -291,7 +291,7 @@ export default function Elevate() {
                   <h3 className="text-xl font-bold text-text-dark group-hover:text-amber-700 transition-colors">Embedded Practice = Retention</h3>
                 </div>
                 <p className="text-text-medium leading-relaxed text-center">
-                  Real-role projects, peer simulations, and post-session coaching turn knowledge into habit.
+                  Real role projects, peer simulations, and post session coaching turn knowledge into habit.
                 </p>
               </div>
               
@@ -380,7 +380,7 @@ export default function Elevate() {
                     <Zap className="w-10 h-10 text-white" />
                   </div>
                   <h2 className="text-3xl md:text-4xl font-bold text-text-dark mb-lg">
-                    Ready to Turn Your Team into a High-Impact, AI-Ready Powerhouse?
+                    Ready to Turn Your Team into a High-Impact, AI Ready Powerhouse?
                   </h2>
                   <p className="text-lg text-text-medium mb-8">
                     Secure a complimentary blueprint session to see exactly how Elevate can close critical skill gaps and drive hiring results.

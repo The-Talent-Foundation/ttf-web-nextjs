@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useCallback } from 'react';
 import { Link } from 'wouter';
 
 interface ScrollAnimationsProps {
@@ -9,29 +9,54 @@ export default function ScrollAnimations({ children }: ScrollAnimationsProps) {
   const [scrollProgress, setScrollProgress] = useState(0);
   const [showFloatingCTA, setShowFloatingCTA] = useState(false);
   const [currentSection, setCurrentSection] = useState('');
+  const [sections, setSections] = useState<string[]>([]);
+
+  // Get all sections with IDs
+  const updateSections = useCallback(() => {
+    const allSections = Array.from(document.querySelectorAll('section[id]')) as HTMLElement[];
+    const sectionIds = allSections.map(section => section.id);
+    setSections(sectionIds);
+    
+    // Set initial section
+    if (sectionIds.length > 0 && !currentSection) {
+      setCurrentSection(sectionIds[0]);
+    }
+  }, [currentSection]);
+
+  const scrollToSection = (sectionId: string) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
 
   useEffect(() => {
+    // Initial sections discovery
+    updateSections();
+    
     const handleScroll = () => {
       const winHeight = window.innerHeight;
       const docHeight = document.documentElement.scrollHeight - winHeight;
       const scrollTop = window.scrollY;
-      const scrollPercent = (scrollTop / docHeight) * 100;
+      const scrollPercent = Math.min(docHeight > 0 ? (scrollTop / docHeight) * 100 : 0, 100);
       
       setScrollProgress(scrollPercent);
-      
-      // Show floating CTA after 30% scroll
       setShowFloatingCTA(scrollPercent > 30);
 
-      // Determine current section for progress tracking
-      const sections = ['hero', 'problem', 'solution', 'benefits'];
-      const sectionElements = sections.map(id => document.getElementById(id));
+      // Find current section
+      const allSections = Array.from(document.querySelectorAll('section[id]')) as HTMLElement[];
+      let foundSection = '';
       
-      for (let i = sectionElements.length - 1; i >= 0; i--) {
-        const element = sectionElements[i];
+      for (let i = allSections.length - 1; i >= 0; i--) {
+        const element = allSections[i];
         if (element && element.offsetTop <= scrollTop + 100) {
-          setCurrentSection(sections[i]);
+          foundSection = element.id;
           break;
         }
+      }
+      
+      if (foundSection && foundSection !== currentSection) {
+        setCurrentSection(foundSection);
       }
 
       // Reveal elements on scroll
@@ -57,19 +82,19 @@ export default function ScrollAnimations({ children }: ScrollAnimationsProps) {
 
     window.addEventListener('scroll', handleScroll);
     
-    // Delayed initial call to ensure DOM is ready
-    const initialCheck = () => {
+    // Initial check
+    const timer = setTimeout(() => {
       handleScroll();
-      // Check again after a short delay to catch any elements that weren't ready
-      setTimeout(handleScroll, 100);
+      updateSections();
+    }, 100);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+      clearTimeout(timer);
     };
-    
-    initialCheck();
+  }, [updateSections, currentSection]);
 
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
-
-  // Counter animation hook
+  // Counter animation effect
   useEffect(() => {
     const animateCounters = () => {
       const counters = document.querySelectorAll('.counter');
@@ -88,7 +113,6 @@ export default function ScrollAnimations({ children }: ScrollAnimationsProps) {
           }
         };
         
-        // Start animation when element is visible
         const observer = new IntersectionObserver((entries) => {
           entries.forEach((entry) => {
             if (entry.isIntersecting) {
@@ -105,12 +129,6 @@ export default function ScrollAnimations({ children }: ScrollAnimationsProps) {
     animateCounters();
   }, []);
 
-  const getSectionProgress = () => {
-    const sections = ['hero', 'problem', 'solution', 'benefits'];
-    const currentIndex = sections.indexOf(currentSection);
-    return currentIndex >= 0 ? ((currentIndex + 1) / sections.length) * 100 : 0;
-  };
-
   return (
     <>
       {/* Progress Indicator */}
@@ -120,19 +138,25 @@ export default function ScrollAnimations({ children }: ScrollAnimationsProps) {
       />
       
       {/* Section Progress Dots */}
-      <div className="fixed top-1/2 left-4 transform -translate-y-1/2 z-50 hidden lg:flex flex-col space-y-4">
-        {['hero', 'problem', 'solution', 'benefits'].map((section, index) => (
-          <div
-            key={section}
-            className={`w-3 h-3 rounded-full transition-all duration-300 border-2 ${
-              currentSection === section 
-                ? 'bg-tf-orange border-tf-orange scale-125 shadow-lg' 
-                : 'bg-white border-gray-400 hover:border-tf-blue hover:bg-tf-blue-light shadow-md'
-            }`}
-            title={section.charAt(0).toUpperCase() + section.slice(1)}
-          />
-        ))}
-      </div>
+      {sections.length > 0 && (
+        <div className="fixed top-1/2 left-4 transform -translate-y-1/2 z-50 hidden lg:flex flex-col space-y-4">
+          {sections.map((sectionId, index) => {
+            const isActive = currentSection === sectionId;
+            return (
+              <button
+                key={sectionId}
+                onClick={() => scrollToSection(sectionId)}
+                className={`w-3 h-3 rounded-full transition-all duration-300 border-2 cursor-pointer hover:scale-110 ${
+                  isActive 
+                    ? 'bg-tf-orange border-tf-orange scale-125 shadow-lg' 
+                    : 'bg-white border-gray-400 hover:border-tf-orange hover:bg-tf-orange/20 shadow-md'
+                }`}
+                title={`Go to ${sectionId.charAt(0).toUpperCase() + sectionId.slice(1)}`}
+              />
+            );
+          })}
+        </div>
+      )}
 
       {/* Floating CTA */}
       <div className={`floating-cta ${showFloatingCTA ? 'visible' : ''}`}>

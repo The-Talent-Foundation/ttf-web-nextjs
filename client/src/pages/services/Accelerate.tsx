@@ -16,7 +16,7 @@ export default function Accelerate() {
               <p className="text-lg md:text-xl text-text-medium mb-xl">
                 Critical roles demand expertise you can't build overnight. 
                 Get immediate access to <span className="font-semibold text-text-dark">senior-level talent acquisition specialists</span> who deliver executive-search rigor at startup speed. 
-                Bridge the gap while you build capacity—or supplement it when stakes are highest.
+                Bridge the gap while you build capacity, or supplement it when stakes are highest.
               </p>
               <div className="flex flex-col sm:flex-row gap-md justify-center">
                 <Link href="/contact" className="btn-primary bg-emerald-600 hover:bg-emerald-700">
@@ -38,7 +38,7 @@ export default function Accelerate() {
                 When Critical Roles Can't Wait for Capacity Building
               </h2>
               <p className="text-lg text-text-medium">
-                Some missions are too urgent—and too important—for trial-and-error. Here's when internal limits damage outcomes.
+                Some missions are too urgent, and too important, for trial-and-error. Here's when internal limits damage outcomes.
               </p>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-lg mb-xxl">
@@ -74,7 +74,7 @@ export default function Accelerate() {
                   <h3 className="text-xl font-bold text-text-dark group-hover:text-blue-700 transition-colors">Under-Resourced for Complexity</h3>
                 </div>
                 <p className="text-text-medium leading-relaxed text-center">
-                  Global searches, hyper-competitive talent markets, and regulation-heavy industries require specialist knowledge most internal teams lack.
+                  Global searches, hypercompetitive talent markets, and regulation heavy industries require specialist knowledge most internal teams lack.
                 </p>
               </div>
               
@@ -137,7 +137,7 @@ export default function Accelerate() {
                   <p className="text-sm font-semibold text-text-medium mt-2">How do we find the best?</p>
                 </div>
                 <p className="text-text-medium leading-relaxed text-center">
-                  Executive-search methodology: direct approach, multi-channel sourcing, and rigorous assessment frameworks. No shortcuts, no compromises.
+                  Executive search methodology: direct approach, multichannel sourcing, and rigorous assessment frameworks. No shortcuts, no compromises.
                 </p>
               </div>
 
@@ -151,7 +151,7 @@ export default function Accelerate() {
                   <p className="text-sm font-semibold text-text-medium mt-2">How do we de-risk the decision?</p>
                 </div>
                 <p className="text-text-medium leading-relaxed text-center">
-                  Structured competency interviews, case-study simulations, and deep-dive reference calls. Reduce uncertainty, improve hire quality.
+                  Structured competency interviews, case study simulations, and deep dive reference calls. Reduce uncertainty, improve hire quality.
                 </p>
               </div>
 
@@ -217,7 +217,7 @@ export default function Accelerate() {
                   <h3 className="text-xl font-bold text-text-dark group-hover:text-blue-700 transition-colors">Executive-Search Quality at Internal Speed</h3>
                 </div>
                 <p className="text-text-medium leading-relaxed text-center">
-                  Rigorous process without executive search timelines—deliver <span className="font-semibold text-text-dark">10-15% better</span> hire quality in faster cycles.
+                  Rigorous process without executive search timelines, deliver <span className="font-semibold text-text-dark">10-15% better</span> hire quality in faster cycles.
                 </p>
               </div>
               

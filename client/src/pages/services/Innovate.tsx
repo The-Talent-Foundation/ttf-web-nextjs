@@ -15,7 +15,7 @@ export default function Innovate() {
               </h1>
               <p className="text-lg md:text-xl text-text-medium mb-xl">
                 Stop losing time and money to broken hiring. Turn every process step into a repeatable system. 
-                With first-principles and design-thinking rigor, we build the <span className="font-semibold text-text-dark">data-driven, resilient</span> talent-acquisition operating system that turns reactive firefighting into a repeatable competitive advantage.
+                With first-principles and design-thinking rigor, we build the <span className="font-semibold text-text-dark">data driven, resilient</span> talent-acquisition operating system that turns reactive firefighting into a repeatable competitive advantage.
               </p>
               <div className="flex flex-col sm:flex-row gap-md justify-center">
                 <Link href="/contact" className="btn-primary bg-tf-orange hover:bg-tf-orange/90">
@@ -37,7 +37,7 @@ export default function Innovate() {
                 When the Process Is the Bottleneck, Growth Pays the Price
               </h2>
               <p className="text-lg text-text-medium">
-                Patch-on-patch fixes can't repair systemic failure. Here's how chaos blocks success.
+                Patch on patch fixes can't repair systemic failure. Here's how chaos blocks success.
               </p>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-lg mb-xxl">
@@ -85,14 +85,14 @@ export default function Innovate() {
                   <h3 className="text-xl font-bold text-text-dark group-hover:text-purple-700 transition-colors">Growth Gridlock</h3>
                 </div>
                 <p className="text-text-medium leading-relaxed text-center">
-                  Unpredictable hiring velocity stalls product launches, expansion headcount, and investor timelines—putting strategic objectives at risk.
+                  Unpredictable hiring velocity stalls product launches, expansion headcount, and investor timelines, putting strategic objectives at risk.
                 </p>
               </div>
             </div>
             
             <div className="bg-gradient-to-r from-tf-orange/10 to-red-50 p-8 rounded-xl border border-tf-orange/20 text-center max-w-4xl mx-auto">
               <p className="text-lg font-semibold text-text-dark">
-                Patch-on-patch fixes can't repair systemic failure. <span className="font-bold text-tf-orange">Innovate replaces chaos with architecture.</span>
+                Patch on patch fixes can't repair systemic failure. <span className="font-bold text-tf-orange">Innovate replaces chaos with architecture.</span>
               </p>
             </div>
           </div>
@@ -122,7 +122,7 @@ export default function Innovate() {
                   <p className="text-sm font-semibold text-text-medium mt-2">Where are we breaking?</p>
                 </div>
                 <p className="text-text-medium leading-relaxed text-center">
-                  Root-cause analysis of flows, tools, roles, metrics, and compliance gaps. Pinpoint process, tech, skill, and data choke-points blocking velocity.
+                  Root cause analysis of flows, tools, roles, metrics, and compliance gaps. Pinpoint process, tech, skill, and data chokepoints blocking velocity.
                 </p>
               </div>
 
@@ -136,7 +136,7 @@ export default function Innovate() {
                   <p className="text-sm font-semibold text-text-medium mt-2">What should the engine look like?</p>
                 </div>
                 <p className="text-text-medium leading-relaxed text-center">
-                  First-principles mapping of roles, stages, SLAs, and supporting tech. Design streamlined, data-driven workflows with clear hand-offs and candidate journeys.
+                  First-principles mapping of roles, stages, SLAs, and supporting tech. Design streamlined, data driven workflows with clear hand-offs and candidate journeys.
                 </p>
               </div>
 
@@ -150,7 +150,7 @@ export default function Innovate() {
                   <p className="text-sm font-semibold text-text-medium mt-2">How do we make tech actually help?</p>
                 </div>
                 <p className="text-text-medium leading-relaxed text-center">
-                  ATS/CRM configuration, integration, and automation roadmap—no shelf-ware. Align stack to process, automate low-value tasks, boost recruiter adoption.
+                  ATS/CRM configuration, integration, and automation roadmap, no shelf-ware. Align stack to process, automate low-value tasks, boost recruiter adoption.
                 </p>
               </div>
 
@@ -164,7 +164,7 @@ export default function Innovate() {
                   <p className="text-sm font-semibold text-text-medium mt-2">How will we prove ROI?</p>
                 </div>
                 <p className="text-text-medium leading-relaxed text-center">
-                  Real-time dashboards and KPI loops for continuous improvement. Track the metrics executives care about—velocity, quality, cost, and risk.
+                  Real-time dashboards and KPI loops for continuous improvement. Track the metrics executives care about, velocity, quality, cost, and risk.
                 </p>
               </div>
             </div>
@@ -318,7 +318,7 @@ export default function Innovate() {
                 Your Talent Acquisition Operating-System Blueprint
               </h2>
               <p className="text-lg text-text-medium mb-lg">
-                A confidential, actionable playbook that includes all packaged for immediate execution—and measurable, compounding ROI.
+                A confidential, actionable playbook that includes all packaged for immediate execution, and measurable, compounding ROI.
               </p>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-lg mb-xxl">

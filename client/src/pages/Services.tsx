@@ -179,7 +179,7 @@ export default function Services() {
                   Next-Gen Capability & AI Enablement
                 </h4>
                 <p className="text-text-medium mb-md">
-                  Expert practitioner-led upskilling programs customized to your needs. We use real-world examples to empower your recruiters and hiring managers with tactical AI literacy and advanced recruitment expertise.
+                  Expert practitioner led upskilling programs customized to your needs. We use real world examples to empower your recruiters and hiring managers with tactical AI literacy and advanced recruitment expertise.
                 </p>
                 <span className="text-purple-600 font-semibold group-hover:translate-x-2 inline-block transition-transform">Learn more →</span>
               </div>
@@ -199,7 +199,7 @@ export default function Services() {
                   Strategically Applied Execution Power
                 </h4>
                 <p className="text-text-medium mb-md">
-                  On-demand recruiting muscle and resource elasticity for time-critical hires. We deploy seasoned TA professionals applying executive search rigor against all critical and urgent hiring needs, securing the candidates you need.
+                  On demand recruiting muscle and resource elasticity for time critical hires. We deploy seasoned TA professionals applying executive search rigor against all critical and urgent hiring needs, securing the candidates you need.
                 </p>
                 <span className="text-green-600 font-semibold group-hover:translate-x-2 inline-block transition-transform">Learn more →</span>
               </div>
@@ -417,7 +417,7 @@ export default function Services() {
               <div className="flex-1">
                 <h4 className="text-lg font-bold text-text-dark mb-2">Our Commitment</h4>
                 <p className="text-text-medium leading-relaxed">
-                  Every engagement is designed to build your internal capabilities while delivering immediate value. We don't just solve problems—we transfer the knowledge and systems that prevent them from recurring.
+                  Every engagement is designed to build your internal capabilities while delivering immediate value. We don't just solve problems, we transfer the knowledge and systems that prevent them from recurring.
                 </p>
               </div>
             </div>

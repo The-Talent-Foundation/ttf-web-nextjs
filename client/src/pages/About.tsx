@@ -14,7 +14,7 @@ export default function About() {
                 Expertise Forged in <span className="text-tf-orange">Complexity.</span> Enablement, Not Band-Aids.
               </h1>
               <p className="text-lg md:text-xl text-text-medium mb-xl">
-                Traditional recruiting collapses under hyper-growth, global expansion, or niche-skill scarcity. 
+                Traditional recruiting collapses under hypergrowth, global expansion, or niche skill scarcity. 
                 We design systems so it never happens again.
               </p>
               <div className="flex flex-col sm:flex-row gap-md justify-center">
@@ -78,7 +78,7 @@ export default function About() {
               
               <div className="bg-gradient-to-r from-tf-orange/10 to-red-50 p-8 rounded-xl border border-tf-orange/20 text-center">
                 <p className="text-lg font-semibold text-text-dark">
-                  Everything we do—<span className="font-bold text-blue-600">Illuminate</span> → <span className="font-bold text-tf-orange">Innovate</span> → <span className="font-bold text-purple-600">Elevate</span> → <span className="font-bold text-emerald-600">Accelerate</span>—reinforces that principle.
+                  Everything we do reinforces that principle: <span className="font-bold text-blue-600">Illuminate</span> → <span className="font-bold text-tf-orange">Innovate</span> → <span className="font-bold text-purple-600">Elevate</span> → <span className="font-bold text-emerald-600">Accelerate</span>.
                 </p>
               </div>
             </div>
@@ -144,9 +144,9 @@ export default function About() {
               
               <div className="bg-gradient-to-r from-tf-orange/10 to-indigo-50 p-8 rounded-xl border border-tf-orange/20">
                 <blockquote className="text-center text-lg font-medium text-text-dark mb-4 italic">
-                  "Real success is when clients outgrow the need for external recruiters—because we helped them build the engine."
+                  "Real success is when clients outgrow the need for external recruiters because we helped them build the engine."
                 </blockquote>
-                <cite className="block text-center text-tf-orange font-semibold">— Adam Kovacs</cite>
+                <cite className="block text-center text-tf-orange font-semibold">Adam Kovacs</cite>
               </div>
             </div>
           </div>
@@ -159,10 +159,10 @@ export default function About() {
               <div className="grid grid-cols-1 md:grid-cols-3 gap-xxl items-center mb-xxl">
                 <div className="md:col-span-2">
                   <h2 className="text-3xl md:text-4xl font-bold text-text-dark mb-lg">
-                    Adam Kovacs — Architect of High-Performance Talent Systems
+                    Adam Kovacs: Architect of High-Performance Talent Systems
                   </h2>
                   <p className="text-lg text-text-medium mb-lg">
-                    Adam stays hands-on with every engagement—no hand-off to junior teams.
+                    Adam stays hands on with every engagement with no handoff to junior teams.
                   </p>
                 </div>
                 <div className="flex justify-center md:justify-end">
@@ -197,7 +197,7 @@ export default function About() {
                     <h3 className="text-xl font-bold text-text-dark group-hover:text-blue-700 transition-colors">Intel Pioneer</h3>
                   </div>
                   <p className="text-text-medium leading-relaxed">
-                    Founded AWS Talent Intelligence to break niche-skill scarcity with data-driven market insight.
+                    Founded AWS Talent Intelligence to break niche skill scarcity with data driven market insight.
                   </p>
                 </div>
                 
@@ -209,7 +209,7 @@ export default function About() {
                     <h3 className="text-xl font-bold text-text-dark group-hover:text-emerald-700 transition-colors">Capability Builder</h3>
                   </div>
                   <p className="text-text-medium leading-relaxed">
-                    Designed training adopted by <span className="font-semibold text-text-dark">1,300+</span> TA pros worldwide—measurably lifting sourcing speed and assessment quality.
+                    Designed training adopted by <span className="font-semibold text-text-dark">1,300+</span> TA pros worldwide, measurably lifting sourcing speed and assessment quality.
                   </p>
                 </div>
                 
@@ -259,7 +259,7 @@ export default function About() {
                     <h3 className="text-xl font-bold text-text-dark group-hover:text-blue-700 transition-colors">Direct Senior Expertise</h3>
                   </div>
                   <p className="text-text-medium leading-relaxed">
-                    You work with principals start-to-finish with zero leverage-model dilution.
+                    You work with principals start to finish with zero leverage model dilution.
                   </p>
                 </div>
                 
@@ -304,7 +304,7 @@ export default function About() {
                 </div>
                 <div className="space-y-6 text-center">
                   <p className="text-lg text-text-dark">
-                    We're the right partner when you need to <span className="font-bold text-tf-orange">build</span> lasting capability—not just fill a req.
+                    We're the right partner when you need to <span className="font-bold text-tf-orange">build</span> lasting capability, not just fill a req.
                   </p>
                   <p className="text-lg text-text-medium">
                     If contingency search or temp staffing solves your issue faster, we'll recommend alternatives. 
@@ -329,7 +329,7 @@ export default function About() {
                     Ready to Turn Talent Into a Durable Competitive Edge?
                   </h2>
                   <p className="text-lg text-text-medium mb-8">
-                    Schedule a candid strategy conversation. If we're not the best fit, we'll say so—and point you to who is.
+                    Schedule a candid strategy conversation. If we're not the best fit, we'll say so and point you to who is.
                   </p>
                 </div>
                 <div className="flex flex-col sm:flex-row gap-md justify-center">
