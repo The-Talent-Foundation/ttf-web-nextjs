@@ -19,6 +19,9 @@ import {
   NavigationMenuLink,
 } from '@/components/ui/navigation-menu';
 
+// Import logo
+import logoImage from '@assets/download_1751590582407.png';
+
 export default function Navigation() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [location] = useLocation();
@@ -75,15 +78,15 @@ export default function Navigation() {
         <div className="flex justify-between items-center h-16">
           <div className="flex items-center">
             <Link href="/" className="flex items-center">
-              <img src="/assets/download_1751590582407.png" alt="The Talent Foundation" className="h-10 w-auto" />
+              <img src={logoImage} alt="The Talent Foundation" className="h-10 w-auto" />
             </Link>
           </div>
           
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-8">
+          <div className="hidden lg:flex items-center space-x-6">
             <Link
               href="/"
-              className={`font-medium transition-colors ${
+              className={`font-medium transition-colors whitespace-nowrap ${
                 isActive('/')
                   ? 'text-tf-blue'
                   : 'text-text-medium hover:text-tf-blue'
@@ -140,7 +143,7 @@ export default function Navigation() {
               <Link
                 key={item.href}
                 href={item.href}
-                className={`font-medium transition-colors ${
+                className={`font-medium transition-colors whitespace-nowrap ${
                   isActive(item.href)
                     ? 'text-tf-blue'
                     : 'text-text-medium hover:text-tf-blue'
@@ -152,17 +155,17 @@ export default function Navigation() {
           </div>
           
           {/* Desktop CTA */}
-          <div className="hidden md:block">
+          <div className="hidden lg:block">
             <Link
               href="/contact"
-              className="btn-primary"
+              className="btn-primary whitespace-nowrap"
             >
               Book Assessment
             </Link>
           </div>
           
           {/* Mobile menu button */}
-          <div className="md:hidden">
+          <div className="lg:hidden">
             <button
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
               className="text-text-medium hover:text-tf-blue"
@@ -175,7 +178,7 @@ export default function Navigation() {
 
       {/* Mobile Navigation */}
       {mobileMenuOpen && (
-        <div className="md:hidden">
+        <div className="lg:hidden">
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white border-t border-border-light">
             <Link
               href="/"

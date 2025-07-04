@@ -1,4 +1,5 @@
 import { Link } from 'wouter';
+import { useRef } from 'react';
 import { 
   TrendingDown, 
   Users, 
@@ -30,6 +31,7 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 import ScrollAnimations from '@/components/ScrollAnimations';
+import Autoplay from "embla-carousel-autoplay";
 
 // Import logo images
 import logo1 from '@assets/egyes-fotor-202407301827_1751590492554.png'; // Amazon
@@ -39,6 +41,10 @@ import logo4 from '@assets/negyes-fotor-20240730175643_1751590492559.png'; // Ly
 import logo5 from '@assets/otos_1751590492559.png'; // DevMatch
 
 export default function Home() {
+  const autoplayPlugin = useRef(
+    Autoplay({ delay: 3000, stopOnInteraction: true })
+  );
+
   return (
     <ScrollAnimations>
       <div>
@@ -75,7 +81,12 @@ export default function Home() {
           <div className="text-center">
             <h2 className="text-xl font-semibold text-text-medium mb-lg">Some of the companies Adam Kovacs provided his expertise to</h2>
             <div className="max-w-4xl mx-auto">
-              <Carousel className="w-full">
+              <Carousel 
+                className="w-full"
+                plugins={[autoplayPlugin.current]}
+                onMouseEnter={autoplayPlugin.current.stop}
+                onMouseLeave={autoplayPlugin.current.reset}
+              >
                 <CarouselContent>
                   <CarouselItem className="basis-1/2 md:basis-1/3 lg:basis-1/5">
                     <div className="p-4">
