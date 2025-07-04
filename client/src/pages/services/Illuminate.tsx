@@ -43,64 +43,68 @@ export default function Illuminate() {
       {/* Problem Section */}
       <section className="bg-bg-subtle py-xxxl">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-bold text-text-dark mb-xxl">
+          <div className="text-center max-w-4xl mx-auto mb-xxl">
+            <h2 className="text-3xl md:text-4xl font-bold text-text-dark mb-lg">
               When Talent Intelligence Is Missing, Costs Explode
             </h2>
-            <Accordion type="single" collapsible className="space-y-md">
-              <AccordionItem value="expansion" className="bg-white rounded-lg px-lg shadow-sm border border-border-light">
-                <AccordionTrigger className="hover:no-underline">
-                  <div className="flex items-start gap-md text-left">
-                    <AlertTriangle className="w-6 h-6 text-tf-orange flex-shrink-0 mt-1" />
-                    <h3 className="font-semibold text-text-dark">Expansion roulette.</h3>
-                  </div>
-                </AccordionTrigger>
-                <AccordionContent className="pl-10 text-text-medium">
-                  Unseen competition causing local talent shortages, compliance traps, and pay realities can derail a new market entry before the first hire. Costly delays are draining both budgets and morale.
-                </AccordionContent>
-              </AccordionItem>
-
-              <AccordionItem value="attrition" className="bg-white rounded-lg px-lg shadow-sm border border-border-light">
-                <AccordionTrigger className="hover:no-underline">
-                  <div className="flex items-start gap-md text-left">
-                    <AlertTriangle className="w-6 h-6 text-tf-orange flex-shrink-0 mt-1" />
-                    <h3 className="font-semibold text-text-dark">Profit‑draining attrition.</h3>
-                  </div>
-                </AccordionTrigger>
-                <AccordionContent className="pl-10 text-text-medium">
-                  Mis‑benchmarked rewards based on flawed compensation reports or unaddressed competitor poaching are fueling double‑digit regrettable turnover and six‑figure replacement costs.
-                </AccordionContent>
-              </AccordionItem>
-
-              <AccordionItem value="ambush" className="bg-white rounded-lg px-lg shadow-sm border border-border-light">
-                <AccordionTrigger className="hover:no-underline">
-                  <div className="flex items-start gap-md text-left">
-                    <AlertTriangle className="w-6 h-6 text-tf-orange flex-shrink-0 mt-1" />
-                    <h3 className="font-semibold text-text-dark">Competitive ambush.</h3>
-                  </div>
-                </AccordionTrigger>
-                <AccordionContent className="pl-10 text-text-medium">
-                  Rival hiring sprints by competitors to dominate the talent market for critical AI or Cyber skills, along with targeted campaigns executed against you, will stall your growth roadmap.
-                </AccordionContent>
-              </AccordionItem>
-
-              <AccordionItem value="surprises" className="bg-white rounded-lg px-lg shadow-sm border border-border-light">
-                <AccordionTrigger className="hover:no-underline">
-                  <div className="flex items-start gap-md text-left">
-                    <AlertTriangle className="w-6 h-6 text-tf-orange flex-shrink-0 mt-1" />
-                    <h3 className="font-semibold text-text-dark">Strategic surprises.</h3>
-                  </div>
-                </AccordionTrigger>
-                <AccordionContent className="pl-10 text-text-medium">
-                  Approving major initiatives (M&A, large-scale transformations) based on thoughts and opinions, rather than hard data on talent and market feasibility? You're exposing yourself to costs and delays.
-                </AccordionContent>
-              </AccordionItem>
-            </Accordion>
-            <div className="mt-xl text-center">
-              <p className="text-lg font-semibold text-text-dark">
-                Ignoring talent intelligence doesn't save money, it causes <span className="text-tf-orange">systemic blindness</span>. Illuminate research service replaces guesswork with data‑driven clarity.
+            <p className="text-lg text-text-medium">
+              Blind decisions in talent strategy can cost millions. Here's how intelligence gaps create systematic risk.
+            </p>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-lg mb-xxl">
+            <div className="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 group">
+              <div className="text-center mb-6">
+                <div className="w-16 h-16 bg-gradient-to-br from-red-500 to-orange-500 rounded-lg flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
+                  <AlertTriangle className="w-8 h-8 text-white" />
+                </div>
+                <h3 className="text-xl font-bold text-text-dark group-hover:text-red-700 transition-colors">Expansion Roulette</h3>
+              </div>
+              <p className="text-text-medium leading-relaxed text-center">
+                Unseen competition causing local talent shortages, compliance traps, and pay realities can derail a new market entry before the first hire. Costly delays are draining both budgets and morale.
               </p>
             </div>
+            
+            <div className="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 group">
+              <div className="text-center mb-6">
+                <div className="w-16 h-16 bg-gradient-to-br from-amber-500 to-yellow-600 rounded-lg flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
+                  <TrendingUp className="w-8 h-8 text-white" />
+                </div>
+                <h3 className="text-xl font-bold text-text-dark group-hover:text-amber-700 transition-colors">Profit-Draining Attrition</h3>
+              </div>
+              <p className="text-text-medium leading-relaxed text-center">
+                Mis-benchmarked rewards based on flawed compensation reports or unaddressed competitor poaching are fueling double-digit regrettable turnover and six-figure replacement costs.
+              </p>
+            </div>
+            
+            <div className="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 group">
+              <div className="text-center mb-6">
+                <div className="w-16 h-16 bg-gradient-to-br from-purple-500 to-indigo-600 rounded-lg flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
+                  <Target className="w-8 h-8 text-white" />
+                </div>
+                <h3 className="text-xl font-bold text-text-dark group-hover:text-purple-700 transition-colors">Competitive Ambush</h3>
+              </div>
+              <p className="text-text-medium leading-relaxed text-center">
+                Rival hiring sprints by competitors to dominate the talent market for critical AI or Cyber skills, along with targeted campaigns executed against you, will stall your growth roadmap.
+              </p>
+            </div>
+            
+            <div className="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 group">
+              <div className="text-center mb-6">
+                <div className="w-16 h-16 bg-gradient-to-br from-slate-500 to-gray-600 rounded-lg flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
+                  <Brain className="w-8 h-8 text-white" />
+                </div>
+                <h3 className="text-xl font-bold text-text-dark group-hover:text-slate-700 transition-colors">Strategic Surprises</h3>
+              </div>
+              <p className="text-text-medium leading-relaxed text-center">
+                Approving major initiatives (M&A, large-scale transformations) based on thoughts and opinions, rather than hard data on talent and market feasibility? You're exposing yourself to costs and delays.
+              </p>
+            </div>
+          </div>
+          
+          <div className="bg-gradient-to-r from-tf-orange/10 to-red-50 p-8 rounded-xl border border-tf-orange/20 text-center max-w-4xl mx-auto">
+            <p className="text-lg font-semibold text-text-dark">
+              Ignoring talent intelligence doesn't save money, it causes <span className="text-tf-orange">systemic blindness</span>. Illuminate research service replaces guesswork with data‑driven clarity.
+            </p>
           </div>
         </div>
       </section>
@@ -234,47 +238,62 @@ export default function Illuminate() {
       {/* Benefits Section */}
       <section className="bg-bg-subtle py-xxxl">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-bold text-text-dark mb-xxl text-center">
+          <div className="text-center max-w-4xl mx-auto mb-xxl">
+            <h2 className="text-3xl md:text-4xl font-bold text-text-dark mb-lg">
               What You'll Gain: Drive Strategy & Mitigate Risk
             </h2>
-            <Accordion type="single" collapsible className="space-y-md">
-              <AccordionItem value="derisk" className="bg-white rounded-lg px-lg shadow-sm">
-                <AccordionTrigger className="hover:no-underline">
-                  <h3 className="font-semibold text-text-dark">De‑risked major strategic investments.</h3>
-                </AccordionTrigger>
-                <AccordionContent className="text-text-medium">
-                  Make confident go/no-go decisions on location expansion, M&A, or complex transformation projects with clear, localized, and validated data on talent feasibility, costs, compliance landscape, and other associated risks.
-                </AccordionContent>
-              </AccordionItem>
-
-              <AccordionItem value="competitive" className="bg-white rounded-lg px-lg shadow-sm">
-                <AccordionTrigger className="hover:no-underline">
-                  <h3 className="font-semibold text-text-dark">Secured competitive advantage.</h3>
-                </AccordionTrigger>
-                <AccordionContent className="text-text-medium">
-                  Proactively identify and map niche talent pools before competitors, enabling targeted talent acquisition. Build data-informed attraction and retention strategies based on competitor vulnerabilities.
-                </AccordionContent>
-              </AccordionItem>
-
-              <AccordionItem value="optimized" className="bg-white rounded-lg px-lg shadow-sm">
-                <AccordionTrigger className="hover:no-underline">
-                  <h3 className="font-semibold text-text-dark">Optimized workforce spending.</h3>
-                </AccordionTrigger>
-                <AccordionContent className="text-text-medium">
-                  Ensure competitive, efficient, and fiscally responsible compensation structures. Justify budgets and optimize workforce planning using <span className="font-semibold">actionable market data</span>. Avoid overspending on premium panic-hires or losing key talent due to uncompetitive offers in new or existing locations.
-                </AccordionContent>
-              </AccordionItem>
-
-              <AccordionItem value="futureproof" className="bg-white rounded-lg px-lg shadow-sm">
-                <AccordionTrigger className="hover:no-underline">
-                  <h3 className="font-semibold text-text-dark">Future‑proofed talent strategy.</h3>
-                </AccordionTrigger>
-                <AccordionContent className="text-text-medium">
-                  Anticipate future skill needs tied to your roadmap. Based on robust data, build informed location strategies, sourcing initiatives, and mobility programs. Prepare your workforce for future market shifts and reduce vulnerability to sudden talent shortages.
-                </AccordionContent>
-              </AccordionItem>
-            </Accordion>
+            <p className="text-lg text-text-medium">
+              Transform uncertainty into strategic advantage with data-driven intelligence that powers confident decision-making.
+            </p>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-lg mb-xxl">
+            <div className="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 group">
+              <div className="text-center mb-6">
+                <div className="w-16 h-16 bg-gradient-to-br from-tf-blue to-blue-600 rounded-lg flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
+                  <CheckCircle2 className="w-8 h-8 text-white" />
+                </div>
+                <h3 className="text-xl font-bold text-text-dark group-hover:text-tf-blue transition-colors">De-risked Major Strategic Investments</h3>
+              </div>
+              <p className="text-text-medium leading-relaxed text-center">
+                Make confident go/no-go decisions on location expansion, M&A, or complex transformation projects with clear, localized, and validated data on talent feasibility, costs, compliance landscape, and other associated risks.
+              </p>
+            </div>
+            
+            <div className="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 group">
+              <div className="text-center mb-6">
+                <div className="w-16 h-16 bg-gradient-to-br from-emerald-500 to-teal-600 rounded-lg flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
+                  <Target className="w-8 h-8 text-white" />
+                </div>
+                <h3 className="text-xl font-bold text-text-dark group-hover:text-emerald-700 transition-colors">Secured Competitive Advantage</h3>
+              </div>
+              <p className="text-text-medium leading-relaxed text-center">
+                Proactively identify and map niche talent pools before competitors, enabling targeted talent acquisition. Build data-informed attraction and retention strategies based on competitor vulnerabilities.
+              </p>
+            </div>
+            
+            <div className="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 group">
+              <div className="text-center mb-6">
+                <div className="w-16 h-16 bg-gradient-to-br from-tf-orange to-red-500 rounded-lg flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
+                  <DollarSign className="w-8 h-8 text-white" />
+                </div>
+                <h3 className="text-xl font-bold text-text-dark group-hover:text-tf-orange transition-colors">Optimized Workforce Spending</h3>
+              </div>
+              <p className="text-text-medium leading-relaxed text-center">
+                Ensure competitive, efficient, and fiscally responsible compensation structures. Justify budgets and optimize workforce planning using <span className="font-semibold text-text-dark">actionable market data</span>. Avoid overspending on premium panic-hires or losing key talent due to uncompetitive offers in new or existing locations.
+              </p>
+            </div>
+            
+            <div className="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 group">
+              <div className="text-center mb-6">
+                <div className="w-16 h-16 bg-gradient-to-br from-purple-500 to-indigo-600 rounded-lg flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
+                  <Sparkles className="w-8 h-8 text-white" />
+                </div>
+                <h3 className="text-xl font-bold text-text-dark group-hover:text-purple-700 transition-colors">Future-Proofed Talent Strategy</h3>
+              </div>
+              <p className="text-text-medium leading-relaxed text-center">
+                Anticipate future skill needs tied to your roadmap. Based on robust data, build informed location strategies, sourcing initiatives, and mobility programs. Prepare your workforce for future market shifts and reduce vulnerability to sudden talent shortages.
+              </p>
+            </div>
           </div>
         </div>
       </section>
@@ -282,42 +301,55 @@ export default function Illuminate() {
       {/* Why Illuminate Section */}
       <section className="bg-white py-xxxl">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-bold text-text-dark mb-md text-center">
+          <div className="text-center max-w-4xl mx-auto mb-xxl">
+            <h2 className="text-3xl md:text-4xl font-bold text-text-dark mb-lg">
               The Illuminated Difference: Actionable Foresight, Not Just Hindsight Data
             </h2>
-            <div className="space-y-lg">
-              <Accordion type="single" collapsible>
-                <AccordionItem value="synthesis" className="border rounded-lg px-lg">
-                  <AccordionTrigger className="hover:no-underline">
-                    <h3 className="font-semibold text-text-dark">1. Deep strategic synthesis, not a data dump.</h3>
-                  </AccordionTrigger>
-                  <AccordionContent className="text-text-medium">
-                    Forget generic reports and the spreadsheet overwhelm. Unlike data brokers providing raw feeds, the Talent Foundation delivers <span className="font-semibold">expertly synthesized intelligence</span>. 
-                    Our seasoned practitioners translate complex data points into clear implications and pragmatic, actionable strategic recommendations directly applicable to <span className="italic">your immediate challenges and operational context</span>.
-                  </AccordionContent>
-                </AccordionItem>
-
-                <AccordionItem value="operational" className="border rounded-lg px-lg">
-                  <AccordionTrigger className="hover:no-underline">
-                    <h3 className="font-semibold text-text-dark">2. Operationally grounded in the reality of execution.</h3>
-                  </AccordionTrigger>
-                  <AccordionContent className="text-text-medium">
-                    Our insights aren't academic exercises. Instead, they are filtered through decades of <span className="font-semibold">deep TA and operational execution experience</span>. 
-                    We understand <span className="italic">how</span> this intelligence must translate into effective process redesign, targeted team development, and precise execution to yield tangible business results.
-                  </AccordionContent>
-                </AccordionItem>
-
-                <AccordionItem value="proactive" className="border rounded-lg px-lg">
-                  <AccordionTrigger className="hover:no-underline">
-                    <h3 className="font-semibold text-text-dark">3. Proactive foresight, not just postmortem analysis.</h3>
-                  </AccordionTrigger>
-                  <AccordionContent className="text-text-medium">
-                    We prioritize identifying emerging talent trends, future skill needs crucial for your growth goals, and potential competitor talent moves before they impact you. 
-                    This anticipatory intelligence, which often provides months of lead time, enables you to proactively shape your strategy instead of the constantly reactive course correction.
-                  </AccordionContent>
-                </AccordionItem>
-              </Accordion>
+            <p className="text-lg text-text-medium">
+              Three key differentiators that set our intelligence apart from generic data services.
+            </p>
+          </div>
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-lg mb-xxl">
+            <div className="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 group border border-tf-blue/20">
+              <div className="text-center mb-6">
+                <div className="w-16 h-16 bg-gradient-to-br from-tf-blue to-blue-600 rounded-lg flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
+                  <Brain className="w-8 h-8 text-white" />
+                </div>
+                <h3 className="text-xl font-bold text-text-dark group-hover:text-tf-blue transition-colors">Deep Strategic Synthesis</h3>
+                <p className="text-sm text-text-medium mt-2">Not a data dump</p>
+              </div>
+              <p className="text-text-medium leading-relaxed text-center">
+                Forget generic reports and the spreadsheet overwhelm. Unlike data brokers providing raw feeds, the Talent Foundation delivers <span className="font-semibold text-text-dark">expertly synthesized intelligence</span>. 
+                Our seasoned practitioners translate complex data points into clear implications and pragmatic, actionable strategic recommendations directly applicable to <span className="italic">your immediate challenges and operational context</span>.
+              </p>
+            </div>
+            
+            <div className="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 group border border-tf-orange/20">
+              <div className="text-center mb-6">
+                <div className="w-16 h-16 bg-gradient-to-br from-tf-orange to-red-500 rounded-lg flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
+                  <Target className="w-8 h-8 text-white" />
+                </div>
+                <h3 className="text-xl font-bold text-text-dark group-hover:text-tf-orange transition-colors">Operationally Grounded</h3>
+                <p className="text-sm text-text-medium mt-2">Reality of execution</p>
+              </div>
+              <p className="text-text-medium leading-relaxed text-center">
+                Our insights aren't academic exercises. Instead, they are filtered through decades of <span className="font-semibold text-text-dark">deep TA and operational execution experience</span>. 
+                We understand <span className="italic">how</span> this intelligence must translate into effective process redesign, targeted team development, and precise execution to yield tangible business results.
+              </p>
+            </div>
+            
+            <div className="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 group border border-emerald-500/20">
+              <div className="text-center mb-6">
+                <div className="w-16 h-16 bg-gradient-to-br from-emerald-500 to-teal-600 rounded-lg flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
+                  <Search className="w-8 h-8 text-white" />
+                </div>
+                <h3 className="text-xl font-bold text-text-dark group-hover:text-emerald-700 transition-colors">Proactive Foresight</h3>
+                <p className="text-sm text-text-medium mt-2">Not just postmortem analysis</p>
+              </div>
+              <p className="text-text-medium leading-relaxed text-center">
+                We prioritize identifying emerging talent trends, future skill needs crucial for your growth goals, and potential competitor talent moves before they impact you. 
+                This anticipatory intelligence, which often provides months of lead time, enables you to proactively shape your strategy instead of the constantly reactive course correction.
+              </p>
             </div>
           </div>
         </div>
