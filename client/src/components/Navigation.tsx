@@ -114,8 +114,8 @@ export default function Navigation() {
               href="/"
               className={`font-medium transition-colors whitespace-nowrap ${
                 isActive('/')
-                  ? 'text-tf-blue'
-                  : 'text-text-medium hover:text-tf-blue'
+                  ? 'text-tf-orange'
+                  : 'text-text-medium hover:text-tf-orange'
               }`}
             >
               Home
@@ -128,8 +128,8 @@ export default function Navigation() {
                   href="/services"
                   className={`font-medium transition-colors whitespace-nowrap ${
                     location.startsWith('/services')
-                      ? 'text-tf-blue'
-                      : 'text-text-medium hover:text-tf-blue'
+                      ? 'text-tf-orange'
+                      : 'text-text-medium hover:text-tf-orange'
                   }`}
                 >
                   Services
@@ -146,10 +146,16 @@ export default function Navigation() {
                         <Link
                           key={item.href}
                           href={item.href}
-                          className="flex items-start space-x-4 rounded-lg p-4 leading-none no-underline outline-none transition-all hover:bg-tf-blue-lighter hover:shadow-sm"
+                          className="flex items-start space-x-4 rounded-lg p-4 leading-none no-underline outline-none transition-all hover:bg-orange-50 hover:shadow-sm"
                         >
-                          <div className="icon-container flex-shrink-0">
-                            <Icon className="h-5 w-5 icon-secondary" />
+                          <div className={`w-10 h-10 rounded-full flex items-center justify-center flex-shrink-0 ${
+                            item.href === '/services' ? 'bg-gradient-to-br from-gray-400 to-gray-600' :
+                            item.href === '/services/illuminate' ? 'bg-gradient-to-br from-blue-500 to-blue-600' :
+                            item.href === '/services/innovate' ? 'bg-gradient-to-br from-orange-500 to-red-500' :
+                            item.href === '/services/elevate' ? 'bg-gradient-to-br from-purple-500 to-indigo-600' :
+                            'bg-gradient-to-br from-red-500 to-orange-600'
+                          }`}>
+                            <Icon className="h-5 w-5 text-white" />
                           </div>
                           <div className="flex-1">
                             <div className="text-base font-semibold leading-none mb-xs text-text-dark">
@@ -173,8 +179,8 @@ export default function Navigation() {
                 href={item.href}
                 className={`font-medium transition-colors whitespace-nowrap ${
                   isActive(item.href)
-                    ? 'text-tf-blue'
-                    : 'text-text-medium hover:text-tf-blue'
+                    ? 'text-tf-orange'
+                    : 'text-text-medium hover:text-tf-orange'
                 }`}
               >
                 {item.label}
@@ -196,7 +202,7 @@ export default function Navigation() {
           <div className="lg:hidden">
             <button
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              className="text-text-medium hover:text-tf-blue"
+              className="text-text-medium hover:text-tf-orange"
             >
               {mobileMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
             </button>
@@ -212,8 +218,8 @@ export default function Navigation() {
               href="/"
               className={`block px-3 py-2 transition-colors ${
                 isActive('/')
-                  ? 'text-tf-blue'
-                  : 'text-text-medium hover:text-tf-blue'
+                  ? 'text-tf-orange'
+                  : 'text-text-medium hover:text-tf-orange'
               }`}
               onClick={() => setMobileMenuOpen(false)}
             >
@@ -229,8 +235,8 @@ export default function Navigation() {
                   href={item.href}
                   className={`block pl-4 py-2 text-sm transition-colors ${
                     isActive(item.href)
-                      ? 'text-tf-blue'
-                      : 'text-text-medium hover:text-tf-blue'
+                      ? 'text-tf-orange'
+                      : 'text-text-medium hover:text-tf-orange'
                   }`}
                   onClick={() => setMobileMenuOpen(false)}
                 >
@@ -245,8 +251,8 @@ export default function Navigation() {
                 href={item.href}
                 className={`block px-3 py-2 transition-colors ${
                   isActive(item.href)
-                    ? 'text-tf-blue'
-                    : 'text-text-medium hover:text-tf-blue'
+                    ? 'text-tf-orange'
+                    : 'text-text-medium hover:text-tf-orange'
                 }`}
                 onClick={() => setMobileMenuOpen(false)}
               >
