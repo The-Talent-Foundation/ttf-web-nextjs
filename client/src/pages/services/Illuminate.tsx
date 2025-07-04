@@ -1,5 +1,5 @@
 import { Link } from 'wouter';
-import { Lightbulb, Search, TrendingUp, AlertTriangle, ArrowRight, CheckCircle2, Brain, Target, ChevronDown, MapPin, Users, DollarSign, Sparkles } from 'lucide-react';
+import { Lightbulb, Search, TrendingUp, AlertTriangle, ArrowRight, CheckCircle2, Brain, Target, ChevronDown, MapPin, Users, DollarSign, Sparkles, BarChart3, Compass } from 'lucide-react';
 import {
   Accordion,
   AccordionContent,
@@ -358,34 +358,75 @@ export default function Illuminate() {
       {/* Deliverable Section */}
       <section className="bg-gradient-to-br from-tf-blue-light to-white py-xxxl">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-3xl md:text-4xl font-bold text-text-dark mb-md">
+          <div className="text-center max-w-4xl mx-auto mb-xxl">
+            <h2 className="text-3xl md:text-4xl font-bold text-text-dark mb-lg">
               Your Strategic Talent Intelligence Compass: Guiding Confident Decisions
             </h2>
-            <p className="text-lg text-text-medium mb-xl">
+            <p className="text-lg text-text-medium mb-lg">
               Move beyond guesswork. The Illuminate research service delivers a comprehensive and confidential <span className="font-semibold text-text-dark">Strategic Intelligence Compass</span>. 
-              Your essential guide for navigating complex talent decisions. This powerful tool synthesizes:
+              Your essential guide for navigating complex talent decisions.
             </p>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-lg mb-xl">
-              <div className="bg-white p-lg rounded-lg shadow-sm">
-                <CheckCircle2 className="w-8 h-8 text-tf-blue mx-auto mb-md" />
-                <h3 className="font-semibold text-text-dark mb-xs">Rigorously Researched Market & Competitor Insights.</h3>
-              </div>
-              <div className="bg-white p-lg rounded-lg shadow-sm">
-                <CheckCircle2 className="w-8 h-8 text-tf-blue mx-auto mb-md" />
-                <h3 className="font-semibold text-text-dark mb-xs">Granular Talent Pool & Compensation Benchmarking Data.</h3>
-              </div>
-              <div className="bg-white p-lg rounded-lg shadow-sm">
-                <CheckCircle2 className="w-8 h-8 text-tf-blue mx-auto mb-md" />
-                <h3 className="font-semibold text-text-dark mb-xs">Actionable Skills Foresight & Risk Analysis.</h3>
-              </div>
-              <div className="bg-white p-lg rounded-lg shadow-sm">
-                <CheckCircle2 className="w-8 h-8 text-tf-blue mx-auto mb-md" />
-                <h3 className="font-semibold text-text-dark mb-xs">Expert Interpretation & Clear Strategic Recommendations.</h3>
-              </div>
+            <div className="bg-gradient-to-r from-tf-blue/10 to-blue-50 p-6 rounded-xl border border-tf-blue/20 mb-lg">
+              <h3 className="text-xl font-bold text-text-dark mb-md">This powerful tool synthesizes:</h3>
             </div>
-            <p className="text-lg text-text-medium">
-              It provides the <span className="font-semibold text-text-dark">validated intelligence foundation</span> required to effectively target and execute talent strategies, 
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-lg mb-xxl">
+            <div className="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 group border border-tf-blue/20">
+              <div className="text-center mb-6">
+                <div className="w-16 h-16 bg-gradient-to-br from-tf-blue to-blue-600 rounded-lg flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
+                  <TrendingUp className="w-8 h-8 text-white" />
+                </div>
+                <h3 className="text-xl font-bold text-text-dark group-hover:text-tf-blue transition-colors">Market & Competitor Insights</h3>
+                <p className="text-sm font-semibold text-text-medium mt-2">Rigorously researched</p>
+              </div>
+              <p className="text-text-medium leading-relaxed">
+                Deep analysis of market dynamics, competitor positioning, and talent acquisition strategies to give you strategic visibility into the competitive landscape.
+              </p>
+            </div>
+            
+            <div className="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 group border border-emerald-500/20">
+              <div className="text-center mb-6">
+                <div className="w-16 h-16 bg-gradient-to-br from-emerald-500 to-teal-600 rounded-lg flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
+                  <Users className="w-8 h-8 text-white" />
+                </div>
+                <h3 className="text-xl font-bold text-text-dark group-hover:text-emerald-700 transition-colors">Talent Pool & Compensation Data</h3>
+                <p className="text-sm font-semibold text-text-medium mt-2">Granular benchmarking</p>
+              </div>
+              <p className="text-text-medium leading-relaxed">
+                Detailed talent availability, skill distribution, and compensation benchmarking data to inform your hiring strategy and budget planning.
+              </p>
+            </div>
+            
+            <div className="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 group border border-purple-500/20">
+              <div className="text-center mb-6">
+                <div className="w-16 h-16 bg-gradient-to-br from-purple-500 to-indigo-600 rounded-lg flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
+                  <TrendingUp className="w-8 h-8 text-white" />
+                </div>
+                <h3 className="text-xl font-bold text-text-dark group-hover:text-purple-700 transition-colors">Skills Foresight & Risk Analysis</h3>
+                <p className="text-sm font-semibold text-text-medium mt-2">Actionable intelligence</p>
+              </div>
+              <p className="text-text-medium leading-relaxed">
+                Forward-looking analysis of emerging skill requirements, talent shortages, and strategic risks to help you stay ahead of market changes.
+              </p>
+            </div>
+            
+            <div className="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 group border border-tf-orange/20">
+              <div className="text-center mb-6">
+                <div className="w-16 h-16 bg-gradient-to-br from-tf-orange to-red-500 rounded-lg flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
+                  <Lightbulb className="w-8 h-8 text-white" />
+                </div>
+                <h3 className="text-xl font-bold text-text-dark group-hover:text-tf-orange transition-colors">Expert Interpretation & Recommendations</h3>
+                <p className="text-sm font-semibold text-text-medium mt-2">Clear strategic guidance</p>
+              </div>
+              <p className="text-text-medium leading-relaxed">
+                Seasoned practitioner insights that translate complex data into clear, actionable recommendations tailored to your specific strategic context.
+              </p>
+            </div>
+          </div>
+          
+          <div className="bg-gradient-to-r from-tf-blue/10 to-blue-50 p-8 rounded-xl border border-tf-blue/20 text-center max-w-4xl mx-auto">
+            <p className="text-lg font-semibold text-text-dark">
+              It provides the <span className="text-tf-blue">validated intelligence foundation</span> required to effectively target and execute talent strategies, 
               maximizing your chance of success in competitive environments.
             </p>
           </div>
@@ -395,40 +436,102 @@ export default function Illuminate() {
       {/* CTA Section */}
       <section className="bg-bg-subtle py-xxxl">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="max-w-3xl mx-auto text-center">
-            <h2 className="text-3xl md:text-4xl font-bold text-text-dark mb-md">
-              Make Your Next Move With Data‑Driven Confidence
-            </h2>
-            <p className="text-lg text-text-medium mb-xl">
-              Stop risking critical initiatives on talent assumptions or incomplete information. Book a briefing and see precisely how Illuminate can provide the clarity your leadership and goals demand.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-md justify-center">
-              <Link href="/contact" className="btn-primary">
-                Request a Strategic Intelligence Briefing
-              </Link>
-              <Link href="/services" className="btn-secondary">
-                Explore the Full Ecosystem
-              </Link>
+          <div className="max-w-4xl mx-auto">
+            <div className="bg-gradient-to-r from-tf-blue/10 to-tf-orange/10 p-12 rounded-2xl border border-tf-blue/20 text-center">
+              <div className="mb-8">
+                <div className="w-20 h-20 bg-gradient-to-br from-tf-blue to-tf-orange rounded-full flex items-center justify-center mx-auto mb-6">
+                  <Target className="w-10 h-10 text-white" />
+                </div>
+                <h2 className="text-3xl md:text-4xl font-bold text-text-dark mb-lg">
+                  Make Your Next Move With Data‑Driven Confidence
+                </h2>
+                <p className="text-lg text-text-medium mb-8">
+                  Stop risking critical initiatives on talent assumptions or incomplete information. Book a briefing and see precisely how Illuminate can provide the clarity your leadership and goals demand.
+                </p>
+              </div>
+              <div className="flex flex-col sm:flex-row gap-md justify-center">
+                <Link href="/contact" className="btn-primary text-lg px-8 py-4 bg-tf-blue hover:bg-tf-blue/90 text-white rounded-lg font-semibold transition-all duration-300 transform hover:-translate-y-1 shadow-lg hover:shadow-xl">
+                  Request a Strategic Intelligence Briefing
+                </Link>
+                <Link href="/services" className="btn-secondary text-lg px-8 py-4 bg-white border-2 border-tf-blue text-tf-blue hover:bg-tf-blue hover:text-white rounded-lg font-semibold transition-all duration-300 transform hover:-translate-y-1 shadow-lg hover:shadow-xl">
+                  Explore the Full Ecosystem
+                </Link>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
       {/* Integration Section */}
-      <section className="bg-white py-xl">
+      <section className="bg-white py-xxxl">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="max-w-3xl mx-auto text-center">
-            <div className="bg-gradient-to-r from-tf-orange/10 to-tf-blue/10 p-lg rounded-lg">
-              <h3 className="text-lg font-semibold text-text-dark mb-xs">Part of the Talent Enablement Ecosystem</h3>
-              <p className="text-text-medium mb-md">
-                Illuminate intelligence directly informs <Link href="/services/innovate" className="text-tf-blue hover:text-tf-orange transition-colors font-semibold">Innovate</Link> process design, 
-                guides <Link href="/services/elevate" className="text-tf-blue hover:text-tf-orange transition-colors font-semibold">Elevate</Link> capability building, 
-                and powers <Link href="/services/accelerate" className="text-tf-blue hover:text-tf-orange transition-colors font-semibold">Accelerate</Link> execution—creating a 
-                multiplier effect across your entire talent strategy.
+          <div className="text-center max-w-4xl mx-auto mb-xxl">
+            <h3 className="text-2xl md:text-3xl font-bold text-text-dark mb-lg">Part of the Talent Enablement Ecosystem</h3>
+            <p className="text-lg text-text-medium">
+              Illuminate intelligence creates a multiplier effect across your entire talent strategy through seamless integration.
+            </p>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-lg mb-xxl">
+            <div className="bg-gradient-to-br from-tf-orange/10 to-red-50 p-8 rounded-xl border border-tf-orange/20 hover:border-tf-orange/40 transition-all duration-300 group">
+              <div className="text-center mb-6">
+                <div className="w-14 h-14 bg-gradient-to-br from-tf-orange to-red-500 rounded-lg flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
+                  <Lightbulb className="w-7 h-7 text-white" />
+                </div>
+                <h4 className="text-xl font-bold text-text-dark group-hover:text-tf-orange transition-colors">Informs Innovate</h4>
+                <p className="text-sm font-semibold text-text-medium mt-2">Process design</p>
+              </div>
+              <p className="text-text-medium leading-relaxed text-center">
+                Intelligence directly guides process optimization and workflow design decisions.
               </p>
-              <Link href="/services" className="inline-flex items-center text-tf-blue font-medium hover:text-tf-orange transition-colors">
+              <div className="mt-6 text-center">
+                <Link href="/services/innovate" className="text-tf-orange hover:text-tf-orange/80 font-semibold transition-colors">
+                  Learn More →
+                </Link>
+              </div>
+            </div>
+            
+            <div className="bg-gradient-to-br from-purple-50 to-indigo-50 p-8 rounded-xl border border-purple-200 hover:border-purple-300 transition-all duration-300 group">
+              <div className="text-center mb-6">
+                <div className="w-14 h-14 bg-gradient-to-br from-purple-500 to-indigo-600 rounded-lg flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
+                  <TrendingUp className="w-7 h-7 text-white" />
+                </div>
+                <h4 className="text-xl font-bold text-text-dark group-hover:text-purple-700 transition-colors">Guides Elevate</h4>
+                <p className="text-sm font-semibold text-text-medium mt-2">Capability building</p>
+              </div>
+              <p className="text-text-medium leading-relaxed text-center">
+                Data insights shape targeted capability development and team enhancement strategies.
+              </p>
+              <div className="mt-6 text-center">
+                <Link href="/services/elevate" className="text-purple-600 hover:text-purple-500 font-semibold transition-colors">
+                  Learn More →
+                </Link>
+              </div>
+            </div>
+            
+            <div className="bg-gradient-to-br from-emerald-50 to-teal-50 p-8 rounded-xl border border-emerald-200 hover:border-emerald-300 transition-all duration-300 group">
+              <div className="text-center mb-6">
+                <div className="w-14 h-14 bg-gradient-to-br from-emerald-500 to-teal-600 rounded-lg flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
+                  <Target className="w-7 h-7 text-white" />
+                </div>
+                <h4 className="text-xl font-bold text-text-dark group-hover:text-emerald-700 transition-colors">Powers Accelerate</h4>
+                <p className="text-sm font-semibold text-text-medium mt-2">Execution excellence</p>
+              </div>
+              <p className="text-text-medium leading-relaxed text-center">
+                Strategic intelligence enables precise, high-impact execution and delivery.
+              </p>
+              <div className="mt-6 text-center">
+                <Link href="/services/accelerate" className="text-emerald-600 hover:text-emerald-500 font-semibold transition-colors">
+                  Learn More →
+                </Link>
+              </div>
+            </div>
+          </div>
+          
+          <div className="text-center">
+            <div className="bg-gradient-to-r from-tf-blue/10 to-tf-orange/10 p-6 rounded-xl border border-tf-blue/20 inline-block">
+              <Link href="/services" className="inline-flex items-center text-tf-blue font-semibold hover:text-tf-orange transition-colors text-lg">
                 Explore the Full Ecosystem
-                <ArrowRight className="ml-xs w-4 h-4" />
+                <ArrowRight className="ml-2 w-5 h-5" />
               </Link>
             </div>
           </div>
