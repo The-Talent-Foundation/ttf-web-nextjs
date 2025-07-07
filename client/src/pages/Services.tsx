@@ -1,4 +1,5 @@
 import { Link } from 'wouter';
+import { useEffect } from 'react';
 import { Lightbulb, Settings, Zap, Play, Timer, AlertCircle, Target, TrendingDown, Shield, Building2, ArrowLeftRight, DollarSign, AlertTriangle, MapPin, Users, CheckCircle } from 'lucide-react';
 import {
   Accordion,
@@ -9,6 +10,19 @@ import {
 import ScrollAnimations from '@/components/ScrollAnimations';
 
 export default function Services() {
+  // Handle scroll to anchor on page load
+  useEffect(() => {
+    const hash = window.location.hash;
+    if (hash) {
+      setTimeout(() => {
+        const element = document.getElementById(hash.substring(1));
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth' });
+        }
+      }, 100);
+    }
+  }, []);
+
   return (
     <ScrollAnimations>
       <div>
