@@ -23,6 +23,14 @@ export default function Services() {
     }
   }, []);
 
+  // Handle same-page anchor scrolling
+  const scrollToSection = (sectionId: string) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <ScrollAnimations>
       <div>
@@ -43,9 +51,12 @@ export default function Services() {
               <a href="https://cal.com/adamkovacs/the-talent-foundation" target="_blank" rel="noopener noreferrer" className="btn-primary text-lg px-8 py-4">
                 Explore Your Enablement Needs
               </a>
-              <Link href="/services#services-grid" className="btn-secondary text-lg px-8 py-4">
+              <button 
+                onClick={() => scrollToSection('services-grid')} 
+                className="btn-secondary text-lg px-8 py-4"
+              >
                 Explore the Enablement Ecosystem
-              </Link>
+              </button>
             </div>
           </div>
         </div>
