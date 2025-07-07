@@ -1,15 +1,43 @@
 import { useEffect, useState, useCallback } from 'react';
 import { Link } from 'wouter';
+import { useLocation } from 'wouter';
 
 interface ScrollAnimationsProps {
   children: React.ReactNode;
 }
 
 export default function ScrollAnimations({ children }: ScrollAnimationsProps) {
+  const [location] = useLocation();
   const [scrollProgress, setScrollProgress] = useState(0);
   const [showFloatingCTA, setShowFloatingCTA] = useState(false);
   const [currentSection, setCurrentSection] = useState('');
   const [sections, setSections] = useState<string[]>([]);
+
+  // Get service-specific color based on current route
+  const getServiceColor = () => {
+    if (location.includes('/services/illuminate')) return '#02a7e1'; // TF Blue
+    if (location.includes('/services/innovate')) return '#e84e36'; // TF Orange  
+    if (location.includes('/services/elevate')) return '#7c3aed'; // Purple
+    if (location.includes('/services/accelerate')) return '#059669'; // Green
+    return '#e84e36'; // Default TF Orange
+  };
+
+  // Throttle scroll events for smooth performance
+  const throttle = useCallback((func: Function, delay: number) => {
+    let timeoutId: NodeJS.Timeout;
+    let lastExecTime = 0;
+    return (...args: any[]) => {
+      const currentTime = Date.now();
+      
+      if (currentTime - lastExecTime > delay) {
+        func(...args);
+        lastExecTime = currentTime;
+      } else {
+        clearTimeout(timeoutId);
+        timeoutId = setTimeout(() => func(...args), delay - (currentTime - lastExecTime));
+      }
+    };
+  }, []);
 
 
 
@@ -20,19 +48,43 @@ export default function ScrollAnimations({ children }: ScrollAnimationsProps) {
     }
   };
 
-  useEffect(() => {
-    // Discover sections and set up scroll handling
-    const setupScrollAnimations = () => {
+  // Define meaningful sections for each page
+  const getMeaningfulSections = () => {
+    if (location === '/') {
+      // Homepage - 4 specific sections as requested
+      return ['hero', 'problem', 'solution', 'proven-partner'];
+    } else if (location.includes('/services/')) {
+      // Service pages - 5 main sections
+      return ['hero', 'problem', 'solution', 'benefits', 'cta'];
+    } else if (location === '/about') {
+      return ['hero', 'philosophy', 'principles', 'founder', 'contact-cta'];
+    } else if (location === '/contact') {
+      return ['hero', 'strategy-call', 'email-contact', 'contact-info'];
+    } else if (location === '/services') {
+      return ['hero', 'overview', 'services-grid', 'roi', 'commitment'];
+    } else if (location === '/who-we-serve') {
+      return ['hero', 'overview', 'client-types', 'case-studies'];
+    } else {
+      // Fallback: get all sections with IDs
       const allSections = Array.from(document.querySelectorAll('section[id]')) as HTMLElement[];
-      const sectionIds = allSections.map(section => section.id);
-      setSections(sectionIds);
+      return allSections.map(section => section.id);
+    }
+  };
+
+  useEffect(() => {
+    // Get meaningful sections for current page
+    const setupScrollAnimations = () => {
+      const meaningfulSections = getMeaningfulSections();
+      // Filter to only include sections that actually exist on the page
+      const existingSections = meaningfulSections.filter(id => document.getElementById(id));
+      setSections(existingSections);
       
-      if (sectionIds.length > 0 && !currentSection) {
-        setCurrentSection(sectionIds[0]);
+      if (existingSections.length > 0 && !currentSection) {
+        setCurrentSection(existingSections[0]);
       }
     };
     
-    const handleScroll = () => {
+    const handleScrollRaw = () => {
       const winHeight = window.innerHeight;
       const docHeight = document.documentElement.scrollHeight - winHeight;
       const scrollTop = window.scrollY;
@@ -41,15 +93,25 @@ export default function ScrollAnimations({ children }: ScrollAnimationsProps) {
       setScrollProgress(scrollPercent);
       setShowFloatingCTA(scrollPercent > 30);
 
-      // Find current section
-      const allSections = Array.from(document.querySelectorAll('section[id]')) as HTMLElement[];
-      let foundSection = '';
+      // Find current section with improved logic
+      const meaningfulSections = getMeaningfulSections();
+      const existingSections = meaningfulSections.filter(id => document.getElementById(id));
       
-      for (let i = allSections.length - 1; i >= 0; i--) {
-        const element = allSections[i];
-        if (element && element.offsetTop <= scrollTop + 200) {
-          foundSection = element.id;
-          break;
+      let foundSection = '';
+      const viewportCenter = scrollTop + winHeight / 2;
+      
+      // Find the section closest to viewport center
+      let minDistance = Infinity;
+      for (const sectionId of existingSections) {
+        const element = document.getElementById(sectionId);
+        if (element) {
+          const sectionCenter = element.offsetTop + element.offsetHeight / 2;
+          const distance = Math.abs(viewportCenter - sectionCenter);
+          
+          if (distance < minDistance) {
+            minDistance = distance;
+            foundSection = sectionId;
+          }
         }
       }
       
@@ -78,21 +140,24 @@ export default function ScrollAnimations({ children }: ScrollAnimationsProps) {
       });
     };
 
+    // Use throttled scroll handler for smooth performance
+    const handleScroll = throttle(handleScrollRaw, 16); // ~60fps
+
     // Initial setup with delays to ensure DOM is ready
     setTimeout(setupScrollAnimations, 50);
     setTimeout(() => {
       setupScrollAnimations();
-      handleScroll();
+      handleScrollRaw();
     }, 150);
     
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener('scroll', handleScroll, { passive: true });
     window.addEventListener('resize', setupScrollAnimations);
 
     return () => {
       window.removeEventListener('scroll', handleScroll);
       window.removeEventListener('resize', setupScrollAnimations);
     };
-  }, [currentSection]);
+  }, [currentSection, location, throttle]);
 
   // Counter animation effect
   useEffect(() => {
@@ -129,29 +194,39 @@ export default function ScrollAnimations({ children }: ScrollAnimationsProps) {
     animateCounters();
   }, []);
 
+  const serviceColor = getServiceColor();
+
   return (
     <>
-      {/* Progress Indicator */}
+      {/* Progress Indicator with Service-Specific Color */}
       <div 
         className="progress-indicator"
-        style={{ width: `${scrollProgress}%` }}
+        style={{ 
+          width: `${scrollProgress}%`,
+          background: `linear-gradient(90deg, #e84e36 0%, ${serviceColor} 100%)`,
+          transition: 'width 0.1s ease-out'
+        }}
       />
       
-      {/* Section Progress Dots */}
+      {/* Section Progress Dots - More Subtle Design */}
       {sections.length > 0 && (
-        <div className="fixed top-1/2 left-4 transform -translate-y-1/2 z-50 hidden lg:flex flex-col space-y-4">
+        <div className="fixed top-1/2 left-3 transform -translate-y-1/2 z-40 hidden lg:flex flex-col space-y-3">
           {sections.map((sectionId, index) => {
             const isActive = currentSection === sectionId;
             return (
               <button
-                key={sectionId}
+                key={`${location}-${sectionId}`} // Add location to make keys unique
                 onClick={() => scrollToSection(sectionId)}
-                className={`w-3 h-3 rounded-full transition-all duration-300 border-2 cursor-pointer hover:scale-110 ${
+                className={`w-2 h-2 rounded-full transition-all duration-300 cursor-pointer hover:scale-125 border ${
                   isActive 
-                    ? 'bg-tf-orange border-tf-orange scale-125 shadow-lg' 
-                    : 'bg-white border-gray-400 hover:border-tf-orange hover:bg-tf-orange/20 shadow-md'
+                    ? `scale-150 shadow-lg border-2` 
+                    : 'bg-white/80 border-gray-300 hover:border-gray-500 hover:bg-white shadow-sm'
                 }`}
-                title={`Go to ${sectionId.charAt(0).toUpperCase() + sectionId.slice(1)}`}
+                style={{
+                  backgroundColor: isActive ? serviceColor : undefined,
+                  borderColor: isActive ? serviceColor : undefined,
+                }}
+                title={`Go to ${sectionId.charAt(0).toUpperCase() + sectionId.slice(1).replace(/-/g, ' ')}`}
               />
             );
           })}

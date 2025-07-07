@@ -371,7 +371,7 @@ export default function Home() {
       </section>
 
       {/* Credibility */}
-      <section className="bg-bg-subtle py-xxxl">
+      <section id="proven-partner" className="bg-bg-subtle py-xxxl">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-xxl">
