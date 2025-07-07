@@ -13,14 +13,8 @@ export default function ScrollAnimations({ children }: ScrollAnimationsProps) {
   const [currentSection, setCurrentSection] = useState('');
   const [sections, setSections] = useState<string[]>([]);
 
-  // Get service-specific color based on current route
-  const getServiceColor = () => {
-    if (location.includes('/services/illuminate')) return '#02a7e1'; // TF Blue
-    if (location.includes('/services/innovate')) return '#e84e36'; // TF Orange  
-    if (location.includes('/services/elevate')) return '#7c3aed'; // Purple
-    if (location.includes('/services/accelerate')) return '#059669'; // Green
-    return '#e84e36'; // Default TF Orange
-  };
+  // Use consistent TF Orange across all pages
+  const orangeColor = '#e84e36';
 
   // Throttle scroll events for smooth performance
   const throttle = useCallback((func: Function, delay: number) => {
@@ -194,21 +188,19 @@ export default function ScrollAnimations({ children }: ScrollAnimationsProps) {
     animateCounters();
   }, []);
 
-  const serviceColor = getServiceColor();
-
   return (
     <>
-      {/* Progress Indicator with Service-Specific Color */}
+      {/* Progress Indicator with Consistent Orange */}
       <div 
         className="progress-indicator"
         style={{ 
           width: `${scrollProgress}%`,
-          background: `linear-gradient(90deg, #e84e36 0%, ${serviceColor} 100%)`,
+          backgroundColor: orangeColor,
           transition: 'width 0.1s ease-out'
         }}
       />
       
-      {/* Section Progress Dots - More Subtle Design */}
+      {/* Section Progress Dots - Consistent Orange Design */}
       {sections.length > 0 && (
         <div className="fixed top-1/2 left-3 transform -translate-y-1/2 z-40 hidden lg:flex flex-col space-y-3">
           {sections.map((sectionId, index) => {
@@ -223,8 +215,8 @@ export default function ScrollAnimations({ children }: ScrollAnimationsProps) {
                     : 'bg-white/80 border-gray-300 hover:border-gray-500 hover:bg-white shadow-sm'
                 }`}
                 style={{
-                  backgroundColor: isActive ? serviceColor : undefined,
-                  borderColor: isActive ? serviceColor : undefined,
+                  backgroundColor: isActive ? orangeColor : undefined,
+                  borderColor: isActive ? orangeColor : undefined,
                 }}
                 title={`Go to ${sectionId.charAt(0).toUpperCase() + sectionId.slice(1).replace(/-/g, ' ')}`}
               />
