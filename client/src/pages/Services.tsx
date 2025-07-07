@@ -116,11 +116,11 @@ export default function Services() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-xxl">
             <h2 className="text-3xl md:text-4xl font-bold text-text-dark mb-md pt-[9px] pb-[9px]">Our Talent Enablement Ecosystem</h2>
-            <p className="text-lg text-text-medium mb-lg max-w-4xl mx-auto font-semibold">
-              The Pillars for Building Durable Talent Acquisition Capability
-            </p>
-            <p className="text-lg text-text-dark max-w-4xl mx-auto">
+            <p className="text-lg text-text-dark max-w-4xl mx-auto mb-lg">
               Our proven framework provides the structure to build a talent acquisition engine fit for your specific purpose. We recognize that not every situation requires the full ecosystem, so we designed each pillar to deliver essential value on its own.
+            </p>
+            <p className="text-lg text-text-medium max-w-4xl mx-auto font-semibold">
+              The Pillars for Building Durable Talent Acquisition Capability
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-xxl mb-xxxl">
