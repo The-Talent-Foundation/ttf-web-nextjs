@@ -69,7 +69,7 @@ export default function Home() {
               <a href="https://cal.com/adamkovacs/the-talent-foundation" target="_blank" rel="noopener noreferrer" className="btn-primary text-lg px-8 py-4">
                 Diagnose Your Talent Risks
               </a>
-              <Link href="/services" className="btn-secondary text-lg px-8 py-4">
+              <Link href="/services#services-grid" className="btn-secondary text-lg px-8 py-4">
                 Explore the Enablement Ecosystem
               </Link>
             </div>
