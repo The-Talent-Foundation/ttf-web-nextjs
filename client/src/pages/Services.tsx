@@ -116,7 +116,7 @@ export default function Services() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-xxl">
             <h2 className="text-3xl md:text-4xl font-bold text-text-dark mb-md pt-[9px] pb-[9px]">Our Talent Enablement Ecosystem</h2>
-            <p className="text-lg text-text-medium mb-lg max-w-4xl mx-auto">
+            <p className="text-lg text-text-medium mb-lg max-w-4xl mx-auto font-semibold">
               The Pillars for Building Durable Talent Acquisition Capability
             </p>
             <p className="text-lg text-text-dark max-w-4xl mx-auto">
