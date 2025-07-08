@@ -227,12 +227,14 @@ export default function ScrollAnimations({ children }: ScrollAnimationsProps) {
 
       {/* Floating CTA */}
       <div className={`floating-cta ${showFloatingCTA ? 'visible' : ''}`}>
-        <Link 
-          href="/contact" 
+        <a 
+          href="https://cal.com/adamkovacs/the-talent-foundation"
+          target="_blank"
+          rel="noopener noreferrer"
           className="btn-primary px-6 py-3 rounded-full shadow-lg hover:shadow-xl transition-shadow"
         >
-          Book Strategic Assessment
-        </Link>
+          Book Discovery Call
+        </a>
       </div>
 
       {children}

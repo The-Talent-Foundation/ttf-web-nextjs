@@ -463,9 +463,9 @@ export default function Services() {
               Move beyond the limitations and risks of the obsolete, reactive firefighting approach to talent acquisition. Discover how The Talent Foundation's integrated enablement ecosystem can transform your talent function into a strategic advantage.
             </p>
             <div className="mb-xxl">
-              <Link href="/contact" className="btn-primary text-lg px-8 py-4 inline-block mb-lg">
+              <a href="https://cal.com/adamkovacs/the-talent-foundation" target="_blank" rel="noopener noreferrer" className="btn-primary text-lg px-8 py-4 inline-block mb-lg">
                 Schedule Discovery Call
-              </Link>
+              </a>
             </div>
             <div className="border-t border-gray-700 pt-lg mt-lg">
               <p className="text-white font-semibold mb-lg">Explore the Ecosystem Pillars:</p>
