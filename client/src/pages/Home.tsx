@@ -403,7 +403,7 @@ export default function Home() {
               <p className="text-lg text-text-medium mb-lg">
                 We operate transparently, intensely focusing on your measurable business outcomes. We don't just offer advice; we partner with you to transform your people and talent function into a dependable engine for achieving your most critical strategic imperatives.
               </p>
-              <Link href="/about" className="text-tf-blue font-semibold hover:text-tf-orange transition-colors">
+              <Link href="/who-we-serve#client-types" className="text-tf-blue font-semibold hover:text-tf-orange transition-colors">
                 Learn More About Our Philosophy & Experience →
               </Link>
             </div>

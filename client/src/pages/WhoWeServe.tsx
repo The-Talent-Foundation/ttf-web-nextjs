@@ -1,8 +1,22 @@
 import { Link } from 'wouter';
+import { useEffect } from 'react';
 import { Users, Settings, ArrowRight, Target, TrendingUp, Globe, Cog, Zap, Rocket, Building, CheckCircle2, Shield, Lightbulb, BarChart3, Award, Clock } from 'lucide-react';
 import ScrollAnimations from '@/components/ScrollAnimations';
 
 export default function WhoWeServe() {
+  // Handle scroll to anchor on page load
+  useEffect(() => {
+    const hash = window.location.hash;
+    if (hash) {
+      setTimeout(() => {
+        const element = document.getElementById(hash.substring(1));
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth' });
+        }
+      }, 100);
+    }
+  }, []);
+
   return (
     <ScrollAnimations>
       <div>
