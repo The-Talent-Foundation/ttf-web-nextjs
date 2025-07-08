@@ -447,10 +447,31 @@ export default function Home() {
               </div>
             </div>
             <div className="border-t border-gray-700 pt-lg mt-lg">
-              <p className="text-white font-semibold mb-md pt-[4px] pb-[4px]">Ready to turn talent from constraint to edge?</p>
-              <div className="flex justify-center">
-                <Link href="/services" className="text-tf-blue-lighter hover:text-tf-orange transition-colors border-b border-tf-blue-lighter pb-1">
-                  Explore Our Services
+              <p className="text-white font-semibold mb-lg">Explore our services:</p>
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-md">
+                <Link href="/services/illuminate" className="group flex items-center gap-md p-md rounded-lg hover:bg-gray-800 transition-all duration-300">
+                  <div className="w-8 h-8 bg-gradient-to-br from-blue-500 to-blue-600 rounded-full flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform duration-300">
+                    <Lightbulb className="w-4 h-4 text-white" />
+                  </div>
+                  <span className="text-tf-blue-lighter group-hover:text-tf-orange transition-colors">Illuminate</span>
+                </Link>
+                <Link href="/services/innovate" className="group flex items-center gap-md p-md rounded-lg hover:bg-gray-800 transition-all duration-300">
+                  <div className="w-8 h-8 bg-gradient-to-br from-orange-500 to-red-500 rounded-full flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform duration-300">
+                    <Settings className="w-4 h-4 text-white" />
+                  </div>
+                  <span className="text-tf-blue-lighter group-hover:text-tf-orange transition-colors">Innovate</span>
+                </Link>
+                <Link href="/services/elevate" className="group flex items-center gap-md p-md rounded-lg hover:bg-gray-800 transition-all duration-300">
+                  <div className="w-8 h-8 bg-gradient-to-br from-purple-500 to-indigo-600 rounded-full flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform duration-300">
+                    <Zap className="w-4 h-4 text-white" />
+                  </div>
+                  <span className="text-tf-blue-lighter group-hover:text-tf-orange transition-colors">Elevate</span>
+                </Link>
+                <Link href="/services/accelerate" className="group flex items-center gap-md p-md rounded-lg hover:bg-gray-800 transition-all duration-300">
+                  <div className="w-8 h-8 bg-gradient-to-br from-green-500 to-emerald-600 rounded-full flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform duration-300">
+                    <Play className="w-4 h-4 text-white" />
+                  </div>
+                  <span className="text-tf-blue-lighter group-hover:text-tf-orange transition-colors">Accelerate</span>
                 </Link>
               </div>
             </div>
