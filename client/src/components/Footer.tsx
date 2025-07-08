@@ -2,7 +2,7 @@ import { Link } from 'wouter';
 
 export default function Footer() {
   return (
-    <footer className="bg-bg-dark py-xl pt-[0px] pb-[0px]">
+    <footer className="bg-bg-dark py-xl pt-[10px] pb-[10px]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-lg">
           <div className="flex flex-col justify-end">
