@@ -85,7 +85,34 @@ export default function ScrollAnimations({ children }: ScrollAnimationsProps) {
       const scrollPercent = Math.min(docHeight > 0 ? (scrollTop / docHeight) * 100 : 0, 100);
       
       setScrollProgress(scrollPercent);
-      setShowFloatingCTA(scrollPercent > 30);
+      
+      // Hide floating CTA when final CTA section is visible
+      const allH2s = document.querySelectorAll('h2');
+      let finalCTASection = null;
+      
+      // Find h2 containing "Ready to Transform Talent"
+      allH2s.forEach(h2 => {
+        if (h2.textContent && h2.textContent.includes('Ready to Transform Talent')) {
+          finalCTASection = h2.closest('section') || h2.parentElement;
+        }
+      });
+      
+      // Fallback to last section if not found
+      if (!finalCTASection) {
+        finalCTASection = document.querySelector('section:last-of-type');
+      }
+      
+      let shouldShowFloatingCTA = scrollPercent > 30;
+      
+      if (finalCTASection) {
+        const rect = finalCTASection.getBoundingClientRect();
+        const isVisible = rect.top <= window.innerHeight && rect.bottom >= 0;
+        if (isVisible) {
+          shouldShowFloatingCTA = false;
+        }
+      }
+      
+      setShowFloatingCTA(shouldShowFloatingCTA);
 
       // Find current section with improved logic
       const meaningfulSections = getMeaningfulSections();
