@@ -16,10 +16,10 @@ export default function Footer() {
             <div>
               <h4 className="font-semibold text-white mb-md">Services</h4>
               <div className="grid grid-cols-2 gap-x-lg gap-y-xs text-sm">
-                <Link href="/services/illuminate#solution" className="text-tf-blue-lighter hover:text-tf-orange transition-colors">Illuminate</Link>
-                <Link href="/services/innovate#solution" className="text-tf-blue-lighter hover:text-tf-orange transition-colors">Innovate</Link>
-                <Link href="/services/elevate#solution" className="text-tf-blue-lighter hover:text-tf-orange transition-colors">Elevate</Link>
-                <Link href="/services/accelerate#solution" className="text-tf-blue-lighter hover:text-tf-orange transition-colors">Accelerate</Link>
+                <Link href="/services/illuminate" className="text-tf-blue-lighter hover:text-tf-orange transition-colors">Illuminate</Link>
+                <Link href="/services/innovate" className="text-tf-blue-lighter hover:text-tf-orange transition-colors">Innovate</Link>
+                <Link href="/services/elevate" className="text-tf-blue-lighter hover:text-tf-orange transition-colors">Elevate</Link>
+                <Link href="/services/accelerate" className="text-tf-blue-lighter hover:text-tf-orange transition-colors">Accelerate</Link>
               </div>
             </div>
           </div>
