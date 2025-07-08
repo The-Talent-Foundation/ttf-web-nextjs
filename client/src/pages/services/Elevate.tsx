@@ -1,8 +1,22 @@
 import { Link } from 'wouter';
+import { useEffect } from 'react';
 import { Zap, Brain, Users, AlertTriangle, ArrowRight, CheckCircle2, Sparkles, TrendingUp, Target, Settings, Lightbulb, Award, BookOpen, BarChart3, Star, Search, Cpu } from 'lucide-react';
 import ScrollAnimations from '@/components/ScrollAnimations';
 
 export default function Elevate() {
+  // Handle scroll to anchor on page load
+  useEffect(() => {
+    const hash = window.location.hash;
+    if (hash) {
+      setTimeout(() => {
+        const element = document.getElementById(hash.substring(1));
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth' });
+        }
+      }, 100);
+    }
+  }, []);
+
   return (
     <ScrollAnimations>
       <div>
