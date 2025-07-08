@@ -1,4 +1,5 @@
 import { Link } from 'wouter';
+import { useEffect } from 'react';
 import { Lightbulb, Search, TrendingUp, AlertTriangle, ArrowRight, CheckCircle2, Brain, Target, ChevronDown, MapPin, Users, DollarSign, Sparkles, BarChart3, Compass, FileText, Zap, Settings, Award, Rocket, Play } from 'lucide-react';
 import {
   Accordion,
@@ -9,6 +10,18 @@ import {
 import ScrollAnimations from '@/components/ScrollAnimations';
 
 export default function Illuminate() {
+  // Handle scroll to anchor on page load
+  useEffect(() => {
+    const hash = window.location.hash;
+    if (hash) {
+      setTimeout(() => {
+        const element = document.getElementById(hash.substring(1));
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth' });
+        }
+      }, 100);
+    }
+  }, []);
 
   return (
     <ScrollAnimations>

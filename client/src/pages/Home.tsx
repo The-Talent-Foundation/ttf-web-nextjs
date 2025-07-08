@@ -196,7 +196,7 @@ export default function Home() {
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-lg mb-xxl">
-            <Link href="/services/illuminate" className="service-card group relative overflow-hidden p-lg rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 text-center reveal-on-scroll bg-white">
+            <Link href="/services/illuminate#solution" className="service-card group relative overflow-hidden p-lg rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 text-center reveal-on-scroll bg-white">
               <div className="absolute inset-0 bg-gradient-to-br from-blue-50 to-blue-100 opacity-50 group-hover:opacity-80 transition-opacity"></div>
               <div className="relative z-10">
                 <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-blue-600 rounded-full flex items-center justify-center mx-auto mb-md group-hover:scale-110 transition-transform duration-300">
