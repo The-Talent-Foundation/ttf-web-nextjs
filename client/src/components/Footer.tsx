@@ -5,7 +5,7 @@ export default function Footer() {
     <footer className="bg-bg-dark py-xl pt-[0px] pb-[0px]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-lg">
-          <div>
+          <div className="flex flex-col justify-end">
             <div className="font-bold text-xl text-tf-orange mb-md">The Talent Foundation</div>
             <p className="text-tf-blue-lighter text-sm">
               Strategic talent enablement for complex challenges.
