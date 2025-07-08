@@ -16,9 +16,9 @@ export default function Footer() {
             <div>
               <h4 className="font-semibold text-white mb-md">Company</h4>
               <div className="grid grid-cols-2 gap-x-lg gap-y-xs text-sm">
-                <Link href="/about" className="text-tf-blue-lighter hover:text-tf-orange transition-colors" onClick={() => { window.history.replaceState(null, '', window.location.pathname); }}>About</Link>
-                <Link href="/contact" className="text-tf-blue-lighter hover:text-tf-orange transition-colors" onClick={() => { window.history.replaceState(null, '', window.location.pathname); }}>Contact</Link>
-                <Link href="/who-we-serve" className="text-tf-blue-lighter hover:text-tf-orange transition-colors" onClick={() => { window.history.replaceState(null, '', window.location.pathname); }}>Who We Serve</Link>
+                <Link href="/about" className="text-tf-blue-lighter hover:text-tf-orange transition-colors" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>About</Link>
+                <Link href="/contact" className="text-tf-blue-lighter hover:text-tf-orange transition-colors" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>Contact</Link>
+                <Link href="/who-we-serve" className="text-tf-blue-lighter hover:text-tf-orange transition-colors" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>Who We Serve</Link>
                 <a href="#" className="text-tf-blue-lighter hover:text-tf-orange transition-colors">Privacy</a>
                 <a href="#" className="text-tf-blue-lighter hover:text-tf-orange transition-colors">Jobs</a>
               </div>
