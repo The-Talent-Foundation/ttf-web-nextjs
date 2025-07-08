@@ -421,7 +421,7 @@ export default function Home() {
             <p className="text-lg text-tf-blue-lighter mb-xxl">
               Move beyond unpredictable hiring outcomes and build the robust talent engine your strategic ambition demands. Let's have a direct conversation about how expert talent enablement can de-risk your initiatives and accelerate sustainable growth.
             </p>
-            <div className="mb-xxl">
+            <div className="mb-xxl mt-[20px] mb-[20px]">
               <a href="https://cal.com/adamkovacs/the-talent-foundation" target="_blank" rel="noopener noreferrer" className="btn-primary text-lg px-8 py-4 inline-block mb-lg">
                 Schedule Strategic Assessment
               </a>
