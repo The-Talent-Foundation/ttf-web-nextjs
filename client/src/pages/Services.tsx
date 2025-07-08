@@ -232,7 +232,8 @@ export default function Services() {
           </div>
 
           {/* Synergy Section */}
-          <div className="bg-gradient-to-r from-tf-orange/10 to-tf-blue/10 p-xxl rounded-lg mb-xxxl">
+          <section id="multiplier-effect">
+            <div className="bg-gradient-to-r from-tf-orange/10 to-tf-blue/10 p-xxl rounded-lg mb-xxxl">
             <div className="text-center mb-lg">
               <h3 className="text-2xl font-bold text-text-dark mb-md">The Multiplier Effect: Why Integration Creates Unmatched Value</h3>
               <p className="text-lg text-text-medium">
@@ -300,6 +301,7 @@ export default function Services() {
               </p>
             </div>
           </div>
+          </section>
         </div>
       </section>
 

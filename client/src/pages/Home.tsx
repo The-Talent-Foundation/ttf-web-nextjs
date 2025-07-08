@@ -241,7 +241,7 @@ export default function Home() {
             <p className="text-lg text-text-medium mb-lg max-w-4xl mx-auto">
               Partnering with you, we collaboratively design <span className="font-semibold text-tf-orange">an integrated operating system for your talent acquisition</span>, purpose-built for <em>your</em> specific complexity and hiring needs.
             </p>
-            <Link href="/services" className="text-tf-blue font-semibold hover:text-tf-orange transition-colors">
+            <Link href="/services#multiplier-effect" className="text-tf-blue font-semibold hover:text-tf-orange transition-colors">
               Learn How Our Integrated Ecosystem Delivers Results →
             </Link>
           </div>
