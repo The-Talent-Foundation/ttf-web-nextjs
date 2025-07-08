@@ -12,15 +12,17 @@ export default function Footer() {
             </p>
           </div>
           
-          <div>
-            <h4 className="font-semibold text-white mb-md">Company</h4>
-            <ul className="space-y-xs text-sm">
-              <li><Link href="/about" className="text-tf-blue-lighter hover:text-tf-orange transition-colors">About</Link></li>
-              <li><Link href="/who-we-serve" className="text-tf-blue-lighter hover:text-tf-orange transition-colors">Who We Serve</Link></li>
-              <li><a href="#" className="text-tf-blue-lighter hover:text-tf-orange transition-colors">Jobs</a></li>
-              <li><Link href="/contact" className="text-tf-blue-lighter hover:text-tf-orange transition-colors">Contact</Link></li>
-              <li><a href="#" className="text-tf-blue-lighter hover:text-tf-orange transition-colors">Privacy</a></li>
-            </ul>
+          <div className="flex flex-col justify-end">
+            <div>
+              <h4 className="font-semibold text-white mb-md">Company</h4>
+              <div className="grid grid-cols-2 gap-x-lg gap-y-xs text-sm">
+                <Link href="/about" className="text-tf-blue-lighter hover:text-tf-orange transition-colors">About</Link>
+                <Link href="/contact" className="text-tf-blue-lighter hover:text-tf-orange transition-colors">Contact</Link>
+                <Link href="/who-we-serve" className="text-tf-blue-lighter hover:text-tf-orange transition-colors">Who We Serve</Link>
+                <a href="#" className="text-tf-blue-lighter hover:text-tf-orange transition-colors">Privacy</a>
+                <a href="#" className="text-tf-blue-lighter hover:text-tf-orange transition-colors">Jobs</a>
+              </div>
+            </div>
           </div>
         </div>
         <div className="border-t border-gray-700 mt-xxl pt-lg text-center">
