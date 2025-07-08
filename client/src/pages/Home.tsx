@@ -412,7 +412,7 @@ export default function Home() {
       </section>
 
       {/* Final CTA */}
-      <section className="bg-bg-dark py-xxxl pt-[0px] pb-[0px]">
+      <section className="bg-bg-dark py-xxxl pt-[10px] pb-[10px]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-[10px] pb-[10px]">
           <div className="text-center max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-md">
