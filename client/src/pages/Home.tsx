@@ -447,7 +447,7 @@ export default function Home() {
               </div>
             </div>
             <div className="border-t border-gray-700 pt-lg mt-lg">
-              <p className="text-white font-semibold mb-lg">Explore our services:</p>
+              <p className="text-white font-semibold mb-lg mt-[12px] mb-[12px] pt-[1px] pb-[1px]">Explore our services:</p>
               <div className="grid grid-cols-2 md:grid-cols-4 gap-md">
                 <Link href="/services/illuminate" className="group flex items-center gap-md p-md rounded-lg hover:bg-gray-800 transition-all duration-300">
                   <div className="w-8 h-8 bg-gradient-to-br from-blue-500 to-blue-600 rounded-full flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform duration-300">
