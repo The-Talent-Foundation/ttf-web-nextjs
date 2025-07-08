@@ -418,7 +418,7 @@ export default function Home() {
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-md">
               Ready to Transform Talent From Bottleneck to Strategic Advantage?
             </h2>
-            <p className="text-lg text-tf-blue-lighter mb-xxl">
+            <p className="text-lg text-tf-blue-lighter mb-xxl pt-[0px] pb-[0px] mt-[20px] mb-[20px]">
               Move beyond unpredictable hiring outcomes and build the robust talent engine your strategic ambition demands. Let's have a direct conversation about how expert talent enablement can de-risk your initiatives and accelerate sustainable growth.
             </p>
             <div className="mb-xxl mt-[20px] mb-[20px]">
