@@ -96,6 +96,17 @@ export default function Navigation() {
     return false;
   };
 
+  const handleNavClick = () => {
+    // Scroll to top when navigating to a new page
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
+  const handleMobileNavClick = () => {
+    // Close mobile menu and scroll to top
+    setMobileMenuOpen(false);
+    handleNavClick();
+  };
+
   return (
     <nav className={`bg-white border-b border-border-light fixed top-0 left-0 right-0 z-50 transition-transform duration-300 ease-in-out ${
       isVisible ? 'translate-y-0' : '-translate-y-full'
@@ -103,7 +114,7 @@ export default function Navigation() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <div className="flex items-center">
-            <Link href="/" className="flex items-center">
+            <Link href="/" className="flex items-center" onClick={handleNavClick}>
               <img src={logoImage} alt="The Talent Foundation" className="h-10 w-auto" />
             </Link>
           </div>
@@ -131,6 +142,7 @@ export default function Navigation() {
                       ? 'text-tf-orange'
                       : 'text-text-medium hover:text-tf-orange'
                   }`}
+                  onClick={handleNavClick}
                 >
                   Services
                 </Link>
@@ -147,6 +159,7 @@ export default function Navigation() {
                           key={item.href}
                           href={item.href}
                           className="flex items-start space-x-3 rounded-lg p-3 leading-none no-underline outline-none transition-all hover:bg-orange-50 hover:shadow-sm"
+                          onClick={handleNavClick}
                         >
                           <div className={`w-10 h-10 rounded-full flex items-center justify-center flex-shrink-0 ${
                             item.href === '/services' ? 'bg-gradient-to-br from-gray-400 to-gray-600' :
@@ -182,6 +195,7 @@ export default function Navigation() {
                     ? 'text-tf-orange'
                     : 'text-text-medium hover:text-tf-orange'
                 }`}
+                onClick={handleNavClick}
               >
                 {item.label}
               </Link>
@@ -223,7 +237,7 @@ export default function Navigation() {
                   ? 'text-tf-orange bg-orange-50'
                   : 'text-text-medium hover:text-tf-orange hover:bg-orange-50'
               }`}
-              onClick={() => setMobileMenuOpen(false)}
+              onClick={handleMobileNavClick}
             >
               Home
             </Link>
@@ -242,7 +256,7 @@ export default function Navigation() {
                         ? 'text-tf-orange'
                         : 'text-text-medium hover:text-tf-orange'
                     }`}
-                    onClick={() => setMobileMenuOpen(false)}
+                    onClick={handleMobileNavClick}
                   >
                     <div className={`w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0 ${
                       item.href === '/services' ? 'bg-gradient-to-br from-gray-400 to-gray-600' :
@@ -271,7 +285,7 @@ export default function Navigation() {
                     ? 'text-tf-orange bg-orange-50'
                     : 'text-text-medium hover:text-tf-orange hover:bg-orange-50'
                 }`}
-                onClick={() => setMobileMenuOpen(false)}
+                onClick={handleMobileNavClick}
               >
                 {item.label}
               </Link>
