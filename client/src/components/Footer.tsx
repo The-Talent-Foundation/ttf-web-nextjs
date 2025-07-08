@@ -26,7 +26,7 @@ export default function Footer() {
           </div>
         </div>
         <div className="border-t border-gray-700 mt-xxl pt-lg text-center">
-          <p className="text-tf-blue-lighter text-sm mb-md pt-[0px] pb-[0px] mt-[0px] mb-[0px]">
+          <p className="text-tf-blue-lighter text-sm mb-md pt-[0px] pb-[0px] mt-[5px] mb-[5px]">
             © 2025 The Talent Foundation. All rights reserved.
           </p>
           <p className="text-xs text-tf-blue-lighter opacity-60">
