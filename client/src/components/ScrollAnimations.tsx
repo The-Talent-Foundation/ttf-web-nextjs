@@ -104,6 +104,17 @@ export default function ScrollAnimations({ children }: ScrollAnimationsProps) {
       
       let shouldShowFloatingCTA = scrollPercent > 30;
       
+      // Hide floating CTA when navigation would be visible (same logic as Navigation component)
+      // Navigation shows when: scrollTop < 50 OR scrolling up
+      const lastScrollYRef = (window as any).lastScrollYRef || scrollTop;
+      const isNavVisible = scrollTop < 50 || (scrollTop < lastScrollYRef && scrollTop > 150);
+      (window as any).lastScrollYRef = scrollTop;
+      
+      if (isNavVisible) {
+        shouldShowFloatingCTA = false;
+      }
+      
+      // Hide floating CTA when final CTA section is visible
       if (finalCTASection) {
         const rect = finalCTASection.getBoundingClientRect();
         const isVisible = rect.top <= window.innerHeight && rect.bottom >= 0;
