@@ -8,10 +8,10 @@ const inter = Inter({ subsets: ['latin'] })
 export const metadata: Metadata = {
   title: {
     template: '%s | The Talent Foundation',
-    default: 'The Talent Foundation - Strategic Talent Solutions',
+    default: 'Strategic Talent Enablement | The Talent Foundation',
   },
-  description: 'Enterprise talent solutions that build sustainable internal capability. Expert hiring, talent strategy, and organizational development.',
-  keywords: ['talent solutions', 'hiring', 'recruitment', 'talent strategy'],
+  description: 'Build a predictable hiring engine that cuts talent acquisition costs and drives faster growth. Book a complimentary Strategic Assessment today.',
+  keywords: ['talent enablement', 'strategic talent solutions', 'hiring', 'recruitment', 'talent strategy', 'talent acquisition', 'workforce planning'],
   authors: [{ name: 'The Talent Foundation' }],
   creator: 'The Talent Foundation',
   publisher: 'The Talent Foundation',
@@ -25,14 +25,14 @@ export const metadata: Metadata = {
     type: 'website',
     locale: 'en_US',
     url: 'https://talent.foundation',
-    title: 'The Talent Foundation - Strategic Talent Solutions',
-    description: 'Enterprise talent solutions that build sustainable internal capability.',
+    title: 'Strategic Talent Enablement | The Talent Foundation',
+    description: 'Build a predictable hiring engine that cuts talent acquisition costs and drives faster growth. Expert talent enablement for complex challenges.',
     siteName: 'The Talent Foundation',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'The Talent Foundation - Strategic Talent Solutions',
-    description: 'Enterprise talent solutions that build sustainable internal capability.',
+    title: 'Strategic Talent Enablement | The Talent Foundation',
+    description: 'Build a predictable hiring engine that cuts talent acquisition costs and drives faster growth. Expert talent enablement for complex challenges.',
   },
   robots: {
     index: true,
