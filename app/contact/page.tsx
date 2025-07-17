@@ -11,7 +11,7 @@ export default function ContactPage() {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="bg-gradient-to-r from-blue-600 to-purple-600 text-white py-20">
+      <section className="bg-gradient-to-r from-tf-blue to-tf-orange text-white py-20">
         <div className="container mx-auto px-4 text-center">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
             Let's Solve Your Critical Talent Challenge—Fast.
@@ -26,18 +26,18 @@ export default function ContactPage() {
       </section>
 
       {/* Value Reminder */}
-      <section className="py-12 bg-blue-50">
+      <section className="py-12 bg-orange-50">
         <div className="container mx-auto px-4 text-center">
           <p className="text-lg text-gray-700 mb-4 max-w-3xl mx-auto">
             Partnering with The Talent Foundation means investing in <strong>sustainable internal capability</strong>—predictable execution, measurable ROI, and reduced risk.
           </p>
           <div className="space-x-4">
             <span className="text-gray-600">Not sure we're the right fit?</span>
-            <Link href="/who-we-serve" className="text-blue-600 hover:text-blue-800 font-semibold">
+            <Link href="/who-we-serve" className="text-tf-orange hover:text-tf-blue font-semibold">
               Who We Help
             </Link>
             <span className="text-gray-600">|</span>
-            <Link href="/about" className="text-blue-600 hover:text-blue-800 font-semibold">
+            <Link href="/about" className="text-tf-orange hover:text-tf-blue font-semibold">
               Our Approach
             </Link>
           </div>

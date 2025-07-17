@@ -37,7 +37,7 @@ export default function ServicesPage() {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="bg-gradient-to-r from-blue-600 to-purple-600 text-white py-20">
+      <section className="bg-gradient-to-r from-tf-blue to-tf-orange text-white py-20">
         <div className="container mx-auto px-4 text-center">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
             Predictable Talent Results, Even Under Extreme Scale and Complexity
@@ -51,13 +51,13 @@ export default function ServicesPage() {
           <div className="space-x-4">
             <Link 
               href="/contact" 
-              className="bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors"
+              className="btn-primary"
             >
               Book a Strategic Assessment
             </Link>
             <Link 
               href="#ecosystem" 
-              className="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-blue-600 transition-colors"
+              className="btn-secondary"
             >
               Explore the Enablement Ecosystem
             </Link>
@@ -106,7 +106,7 @@ export default function ServicesPage() {
       </section>
 
       {/* Talent Enablement Ecosystem */}
-      <section id="ecosystem" className="py-20 bg-blue-50">
+      <section id="ecosystem" className="py-20 bg-orange-50">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <h2 className="text-4xl font-bold text-center mb-8">Our Talent Enablement Ecosystem: The Pillars for Building Durable Talent Acquisition Capability</h2>
@@ -129,8 +129,8 @@ export default function ServicesPage() {
             </div>
 
             {/* Synergy Section */}
-            <div className="bg-gradient-to-r from-purple-100 to-blue-100 p-8 rounded-lg">
-              <h3 className="text-3xl font-bold text-center mb-8 text-purple-800">The Multiplier Effect: Why Integration Creates Unmatched Value</h3>
+            <div className="bg-gradient-to-r from-orange-50 to-blue-50 p-8 rounded-lg">
+              <h3 className="text-3xl font-bold text-center mb-8 text-tf-orange">The Multiplier Effect: Why Integration Creates Unmatched Value</h3>
               <p className="text-lg mb-6 text-gray-700">
                 These aren't just four separate services. Our framework is powerful <em>because</em> its components are designed to work in synergy when cross-integrated, systematically amplifying results and creating a compounding strategic advantage that empowers your entire organization.
               </p>
@@ -154,13 +154,13 @@ export default function ServicesPage() {
                   }
                 ].map((item, index) => (
                   <div key={index} className="bg-white p-6 rounded-lg shadow-sm">
-                    <h4 className="font-semibold text-purple-600 mb-2">• {item.connection}</h4>
+                    <h4 className="font-semibold text-tf-orange mb-2">• {item.connection}</h4>
                     <p className="text-gray-700 text-sm">{item.description}</p>
                   </div>
                 ))}
               </div>
               <div className="text-center mt-8">
-                <p className="text-lg font-semibold text-purple-800">
+                <p className="text-lg font-semibold text-tf-orange">
                   A deliberate integration like this transforms your People and Talent Acquisition functions from isolated silos into a powerful, predictable engine that propels your strategic business outcomes.
                 </p>
               </div>
@@ -231,8 +231,8 @@ export default function ServicesPage() {
                 Engagements start with a focused diagnostic to create a clear roadmap: perhaps an <strong>Illuminate</strong> deep-dive revealing market realities or an <strong>Innovate</strong> assessment pinpointing process bottlenecks. Based on your needs, we can deploy <strong>Accelerate</strong> for immediate, expert execution on urgent priorities. While <em>concurrently</em> implementing foundational <strong>Innovate</strong> process improvements and delivering targeted <strong>Elevate</strong> capability building in your teams to ensure lasting impact.
               </p>
             </div>
-            <div className="bg-blue-50 p-8 rounded-lg text-center">
-              <h3 className="text-2xl font-semibold mb-4 text-blue-800">The Guiding Principle Remains: Strategic Enablement.</h3>
+            <div className="bg-orange-50 p-8 rounded-lg text-center">
+              <h3 className="text-2xl font-semibold mb-4 text-tf-orange">The Guiding Principle Remains: Strategic Enablement.</h3>
               <p className="text-lg text-gray-700">
                 Regardless of the starting point, our commitment extends beyond short-term fixes. Every interaction emphasizes <strong>transparent knowledge transfer</strong> and practical skill building. We measure our success by <strong>your team's increasing self-sufficiency</strong> and the creation of a robust internal talent engine that provides enduring <strong>strategic control.</strong>
               </p>
@@ -242,7 +242,7 @@ export default function ServicesPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-r from-blue-600 to-purple-600 text-white">
+      <section className="py-20 bg-gradient-to-r from-tf-blue to-tf-orange text-white">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-4xl font-bold mb-6">Ready to Build Your Predictable, High-Performance Talent Engine?</h2>
           <p className="text-xl mb-8 max-w-4xl mx-auto">
@@ -251,7 +251,7 @@ export default function ServicesPage() {
           <div className="space-y-6">
             <Link 
               href="/contact" 
-              className="bg-white text-blue-600 px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 transition-colors inline-block text-lg"
+              className="btn-primary inline-block text-lg"
             >
               Schedule Discovery Call
             </Link>

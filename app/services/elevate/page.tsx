@@ -10,7 +10,7 @@ export default function ElevatePage() {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="bg-gradient-to-r from-emerald-600 to-teal-600 text-white py-20">
+      <section className="bg-gradient-to-r from-tf-blue to-tf-orange text-white py-20">
         <div className="container mx-auto px-4 text-center">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
             Elevate: Build an AI-Savvy, High-Performance TA Team
@@ -24,13 +24,13 @@ export default function ElevatePage() {
           <div className="space-x-4">
             <Link 
               href="/contact" 
-              className="bg-white text-emerald-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors"
+              className="btn-primary"
             >
               Request a Capability Blueprint
             </Link>
             <Link 
               href="/services" 
-              className="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-emerald-600 transition-colors"
+              className="btn-secondary"
             >
               Explore the Enablement Ecosystem
             </Link>

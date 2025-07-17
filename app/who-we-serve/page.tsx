@@ -10,7 +10,7 @@ export default function WhoWeServePage() {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="bg-gradient-to-r from-indigo-600 to-violet-600 text-white py-20">
+      <section className="bg-gradient-to-r from-tf-blue to-tf-orange text-white py-20">
         <div className="container mx-auto px-4 text-center">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
             Focused Expertise for Your Most Critical, Complex Talent Challenges
@@ -35,15 +35,15 @@ export default function WhoWeServePage() {
               </p>
               <ul className="space-y-4 mt-8">
                 <li className="flex items-start">
-                  <span className="text-indigo-600 font-bold mr-3">•</span>
+                  <span className="text-tf-orange font-bold mr-3">•</span>
                   <span><strong>Significantly Lower Execution Risk:</strong> We've navigated these waters before.</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-indigo-600 font-bold mr-3">•</span>
+                  <span className="text-tf-orange font-bold mr-3">•</span>
                   <span><strong>Demonstrably Faster, More Predictable Results:</strong> Proven methods mean less trial-and-error (often improving critical timelines by 30-50%+).</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-indigo-600 font-bold mr-3">•</span>
+                  <span className="text-tf-orange font-bold mr-3">•</span>
                   <span><strong>Superior Long-Term ROI:</strong> Building targeted capability delivers far greater value than perpetual reliance on fragmented solutions.</span>
                 </li>
               </ul>

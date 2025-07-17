@@ -2,27 +2,9 @@ import Link from 'next/link';
 
 export default function Home() {
   return (
-    <main className="min-h-screen">
-      {/* Navigation */}
-      <nav className="bg-white shadow-sm border-b">
-        <div className="container mx-auto px-4 py-4">
-          <div className="flex items-center justify-between">
-            <Link href="/" className="text-2xl font-bold text-gray-900">
-              The Talent Foundation
-            </Link>
-            <div className="hidden md:flex space-x-8">
-              <Link href="/" className="text-gray-600 hover:text-gray-900">Home</Link>
-              <Link href="/services" className="text-gray-600 hover:text-gray-900">Services</Link>
-              <Link href="/who-we-serve" className="text-gray-600 hover:text-gray-900">Who We Serve</Link>
-              <Link href="/about" className="text-gray-600 hover:text-gray-900">About</Link>
-              <Link href="/contact" className="text-gray-600 hover:text-gray-900">Contact</Link>
-            </div>
-          </div>
-        </div>
-      </nav>
-
+    <>
       {/* Hero Section */}
-      <section className="bg-gradient-to-r from-blue-600 to-purple-600 text-white py-20">
+      <section className="bg-gradient-to-r from-tf-blue to-tf-orange text-white py-20">
         <div className="container mx-auto px-4 text-center">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
             Is Your Talent Strategy Fueling Growth or Slowing It Down?
@@ -36,13 +18,13 @@ export default function Home() {
           <div className="space-x-4">
             <Link 
               href="/contact" 
-              className="bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors"
+              className="btn-primary"
             >
               Book a Strategic Assessment
             </Link>
             <Link 
               href="/services" 
-              className="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-blue-600 transition-colors"
+              className="btn-secondary"
             >
               Explore the Enablement Ecosystem
             </Link>
@@ -103,7 +85,7 @@ export default function Home() {
       </section>
 
       {/* Solution Approach - The Ecosystem */}
-      <section className="py-20 bg-blue-50">
+      <section className="py-20 bg-orange-50">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center mb-12">
             <h2 className="text-4xl font-bold mb-6">A Purpose-Built Operating System for Your Talent Acquisition</h2>
@@ -153,7 +135,7 @@ export default function Home() {
             <p className="text-xl text-gray-700 mb-8">
               Partnering with you, we collaboratively design <strong>an integrated operating system for your talent acquisition</strong>, purpose-built for your specific complexity and hiring needs.
             </p>
-            <Link href="/services" className="text-blue-600 hover:text-blue-800 font-semibold text-lg">
+            <Link href="/services" className="text-tf-orange hover:text-tf-blue font-semibold text-lg">
               Learn How Our Integrated Ecosystem Delivers Results →
             </Link>
           </div>
@@ -185,7 +167,7 @@ export default function Home() {
                 }
               ].map((item, index) => (
                 <div key={index} className="bg-gray-50 p-6 rounded-lg">
-                  <h3 className="text-xl font-semibold mb-3 text-blue-600">• {item.title}</h3>
+                  <h3 className="text-xl font-semibold mb-3 text-tf-orange">• {item.title}</h3>
                   <p className="text-gray-700">{item.description}</p>
                 </div>
               ))}
@@ -216,7 +198,7 @@ export default function Home() {
                 </div>
               ))}
             </div>
-            <Link href="/who-we-serve" className="text-blue-600 hover:text-blue-800 font-semibold text-lg">
+            <Link href="/who-we-serve" className="text-tf-orange hover:text-tf-blue font-semibold text-lg">
               Discover Our Areas of Specialized Expertise →
             </Link>
           </div>
@@ -228,7 +210,7 @@ export default function Home() {
         <div className="container mx-auto px-4">
           <div className="max-w-5xl mx-auto">
             <h2 className="text-4xl font-bold text-center mb-12">Your Proven Enablement Partner</h2>
-            <div className="bg-blue-50 p-8 rounded-lg mb-8">
+            <div className="bg-orange-50 p-8 rounded-lg mb-8">
               <p className="text-xl text-gray-700 mb-6">
                 The Talent Foundation's strategies aren't theoretical constructs; they are practical, proven frameworks forged from direct experience navigating extreme scale and complexity where standard methods demonstrably failed.
               </p>
@@ -252,7 +234,7 @@ export default function Home() {
                 }
               ].map((principle, index) => (
                 <div key={index} className="text-center">
-                  <h3 className="text-xl font-semibold mb-3 text-blue-600">• {principle.title}</h3>
+                  <h3 className="text-xl font-semibold mb-3 text-tf-orange">• {principle.title}</h3>
                   <p className="text-gray-700">{principle.description}</p>
                 </div>
               ))}
@@ -261,7 +243,7 @@ export default function Home() {
               <p className="text-lg text-gray-700 mb-6">
                 We operate transparently, intensely focusing on your measurable business outcomes. We don't just offer advice; we partner with you to transform your people and talent function into a dependable engine for achieving your most critical strategic imperatives.
               </p>
-              <Link href="/about" className="text-blue-600 hover:text-blue-800 font-semibold text-lg">
+              <Link href="/about" className="text-tf-orange hover:text-tf-blue font-semibold text-lg">
                 Learn More About Our Philosophy & Experience →
               </Link>
             </div>
@@ -270,7 +252,7 @@ export default function Home() {
       </section>
 
       {/* Final CTA Section */}
-      <section className="py-20 bg-gradient-to-r from-blue-600 to-purple-600 text-white">
+      <section className="py-20 bg-gradient-to-r from-tf-blue to-tf-orange text-white">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-4xl font-bold mb-6">Ready to Transform Talent From Bottleneck to Strategic Advantage?</h2>
           <p className="text-xl mb-8 max-w-4xl mx-auto">
@@ -304,7 +286,7 @@ export default function Home() {
           <div className="space-y-4">
             <Link 
               href="/contact" 
-              className="bg-white text-blue-600 px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 transition-colors inline-block text-lg"
+              className="btn-primary inline-block text-lg"
             >
               Book a Strategic Assessment
             </Link>
@@ -346,44 +328,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-
-      {/* Footer */}
-      <footer className="bg-gray-900 text-white py-12">
-        <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
-            <div>
-              <h3 className="text-xl font-semibold mb-4">Services</h3>
-              <ul className="space-y-2">
-                <li><Link href="/services/illuminate" className="hover:text-gray-300">Illuminate</Link></li>
-                <li><Link href="/services/innovate" className="hover:text-gray-300">Innovate</Link></li>
-                <li><Link href="/services/elevate" className="hover:text-gray-300">Elevate</Link></li>
-                <li><Link href="/services/accelerate" className="hover:text-gray-300">Accelerate</Link></li>
-              </ul>
-            </div>
-            <div>
-              <h3 className="text-xl font-semibold mb-4">Resources</h3>
-              <ul className="space-y-2">
-                <li><a href="#" className="hover:text-gray-300">Blog</a></li>
-                <li><a href="#" className="hover:text-gray-300">Case Studies</a></li>
-                <li><a href="#" className="hover:text-gray-300">Talent Tools Newsletter</a></li>
-                <li><a href="#" className="hover:text-gray-300">Events & Webinars</a></li>
-              </ul>
-            </div>
-            <div>
-              <h3 className="text-xl font-semibold mb-4">Company</h3>
-              <ul className="space-y-2">
-                <li><Link href="/about" className="hover:text-gray-300">About</Link></li>
-                <li><a href="#" className="hover:text-gray-300">Careers</a></li>
-                <li><Link href="/contact" className="hover:text-gray-300">Contact</Link></li>
-                <li><a href="#" className="hover:text-gray-300">Privacy</a></li>
-              </ul>
-            </div>
-          </div>
-          <div className="text-center pt-8 border-t border-gray-700">
-            <p>&copy; 2024 The Talent Foundation. All rights reserved.</p>
-          </div>
-        </div>
-      </footer>
-    </main>
+    </>
   );
 }

@@ -10,7 +10,7 @@ export default function AboutPage() {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="bg-gradient-to-r from-blue-600 to-purple-600 text-white py-20">
+      <section className="bg-gradient-to-r from-tf-blue to-tf-orange text-white py-20">
         <div className="container mx-auto px-4 text-center">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
             Expertise Forged in Complexity. Enablement, Not Band-Aids.
@@ -21,13 +21,13 @@ export default function AboutPage() {
           <div className="space-x-4">
             <Link 
               href="/contact" 
-              className="bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors"
+              className="btn-primary"
             >
               Talk with Adam
             </Link>
             <Link 
               href="/services" 
-              className="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-blue-600 transition-colors"
+              className="btn-secondary"
             >
               Explore the Ecosystem
             </Link>
